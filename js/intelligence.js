@@ -613,3 +613,43 @@ dashboardSummary();
 console.table(bestTargets());
 
 console.log("Intelligence Engine Ready");
+
+function runAI(){
+
+const company={
+
+name:document.getElementById("companyName").value,
+
+industry:document.getElementById("companyIndustry").value,
+
+location:document.getElementById("companyLocation").value,
+
+expanding:document.getElementById("companyExpanding").checked
+
+};
+
+const result=recommendation(company);
+
+document.getElementById("aiResult").innerHTML=`
+
+<b>AI BUSINESS ANALYSIS</b>
+
+Company : ${result.company}
+
+Industry : ${result.industry}
+
+Score : ${result.score}
+
+Stars : ${result.stars}
+
+Priority : ${result.priority}
+
+Next Action : ${result.action}
+
+Reasons
+
+${result.reasons.join("\n")}
+
+`;
+
+   }
