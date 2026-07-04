@@ -630,26 +630,15 @@ expanding:document.getElementById("companyExpanding").checked
 
 const result=recommendation(company);
 
-document.getElementById("aiResult").innerHTML=`
-
-<b>AI BUSINESS ANALYSIS</b>
-
-Company : ${result.company}
-
-Industry : ${result.industry}
-
-Score : ${result.score}
-
-Stars : ${result.stars}
-
-Priority : ${result.priority}
-
-Next Action : ${result.action}
-
-Reasons
-
-${result.reasons.join("\n")}
-
-`;
+document.getElementById("aiResult").innerHTML =
+"<b>AI BUSINESS ANALYSIS</b><br><br>" +
+"Company : " + result.company + "<br>" +
+"Industry : " + result.industry + "<br>" +
+"Score : " + result.score + "<br>" +
+"Stars : " + result.stars + "<br>" +
+"Priority : " + result.priority + "<br>" +
+"Next Action : " + result.action + "<br><br>" +
+"<b>Reasons</b><br>" +
+result.reasons.join("<br>");
 
    }
