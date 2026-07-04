@@ -158,6 +158,7 @@ console.log("database.js loaded");
 
            function saveProspect(){
 
+
 const prospect={
 
 company:document.getElementById("companyName").value,
@@ -166,10 +167,19 @@ industry:document.getElementById("companyIndustry").value,
 
 location:document.getElementById("companyLocation").value,
 
+decisionMaker:document.querySelector('input[placeholder="Decision Maker"]').value,
+
+phone:document.querySelector('input[placeholder="Phone / Email"]').value,
+
+status:document.querySelector("select").value,
+
 date:new Date().toLocaleDateString()
 
 };
 
+
+
+              
 let prospects=JSON.parse(localStorage.getItem("prospects")) || [];
 
 prospects.push(prospect);
