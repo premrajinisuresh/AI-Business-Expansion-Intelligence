@@ -16,39 +16,6 @@ const DATABASE = {
    Load JSON Files
 ========================================== */
 
-async function loadDatabase(){
-
-    try{
-
-        DATABASE.companies =
-        await fetch("data/companies.json")
-        .then(r=>r.json());
-
-        DATABASE.prospects =
-        await fetch("data/prospects.json")
-        .then(r=>r.json());
-
-        DATABASE.industries =
-        await fetch("data/industries.json")
-        .then(r=>r.json());
-
-        DATABASE.searches =
-        await fetch("data/searches.json")
-        .then(r=>r.json());
-
-        console.log("Database Loaded");
-
-        console.log(DATABASE);
-
-    }
-
-    catch(e){
-
-        console.error(e);
-
-    }
-
-}
 
 /* ==========================================
    Statistics
@@ -141,17 +108,7 @@ function dashboardStats(){
    Start
 ========================================== */
 
-document.addEventListener(
 
-"DOMContentLoaded",
-
-function(){
-
-    loadDatabase();
-
-}
-
-);
 
 console.log("database.js loaded");
 
