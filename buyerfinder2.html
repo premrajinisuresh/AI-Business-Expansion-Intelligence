@@ -55,6 +55,11 @@
   #btnGemini     { background:#8e44ad; }
   #btnClaude     { background:#D97757; }
 
+  .bf-ai-buttons-contacts button {
+    background:#fff; border:2px solid #1d3557; color:#1d3557; box-shadow:none;
+  }
+  .bf-ai-buttons-contacts button:hover { background:#eef2f7; }
+
   #copyNotice { display:none; background:#fff8e1; border:1px solid #e0c46c; color:#7a5b00; border-radius:10px; padding:12px 14px; font-size:0.85rem; margin-bottom:20px; }
 
   .bf-paste-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px; }
@@ -137,10 +142,18 @@
 
   <div class="bf-step-label">Step 2 — Ask AI to find prosperous, plot-specific buyers</div>
   <div class="bf-ai-buttons">
-    <button id="btnPerplexity" data-ai-engine="perplexity">🔮 Perplexity</button>
-    <button id="btnChatGPT" data-ai-engine="chatgpt">🤖 ChatGPT</button>
-    <button id="btnGemini" data-ai-engine="gemini">✨ Gemini</button>
-    <button id="btnClaude" data-ai-engine="claude">🧠 Claude</button>
+    <button id="btnPerplexity" data-ai-engine="perplexity" data-mode="leads">🔮 Perplexity</button>
+    <button id="btnChatGPT" data-ai-engine="chatgpt" data-mode="leads">🤖 ChatGPT</button>
+    <button id="btnGemini" data-ai-engine="gemini" data-mode="leads">✨ Gemini</button>
+    <button id="btnClaude" data-ai-engine="claude" data-mode="leads">🧠 Claude</button>
+  </div>
+
+  <div class="bf-step-label">Step 2B — Now get their contact details (email, phone, website)</div>
+  <div class="bf-ai-buttons bf-ai-buttons-contacts">
+    <button data-ai-engine="perplexity" data-mode="contacts">🔮 Perplexity — Contacts</button>
+    <button data-ai-engine="chatgpt" data-mode="contacts">🤖 ChatGPT — Contacts</button>
+    <button data-ai-engine="gemini" data-mode="contacts">✨ Gemini — Contacts</button>
+    <button data-ai-engine="claude" data-mode="contacts">🧠 Claude — Contacts</button>
   </div>
   <div id="copyNotice">✅ Your research request was also copied to the clipboard. If the AI page opens empty, just paste (long-press → Paste) into its box.</div>
 

@@ -188,8 +188,39 @@ function buildAIPrompt(engine) {
   return buildPlotBrief() + `Find prosperous buyers for: ${whoList}\n\n` + commonRules;
 }
 
-function openAI(engine) {
-  const prompt = buildAIPrompt(engine);
+function buildContactPrompt(engine) {
+  const keys = activeCategoryKeys();
+  const orderedKeys = keys.includes("investors")
+    ? ["investors", ...keys.filter((k) => k !== "investors")]
+    : keys;
+  const descs = orderedKeys.map((k) => CATEGORIES[k].desc);
+  const whoList = descs.map((d, i) => `${i + 1}. ${d}`).join("\n");
+
+  const engineNote = {
+    perplexity: "Use your live web access to actually search and open real organization websites.",
+    chatgpt: "Use browsing if available; otherwise rely on well-known, verifiable public organizations.",
+    gemini: "Use your web access to check official Madurai / Tamil Nadu business websites.",
+    claude: "Use web search if available to verify each organization's own official website."
+  }[engine] || "Use web search if available.";
+
+  return (
+    `Act as a data-research assistant building a CONTACT LIST, not a strategy report. ` +
+    buildPlotBrief() +
+    `TASK: For prosperous organizations in these categories:\n${whoList}\n\n` +
+    `${engineNote}\n\n` +
+    `For EACH real organization, visit their own official website (About / Contact / Locations page) ` +
+    `and extract ONLY publicly published details:\n` +
+    `- Company Name\n- Website URL\n- Official Email (general/enquiry email is fine)\n` +
+    `- Phone Number\n- Contact Person / Designation (if listed)\n- City / Branch Address\n\n` +
+    `Present it as a simple table, one row per organization, ready for me to copy into a spreadsheet. ` +
+    `If a detail is not publicly listed on their site, write "Not public" — never guess or invent an ` +
+    `email or phone number. Do not include brokers, listing portals, or aggregator sites — only the ` +
+    `organizations' own official websites.`
+  );
+}
+
+function openAI(engine, mode) {
+  const prompt = mode === "contacts" ? buildContactPrompt(engine) : buildAIPrompt(engine);
 
   // Try to copy the prompt to clipboard as a safety net, in case the AI
   // site opens with an empty box instead of pre-filling it.
@@ -568,10 +599,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   updateSelectionSummary();
 
-  // The 3 AI buttons — this is what actually runs the research.
+  // The AI buttons (both lead-finding and contact-detail modes) — runs the research.
   document.querySelectorAll("[data-ai-engine]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      openAI(btn.getAttribute("data-ai-engine"));
+      openAI(btn.getAttribute("data-ai-engine"), btn.getAttribute("data-mode") || "leads");
     });
   });
 
