@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Buyer Finder v3 — Alagarkovil Junction Land</title>
+<meta name="description" content="AI Business Development Executive to find genuine buyers for prime commercial land at Alagarkovil Junction, Madurai." />
+
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f2f3f5; color:#222; }
+  a { text-decoration:none; }
+  button { font-family: inherit; -webkit-appearance:none; appearance:none; }
+
+  .bf-wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  .bf-back {
+    display:inline-block; margin-bottom:14px; color:#fff; background:#1d3557;
+    padding:8px 16px; border-radius:20px; font-size:0.85rem; font-weight:600;
+  }
+
+  .bf-summary { background:#111; color:#eee; border-radius:14px; padding:18px 20px; margin-bottom:20px; box-shadow:0 4px 14px rgba(0,0,0,0.15); }
+  .bf-summary h1 { margin:0 0 8px; font-size:1.3rem; }
+  .bf-summary .bf-tag { display:inline-block; background:#c9a84c; color:#111; font-weight:700; border-radius:20px; padding:4px 12px; font-size:0.8rem; margin-right:6px; margin-bottom:6px; }
+  .bf-summary ul { margin:10px 0 0; padding-left:18px; font-size:0.9rem; line-height:1.6; }
+
+  .bf-step-label { font-size:0.8rem; color:#1d3557; font-weight:800; margin:22px 0 10px; text-transform:uppercase; letter-spacing:0.04em; }
+  .bf-step-sub { font-size:0.78rem; color:#666; margin:-4px 0 10px; }
+
+  .bf-categories { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:8px; }
+  .bf-categories button {
+    flex:1 1 120px; padding:14px 10px; border:none; border-radius:14px;
+    background:#e7ecf3; color:#1d3557; font-size:0.95rem; font-weight:700;
+    cursor:pointer; box-shadow:0 2px 6px rgba(29,53,87,0.15);
+    transition: transform 0.08s ease, background 0.15s ease;
+  }
+  .bf-categories button:active { transform: scale(0.97); }
+  .bf-categories button.active {
+    background:#1d3557; color:#fff; box-shadow:0 4px 10px rgba(29,53,87,0.4);
+  }
+
+  #selectionSummary { font-size:0.85rem; color:#555; margin-bottom:20px; font-style:italic; }
+
+  .bf-ai-buttons { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:10px; }
+  .bf-ai-buttons button {
+    flex:1 1 140px; padding:16px 10px; border:none; border-radius:14px;
+    color:#fff; font-size:1rem; font-weight:800; cursor:pointer;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2); transition: transform 0.08s ease, filter 0.15s ease;
+  }
+  .bf-ai-buttons button:active { transform: scale(0.97); }
+  .bf-ai-buttons button:hover { filter: brightness(1.08); }
+  #btnPerplexity { background:#1FB8CD; }
+  #btnChatGPT    { background:#10a37f; }
+  #btnGemini     { background:#8e44ad; }
+  #btnClaude     { background:#D97757; }
+
+  .bf-ai-buttons-contacts button {
+    background:#fff; border:2px solid #1d3557; color:#1d3557; box-shadow:none;
+  }
+  .bf-ai-buttons-contacts button:hover { background:#eef2f7; }
+
+  #copyNotice { display:none; background:#fff8e1; border:1px solid #e0c46c; color:#7a5b00; border-radius:10px; padding:12px 14px; font-size:0.85rem; margin-bottom:20px; }
+
+  /* ---- NEW v3: Specialist prompt cards ---- */
+  .bf-specialist-list { display:flex; flex-direction:column; gap:10px; margin-bottom:20px; }
+  .bf-specialist-card { background:#fff; border-radius:12px; padding:12px 14px; box-shadow:0 2px 6px rgba(0,0,0,0.08); border-left:4px solid #c9a84c; }
+  .bf-specialist-head strong { font-size:0.92rem; color:#1d3557; }
+  .bf-specialist-blurb { font-size:0.78rem; color:#666; margin:4px 0 8px; }
+  .bf-specialist-engines { display:flex; gap:8px; }
+  .bf-mini-engine {
+    width:38px; height:38px; border-radius:10px; border:none; cursor:pointer;
+    font-size:1.05rem; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.15); transition: transform 0.08s ease;
+  }
+  .bf-mini-engine:active { transform: scale(0.92); }
+  .bf-mini-perplexity { background:#1FB8CD; }
+  .bf-mini-chatgpt { background:#10a37f; }
+  .bf-mini-gemini { background:#8e44ad; }
+  .bf-mini-claude { background:#D97757; }
+
+  .bf-paste-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px; }
+  .bf-paste-box label { display:block; font-size:0.78rem; font-weight:700; color:#1d3557; margin-bottom:4px; }
+  .bf-paste-box textarea { width:100%; padding:8px; border:1px solid #ccc; border-radius:8px; font-size:0.8rem; resize:vertical; }
+  .bf-compile-actions { display:flex; gap:10px; margin-bottom:10px; }
+  .bf-compile-actions button { flex:1; padding:12px 10px; border:none; border-radius:10px; color:#fff; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+  #compileBtn { background:#1d3557; }
+  #copyCompiledBtn { background:#c9a84c; color:#111; }
+  #compiledOutput { display:none; white-space:pre-wrap; background:#fff; border-radius:10px; padding:14px; font-size:0.78rem; max-height:320px; overflow:auto; box-shadow:0 2px 6px rgba(0,0,0,0.08); margin-bottom:20px; }
+
+  .bf-progress { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:24px; }
+  .bf-progress div { background:#fff; border-radius:12px; padding:14px 6px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+  .bf-progress span.bf-num { display:block; font-size:1.5rem; font-weight:800; color:#1d3557; }
+  .bf-progress span.bf-label { font-size:0.72rem; color:#666; }
+
+  .bf-section-title { display:flex; justify-content:space-between; align-items:center; margin:20px 0 10px; }
+  .bf-section-title h2 { font-size:1.1rem; margin:0; }
+  #toggleAddCompany { padding:10px 16px; border-radius:12px; border:none; background:#1d3557; color:#fff; font-weight:700; cursor:pointer; box-shadow:0 2px 6px rgba(29,53,87,0.3); }
+
+  #addCompanyPanel { display:none; background:#fff; border-radius:14px; padding:16px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+  #addCompanyPanel.open { display:block; }
+  #addCompanyPanel label { display:block; font-size:0.8rem; margin:8px 0 3px; color:#333; font-weight:600; }
+  #addCompanyPanel input, #addCompanyPanel select, #addCompanyPanel textarea {
+    width:100%; padding:10px; border:1px solid #ccc; border-radius:8px; font-size:0.9rem;
+  }
+  #addCompanyPanel button[type="submit"] { margin-top:12px; padding:12px 18px; background:#c9a84c; border:none; border-radius:10px; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(201,168,76,0.4); }
+
+  .bf-card { border-radius:14px; padding:14px; margin-bottom:12px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+  .bf-card-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+  .bf-badge { background:#1d3557; color:#fff; font-size:0.7rem; border-radius:8px; padding:3px 10px; font-weight:700; }
+  .bf-card-body div { font-size:0.85rem; margin:3px 0; color:#333; }
+  .bf-card-body a { color:#1d3557; font-weight:700; text-decoration:underline; }
+  .bf-card-body .bf-notes { color:#666; }
+  .bf-card-body .bf-meta { font-size:0.75rem; color:#888; margin-top:6px; }
+  .bf-status { margin-left:4px; padding:3px 6px; border-radius:6px; border:1px solid #ccc; font-size:0.75rem; }
+  .bf-card-actions { display:flex; gap:8px; margin-top:10px; }
+  .bf-card-actions button { flex:1; padding:10px; border:none; border-radius:8px; font-size:0.8rem; font-weight:700; cursor:pointer; }
+  .bf-btn-email { background:#1d3557; color:#fff; }
+  .bf-btn-whatsapp { background:#25D366; color:#fff; }
+  .bf-btn-delete { background:#f1e1e1; color:#900; }
+  .bf-empty { color:#777; font-size:0.9rem; }
+</style>
+</head>
+<body>
+<div class="bf-wrap">
+
+  <a href="index.html" class="bf-back">← Back to site</a>
+
+  <section class="bf-summary">
+    <h1>🎯 AI Buyer Finder v3</h1>
+    <div>
+      <span class="bf-tag">23.5 Cents</span>
+      <span class="bf-tag">Corner Plot</span>
+      <span class="bf-tag">₹5–10 Cr+</span>
+    </div>
+    <p style="margin:10px 0 4px;">
+      <strong>Alagarkovil, Madurai, Tamil Nadu</strong> — 16 km from Madurai City centre, facing
+      Alagarkovil Road &amp; Natham–Alanganallur High Road.
+    </p>
+    <ul>
+      <li>Corner plot on a busy junction, four-lane highway frontage</li>
+      <li>Only 16 km (~30 min) from Madurai City — close enough to inspect same-day, far enough to be affordable</li>
+      <li>Tourism corridor (Alagar Kovil Temple, Alanganallur Jallikattu, Vishaal Tourism Project)</li>
+      <li>Education corridor (Engineering, Arts, Catering, Aviation colleges &amp; schools nearby)</li>
+      <li>Near TNPL Cricket Ground, Natham · Cooler climate area</li>
+    </ul>
+  </section>
+
+  <div class="bf-step-label">Step 1 — Pick a category (only these 6 — skip to search all)</div>
+  <div class="bf-categories">
+    <button data-category="hotels">🏨 Hotels</button>
+    <button data-category="resorts">🌴 Resorts</button>
+    <button data-category="hospitals">🏥 Hospitals</button>
+    <button data-category="education">🎓 Education</button>
+    <button data-category="restaurants">🍽 Restaurants</button>
+    <button data-category="investors">🌍 Investors ⭐</button>
+  </div>
+  <div id="selectionSummary"></div>
+
+  <div class="bf-step-label">Step 2 — Ask AI to find prosperous, plot-specific buyers</div>
+  <div class="bf-ai-buttons">
+    <button id="btnPerplexity" data-ai-engine="perplexity" data-mode="leads">🔮 Perplexity</button>
+    <button id="btnChatGPT" data-ai-engine="chatgpt" data-mode="leads">🤖 ChatGPT</button>
+    <button id="btnGemini" data-ai-engine="gemini" data-mode="leads">✨ Gemini</button>
+    <button id="btnClaude" data-ai-engine="claude" data-mode="leads">🧠 Claude</button>
+  </div>
+
+  <div class="bf-step-label">Step 2B — Now get their contact details (email, phone, website)</div>
+  <div class="bf-ai-buttons bf-ai-buttons-contacts">
+    <button data-ai-engine="perplexity" data-mode="contacts">🔮 Perplexity — Contacts</button>
+    <button data-ai-engine="chatgpt" data-mode="contacts">🤖 ChatGPT — Contacts</button>
+    <button data-ai-engine="gemini" data-mode="contacts">✨ Gemini — Contacts</button>
+    <button data-ai-engine="claude" data-mode="contacts">🧠 Claude — Contacts</button>
+  </div>
+  <div id="copyNotice">✅ Your research request was also copied to the clipboard. If the AI page opens empty, just paste (long-press → Paste) into its box.</div>
+
+  <div class="bf-step-label">Step 2C — NEW: 10 Specialist Prompts (more angles, more leads)</div>
+  <div class="bf-step-sub">Each row is a different buyer angle. Tap any of the 4 AI icons to send THAT prompt to THAT AI — the same prompt often returns different real organizations depending on which AI answers it.</div>
+  <div class="bf-specialist-list" id="specialistPromptsList"></div>
+
+  <div class="bf-step-label">Step 3 — Paste each AI's answer, then compile</div>
+  <div class="bf-paste-grid">
+    <div class="bf-paste-box">
+      <label>🔮 Perplexity answer</label>
+      <textarea id="pastePerplexity" rows="3" placeholder="Paste Perplexity's reply here..."></textarea>
+    </div>
+    <div class="bf-paste-box">
+      <label>🤖 ChatGPT answer</label>
+      <textarea id="pasteChatGPT" rows="3" placeholder="Paste ChatGPT's reply here..."></textarea>
+    </div>
+    <div class="bf-paste-box">
+      <label>✨ Gemini answer</label>
+      <textarea id="pasteGemini" rows="3" placeholder="Paste Gemini's reply here..."></textarea>
+    </div>
+    <div class="bf-paste-box">
+      <label>🧠 Claude answer</label>
+      <textarea id="pasteClaude" rows="3" placeholder="Paste Claude's reply here..."></textarea>
+    </div>
+  </div>
+  <div class="bf-compile-actions">
+    <button id="compileBtn">📋 Compile All Leads</button>
+    <button id="copyCompiledBtn">📎 Copy Compiled List</button>
+  </div>
+  <pre id="compiledOutput"></pre>
+
+  <div class="bf-progress">
+    <div><span class="bf-num" id="statFound">0</span><span class="bf-label">Companies Found</span></div>
+    <div><span class="bf-num" id="statSaved">0</span><span class="bf-label">Saved</span></div>
+    <div><span class="bf-num" id="statContacted">0</span><span class="bf-label">Contacted</span></div>
+    <div><span class="bf-num" id="statInterested">0</span><span class="bf-label">Interested</span></div>
+  </div>
+
+  <div class="bf-section-title">
+    <h2>Saved Companies</h2>
+    <button id="toggleAddCompany">+ Add Company</button>
+  </div>
+
+  <div id="addCompanyPanel">
+    <form id="addCompanyForm">
+      <label for="inCompany">Company Name *</label>
+      <input type="text" id="inCompany" required />
+
+      <label for="inCategory">Category</label>
+      <select id="inCategory">
+        <option value="Hotels">Hotels</option>
+        <option value="Resorts">Resorts</option>
+        <option value="Hospitals">Hospitals</option>
+        <option value="Education">Education</option>
+        <option value="Restaurants">Restaurants</option>
+        <option value="Investors">Investors</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="inWebsite">Website</label>
+      <input type="text" id="inWebsite" placeholder="https://..." />
+
+      <label for="inContact">Contact Person</label>
+      <input type="text" id="inContact" />
+
+      <label for="inEmail">Email</label>
+      <input type="email" id="inEmail" />
+
+      <label for="inPhone">Phone (with country code for WhatsApp)</label>
+      <input type="text" id="inPhone" placeholder="91XXXXXXXXXX" />
+
+      <label for="inNotes">Notes</label>
+      <textarea id="inNotes" rows="2"></textarea>
+
+      <button type="submit">Save Company</button>
+    </form>
+  </div>
+
+  <div id="companyList"></div>
+
+</div>
+
+<script src="buyerfinder3.js"></script>
+</body>
+</html>
