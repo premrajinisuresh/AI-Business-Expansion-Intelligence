@@ -642,3 +642,38 @@ document.getElementById("aiResult").innerHTML =
 result.reasons.join("<br>");
 
    }
+
+
+/* ==========================================
+   Auto AI Research
+========================================== */
+
+function startAutoResearch(){
+
+document.getElementById("status").innerHTML="Running...";
+
+let found=0;
+
+let saved=0;
+
+let timer=setInterval(function(){
+
+found++;
+
+saved++;
+
+document.getElementById("found").innerHTML=found;
+
+document.getElementById("saved").innerHTML=saved;
+
+if(found>=20){
+
+clearInterval(timer);
+
+document.getElementById("status").innerHTML="Completed";
+
+}
+
+},500);
+
+   }
