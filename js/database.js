@@ -207,13 +207,15 @@ body.innerHTML = "";
 prospects.forEach(function(p){
 
 body.innerHTML += `
-<tr>
-<td>${p.company}</td>
-<td>${p.industry}</td>
-<td>${p.location}</td>
-<td>${p.status}</td>
-<td>${p.date}</td>
-</tr>
+<div class="card">
+    <h3>${p.company}</h3>
+    <p><b>Industry:</b> ${p.industry}</p>
+    <p><b>Location:</b> ${p.location}</p>
+    <p><b>Decision Maker:</b> ${p.decisionMaker}</p>
+    <p><b>Phone:</b> ${p.phone}</p>
+    <p><b>Status:</b> ${p.status}</p>
+    <p><b>Date:</b> ${p.date}</p>
+</div>
 `;
 
 });
