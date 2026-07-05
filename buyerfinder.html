@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Buyer Finder — Alagarkovil Commercial Land</title>
+<style>
+  :root {
+    --navy: #0b1f3a;
+    --navy-light: #12305a;
+    --gold: #d4af37;
+    --gold-light: #f2d98a;
+    --bg: #0a1628;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg), var(--navy));
+    color: #eef1f6;
+    padding: 24px 16px 60px;
+  }
+  .bf-wrap { max-width: 960px; margin: 0 auto; }
+  .bf-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .bf-header h1 {
+    font-size: 26px;
+    color: var(--gold-light);
+    margin: 0 0 6px;
+    letter-spacing: 0.5px;
+  }
+  .bf-header p { color: #b9c2d0; margin: 0; font-size: 14px; }
+
+  .bf-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .bf-card h2 {
+    color: var(--gold-light);
+    font-size: 17px;
+    margin: 0 0 12px;
+    border-bottom: 1px solid rgba(212,175,55,0.25);
+    padding-bottom: 8px;
+  }
+  .bf-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px 20px;
+    font-size: 14px;
+    color: #dbe2ec;
+  }
+  .bf-summary-grid strong { color: var(--gold-light); }
+  .bf-highlights {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .bf-chip {
+    background: rgba(212,175,55,0.12);
+    border: 1px solid rgba(212,175,55,0.4);
+    color: #f2d98a;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+
+  .bf-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .bf-btn {
+    background: linear-gradient(135deg, var(--gold), #b8912c);
+    color: #1a1204;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .bf-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(212,175,55,0.35); }
+  .bf-btn.bf-primary {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #1c3a66, var(--navy-light));
+    color: var(--gold-light);
+    border: 1px solid var(--gold);
+  }
+
+  .bf-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .bf-stat {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(212,175,55,0.25);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+  .bf-stat .num { font-size: 26px; font-weight: 700; color: var(--gold-light); }
+  .bf-stat .lbl { font-size: 12px; color: #a9b3c2; margin-top: 4px; }
+
+  form.bf-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  form.bf-form input, form.bf-form select, form.bf-form textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(212,175,55,0.4);
+    background: rgba(255,255,255,0.9);
+    color: #0b1f3a;
+    font-size: 13px;
+  }
+  form.bf-form textarea { grid-column: 1 / -1; min-height: 50px; resize: vertical; }
+  form.bf-form button {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; border-radius: 10px; overflow: hidden; }
+  thead { background: var(--navy); color: var(--gold-light); }
+  th, td { padding: 10px; text-align: left; vertical-align: top; color: #1a2436; }
+  tbody tr:nth-child(odd) { background: #f7f4ea; }
+  tbody tr:nth-child(even) { background: #ffffff; }
+
+  .bf-btn-small {
+    background: var(--navy);
+    color: var(--gold-light);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .bf-btn-small.bf-danger { background: #6b1414; border-color: #a33; color: #fff; }
+
+  .bf-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .bf-file-label {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(212,175,55,0.4);
+    color: var(--gold-light);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .bf-back { display: inline-block; margin-bottom: 16px; color: var(--gold-light); text-decoration: none; font-size: 14px; }
+  .bf-back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="bf-wrap">
+
+  <a class="bf-back" href="index.html">&larr; Back to main site</a>
+
+  <div class="bf-header">
+    <h1>🎯 AI Buyer Finder</h1>
+    <p>Business development assistant for the Alagarkovil Junction commercial land</p>
+  </div>
+
+  <div class="bf-card">
+    <h2>Property Summary</h2>
+    <div class="bf-summary-grid">
+      <div><strong>Location:</strong> Alagarkovil Junction, Madurai, Tamil Nadu</div>
+      <div><strong>Size:</strong> 23.5 Cents (Corner Plot)</div>
+      <div><strong>Type:</strong> Prime Commercial Land</div>
+      <div><strong>Price:</strong> Rs. 25 Lakhs / cent</div>
+      <div><strong>Frontage 1:</strong> Alagarkovil Main Road — 46 ft</div>
+      <div><strong>Frontage 2:</strong> Natham–Alanganallur High Road — 168 ft</div>
+      <div><strong>Owner Contact:</strong> 9884198930 (No Brokers)</div>
+      <div><strong>Brochure:</strong> <a href="https://bit.ly/4tHbNV4" target="_blank" style="color:#f2d98a;">bit.ly/4tHbNV4</a></div>
+    </div>
+    <div class="bf-highlights" id="highlightsBox"></div>
+  </div>
+
+  <div class="bf-card">
+    <h2>Search By Category</h2>
+    <div class="bf-buttons">
+      <button class="bf-btn" onclick="openCategory('hotels')">🏨 Hotels</button>
+      <button class="bf-btn" onclick="openCategory('resorts')">🌴 Resorts</button>
+      <button class="bf-btn" onclick="openCategory('hospitals')">🏥 Hospitals</button>
+      <button class="bf-btn" onclick="openCategory('education')">🎓 Education</button>
+      <button class="bf-btn" onclick="openCategory('restaurants')">🍽 Restaurants</button>
+      <button class="bf-btn" onclick="openCategory('investors')">🌍 Investors</button>
+      <button class="bf-btn bf-primary" onclick="searchAll()">▶ Search All Categories</button>
+    </div>
+  </div>
+
+  <div class="bf-card">
+    <h2>Today's Progress</h2>
+    <div class="bf-stats">
+      <div class="bf-stat"><div class="num" id="statFound">0</div><div class="lbl">Companies Found</div></div>
+      <div class="bf-stat"><div class="num" id="statSaved">0</div><div class="lbl">Saved</div></div>
+      <div class="bf-stat"><div class="num" id="statContacted">0</div><div class="lbl">Contacted</div></div>
+      <div class="bf-stat"><div class="num" id="statInterested">0</div><div class="lbl">Interested</div></div>
+    </div>
+  </div>
+
+  <div class="bf-card">
+    <h2>Save A Lead</h2>
+    <form class="bf-form" id="addCompanyForm">
+      <input name="company" placeholder="Company name" required />
+      <select name="category">
+        <option>Hotels</option>
+        <option>Resorts</option>
+        <option>Hospitals</option>
+        <option>Education</option>
+        <option>Restaurants</option>
+        <option>Investors</option>
+        <option>Other</option>
+      </select>
+      <input name="website" placeholder="Website (optional)" />
+      <input name="email" placeholder="Email (optional)" />
+      <input name="phone" placeholder="Phone / WhatsApp number" />
+      <input name="contactPerson" placeholder="Contact person (optional)" />
+      <textarea name="notes" placeholder="Notes (optional)"></textarea>
+      <button type="submit" class="bf-btn">＋ Save Company</button>
+    </form>
+  </div>
+
+  <div class="bf-card">
+    <h2>Saved Companies</h2>
+    <div class="bf-toolbar">
+      <button class="bf-btn-small" onclick="exportData()">⬇ Export JSON</button>
+      <label class="bf-file-label">
+        ⬆ Import JSON
+        <input type="file" id="importFile" accept="application/json" style="display:none;" />
+      </label>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Contact Info</th>
+            <th>Status</th>
+            <th>Email</th>
+            <th>WhatsApp</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="companiesBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('highlightsBox').innerHTML =
+    ['Corner plot','4-lane highway','~30 min to Madurai City','Bus stop in front',
+     'Tourism corridor','Education corridor','Cooler climate','Near Alagar Kovil Temple',
+     'Near Alanganallur Jallikattu','Near Vishaal Tourism Project','Near TNPL Cricket Ground',
+     'Near Engg/Arts/Catering/Aviation colleges','Near schools']
+    .map(h => `<span class="bf-chip">${h}</span>`).join('');
+</script>
+<script src="buyerfinder.js"></script>
+</body>
+</html>

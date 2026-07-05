@@ -1,0 +1,15 @@
+{
+  "_readme": "This file is the schema/seed for the AI Buyer Finder. Because GitHub Pages is a static host, the browser cannot write back to this file directly. Live data (companies you save, contact, mark interested) is stored in your browser's localStorage automatically. Use the 'Export JSON' button in buyerfinder.html any time to download an up-to-date copy of this file with all your saved records, and 'Import JSON' to load a previously exported file (e.g. on a new device/browser).",
+  "fields": {
+    "Company": "string - organization name",
+    "Category": "string - Hotels | Resorts | Hospitals | Education | Restaurants | Investors | Other",
+    "Website": "string - URL",
+    "Email": "string",
+    "Phone": "string",
+    "ContactPerson": "string",
+    "Status": "string - New | Contacted | Interested | Not Interested | Deal Closed",
+    "Notes": "string",
+    "DateAdded": "string - ISO date"
+  },
+  "companies": []
+}
