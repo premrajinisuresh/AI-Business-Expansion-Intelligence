@@ -41,6 +41,11 @@
 <button>★★★ Low</button>
 </div>
 
+
+  <div class="card">
+<h2>Saved Prospects</h2>
+<div id="prospectList"></div>
+  </div>
 <div class="card">
 <h2>Navigation</h2>
 <button onclick="location.href='index.html'">Home</button>
@@ -50,5 +55,27 @@
 <button onclick="location.href='settings.html'">Settings</button>
 </div>
 </div>
+
+  <script>
+const prospects = JSON.parse(localStorage.getItem("prospects")) || [];
+
+let html = "";
+
+prospects.forEach(p => {
+html += `
+<div class="card">
+<b>${p.company}</b><br>
+Industry: ${p.industry}<br>
+Location: ${p.location}<br>
+Decision Maker: ${p.decisionMaker}<br>
+Phone: ${p.phone}<br>
+Status: ${p.status}<br>
+Date: ${p.date}
+</div>
+`;
+});
+
+document.getElementById("prospectList").innerHTML = html;
+  </script>
 </body>
 </html>
