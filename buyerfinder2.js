@@ -1,24 +1,26 @@
 /* ============================================================
-   AI BUYER FINDER — buyerfinder.js
+   AI BUYER FINDER v2 — buyerfinder2.js
    Acts like an AI Business Development Executive.
-   Mission: find real organizations that may genuinely buy
-   the property, then help contact them.
+   Instead of opening plain Google search tabs, this version
+   sends a real research prompt to an AI tool of your choice
+   (Perplexity, ChatGPT, or Gemini) so it actually names real
+   companies for you.
    Uses localStorage for persistence (works on GitHub Pages /
    Cloudflare Pages with no backend/server required).
    ============================================================ */
 
 /* ---------------------------------------------------------
-   1. PROPERTY DATA (used inside every generated search & draft)
+   1. PROPERTY DATA (used inside every generated prompt & draft)
    --------------------------------------------------------- */
 const PROPERTY = {
-  location: "Alagarkovil Junction, Madurai, Tamil Nadu",
+  location: "Alagarkovil, Madurai, Tamil Nadu — 16 km from Madurai City centre",
   size: "23.5 Cents",
   type: "Prime Corner Commercial Land",
   roads: ["Alagarkovil Road", "Natham–Alanganallur High Road"],
   advantages: [
     "Corner plot on a busy junction",
     "Four lane highway frontage",
-    "Around 30 minutes to Madurai City",
+    "Only 16 km (about 30 minutes) from Madurai City — close enough for a same-day site visit, far enough to be affordable",
     "Bus stop directly in front of the property",
     "Located on a tourism corridor",
     "Located on an education corridor",
@@ -34,72 +36,24 @@ const PROPERTY = {
 };
 
 /* ---------------------------------------------------------
-   2. CATEGORIES + INTELLIGENT SEARCH QUERY TEMPLATES
-   Each template is written the way a real BD executive would
-   search Google to find genuine buyers, not brokers.
+   2. CATEGORIES (used to build the AI research prompt)
    --------------------------------------------------------- */
 const CATEGORIES = {
-  hotels: {
-    label: "🏨 Hotels",
-    queries: [
-      "budget hotel chains expanding in Madurai Tamil Nadu 2026",
-      "hotel group looking for land near Alagarkovil Madurai",
-      "highway hotel investment opportunity Madurai Tamil Nadu",
-      "OYO Treebo FabHotels expansion Madurai highway property",
-      "new hotel project Natham Alanganallur road Madurai"
-    ]
-  },
-  resorts: {
-    label: "🌴 Resorts",
-    queries: [
-      "resort development land near Alagar Kovil temple Madurai",
-      "weekend resort investment near Madurai cooler climate land",
-      "tourism resort project Alanganallur Jallikattu corridor",
-      "resort chain expansion Tamil Nadu temple tourism circuit",
-      "Vishaal Tourism Project Madurai nearby land investors"
-    ]
-  },
-  hospitals: {
-    label: "🏥 Hospitals",
-    queries: [
-      "hospital chain looking for land Madurai highway junction",
-      "nursing home new branch land Madurai Natham road",
-      "multi speciality hospital expansion Madurai outskirts 2026",
-      "healthcare group land acquisition Madurai Tamil Nadu"
-    ]
-  },
-  education: {
-    label: "🎓 Education",
-    queries: [
-      "educational trust land purchase Madurai highway corner plot",
-      "engineering college new campus land Madurai Natham road",
-      "school trust expansion land near Alagarkovil Madurai",
-      "aviation catering college new campus Madurai Tamil Nadu",
-      "arts and science college land requirement Madurai 2026"
-    ]
-  },
-  restaurants: {
-    label: "🍽 Restaurants",
-    queries: [
-      "restaurant chain highway outlet land Madurai Tamil Nadu",
-      "food court investment corner plot Madurai highway junction",
-      "A2B Saravana Bhavan Sangeetha new outlet Madurai highway",
-      "drive-in restaurant land requirement Madurai bypass road"
-    ]
-  },
+  hotels: { label: "🏨 Hotels", desc: "hotel chains and hotel groups (budget, mid-scale, or highway hotels)" },
+  resorts: { label: "🌴 Resorts", desc: "resort developers and weekend/tourism resort operators" },
+  hospitals: { label: "🏥 Hospitals", desc: "hospital chains, nursing homes, and healthcare groups" },
+  education: { label: "🎓 Education", desc: "educational trusts, engineering/arts/aviation/catering colleges, and school trusts" },
+  restaurants: { label: "🍽 Restaurants", desc: "restaurant chains, food courts, and highway dining brands" },
   investors: {
     label: "🌍 Investors",
-    queries: [
-      "NRI investor buying commercial land Madurai Tamil Nadu",
-      "HNI investor commercial land Madurai highway corner plot",
-      "real estate investment group Madurai Alagarkovil corridor",
-      "convention centre marriage hall land Madurai highway",
-      "shopping mall land requirement Madurai outskirts 2026"
-    ]
+    desc: "PRIORITY GROUP — prosperous investors based in or native to Madurai City: established Madurai business families (textile, jewellery, spinning mills, wholesale trade) diversifying into real estate; Madurai-origin NRI investors; local HNI individuals; temple trusts and charitable trusts with surplus funds; real estate investment groups and family offices active in Madurai; convention/marriage hall operators; shopping mall developers",
+    priority: true
   }
 };
-
 const CATEGORY_KEYS = Object.keys(CATEGORIES);
+
+/* Which categories are currently selected (default: none = "all") */
+let selectedCategories = new Set();
 
 /* ---------------------------------------------------------
    3. STORAGE HELPERS (localStorage, no backend needed)
@@ -125,15 +79,13 @@ function todayStr() {
   return new Date().toISOString().split("T")[0];
 }
 
-/* Merge the static buyerdata.json (seed file) with whatever
-   has been saved locally in the browser so far. */
 async function initBuyerData() {
   let seed = { companies: [] };
   try {
     const res = await fetch("buyerdata2.json");
     seed = await res.json();
   } catch (e) {
-    console.warn("buyerdata.json not reachable, starting empty.", e);
+    console.warn("buyerdata2.json not reachable, starting empty.", e);
   }
   const local = loadSavedCompanies();
   if (local.length === 0 && seed.companies && seed.companies.length > 0) {
@@ -144,39 +96,208 @@ async function initBuyerData() {
 }
 
 /* ---------------------------------------------------------
-   4. SEARCH GENERATION + TAB OPENING
+   4. AI PROMPT BUILDING + OPENING THE AI TOOL
    --------------------------------------------------------- */
-function generateSearchQueries(categoryKey) {
-  const cat = CATEGORIES[categoryKey];
-  if (!cat) return [];
-  return cat.queries;
+function activeCategoryKeys() {
+  return selectedCategories.size > 0 ? Array.from(selectedCategories) : CATEGORY_KEYS;
 }
 
-function openSearchTabs(queries) {
-  queries.forEach((q, i) => {
-    const url = "https://www.google.com/search?q=" + encodeURIComponent(q);
-    // small stagger so the browser / popup blocker doesn't choke
-    setTimeout(() => window.open(url, "_blank"), i * 250);
-  });
+function buildPlotBrief() {
+  return (
+    `THE PLOT:\n` +
+    `${PROPERTY.size} ${PROPERTY.type} at ${PROPERTY.location}. Corner plot facing ` +
+    `${PROPERTY.roads.join(" and ")}. Specific features: ` +
+    PROPERTY.advantages.join("; ") + `. Budget expected: ${PROPERTY.budgetRange}. ` +
+    `${PROPERTY.dealType}.\n\n`
+  );
 }
 
-function searchCategory(categoryKey) {
-  const queries = generateSearchQueries(categoryKey);
-  openSearchTabs(queries);
-  logActivity(`Searched category: ${CATEGORIES[categoryKey].label}`);
+function buildAIPrompt(engine) {
+  const keys = activeCategoryKeys();
+  const orderedKeys = keys.includes("investors")
+    ? ["investors", ...keys.filter((k) => k !== "investors")]
+    : keys;
+  const descs = orderedKeys.map((k) => CATEGORIES[k].desc);
+  const whoList = descs.map((d, i) => `${i + 1}. ${d}`).join("\n");
+  const commonRules =
+    `EXCLUDE completely: brokers, land aggregators, property listing/portal websites, ` +
+    `joint-venture or revenue-share seekers, lease-only operators, residential plot developers, ` +
+    `and any speculative or undercapitalized buyer. I am NOT asking for property-sale advice — ` +
+    `I need PROSPEROUS BUYERS ONLY, named specifically, not generic search results.\n\n`;
+
+  if (engine === "perplexity") {
+    // The fact-checker: real, recent, verifiable evidence of money in motion.
+    return (
+      `Act as a financial due-diligence researcher with live web access. ` +
+      buildPlotBrief() +
+      `TASK: Find REAL organizations with VERIFIABLE recent evidence of expansion or ` +
+      `investment in Tamil Nadu / Madurai in the last 24 months — funding rounds, new branch ` +
+      `openings, land purchases, expansion announcements. Focus on these categories:\n${whoList}\n\n` +
+      commonRules +
+      `For each one, cite the specific news/evidence of their recent financial activity and ` +
+      `expansion, with dates if possible, and website if known.`
+    );
+  }
+
+  if (engine === "chatgpt") {
+    // The creative scout: non-obvious niches that still fit the plot's specific features.
+    return (
+      `Act as a creative business-development strategist who thinks beyond the obvious. ` +
+      buildPlotBrief() +
+      `TASK: Beyond the usual categories (${descs.join(", ")}), brainstorm NON-OBVIOUS but ` +
+      `financially strong buyer types that specifically benefit from a highway corner near a ` +
+      `temple/Jallikattu tourism route and an education corridor — for example logistics/warehousing ` +
+      `hubs, EV charging & highway service stations, wedding/event destination brands, film/TV shoot ` +
+      `location companies, spiritual retreat or wellness brands, or franchise master-operators looking ` +
+      `to enter Madurai. For each niche, name real organizations if you know any.\n\n` +
+      commonRules +
+      `Rank ideas by how well they specifically exploit this plot's features, not just general demand.`
+    );
+  }
+
+  if (engine === "gemini") {
+    // The local insider: Madurai-native wealth specifically.
+    return (
+      `Act as a local Madurai business-community insider and researcher. ` +
+      buildPlotBrief() +
+      `TASK: Focus almost entirely on prosperous buyers who are based IN or NATIVE TO Madurai ` +
+      `City itself — established Madurai business families (textiles, jewellery, spinning mills, ` +
+      `wholesale trade), Madurai-origin NRI investors, local temple/charitable trusts with surplus ` +
+      `funds, and Madurai-based real estate investment groups or family offices. Only secondarily ` +
+      `consider these categories if no local fit exists:\n${whoList}\n\n` +
+      commonRules +
+      `Local money moves faster — explain briefly why each candidate could decide quickly.`
+    );
+  }
+
+  if (engine === "claude") {
+    // The closer: buyer psychology and likelihood to actually sign.
+    return (
+      `Act as a world-class negotiation and buyer-psychology consultant. ` +
+      buildPlotBrief() +
+      `TASK: For these buyer categories:\n${whoList}\n\n` +
+      commonRules +
+      `Don't just list companies — for each one, explain the PSYCHOLOGICAL and strategic reason ` +
+      `they would say yes to THIS exact plot (status, visibility, footfall, timing, competitive ` +
+      `pressure, etc.), what might make them hesitate, and how prosperous/decisive they are likely ` +
+      `to be. Rank all candidates by likelihood to actually close a deal.`
+    );
+  }
+
+  // fallback (shouldn't normally hit this)
+  return buildPlotBrief() + `Find prosperous buyers for: ${whoList}\n\n` + commonRules;
 }
 
-function searchAllCategories() {
-  let delay = 0;
-  CATEGORY_KEYS.forEach((key) => {
-    setTimeout(() => searchCategory(key), delay);
-    delay += 1500; // stagger categories so tabs don't all fire at once
-  });
-  logActivity("Ran a full search across all categories");
+function openAI(engine) {
+  const prompt = buildAIPrompt(engine);
+
+  // Try to copy the prompt to clipboard as a safety net, in case the AI
+  // site opens with an empty box instead of pre-filling it.
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(prompt).catch(() => {});
+  }
+
+  const encoded = encodeURIComponent(prompt);
+  let url = "";
+  if (engine === "perplexity") {
+    url = `https://www.perplexity.ai/search?q=${encoded}`;
+  } else if (engine === "chatgpt") {
+    url = `https://chatgpt.com/?q=${encoded}`;
+  } else if (engine === "gemini") {
+    url = `https://gemini.google.com/app?q=${encoded}`;
+  } else if (engine === "claude") {
+    url = `https://claude.ai/new?q=${encoded}`;
+  }
+
+  window.open(url, "_blank");
+  showCopyNotice();
+  logActivity(`Sent research prompt to ${engine} for: ${activeCategoryKeys().join(", ")}`);
+}
+
+function showCopyNotice() {
+  const el = document.getElementById("copyNotice");
+  if (!el) return;
+  el.style.display = "block";
+  clearTimeout(window._bfNoticeTimer);
+  window._bfNoticeTimer = setTimeout(() => (el.style.display = "none"), 6000);
 }
 
 /* ---------------------------------------------------------
-   5. SAVE / MANAGE COMPANIES
+   5. CATEGORY SELECTION (toggle, not immediate search)
+   --------------------------------------------------------- */
+function toggleCategory(key, btn) {
+  if (selectedCategories.has(key)) {
+    selectedCategories.delete(key);
+    btn.classList.remove("active");
+  } else {
+    selectedCategories.add(key);
+    btn.classList.add("active");
+  }
+  updateSelectionSummary();
+}
+
+function updateSelectionSummary() {
+  const el = document.getElementById("selectionSummary");
+  if (!el) return;
+  const keys = activeCategoryKeys();
+  const isAll = selectedCategories.size === 0;
+  el.textContent = isAll
+    ? "No specific category picked — AI will research ALL categories."
+    : `Researching: ${keys.map((k) => CATEGORIES[k].label).join(", ")}`;
+}
+
+/* ---------------------------------------------------------
+   6b. COMPILE LEADS FROM ALL 4 AI ANSWERS
+   --------------------------------------------------------- */
+const COMPILE_KEY = "buyerFinder_compiledLeads_v2";
+
+function compileLeads() {
+  const engines = [
+    { id: "pastePerplexity", label: "🔮 Perplexity (financial evidence)" },
+    { id: "pasteChatGPT", label: "🤖 ChatGPT (creative niches)" },
+    { id: "pasteGemini", label: "✨ Gemini (Madurai locals)" },
+    { id: "pasteClaude", label: "🧠 Claude (buyer psychology)" }
+  ];
+
+  const parts = [];
+  engines.forEach((eng) => {
+    const el = document.getElementById(eng.id);
+    const text = el ? el.value.trim() : "";
+    if (text) {
+      parts.push(`===== ${eng.label} =====\n${text}`);
+    }
+  });
+
+  const compiled = parts.join("\n\n");
+  localStorage.setItem(COMPILE_KEY, compiled);
+  renderCompiledLeads();
+  logActivity("Compiled leads from " + parts.length + " AI source(s)");
+}
+
+function renderCompiledLeads() {
+  const out = document.getElementById("compiledOutput");
+  if (!out) return;
+  const compiled = localStorage.getItem(COMPILE_KEY) || "";
+  if (!compiled) {
+    out.style.display = "none";
+    return;
+  }
+  out.style.display = "block";
+  out.textContent = compiled;
+}
+
+function copyCompiledLeads() {
+  const compiled = localStorage.getItem(COMPILE_KEY) || "";
+  if (!compiled) return;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(compiled).catch(() => {});
+  }
+  showCopyNotice();
+}
+
+
+/* ---------------------------------------------------------
+   6. SAVE / MANAGE COMPANIES
    --------------------------------------------------------- */
 function saveCompany(companyData) {
   const companies = loadSavedCompanies();
@@ -217,7 +338,7 @@ function deleteCompany(id) {
 }
 
 /* ---------------------------------------------------------
-   6. PROGRESS TRACKING (today's activity)
+   7. PROGRESS TRACKING (today's activity)
    --------------------------------------------------------- */
 function logActivity(text) {
   try {
@@ -235,7 +356,7 @@ function logActivity(text) {
 function getProgressStats() {
   const companies = loadSavedCompanies();
   const total = companies.length;
-  const saved = total; // every record in storage counts as "saved"
+  const saved = total;
   const contacted = companies.filter(
     (c) => c.Status === "Contacted" || c.Status === "Interested"
   ).length;
@@ -244,7 +365,7 @@ function getProgressStats() {
 }
 
 /* ---------------------------------------------------------
-   7. EMAIL / WHATSAPP DRAFT GENERATION
+   8. EMAIL / WHATSAPP DRAFT GENERATION
    --------------------------------------------------------- */
 function buildPropertyPitchText() {
   return (
@@ -300,7 +421,7 @@ function generateWhatsAppDraft(company) {
 }
 
 /* ---------------------------------------------------------
-   8. RENDERING (talks to buyerfinder.html elements)
+   9. RENDERING
    --------------------------------------------------------- */
 function renderProgress() {
   const stats = getProgressStats();
@@ -322,7 +443,7 @@ function renderCompanyList() {
   const companies = loadSavedCompanies();
 
   if (companies.length === 0) {
-    listEl.innerHTML = `<p class="bf-empty">No companies saved yet. Run a search, find a real organization, then use "Add Company" to save it here.</p>`;
+    listEl.innerHTML = `<p class="bf-empty">No companies saved yet. Ask the AI, find a real organization, then use "Add Company" to save it here.</p>`;
     return;
   }
 
@@ -405,7 +526,7 @@ function escapeAttr(str) {
 }
 
 /* ---------------------------------------------------------
-   9. ADD-COMPANY FORM HANDLER
+   10. ADD-COMPANY FORM HANDLER
    --------------------------------------------------------- */
 function handleAddCompanyForm() {
   const form = document.getElementById("addCompanyForm");
@@ -434,23 +555,26 @@ function handleAddCompanyForm() {
 }
 
 /* ---------------------------------------------------------
-   10. INIT
+   11. INIT
    --------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", async () => {
   await initBuyerData();
 
-  // Category search buttons
-  document.querySelectorAll("[data-search-category]").forEach((btn) => {
+  // Category buttons now TOGGLE a selection, they don't search directly.
+  document.querySelectorAll("[data-category]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      searchCategory(btn.getAttribute("data-search-category"));
+      toggleCategory(btn.getAttribute("data-category"), btn);
+    });
+  });
+  updateSelectionSummary();
+
+  // The 3 AI buttons — this is what actually runs the research.
+  document.querySelectorAll("[data-ai-engine]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      openAI(btn.getAttribute("data-ai-engine"));
     });
   });
 
-  // Search all
-  const allBtn = document.getElementById("searchAllBtn");
-  if (allBtn) allBtn.addEventListener("click", searchAllCategories);
-
-  // Toggle add-company panel
   const toggleBtn = document.getElementById("toggleAddCompany");
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
@@ -458,6 +582,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  const compileBtn = document.getElementById("compileBtn");
+  if (compileBtn) compileBtn.addEventListener("click", compileLeads);
+
+  const copyCompiledBtn = document.getElementById("copyCompiledBtn");
+  if (copyCompiledBtn) copyCompiledBtn.addEventListener("click", copyCompiledLeads);
+
+  renderCompiledLeads();
   handleAddCompanyForm();
   renderCompanyList();
   renderProgress();
