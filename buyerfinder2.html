@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Buyer Finder v2 — Alagarkovil Junction Land</title>
+<meta name="description" content="AI Business Development Executive to find genuine buyers for prime commercial land at Alagarkovil Junction, Madurai." />
+
+<style>
+  /* All styling is inline in this file (buyerfinder2.html).
+     Nothing here touches your existing site CSS. */
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#fafafa; color:#222; }
+  .bf-wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
+  .bf-summary { background:#111; color:#eee; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+  .bf-summary h1 { margin:0 0 8px; font-size:1.3rem; }
+  .bf-summary .bf-tag { display:inline-block; background:#c9a84c; color:#111; font-weight:600; border-radius:6px; padding:2px 8px; font-size:0.8rem; margin-right:6px; }
+  .bf-summary ul { margin:10px 0 0; padding-left:18px; font-size:0.9rem; line-height:1.5; }
+  .bf-categories { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; }
+  .bf-categories button, #searchAllBtn { flex:1 1 120px; padding:12px 10px; border:none; border-radius:10px; background:#1d3557; color:#fff; font-size:0.95rem; cursor:pointer; }
+  .bf-categories button:hover, #searchAllBtn:hover { background:#274472; }
+  #searchAllBtn { background:#c9a84c; color:#111; font-weight:700; width:100%; margin-bottom:24px; }
+  #searchAllBtn:hover { background:#b5943f; }
+  .bf-progress { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:24px; }
+  .bf-progress div { background:#f4f1e8; border-radius:10px; padding:12px 6px; text-align:center; }
+  .bf-progress span.bf-num { display:block; font-size:1.4rem; font-weight:700; color:#1d3557; }
+  .bf-progress span.bf-label { font-size:0.75rem; color:#555; }
+  .bf-section-title { display:flex; justify-content:space-between; align-items:center; margin:20px 0 10px; }
+  .bf-section-title h2 { font-size:1.1rem; margin:0; }
+  #toggleAddCompany { padding:8px 14px; border-radius:8px; border:none; background:#1d3557; color:#fff; cursor:pointer; }
+  #addCompanyPanel { display:none; background:#fff; border:1px solid #ddd; border-radius:10px; padding:16px; margin-bottom:20px; }
+  #addCompanyPanel.open { display:block; }
+  #addCompanyPanel label { display:block; font-size:0.8rem; margin:8px 0 3px; color:#333; }
+  #addCompanyPanel input, #addCompanyPanel select, #addCompanyPanel textarea {
+    width:100%; padding:8px; border:1px solid #ccc; border-radius:6px; font-size:0.9rem;
+  }
+  #addCompanyPanel button[type="submit"] { margin-top:12px; padding:10px 16px; background:#c9a84c; border:none; border-radius:8px; font-weight:700; cursor:pointer; }
+  .bf-card { border:1px solid #e2e2e2; border-radius:10px; padding:14px; margin-bottom:12px; background:#fff; }
+  .bf-card-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+  .bf-badge { background:#1d3557; color:#fff; font-size:0.7rem; border-radius:6px; padding:2px 8px; }
+  .bf-card-body div { font-size:0.85rem; margin:3px 0; color:#333; }
+  .bf-card-body .bf-notes { color:#666; }
+  .bf-card-body .bf-meta { font-size:0.75rem; color:#888; margin-top:6px; }
+  .bf-status { margin-left:4px; padding:2px 4px; border-radius:4px; border:1px solid #ccc; font-size:0.75rem; }
+  .bf-card-actions { display:flex; gap:8px; margin-top:10px; }
+  .bf-card-actions button { flex:1; padding:8px; border:none; border-radius:6px; font-size:0.8rem; cursor:pointer; }
+  .bf-btn-email { background:#1d3557; color:#fff; }
+  .bf-btn-whatsapp { background:#25D366; color:#fff; }
+  .bf-btn-delete { background:#eee; color:#900; }
+  .bf-empty { color:#777; font-size:0.9rem; }
+  .bf-back { display:inline-block; margin-bottom:14px; color:#1d3557; text-decoration:none; font-size:0.9rem; }
+</style>
+</head>
+<body>
+<div class="bf-wrap">
+
+  <a href="index.html" class="bf-back">← Back to site</a>
+
+  <section class="bf-summary">
+    <h1>🎯 AI Buyer Finder</h1>
+    <div>
+      <span class="bf-tag">23.5 Cents</span>
+      <span class="bf-tag">Corner Plot</span>
+      <span class="bf-tag">₹5–10 Cr+</span>
+    </div>
+    <p style="margin:10px 0 4px;">
+      <strong>Alagarkovil Junction, Madurai, Tamil Nadu</strong> — facing
+      Alagarkovil Road &amp; Natham–Alanganallur High Road.
+    </p>
+    <ul>
+      <li>Corner plot on a busy junction, four-lane highway frontage</li>
+      <li>~30 minutes to Madurai City, bus stop right in front</li>
+      <li>Tourism corridor (Alagar Kovil Temple, Alanganallur Jallikattu, Vishaal Tourism Project)</li>
+      <li>Education corridor (Engineering, Arts, Catering, Aviation colleges &amp; schools nearby)</li>
+      <li>Near TNPL Cricket Ground, Natham · Cooler climate area</li>
+    </ul>
+  </section>
+
+  <div class="bf-categories">
+    <button data-search-category="hotels">🏨 Hotels</button>
+    <button data-search-category="resorts">🌴 Resorts</button>
+    <button data-search-category="hospitals">🏥 Hospitals</button>
+    <button data-search-category="education">🎓 Education</button>
+    <button data-search-category="restaurants">🍽 Restaurants</button>
+    <button data-search-category="investors">🌍 Investors</button>
+  </div>
+  <button id="searchAllBtn">▶ Search All Categories</button>
+
+  <div class="bf-progress">
+    <div><span class="bf-num" id="statFound">0</span><span class="bf-label">Companies Found</span></div>
+    <div><span class="bf-num" id="statSaved">0</span><span class="bf-label">Saved</span></div>
+    <div><span class="bf-num" id="statContacted">0</span><span class="bf-label">Contacted</span></div>
+    <div><span class="bf-num" id="statInterested">0</span><span class="bf-label">Interested</span></div>
+  </div>
+
+  <div class="bf-section-title">
+    <h2>Saved Companies</h2>
+    <button id="toggleAddCompany">+ Add Company</button>
+  </div>
+
+  <div id="addCompanyPanel">
+    <form id="addCompanyForm">
+      <label for="inCompany">Company Name *</label>
+      <input type="text" id="inCompany" required />
+
+      <label for="inCategory">Category</label>
+      <select id="inCategory">
+        <option value="Hotels">Hotels</option>
+        <option value="Resorts">Resorts</option>
+        <option value="Hospitals">Hospitals</option>
+        <option value="Education">Education</option>
+        <option value="Restaurants">Restaurants</option>
+        <option value="Investors">Investors</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="inWebsite">Website</label>
+      <input type="text" id="inWebsite" placeholder="https://..." />
+
+      <label for="inContact">Contact Person</label>
+      <input type="text" id="inContact" />
+
+      <label for="inEmail">Email</label>
+      <input type="email" id="inEmail" />
+
+      <label for="inPhone">Phone (with country code for WhatsApp)</label>
+      <input type="text" id="inPhone" placeholder="91XXXXXXXXXX" />
+
+      <label for="inNotes">Notes</label>
+      <textarea id="inNotes" rows="2"></textarea>
+
+      <button type="submit">Save Company</button>
+    </form>
+  </div>
+
+  <div id="companyList"></div>
+
+</div>
+
+<script src="buyerfinder2.js"></script>
+</body>
+</html>
