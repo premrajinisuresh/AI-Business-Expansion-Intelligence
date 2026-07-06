@@ -2,14 +2,13 @@ name: Auto Buyer Search v5
 
 on:
   schedule:
-    # 21:30 UTC = 3:00 AM IST daily. Change the cron value to run
-    # more/less often. Gemini free tier is generous; this workflow
-    # makes 12 calls per run (one per category), so once or twice
-    # a day is safe.
+    # 21:30 UTC = 3:00 AM IST daily. Tavily free tier = 1,000
+    # searches/month; this workflow uses 12 per run, so once a
+    # day (~360/month) is very safe.
     - cron: "30 21 * * *"
   workflow_dispatch: {}
     # ^ lets you click "Run workflow" in the Actions tab to trigger
-    #   it manually any time, e.g. right after setting up the secret.
+    #   it manually any time, e.g. right after setting up secrets.
 
 permissions:
   contents: write
@@ -28,6 +27,7 @@ jobs:
 
       - name: Run automated buyer search
         env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/auto-buyer-search5.mjs
 
