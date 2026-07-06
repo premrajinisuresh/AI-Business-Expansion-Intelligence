@@ -3,35 +3,42 @@
    Runs inside GitHub Actions on a schedule (see the workflow
    file .github/workflows/auto-buyer-search5.yml).
 
-   UPDATED: Google shut down free "search the entire web" access
-   for new Custom Search Engines (Jan 2026), so this script no
-   longer uses Google CSE at all. Instead it uses Gemini's own
-   built-in web search ("Google Search grounding") — one API,
-   one free key, same result.
+   UPDATED AGAIN: Gemini's own "Google Search grounding" button
+   turned out to require a paid/billing-enabled account — it
+   returned 429 RESOURCE_EXHAUSTED immediately on a free key.
+   So this version splits the job into two free tools:
+     1. Tavily          - does the actual live web searching
+                           (1,000 free searches/month, no card)
+     2. Gemini (plain)  - reads Tavily's results and writes out
+                           clean structured leads (free tier,
+                           no grounding tool used, so no 429)
 
    What it does, every run:
-   1. For each of 12 buyer categories, asks Gemini (with its
-      google_search tool turned on) to search the live web itself
-      and pull out real organizations + any public contact
-      details (never inventing anything).
-   2. Merges new, non-duplicate leads into buyerdatabase5.json.
-   3. The workflow then commits & pushes the updated file, which
+   1. For each of 12 buyer categories, searches the live web
+      using Tavily.
+   2. Sends those raw search results to Gemini and asks it to
+      pull out real organizations + any public contact details
+      (never inventing anything).
+   3. Merges new, non-duplicate leads into buyerdatabase5.json.
+   4. The workflow then commits & pushes the updated file, which
       Cloudflare Pages (connected to this same GitHub repo) will
       automatically redeploy.
 
-   Needs only ONE GitHub repo secret (Settings > Secrets and
+   Needs these 2 GitHub repo secrets (Settings > Secrets and
    variables > Actions):
+     TAVILY_API_KEY   - free, from https://tavily.com (no card)
      GEMINI_API_KEY   - free, from https://aistudio.google.com/apikey
    ============================================================ */
 
 import fs from "fs";
 
+const TAVILY_API_KEY = process.env.TAVILY_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-if (!GEMINI_API_KEY) {
+if (!TAVILY_API_KEY || !GEMINI_API_KEY) {
   console.error(
-    "Missing required secret: GEMINI_API_KEY. " +
-    "Add it under repo Settings > Secrets and variables > Actions."
+    "Missing required secret(s): TAVILY_API_KEY and/or GEMINI_API_KEY. " +
+    "Add them under repo Settings > Secrets and variables > Actions."
   );
   process.exit(1);
 }
@@ -50,45 +57,71 @@ const PROPERTY_BRIEF =
   "Kovil Temple, Alanganallur Jallikattu) and an education corridor. Budget expected: Rs 5-10 " +
   "Crore or more. Outright sale only, no brokers, no JV, no lease.";
 
-/* 12 buyer categories, each with its own search angle */
+/* 12 buyer categories, each with its own search query */
 const CATEGORIES = [
-  { category: "Hotels & Highway Hospitality", angle: "hotel chains expanding branches on Tamil Nadu highways" },
-  { category: "Restaurants & Food Courts", angle: "restaurant chains and food courts expanding on Tamil Nadu highways" },
-  { category: "Local Madurai Investors & Business Families", angle: "prosperous Madurai business families and investors buying commercial land" },
-  { category: "Hospitals & Healthcare Groups", angle: "hospital chains and healthcare groups opening new branches in Madurai, Tamil Nadu" },
-  { category: "Educational Trusts & Colleges", angle: "engineering, arts, aviation, or catering college trusts opening new campuses near Madurai" },
-  { category: "NRI & Diaspora Investors", angle: "NRI investor associations from Madurai native place investing in real estate" },
-  { category: "Temple & Charitable Trusts", angle: "temple trusts or charitable trusts in Tamil Nadu with surplus funds purchasing land" },
-  { category: "Wedding & Convention Halls", angle: "wedding and convention hall brands expanding in Madurai, Tamil Nadu" },
-  { category: "Highway Fuel, EV & Logistics", angle: "fuel station, EV charging, or logistics/warehousing companies expanding on Tamil Nadu highways" },
-  { category: "Franchise Master Operators", angle: "franchise master operators expanding into Tamil Nadu tier-2 towns" },
-  { category: "Government / PPP Institutional", angle: "government tourism corporations or PPP projects acquiring land near Madurai" },
-  { category: "Funded Startups / Scaleups", angle: "recently funded startups or scaleups expanding physical locations in Tamil Nadu" }
+  { category: "Hotels & Highway Hospitality", query: "hotel chain expansion Madurai Tamil Nadu highway new branch contact" },
+  { category: "Restaurants & Food Courts", query: "restaurant chain food court expansion Madurai Tamil Nadu highway contact" },
+  { category: "Local Madurai Investors & Business Families", query: "Madurai business family investor commercial land contact" },
+  { category: "Hospitals & Healthcare Groups", query: "hospital chain healthcare group expansion Madurai Tamil Nadu new branch contact" },
+  { category: "Educational Trusts & Colleges", query: "engineering arts aviation catering college new campus Madurai Tamil Nadu trust contact" },
+  { category: "NRI & Diaspora Investors", query: "NRI investor Tamil Nadu native place real estate association contact" },
+  { category: "Temple & Charitable Trusts", query: "temple trust charitable trust Tamil Nadu land purchase contact" },
+  { category: "Wedding & Convention Halls", query: "wedding convention hall banquet brand Madurai Tamil Nadu expansion contact" },
+  { category: "Highway Fuel, EV & Logistics", query: "fuel station EV charging logistics warehousing company Tamil Nadu highway expansion contact" },
+  { category: "Franchise Master Operators", query: "franchise master operator expansion Tamil Nadu tier 2 town contact" },
+  { category: "Government / PPP Institutional", query: "government tourism corporation PPP land Madurai Tamil Nadu contact" },
+  { category: "Funded Startups / Scaleups", query: "funded startup expansion Tamil Nadu physical location contact" }
 ];
 
 /* ---------------------------------------------------------
-   Ask Gemini to search the LIVE web itself (google_search tool)
-   and directly return structured leads — one call per category,
-   no separate search API involved.
+   Tavily does the actual live web search (free, 1,000/month)
    --------------------------------------------------------- */
-async function findLeadsWithGemini(category, angle) {
+async function tavilySearch(query) {
+  const res = await fetch("https://api.tavily.com/search", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      api_key: TAVILY_API_KEY,
+      query,
+      search_depth: "basic",
+      max_results: 8
+    })
+  });
+
+  if (!res.ok) {
+    console.error(`Tavily search failed for "${query}": ${res.status} ${await res.text()}`);
+    return [];
+  }
+
+  const data = await res.json();
+  return (data.results || []).map((r) => ({
+    title: r.title,
+    link: r.url,
+    snippet: r.content
+  }));
+}
+
+/* ---------------------------------------------------------
+   Gemini (plain, no grounding tool) reads Tavily's results
+   and writes out structured leads. Stays inside Gemini's free
+   tier since it never touches the paid grounding feature.
+   --------------------------------------------------------- */
+async function extractLeadsWithGemini(category, searchResults) {
+  if (searchResults.length === 0) return [];
+
   const prompt =
     `You are building a buyer-lead database for a commercial land sale. ${PROPERTY_BRIEF}\n\n` +
-    `Use your live web search to find REAL, currently active organizations related to: ${angle}.\n\n` +
-    `Only include genuinely prosperous organizations capable of an outright purchase of ` +
-    `Rs 5-10 Crore or more. Exclude brokers, property listing/aggregator sites, and generic ` +
-    `news aggregators. For each organization, extract only what you find on their own official ` +
-    `website or in a reputable news source: Company, Website, Email, Phone, ContactPerson, Notes ` +
-    `(why they fit), SourceURL. Use the exact string "Not public" for any field that is not ` +
-    `clearly available — never invent an email or phone number.\n\n` +
-    `Respond with ONLY a valid JSON array of these objects, no markdown formatting, no commentary, ` +
-    `no surrounding text.`;
+    `Here are raw web search results for the category "${category}":\n` +
+    JSON.stringify(searchResults, null, 2) +
+    `\n\nFrom ONLY the information above, extract real organizations that could genuinely be ` +
+    `prosperous buyers. Exclude brokers, property listing/aggregator sites, and generic news ` +
+    `aggregators. For each organization, output an object with fields: Company, Website, Email, ` +
+    `Phone, ContactPerson, Notes, SourceURL. Use the exact string "Not public" for any field ` +
+    `that is not clearly present in the search results — never invent an email or phone number. ` +
+    `Respond with ONLY a valid JSON array of these objects, no markdown formatting, no commentary.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
-  const body = {
-    contents: [{ parts: [{ text: prompt }] }],
-    tools: [{ google_search: {} }] // <-- this is Gemini's own built-in live web search
-  };
+  const body = { contents: [{ parts: [{ text: prompt }] }] }; // no tools -> plain free-tier call
 
   const res = await fetch(url, {
     method: "POST",
@@ -168,13 +201,16 @@ async function main() {
   let totalAdded = 0;
 
   for (const cat of CATEGORIES) {
-    console.log(`Researching: ${cat.category} ...`);
-    const leads = await findLeadsWithGemini(cat.category, cat.angle);
-    console.log(`  -> ${leads.length} candidate lead(s) from Gemini`);
+    console.log(`Searching: ${cat.category} ...`);
+    const results = await tavilySearch(cat.query);
+    console.log(`  -> ${results.length} web result(s)`);
 
-    const added = mergeLeads(db, leads, cat.category);
-    console.log(`  -> ${added} new lead(s) added`);
-    totalAdded += added;
+    if (results.length > 0) {
+      const leads = await extractLeadsWithGemini(cat.category, results);
+      const added = mergeLeads(db, leads, cat.category);
+      console.log(`  -> ${added} new lead(s) added`);
+      totalAdded += added;
+    }
 
     // Small delay to stay comfortably within free-tier rate limits.
     await new Promise((r) => setTimeout(r, 4000));
