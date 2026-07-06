@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
+    "version": "v4",
+    "lastUpdated": "2026-07-06",
+    "note": "v4 adds a 12-free-AI contact-detail hunt on top of everything in v3. This file is just the starter schema; live data lives in the browser's localStorage under keys ending in _v4."
+  },
+  "companies": []
+}
