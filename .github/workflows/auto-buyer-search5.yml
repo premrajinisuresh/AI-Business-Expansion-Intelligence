@@ -5,7 +5,7 @@ on:
     # 21:30 UTC = 3:00 AM IST daily. Tavily free tier = 1,000
     # searches/month; this workflow uses 12 per run, so once a
     # day (~360/month) is very safe.
-    - cron: "30 21 * * *"
+    - cron: "30 6 * * *"
   workflow_dispatch: {}
     # ^ lets you click "Run workflow" in the Actions tab to trigger
     #   it manually any time, e.g. right after setting up secrets.
