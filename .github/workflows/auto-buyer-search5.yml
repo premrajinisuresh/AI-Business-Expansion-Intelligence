@@ -2,7 +2,6 @@ name: Auto Buyer Search v5
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
     - cron: "47 21 * * *"
   workflow_dispatch: {}
 
