@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-07T09:34:23.118Z",
+    "lastRun": "2026-07-08T02:33:31.299Z",
     "lastRunAdded": 12,
-    "totalCompanies": 97
+    "totalCompanies": 109
   },
   "companies": [
     {
@@ -1267,6 +1267,162 @@
       "Notes": "Real estate developer in Chennai and Tamil Nadu offering structured real estate investments and legal guidance for Non-Resident Indians.",
       "SourceURL": "https://www.asnhousing.com/nri",
       "DateAdded": "2026-07-07"
+    },
+    {
+      "id": "auto_1783477892679_9718",
+      "Company": "Tamil Nadu Tourism Development Corporation",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "www.ttdconline.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "State-run tourism and hospitality body operating Hotel Tamil Nadu Pandiyan in Madurai, focusing on central locations and tourism development.",
+      "SourceURL": "https://www.facebook.com/tntourismoffcl/posts/stay-in-the-heart-of-madurai-where-comfort-meets-convenience-from-cozy-deluxe-ro/1389588823193559",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477914769_16149",
+      "Company": "South Indian Restaurant Franchise Opportunity",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+91 9909425729",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An active franchise expansion initiative for a South Indian Restaurant looking to open gates in Madurai.",
+      "SourceURL": "https://www.instagram.com/reel/DYqwk4EIT5M",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477914769_60211",
+      "Company": "Madurai Kitchen",
+      "Category": "Restaurants & Food Courts",
+      "Website": "https://maduraikitchen.net",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A South Indian restaurant chain with a strong customer base, actively expanding its footprint through franchising.",
+      "SourceURL": "https://maduraikitchen.net/page/franchise",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477914769_37904",
+      "Company": "Swirl Lifestyle LLP",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A dynamic brand development organization in the food and technology sectors, currently offering franchise opportunities for their premium dining brand 'The Mayflower'.",
+      "SourceURL": "https://www.smergers.com/restaurant-franchise-opportunities-in-madurai/c26s409t11b",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477914769_85598",
+      "Company": "Amma Mess",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Highly popular, established regional restaurant brand in Madurai known for its traditional regional cuisine.",
+      "SourceURL": "https://wanderlog.com/list/geoCategory/759860/best-regional-fast-food-chains-and-restaurants-in-madurai",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477914769_38754",
+      "Company": "Chandran Mess",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A renowned traditional regional restaurant chain based in Tallakulam, Madurai.",
+      "SourceURL": "https://wanderlog.com/list/geoCategory/759860/best-regional-fast-food-chains-and-restaurants-in-madurai",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477943116_43776",
+      "Company": "Apollo Speciality Hospitals, Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "https://www.apollohospitals.com/hospitals/apollo-speciality-hospitals-madurai",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A leading tertiary medical care provider in Southern Tamil Nadu, part of the major Apollo Hospitals group. High potential buyer for healthcare expansions.",
+      "SourceURL": "https://www.apollohospitals.com/hospitals/apollo-speciality-hospitals-madurai",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477943116_4129",
+      "Company": "Preethi Hospitals, Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "https://www.facebook.com/preethihospitalsmadurai/posts/were-hiring-it-professionalspreethi-hospitals-is-expanding-our-tech-teamwere-loo/1165063238946664",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "R. Sivakumar (Chairman)",
+      "Status": "New",
+      "Notes": "An expanding hospital group in Madurai actively scaling its tech and medical infrastructure. The Chairman is a key figure in the regional healthcare sector.",
+      "SourceURL": "https://www.instagram.com/reel/DJZBcZBgJTn?hl=fr",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477943116_99702",
+      "Company": "NTC Multi Speciality Hospital",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "https://www.ntchospitals.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A specialized gastro, laparoscopic, and multi-speciality hospital in Madurai running 24/7 services and associated healthcare training programs.",
+      "SourceURL": "https://www.ntchospitals.com",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477976990_8759",
+      "Company": "Maharajan Rajammal Thirumana Maaligai",
+      "Category": "Wedding & Convention Halls",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+91 82200 13444",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Wedding Mahal located in Madurai, Tamil Nadu, associated with VS Chellam Century Hall.",
+      "SourceURL": "https://www.instagram.com/p/DQTu_PUEnOO",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477976990_12818",
+      "Company": "Kadambavanam Banquet Halls",
+      "Category": "Wedding & Convention Halls",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "9500954090 / 9500954094",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Banquet halls located along the Madurai - Natham Road corridor.",
+      "SourceURL": "https://www.facebook.com/kadambavanammadurai/posts/kadambavanam-banquet-halls-where-celebrations-embrace-elegancecall-9500954090-94/764112565721381",
+      "DateAdded": "2026-07-08"
+    },
+    {
+      "id": "auto_1783477976990_77771",
+      "Company": "Paradise Banquet Hall A/C",
+      "Category": "Wedding & Convention Halls",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Air-conditioned banquet hall venue in Villapuram, Madurai, with a capacity of up to 200 seated guests.",
+      "SourceURL": "https://www.youtube.com/watch?v=H4_f4ZwlRKQ",
+      "DateAdded": "2026-07-08"
     }
   ]
 }
