@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-09T02:34:40.021Z",
-    "lastRunAdded": 25,
-    "totalCompanies": 152
+    "lastRun": "2026-07-09T10:47:28.854Z",
+    "lastRunAdded": 9,
+    "totalCompanies": 161
   },
   "companies": [
     {
@@ -1981,6 +1981,123 @@
       "Status": "New",
       "Notes": "Chennai-based funded advertising startup identified in recent funding rounds in Tamil Nadu.",
       "SourceURL": "https://fundediq.co/funded-startups-tamil-nadu",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593892134_41729",
+      "Company": "Meenakshi Super Speciality Hospital (MSSH)",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "https://mssh.in",
+      "Email": "info@mssh.in",
+      "Phone": "Not public",
+      "ContactPerson": "Gurushankar",
+      "Status": "New",
+      "Notes": "A prominent healthcare operator in Madurai that recently launched a 350-bed state-of-the-art facility. Led by Chairman Gurushankar, the group is actively expanding its footprint and represents a highly viable corporate buyer for prime healthcare land in the region.",
+      "SourceURL": "https://mssh.in",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593892134_78674",
+      "Company": "Preethi Hospitals, Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An established healthcare institution in Madurai currently expanding its operations and staff, indicating potential interest in scaling its physical presence in key corridors.",
+      "SourceURL": "https://www.facebook.com/preethihospitalsmadurai/posts/were-hiring-it-professionalspreethi-hospitals-is-expanding-our-tech-teamwere-loo/1165063238946664",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593956401_15727",
+      "Company": "i5 Housing & Properties",
+      "Category": "NRI & Diaspora Investors",
+      "Website": "https://i5housing.com/nri",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A real estate development firm operating in Tamil Nadu since 2010, specializing in buying, developing, and selling legally approved plots, villas, apartments, and farmland.",
+      "SourceURL": "https://i5housing.com/nri",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593956401_52712",
+      "Company": "Appaswamy Properties",
+      "Category": "NRI & Diaspora Investors",
+      "Website": "https://appaswamy.com/Guide-For-NRI",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A prominent property developer in Tamil Nadu that acquires land to build and own both residential and commercial properties.",
+      "SourceURL": "https://appaswamy.com/Guide-For-NRI",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593956401_90289",
+      "Company": "Casagrand",
+      "Category": "NRI & Diaspora Investors",
+      "Website": "https://www.casagrand.co.in/blog/nri-corner",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A leading real estate developer in South India that acquires land for building extensive residential and commercial projects.",
+      "SourceURL": "https://www.casagrand.co.in/blog/nri-corner",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593956401_51280",
+      "Company": "MP Developers",
+      "Category": "NRI & Diaspora Investors",
+      "Website": "https://mpdevelopers.com/how-nris-can-invest-safely-in-chennai-real-estate-in-2026",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Real estate developers in Chennai and Tamil Nadu specializing in secure property development and construction investments.",
+      "SourceURL": "https://mpdevelopers.com/how-nris-can-invest-safely-in-chennai-real-estate-in-2026",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783593970619_94990",
+      "Company": "Sree Mahadeshwara Temple Trust",
+      "Category": "Temple & Charitable Trusts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A temple trust holding and managing properties, including 9 acres and 4 guntas of land in Kodagahalli village.",
+      "SourceURL": "https://www.scribd.com/document/514606335/Temple-Trust-Deed",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783594030103_4067",
+      "Company": "District Tourist Office (Govt. of Tamil Nadu)",
+      "Category": "Government / PPP Institutional",
+      "Website": "https://madurai.nic.in/tourist-information",
+      "Email": "Not public",
+      "Phone": "0452 – 2334757, 91769 95868",
+      "ContactPerson": "District Tourist officer",
+      "Status": "New",
+      "Notes": "Government administrative office in charge of tourism development, tourist reception centers, and accommodations (Hotel Tamil Nadu) in the Madurai district.",
+      "SourceURL": "https://madurai.nic.in/tourist-information",
+      "DateAdded": "2026-07-09"
+    },
+    {
+      "id": "auto_1783594030103_3116",
+      "Company": "Tamil Nadu Infrastructure Fund Management Corporation (TNIFMC)",
+      "Category": "Government / PPP Institutional",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Public-private partnership investment manager shaping eco-tourism, infrastructure frameworks, and sustainable development initiatives in Tamil Nadu.",
+      "SourceURL": "https://www.instagram.com/p/DRO6uk7jGYI",
       "DateAdded": "2026-07-09"
     }
   ]
