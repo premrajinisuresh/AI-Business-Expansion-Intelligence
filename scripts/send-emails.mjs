@@ -66,8 +66,8 @@ async function sendEmail(company) {
       'Authorization': `Bearer ${RESEND_API_KEY}`
     },
     body: JSON.stringify({
-      from: 'Durga Psychiatric Centre <noreply@durgapsychiatriccentre.com>',
-      to: [company.Email],
+      from: 'Suresh Kumar <smartpos.systems@gmail.com>',
+      to: [prem.rajini.suresh@gmail.com],
       subject: subject,
       html: body
     })
@@ -111,6 +111,10 @@ async function main() {
   }
 
   const db = await loadDatabase();
+  
+  // TEST MODE
+db.companies = db.companies.slice(0,1);
+ 
   let stats = { processed: 0, sent: 0, skipped: 0, failed: 0 };
 
   for (const company of db.companies) {
