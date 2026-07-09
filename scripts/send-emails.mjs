@@ -8,8 +8,11 @@ if(!fs.existsSync(db)){
   process.exit(1);
 }
 
-const leads=JSON.parse(fs.readFileSync(db,'utf8'));
-const emailLeads=leads.filter(x=>x.email);
+
+const data = JSON.parse(fs.readFileSync(db,'utf8'));
+const emailLeads = data.companies.filter(
+  x => x.Email && x.Email !== "Not public"
+);
 
 console.log(`Found ${emailLeads.length} leads with email addresses.`);
 console.log('Next step: integrate Resend API.');
