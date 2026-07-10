@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-09T10:47:28.854Z",
-    "lastRunAdded": 9,
-    "totalCompanies": 161
+    "lastRun": "2026-07-10T02:34:04.024Z",
+    "lastRunAdded": 10,
+    "totalCompanies": 171
   },
   "companies": [
     {
@@ -4192,6 +4192,136 @@
       "City": "",
       "State": "",
       "PIN": ""
+    },
+    {
+      "id": "auto_1783650681093_10583",
+      "Company": "United Hospitality Management",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Slated to manage the upcoming Holiday Inn Express & Suites Madurai project.",
+      "SourceURL": "https://www.asianhospitality.com/ihg-chentoor-holiday-inn-madurai",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650731824_57280",
+      "Company": "Mohan's Medicity Hospital",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+914522521911",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Located in KK Nagar, Madurai, Tamil Nadu. A potential local healthcare buyer.",
+      "SourceURL": "https://www.instagram.com/reel/DXtoNVmE42u",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650731824_56747",
+      "Company": "Sundaram Arulrhaj Hospital",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "www.sah-hospitals.com",
+      "Email": "sundaramarulrhajhospital@gmail.com",
+      "Phone": "+91 461 4230001 | +91 99654 80001",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Tamil Nadu-based hospital group with active helpline numbers and digital presence.",
+      "SourceURL": "https://www.instagram.com/p/DRfDKFAjKLZ?hl=en",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650731824_54824",
+      "Company": "Healthcare Hospital",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "https://healthcarehospital.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An established healthcare provider operating since 1995, offering comprehensive medical services.",
+      "SourceURL": "https://healthcarehospital.in",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650749937_35456",
+      "Company": "Boston College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://bostoncolleges.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An aviation and hospitality management college in Madurai operating for over 12 years, offering undergraduate, postgraduate, and diploma programs.",
+      "SourceURL": "https://bostoncolleges.in",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650749937_92740",
+      "Company": "Mangayarkarasi Educational Trust",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://mce-madurai.ac.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An educational trust that has been active in Madurai for seventy-five years, running several institutions ranging from Nursery to Engineering (Mangayarkarasi College of Engineering).",
+      "SourceURL": "https://mce-madurai.ac.in",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650749937_1446",
+      "Company": "Annai Fathima Educational Society",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "http://annaifathimacollege.edu.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Society running the Annai Fathima College of Arts & Science and the Annai Fathima College of Education, dedicated to serving rural community students in South Tamil Nadu.",
+      "SourceURL": "http://annaifathimacollege.edu.in",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650749937_17454",
+      "Company": "King Rashid International College (KRI College of Aeronautics)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://kri.org.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Jaffer Sheriff",
+      "Status": "New",
+      "Notes": "A premier aviation training institution in Madurai approved by Alagappa University, offering degree programs, flight simulators, and state-of-the-art training facilities.",
+      "SourceURL": "https://kri.org.in",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650792981_19721",
+      "Company": "Heritage Madurai",
+      "Category": "Wedding & Convention Halls",
+      "Website": "https://heritagemadurai.com/contact",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A luxury hotel and heritage resort in Kochadai, Madurai, offering premium room and banquet facilities. Operated under Grand Luxe Hotels (Coorg) Private Limited.",
+      "SourceURL": "https://heritagemadurai.com/contact",
+      "DateAdded": "2026-07-10"
+    },
+    {
+      "id": "auto_1783650834541_73670",
+      "Company": "Andhra Pradesh Tourism Development Corporation",
+      "Category": "Government / PPP Institutional",
+      "Website": "https://tourism.ap.gov.in/contactus",
+      "Email": "Not public",
+      "Phone": "1800-42-545454",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "State tourism development corporation of Andhra Pradesh, which may seek strategic regional locations for tourism expansion, information centers, or tourist amenities.",
+      "SourceURL": "https://tourism.ap.gov.in/contactus",
+      "DateAdded": "2026-07-10"
     }
   ]
 }
