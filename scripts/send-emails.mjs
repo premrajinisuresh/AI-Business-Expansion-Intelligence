@@ -6,7 +6,7 @@ import nodemailer from "nodemailer";
 // file should contain a hardcoded email, limit, or delay.
 // ============================================================
 const CONFIG = {
-  TEST_MODE: true,
+  TEST_MODE: false,
   TEST_LIMIT: 5,
   TEST_EMAIL: "prem.rajini.suresh@gmail.com",
   OWNER_NAME: "Suresh Kumar",
