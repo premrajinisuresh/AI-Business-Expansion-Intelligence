@@ -451,7 +451,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:23.920Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332128004_41554",
@@ -477,7 +481,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332128004_25961",
@@ -503,7 +511,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332128004_24375",
@@ -529,7 +541,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:27.376Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332128004_62372",
@@ -555,7 +571,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332157528_92774",
@@ -581,7 +601,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332157528_28091",
@@ -607,7 +631,11 @@
       "Address": "dress\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"16 Cotton Mill Road, PN Road\",\"addressLocality\":\"Tirupur\",\"addressRegion\":\"Tamil Nadu\",\"postalCode\":\"641601\",\"a",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "641601"
+      "PIN": "641601",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:30.730Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332157528_63099",
@@ -633,7 +661,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332157528_70734",
@@ -659,7 +691,11 @@
       "Address": "amp;utm_medium=website_banner&utm_campaign=lowest_prices&utm_id=wattadeal_website_banner\" rel=\"noopener noreferrer\" class=\"hidden w-full bg-[#050804] lg",
       "City": "",
       "State": "Karnataka",
-      "PIN": "050804"
+      "PIN": "050804",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:34.138Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332157528_85347",
@@ -685,7 +721,11 @@
       "Address": "ar n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()",
       "City": "",
       "State": "",
-      "PIN": "604800"
+      "PIN": "604800",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:37.466Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332157528_92217",
@@ -711,7 +751,11 @@
       "Address": "6a728e{text-align:center;}.elementor-1318 .elementor-element.elementor-element-b6a728e .elementor-heading-title{font-size:20px;font-weight:600;color:#000000;}.e",
       "City": "Chennai",
       "State": "Andhra Pradesh",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:40.795Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332184533_49185",
@@ -737,7 +781,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332184533_88618",
@@ -763,7 +811,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332184533_96915",
@@ -789,7 +841,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332184533_25092",
@@ -815,7 +871,11 @@
       "Address": "elementor-hidden-tablet{display:none}}@media (min-width:1025px) and (max-width:99999px){.elementor .elementor-hidden-desktop{display:none}}.elementor-200086 .el",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "200086"
+      "PIN": "200086",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:44.048Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332214499_74210",
@@ -841,7 +901,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:47.233Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332214499_61998",
@@ -867,7 +931,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332214499_81040",
@@ -893,7 +961,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332214499_93425",
@@ -919,7 +991,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332214499_14172",
@@ -945,7 +1021,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:50.540Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332240350_17011",
@@ -971,7 +1051,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332240350_58471",
@@ -997,7 +1081,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332240350_74634",
@@ -1023,7 +1111,11 @@
       "Address": "root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--b",
       "City": "",
       "State": "",
-      "PIN": "198754"
+      "PIN": "198754",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416150885_13983",
@@ -1049,7 +1141,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:53.885Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416150885_28715",
@@ -1075,7 +1171,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416150885_38696",
@@ -1101,7 +1201,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416150885_13400",
@@ -1127,7 +1231,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416183218_41211",
@@ -1153,7 +1261,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "",
       "State": "Telangana",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:41:57.240Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416183218_22666",
@@ -1179,7 +1291,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416183218_90938",
@@ -1205,7 +1321,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416183218_61273",
@@ -1231,7 +1351,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416183218_77566",
@@ -1257,7 +1381,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416183218_19033",
@@ -1283,7 +1411,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416195174_72309",
@@ -1309,7 +1441,11 @@
       "Address": "ar n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "604800"
+      "PIN": "604800",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:00.573Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416223742_33535",
@@ -1335,7 +1471,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:03.715Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416223742_33272",
@@ -1361,7 +1501,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:06.918Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416223742_15573",
@@ -1387,7 +1531,11 @@
       "Address": "ef=\"assets/img/favicon.jpeg\">",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "002147"
+      "PIN": "002147",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:10.189Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416223742_99723",
@@ -1413,7 +1561,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416223742_66844",
@@ -1439,7 +1591,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:13.526Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416240546_12170",
@@ -1465,7 +1621,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416240546_5452",
@@ -1491,7 +1651,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:16.771Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416240546_21131",
@@ -1517,7 +1681,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:19.911Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416240546_95849",
@@ -1543,7 +1711,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:23.269Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416240547_27145",
@@ -1569,7 +1741,11 @@
       "Address": "14/16, kurunji nagar, keela kallandhiri,madurai, tamilnadu - 625301",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "003366"
+      "PIN": "003366",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416240547_70479",
@@ -1595,7 +1771,11 @@
       "Address": "Admission Office @: 111/112, Ra-Gem Plaza, Thallakulam, Madurai-625002.",
       "City": "Chennai",
       "State": "Delhi",
-      "PIN": "625002"
+      "PIN": "625002",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:26.501Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416257253_23221",
@@ -1621,7 +1801,11 @@
       "Address": "color: #000; margin-top:45px; font-size:48px; } .ProjectDec h4 small { display: block; font-weight: 400; font-size: 15px; color: #343434; }",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "343434"
+      "PIN": "343434",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416257253_25742",
@@ -1647,7 +1831,11 @@
       "Address": "ies First Floor, No. 10B, Ekambaram Industrial Estate Rd, Alapakkam, Karpaga Vinayagar Colony, Valasaravakkam, Chennai, Tamil Nadu 600116",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600116"
+      "PIN": "600116",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:29.866Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416257253_34809",
@@ -1673,7 +1861,11 @@
       "Address": "y deep blue theme */ backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); z-index: 100000;",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "100000"
+      "PIN": "100000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:33.057Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416271062_23410",
@@ -1699,7 +1891,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416271062_36259",
@@ -1725,7 +1921,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416287725_86032",
@@ -1751,7 +1951,11 @@
       "Address": ": { \"@type\" : \"PostalAddress\", \"streetAddress\" : \"SAS Hotels and Enterprises Limited, Airport Road, Perungudi, Madurai, Tamil Nadu - 625022\",",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "625022"
+      "PIN": "625022",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:36.459Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416287725_91238",
@@ -1777,7 +1981,11 @@
       "Address": "name: \"Courtyard by Marriott Madurai\", address: \"No 168 Alagarkoil Road, Next to Circuit House, Madurai, Tamil Nadu, India, 625002\",",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625002"
+      "PIN": "625002",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416287725_74762",
@@ -1803,7 +2011,11 @@
       "Address": "s=\"text mb-0\"> 2/2, TPK Main Road, Andalpuram Madurai - 625011, Ta",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "625011"
+      "PIN": "625011",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:39.635Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416287725_78091",
@@ -1829,7 +2041,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:42.938Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416314538_33001",
@@ -1855,7 +2071,11 @@
       "Address": "rminate css-gpgdpj\" cx=\"44\" cy=\"44\" r=\"20.2\" fill=\"none\" stroke-width=\"3.6\"><",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "272727"
+      "PIN": "272727",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:46.153Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416314538_18282",
@@ -1881,7 +2101,11 @@
       "Address": "ar n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()",
       "City": "",
       "State": "",
-      "PIN": "604800"
+      "PIN": "604800",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:49.426Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416314538_58421",
@@ -1907,7 +2131,11 @@
       "Address": "ementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(312deg, #1E9ED4 0%, #082456 100",
       "City": "Chennai",
       "State": "Andhra Pradesh",
-      "PIN": "082456"
+      "PIN": "082456",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:52.735Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416314538_5695",
@@ -1933,7 +2161,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416332312_78493",
@@ -1959,7 +2191,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416332312_81671",
@@ -1985,7 +2221,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416332312_48571",
@@ -2011,7 +2251,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416332312_57582",
@@ -2037,7 +2281,11 @@
       "Address": "position:absolute;inset:0}.iL7Pq5 svg:not([data-type=ugc]){overflow:visible}.gx51wo *{vector-effect:non-scaling-stroke}ul.font_100,ol.font_100{color:#080808;fon",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "080808"
+      "PIN": "080808",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:56.130Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416351920_16603",
@@ -2063,7 +2311,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416351920_14693",
@@ -2089,7 +2341,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416351920_40941",
@@ -2115,7 +2371,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:42:59.318Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416351920_53195",
@@ -2141,7 +2401,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:02.690Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416351920_312",
@@ -2167,7 +2431,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416351920_13719",
@@ -2193,7 +2461,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:05.975Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416383373_61003",
@@ -2219,7 +2491,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:09.537Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416383373_92383",
@@ -2245,7 +2521,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416383373_98210",
@@ -2271,7 +2551,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416686937_15959",
@@ -2297,7 +2581,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:12.767Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416686937_68662",
@@ -2323,7 +2611,11 @@
       "Address": "7307b-805b-4eae-af92-d5c89c8e238b\">",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "701728"
+      "PIN": "701728",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416686937_98499",
@@ -2349,7 +2641,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416708541_31028",
@@ -2375,7 +2671,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416765318_67470",
@@ -2401,7 +2701,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:16.126Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416765318_43780",
@@ -2427,7 +2731,11 @@
       "Address": "14/16, kurunji nagar, keela kallandhiri,madurai, tamilnadu - 625301",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "003366"
+      "PIN": "003366",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416765318_32839",
@@ -2453,7 +2761,11 @@
       "Address": "Admission Office @: 111/112, Ra-Gem Plaza, Thallakulam, Madurai-625002.",
       "City": "Chennai",
       "State": "Delhi",
-      "PIN": "625002"
+      "PIN": "625002",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:19.462Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416804075_42352",
@@ -2479,7 +2791,11 @@
       "Address": "color: #000; margin-top:45px; font-size:48px; } .ProjectDec h4 small { display: block; font-weight: 400; font-size: 15px; color: #343434; }",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "343434"
+      "PIN": "343434",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416804075_44394",
@@ -2505,7 +2821,11 @@
       "Address": "ies First Floor, No. 10B, Ekambaram Industrial Estate Rd, Alapakkam, Karpaga Vinayagar Colony, Valasaravakkam, Chennai, Tamil Nadu 600116",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600116"
+      "PIN": "600116",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:22.632Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416804075_27528",
@@ -2531,7 +2851,11 @@
       "Address": "talAddress\", \"streetAddress\": \"Morais City, Airport Road\", \"addressLocality\": \"Trichy\", \"addressRegion\": \"Tamil Nadu\", \"postalCode\": \"620007\",",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "620007"
+      "PIN": "620007",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:25.893Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416804075_37553",
@@ -2557,7 +2881,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:29.290Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416804075_4065",
@@ -2583,7 +2911,11 @@
       "Address": ": \"Chennai\", \"addressRegion\": \"Tamil Nadu,\", \"addressCountry\": \"India\", \"postalCode\": \"600044\"",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600044"
+      "PIN": "600044",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:32.822Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783477892679_9718",
@@ -2609,7 +2941,11 @@
       "Address": "ighlight:#ffce11;--primary-color-hover:#e9ba04;--primary-color-bg:#fff0b8;--primary-bg-color:#fffae7;--secondary-color:#1f1f1f;--sub-secondary-color:#626262;--t",
       "City": "",
       "State": "Tamil Nadu",
-      "PIN": "626262"
+      "PIN": "626262",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477914769_16149",
@@ -2635,7 +2971,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477914769_60211",
@@ -2661,7 +3001,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477914769_37904",
@@ -2687,7 +3031,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477914769_85598",
@@ -2713,7 +3061,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477914769_38754",
@@ -2739,7 +3091,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477943116_43776",
@@ -2765,7 +3121,11 @@
       "Address": "\"@type\": \"PostalAddress\", \"streetAddress\": \"Apollo Speciality Hospital, 80 Feet Rd, Deputy Collector Colony, KK Nagar, Madurai, Tamil Nadu 625020\",",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "625020"
+      "PIN": "625020",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:36.002Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783477943116_4129",
@@ -2791,7 +3151,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477943116_99702",
@@ -2817,7 +3181,11 @@
       "Address": "187, Thathaneri Main Road, Near ESI Hospital Vaithiyanathapuram, Madurai - 625018.",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625018"
+      "PIN": "625018",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:39.351Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783477976990_8759",
@@ -2843,7 +3211,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477976990_12818",
@@ -2869,7 +3241,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783477976990_77771",
@@ -2895,7 +3271,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493100131_63906",
@@ -2921,7 +3301,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493100131_72100",
@@ -2947,7 +3331,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493100132_26169",
@@ -2973,7 +3361,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493118136_6772",
@@ -2999,7 +3391,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493118136_68469",
@@ -3025,7 +3421,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493118136_96669",
@@ -3051,7 +3451,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493118136_81423",
@@ -3077,7 +3481,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493118136_65368",
@@ -3103,7 +3511,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493142961_68696",
@@ -3129,7 +3541,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:42.752Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783493142961_70056",
@@ -3155,7 +3571,11 @@
       "Address": "ax-sm:hidden\">S.NO 32/1 , Fourwaytrack , Airport, Valayankulam Village, Perungudi, Madurai Tamil Nadu - 625022",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625022"
+      "PIN": "625022",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:46.102Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783493142961_49113",
@@ -3181,7 +3601,11 @@
       "Address": "eue\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;tex",
       "City": "Madurai",
       "State": "",
-      "PIN": "212529"
+      "PIN": "212529",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:49.440Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783493171779_34100",
@@ -3207,7 +3631,11 @@
       "Address": "i-Dindigul Rd, Highways, Thuvariman\", \"addressLocality\": \"Madurai\", \"addressRegion\": \"Tamil Nadu\", \"postalCode\": \"625019\",",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625019"
+      "PIN": "625019",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:52.964Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783493171779_53003",
@@ -3233,7 +3661,11 @@
       "Address": "Melur Main Rd, Opp Bus Stand Mattuthavani\", \"addressLocality\": \"Madurai\", \"addressRegion\": \"Tamil Nadu\", \"postalCode\": \"625007\",",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625007"
+      "PIN": "625007",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:56.428Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783493171779_92854",
@@ -3259,7 +3691,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493195202_12828",
@@ -3285,7 +3721,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493195202_81399",
@@ -3311,7 +3751,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493195202_50537",
@@ -3337,7 +3781,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783493195202_11240",
@@ -3363,7 +3811,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564294602_874",
@@ -3389,7 +3841,11 @@
       "Address": "+91 89 4000 0860 bookings@sangamhotels.com",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "003792"
+      "PIN": "003792",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:43:59.578Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564294602_18918",
@@ -3415,7 +3871,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:02.834Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564294602_82066",
@@ -3441,7 +3901,11 @@
       "Address": "ighlight:#ffce11;--primary-color-hover:#e9ba04;--primary-color-bg:#fff0b8;--primary-bg-color:#fffae7;--secondary-color:#1f1f1f;--sub-secondary-color:#626262;--t",
       "City": "",
       "State": "Tamil Nadu",
-      "PIN": "626262"
+      "PIN": "626262",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564316244_56658",
@@ -3467,7 +3931,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Madurai",
       "State": "",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:06.247Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564316244_96199",
@@ -3493,7 +3961,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "",
       "State": "Telangana",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:09.480Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564316244_26192",
@@ -3519,7 +3991,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564316244_61012",
@@ -3545,7 +4021,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564316244_840",
@@ -3571,7 +4051,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564347228_68206",
@@ -3597,7 +4081,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:12.725Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564347228_71024",
@@ -3623,7 +4111,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:15.903Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564347228_49984",
@@ -3649,7 +4141,11 @@
       "Address": "ight:400;line-height:24px;width:100%;padding:12px 16px;border-radius:4px;box-shadow:0px 1px 2px 0px rgba(0,0,0,0.05);color:var(--ast-form-input-text,#475569);}i",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "475569"
+      "PIN": "475569",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:19.154Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564362624_52726",
@@ -3675,7 +4171,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:22.406Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564362624_20102",
@@ -3701,7 +4201,11 @@
       "Address": "Admission Office @: 111/112, Ra-Gem Plaza, Thallakulam, Madurai-625002.",
       "City": "Chennai",
       "State": "Delhi",
-      "PIN": "625002"
+      "PIN": "625002",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:25.616Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564362624_27150",
@@ -3727,7 +4231,11 @@
       "Address": "tial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover\" />",
       "City": "",
       "State": "Gujarat",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564362624_89063",
@@ -3753,7 +4261,11 @@
       "Address": "tial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover\" />",
       "City": "",
       "State": "Gujarat",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:28.751Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564362624_27450",
@@ -3779,7 +4291,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:31.911Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564408163_70966",
@@ -3805,7 +4321,11 @@
       "Address": ": { \"@type\" : \"PostalAddress\", \"streetAddress\" : \"SAS Hotels and Enterprises Limited, Airport Road, Perungudi, Madurai, Tamil Nadu - 625022\",",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "625022"
+      "PIN": "625022",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:35.187Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564408163_49749",
@@ -3831,7 +4351,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564423821_12956",
@@ -3857,7 +4381,11 @@
       "Address": "ss\":\"1st Floor, Enzyme Tech Park, MP Krishna Mansion, 1st Cross Road, KHB Colony, 5th Block, Koramangala\",\"addressLocality\":\"Bengaluru\",\"postalCode\":\"560095\",\"a",
       "City": "",
       "State": "",
-      "PIN": "560095"
+      "PIN": "560095",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:38.355Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564423821_94354",
@@ -3883,7 +4411,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564459804_78514",
@@ -3909,7 +4441,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:41.809Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783564459804_44576",
@@ -3935,7 +4471,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564476018_21444",
@@ -3961,7 +4501,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564476018_55687",
@@ -3987,7 +4531,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783564476018_90064",
@@ -4013,7 +4561,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783593892134_41729",
@@ -4039,7 +4591,11 @@
       "Address": ": 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--w",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "000000"
+      "PIN": "000000",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:45.065Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783593892134_78674",
@@ -4065,7 +4621,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783593956401_15727",
@@ -4091,7 +4651,11 @@
       "Address": "ies First Floor, No. 10B, Ekambaram Industrial Estate Rd, Alapakkam, Karpaga Vinayagar Colony, Valasaravakkam, Chennai, Tamil Nadu 600116",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600116"
+      "PIN": "600116",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:48.347Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783593956401_52712",
@@ -4117,7 +4681,11 @@
       "Address": "",
       "City": "Chennai",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:51.625Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783593956401_90289",
@@ -4143,7 +4711,11 @@
       "Address": ": \"Chennai\", \"addressRegion\": \"Tamil Nadu,\", \"addressCountry\": \"India\", \"postalCode\": \"600041\"",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600041"
+      "PIN": "600041",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:55.009Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783593956401_51280",
@@ -4169,7 +4741,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:44:58.177Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783593970619_94990",
@@ -4195,7 +4771,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783594030103_4067",
@@ -4221,7 +4801,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783594030103_3116",
@@ -4247,7 +4831,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650681093_10583",
@@ -4260,7 +4848,11 @@
       "Status": "New",
       "Notes": "Slated to manage the upcoming Holiday Inn Express & Suites Madurai project.",
       "SourceURL": "https://www.asianhospitality.com/ihg-chentoor-holiday-inn-madurai",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650731824_57280",
@@ -4273,7 +4865,11 @@
       "Status": "New",
       "Notes": "Located in KK Nagar, Madurai, Tamil Nadu. A potential local healthcare buyer.",
       "SourceURL": "https://www.instagram.com/reel/DXtoNVmE42u",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650731824_56747",
@@ -4286,7 +4882,11 @@
       "Status": "New",
       "Notes": "Tamil Nadu-based hospital group with active helpline numbers and digital presence.",
       "SourceURL": "https://www.instagram.com/p/DRfDKFAjKLZ?hl=en",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:45:01.489Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783650731824_54824",
@@ -4299,7 +4899,11 @@
       "Status": "New",
       "Notes": "An established healthcare provider operating since 1995, offering comprehensive medical services.",
       "SourceURL": "https://healthcarehospital.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650749937_35456",
@@ -4312,7 +4916,11 @@
       "Status": "New",
       "Notes": "An aviation and hospitality management college in Madurai operating for over 12 years, offering undergraduate, postgraduate, and diploma programs.",
       "SourceURL": "https://bostoncolleges.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650749937_92740",
@@ -4325,7 +4933,11 @@
       "Status": "New",
       "Notes": "An educational trust that has been active in Madurai for seventy-five years, running several institutions ranging from Nursery to Engineering (Mangayarkarasi College of Engineering).",
       "SourceURL": "https://mce-madurai.ac.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650749937_1446",
@@ -4338,7 +4950,11 @@
       "Status": "New",
       "Notes": "Society running the Annai Fathima College of Arts & Science and the Annai Fathima College of Education, dedicated to serving rural community students in South Tamil Nadu.",
       "SourceURL": "http://annaifathimacollege.edu.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650749937_17454",
@@ -4351,7 +4967,11 @@
       "Status": "New",
       "Notes": "A premier aviation training institution in Madurai approved by Alagappa University, offering degree programs, flight simulators, and state-of-the-art training facilities.",
       "SourceURL": "https://kri.org.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650792981_19721",
@@ -4364,7 +4984,11 @@
       "Status": "New",
       "Notes": "A luxury hotel and heritage resort in Kochadai, Madurai, offering premium room and banquet facilities. Operated under Grand Luxe Hotels (Coorg) Private Limited.",
       "SourceURL": "https://heritagemadurai.com/contact",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783650834541_73670",
@@ -4377,7 +5001,11 @@
       "Status": "New",
       "Notes": "State tourism development corporation of Andhra Pradesh, which may seek strategic regional locations for tourism expansion, information centers, or tourist amenities.",
       "SourceURL": "https://tourism.ap.gov.in/contactus",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679511637_86040",
@@ -4390,7 +5018,11 @@
       "Status": "New",
       "Notes": "A real estate company in Madurai. While primarily listing land for sale, local real estate promoters in Tamil Nadu frequently acquire prime commercial land parcels for development.",
       "SourceURL": "https://www.facebook.com/MR.PROMOTERS333/videos/%F0%9D%97%A9%F0%9D%97%B2%F0%9D%97%B9%F0%9D%97%B9%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%BD%F0%9D%97%AE%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B6-land-for-sale-in-%F0%9D%97%A0%F0%9D%97%AE%F0%9D%97%B1%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B6%F0%9D%10%8C%F0%9D%10%91-%F0%9D%10%8F%F0%9D%10%91%F0%9D%10%8E%F0%9D%10%9C%F0%9D%10%8E%F0%9D%10%93%F0%9D%10%84%F0%9D%10%91%F0%9D%10%92-%F0%9D%10%8D%F0%9D%10%8E%F0%9D%9F%AD-%F0%9D%10%91%F0%9D%10%9E%F0%9D%10%9A%F0%9D%10%A5-%F0%9D%10%84%F0%9D%10%AC%F0%9D%10%AD%F0%9D%10%9A%F0%9D%10%AD%F0%9D%10%9E-%F0%9D%10%82%F0%9D%10%A8%F0%9D%10%A6%F0%9D%10%A9%F0%9D%10%9A%F0%9D%10%A7%F0%9D%10%B2%F0%9D%97%99%F0%9D%97%BC%F0%9D%97%BF-%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B2/334159492329088",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679543349_12546",
@@ -4403,7 +5035,11 @@
       "Status": "New",
       "Notes": "An expanding healthcare group in Tamil Nadu that is actively adding specialized departments.",
       "SourceURL": "https://www.facebook.com/velammal.hospital/posts/velammal-multispeciality-continues-to-expand-its-specialized-departments-providi/985211800316342",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679543349_41297",
@@ -4416,7 +5052,11 @@
       "Status": "New",
       "Notes": "A growing healthcare enablement and solutions company expanding its operations in Tamil Nadu, including a newly opened 1,000-seat facility in Coimbatore.",
       "SourceURL": "https://www.instagram.com/p/DRfDKFAjKLZ?hl=en",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679577040_36609",
@@ -4429,7 +5069,11 @@
       "Status": "New",
       "Notes": "An active arts and science college based in Madurai. They are routinely expanding their academic offerings and student capacity, making them a potential buyer for land to build new hostels, departments, or satellite facilities.",
       "SourceURL": "https://www.instagram.com/p/DWQP-22AeMS",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679797419_11787",
@@ -4442,7 +5086,11 @@
       "Status": "New",
       "Notes": "An organization specializing in matching prospective franchisees with franchisors, helping brands expand into Tier 2 and Tier 3 cities, and organizing regional franchise shows such as the Tamilnadu & Kerala Franchise Show.",
       "SourceURL": "https://www.facebook.com/franchiseindiabrandslimited/posts/want-to-start-your-own-businessmeet-today-with-top-10-popular-franchise-opportun/3974733119221936",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679797419_70826",
@@ -4455,7 +5103,11 @@
       "Status": "New",
       "Notes": "A franchise consulting and planning service provider that assists businesses with expansion, franchise design, and client acquisition in Tier 2 and Tier 3 cities.",
       "SourceURL": "https://www.sparkleminds.com/2025/08/15/expand-franchise-businesses",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679797419_40347",
@@ -4468,7 +5120,11 @@
       "Status": "New",
       "Notes": "A rapidly growing food and beverage franchise brand actively targeting strategic expansion and market penetration in Tier 2 and Tier 3 cities.",
       "SourceURL": "https://www.chaisuttabarindia.com/blog/franchise-market",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679832831_59862",
@@ -4481,7 +5137,11 @@
       "Status": "New",
       "Notes": "Planning Office for Madurai District, actively spearheading the Madurai Master Plan 2024 - 2044. Key stakeholder for institutional land use, zoning, and urban expansion initiatives.",
       "SourceURL": "https://madurailpa.com",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T15:45:04.783Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783679889485_16376",
@@ -4494,7 +5154,11 @@
       "Status": "New",
       "Notes": "An agency of the Government of Tamil Nadu nurturing the state's entrepreneurial ecosystem. They operate regional hubs, including the StartupTN Madurai Regional Hub, and launch infrastructure/coordination initiatives such as Global Coordination Centres.",
       "SourceURL": "https://www.instagram.com/reel/C9AND4FIlkK",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783679889485_9794",
@@ -4507,7 +5171,11 @@
       "Status": "New",
       "Notes": "An investment and funding platform initiative by StartupTN, headquartered at the Chennai Metro Rail Limited Building in Chennai, Tamil Nadu.",
       "SourceURL": "https://www.tanfund.in",
-      "DateAdded": "2026-07-10"
+      "DateAdded": "2026-07-10",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
