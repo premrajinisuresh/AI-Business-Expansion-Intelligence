@@ -31,7 +31,11 @@
       "Address": "7307b-805b-4eae-af92-d5c89c8e238b\">",
       "City": "",
       "State": "",
-      "PIN": "701728"
+      "PIN": "701728",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783331981835_43069",
@@ -57,7 +61,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783331981835_94249",
@@ -83,7 +91,11 @@
       "Address": "font-bold text-center mb-6\">Our Moto",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "904018"
+      "PIN": "904018",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332004770_18261",
@@ -109,7 +121,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332004770_92453",
@@ -135,7 +151,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332004770_61032",
@@ -161,7 +181,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332004770_8947",
@@ -187,7 +211,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332004770_43190",
@@ -213,7 +241,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332084344_79961",
@@ -239,7 +271,11 @@
       "Address": "-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:ro",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "313131"
+      "PIN": "313131",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Failed",
+      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
     },
     {
       "id": "auto_1783332084344_5095",
@@ -265,7 +301,11 @@
       "Address": "",
       "City": "",
       "State": "",
-      "PIN": ""
+      "PIN": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783332084344_36965",
@@ -291,7 +331,11 @@
       "Address": ": \"Chennai\", \"addressRegion\": \"Tamil Nadu,\", \"addressCountry\": \"India\", \"postalCode\": \"600044\"",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "600044"
+      "PIN": "600044",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Failed",
+      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
     },
     {
       "id": "auto_1783332098973_41339",
@@ -317,7 +361,11 @@
       "Address": "ar n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()",
       "City": "",
       "State": "Odisha",
-      "PIN": "604800"
+      "PIN": "604800",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Failed",
+      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
     },
     {
       "id": "auto_1783332128004_68020",
@@ -343,7 +391,11 @@
       "Address": "i-Dindigul Rd, Highways, Thuvariman\", \"addressLocality\": \"Madurai\", \"addressRegion\": \"Tamil Nadu\", \"postalCode\": \"625019\",",
       "City": "Madurai",
       "State": "Tamil Nadu",
-      "PIN": "625019"
+      "PIN": "625019",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Failed",
+      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
     },
     {
       "id": "auto_1783332128004_86180",
@@ -369,7 +421,11 @@
       "Address": "s=\"text mb-0\"> 2/2, TPK Main Road, Andalpuram Madurai - 625011, Ta",
       "City": "Chennai",
       "State": "Tamil Nadu",
-      "PIN": "625011"
+      "PIN": "625011",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Failed",
+      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
     },
     {
       "id": "auto_1783332128004_37109",
