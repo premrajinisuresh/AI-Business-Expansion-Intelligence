@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import nodemailer from "nodemailer";
 
 // ============================================================
 // CONFIG — every tunable value lives here. Nothing else in this
@@ -11,20 +12,25 @@ const CONFIG = {
   OWNER_NAME: "Suresh Kumar",
   SENDER_NAME: "Suresh Kumar",
 
-  // Resend's built-in sandbox address. Works immediately with just an
-  // API key — no domain purchase, no DNS verification, no Google
-  // 2-Step Verification needed. Recipients see "Suresh Kumar" as the
-  // display name; the actual address is the sandbox one below.
-  FROM_EMAIL: "onboarding@resend.dev",
-  REPLY_TO_EMAIL: "smartpos.systems@gmail.com",
+  // Dedicated Gmail account for this project, sent via Gmail's own SMTP
+  // servers — no domain purchase or DNS verification needed, and can
+  // send to any real recipient (unlike the Resend sandbox, which can
+  // only ever send to the account owner's own address).
+  // Requires GMAIL_USER + GMAIL_APP_PASSWORD as GitHub Actions secrets,
+  // both tied to THIS account (not smartpos.systems@gmail.com).
+  FROM_EMAIL: "suresh.kumar.alagarkovil@gmail.com",
 
-  EMAIL_DELAY: 1000,
+  EMAIL_DELAY: 2000,
 
   // Supporting config (not in the original required list, but kept
   // here rather than hardcoded elsewhere in the file).
-  RESEND_ENDPOINT: "https://api.resend.com/emails",
-  REQUEST_TIMEOUT_MS: 15000,
+  SMTP_TIMEOUT_MS: 15000,
   SKIP_ALREADY_SENT: true,
+
+  // A fresh/new Gmail account is capped lower than an established one
+  // by Google's anti-abuse systems. Keep this conservative at first;
+  // it can be raised once the account has some sending history.
+  DAILY_SEND_LIMIT: 100,
 
   PROPERTY_TITLE: "23.5 Cents Corner Commercial Land — Alagarkovil Highway Junction, Madurai",
   PROPERTY_PRICE: "₹25 Lakhs per cent",
@@ -246,39 +252,45 @@ function escapeHtml(value) {
 }
 
 // ============================================================
-// RESEND API (fetch-based, no SDK) — sandbox sender, no domain needed.
+// GMAIL SMTP (via nodemailer) — sends as the dedicated project
+// account; no domain or DNS verification needed.
 // ============================================================
-async function sendEmailViaResend({ to, subject, html }) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), CONFIG.REQUEST_TIMEOUT_MS);
+let transporter = null;
 
-  try {
-    const response = await fetch(CONFIG.RESEND_ENDPOINT, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        from: `${CONFIG.SENDER_NAME} <${CONFIG.FROM_EMAIL}>`,
-        to: [to],
-        reply_to: CONFIG.REPLY_TO_EMAIL,
-        subject,
-        html
-      }),
-      signal: controller.signal
-    });
+function getTransporter() {
+  if (transporter) return transporter;
 
-    const responseBody = await response.text();
-
-    if (!response.ok) {
-      throw new Error(`Resend API ${response.status}: ${responseBody.slice(0, 300)}`);
-    }
-
-    return true;
-  } finally {
-    clearTimeout(timeoutId);
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+    throw new Error(
+      "Missing GMAIL_USER or GMAIL_APP_PASSWORD environment variable/secret."
+    );
   }
+
+  transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD
+    },
+    connectionTimeout: CONFIG.SMTP_TIMEOUT_MS,
+    greetingTimeout: CONFIG.SMTP_TIMEOUT_MS,
+    socketTimeout: CONFIG.SMTP_TIMEOUT_MS
+  });
+
+  return transporter;
+}
+
+async function sendEmailViaGmail({ to, subject, html }) {
+  const mailer = getTransporter();
+
+  await mailer.sendMail({
+    from: `${CONFIG.SENDER_NAME} <${CONFIG.FROM_EMAIL}>`,
+    to,
+    subject,
+    html
+  });
+
+  return true;
 }
 
 // ============================================================
@@ -345,7 +357,7 @@ async function processCompany(company, data, stats) {
   stats.processed += 1;
 
   try {
-    await sendEmailViaResend({ to: actualRecipient, subject, html });
+    await sendEmailViaGmail({ to: actualRecipient, subject, html });
 
     company.EmailSent = true;
     company.EmailSentDate = new Date().toISOString();
@@ -397,6 +409,13 @@ async function main() {
 
   for (const company of data.companies) {
     if (CONFIG.TEST_MODE && validAttempts >= CONFIG.TEST_LIMIT) {
+      break;
+    }
+
+    if (!CONFIG.TEST_MODE && stats.sent >= CONFIG.DAILY_SEND_LIMIT) {
+      console.log(
+        `Daily send limit of ${CONFIG.DAILY_SEND_LIMIT} reached — stopping safely. Re-run tomorrow to continue with remaining companies.`
+      );
       break;
     }
 
