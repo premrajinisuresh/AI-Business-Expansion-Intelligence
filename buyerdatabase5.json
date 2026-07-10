@@ -272,10 +272,10 @@
       "City": "Chennai",
       "State": "Tamil Nadu",
       "PIN": "313131",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Failed",
-      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T12:08:29.565Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332084344_5095",
@@ -332,10 +332,10 @@
       "City": "Chennai",
       "State": "Tamil Nadu",
       "PIN": "600044",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Failed",
-      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T12:08:32.463Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332098973_41339",
@@ -362,10 +362,10 @@
       "City": "",
       "State": "Odisha",
       "PIN": "604800",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Failed",
-      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T12:08:35.336Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332128004_68020",
@@ -392,10 +392,10 @@
       "City": "Madurai",
       "State": "Tamil Nadu",
       "PIN": "625019",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Failed",
-      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T12:08:38.191Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332128004_86180",
@@ -422,10 +422,10 @@
       "City": "Chennai",
       "State": "Tamil Nadu",
       "PIN": "625011",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Failed",
-      "LastError": "Resend API 403: {\"statusCode\":403,\"name\":\"validation_error\",\"message\":\"You can only send testing emails to your own email address (smartpos.systems@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.\"}"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-10T12:08:41.226Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783332128004_37109",
