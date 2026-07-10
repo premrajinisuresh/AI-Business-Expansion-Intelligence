@@ -82,10 +82,16 @@ async function sendEmail(company) {
 }
 
 async function processCompany(company) {
-  if (!validateEmail(company.Email) || company.EmailSent === true) {
-    return 'Skipped';
-  }
 
+if (!validateEmail(company.Email)) {
+    console.log("INVALID EMAIL:", company.Email);
+    return "Skipped";
+}
+
+if (company.EmailSent === true) {
+    console.log("ALREADY SENT");
+    return "Skipped";
+}
   try {
     await sendEmail(company);
     company.EmailSent = true;
