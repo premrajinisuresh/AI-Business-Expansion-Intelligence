@@ -67,7 +67,7 @@ async function sendEmail(company) {
     },
     body: JSON.stringify({
       from: 'Suresh Kumar <smartpos.systems@gmail.com>',
-      to: [prem.rajini.suresh@gmail.com],
+      to: ["prem.rajini.suresh@gmail.com"],
       subject: subject,
       html: body
     })
