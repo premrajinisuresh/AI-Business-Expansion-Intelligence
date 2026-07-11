@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-11T02:33:26.007Z",
-    "lastRunAdded": 0,
-    "totalCompanies": 181
+    "lastRun": "2026-07-11T06:26:39.303Z",
+    "lastRunAdded": 1,
+    "totalCompanies": 182
   },
   "companies": [
     {
@@ -5176,6 +5176,19 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "id": "auto_1783751144224_79455",
+      "Company": "Visvas",
+      "Category": "Local Madurai Investors & Business Families",
+      "Website": "https://www.visvas.in/blog/residential-and-commercial-land-plots-for-sale-in-madurai",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Visvas (Visvas Promoters) is an active real estate development company in Madurai, known for developing both residential and commercial land projects (such as Vaaruni Enclave). As an established local builder/developer, they represent a potential corporate buyer for outright commercial land purchases.",
+      "SourceURL": "https://www.visvas.in/blog/residential-and-commercial-land-plots-for-sale-in-madurai",
+      "DateAdded": "2026-07-11"
     }
   ]
 }
