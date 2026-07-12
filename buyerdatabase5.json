@@ -5188,7 +5188,11 @@
       "Status": "New",
       "Notes": "Visvas (Visvas Promoters) is an active real estate development company in Madurai, known for developing both residential and commercial land projects (such as Vaaruni Enclave). As an established local builder/developer, they represent a potential corporate buyer for outright commercial land purchases.",
       "SourceURL": "https://www.visvas.in/blog/residential-and-commercial-land-plots-for-sale-in-madurai",
-      "DateAdded": "2026-07-11"
+      "DateAdded": "2026-07-11",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823545078_42318",
@@ -5201,7 +5205,11 @@
       "Status": "New",
       "Notes": "A provider of healthcare revenue cycle management solutions that is expanding in Tamil Nadu. Signed an MoU with Guidance Tamil Nadu to establish a Technology and Global Delivery Center in Madurai.",
       "SourceURL": "https://www.infinx.com/infinx-healthcare-enters-into-mou-to-expand-operations-in-tamil-nadu-plans-to-create-700-jobs-in-madurai",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823545078_71836",
@@ -5214,7 +5222,11 @@
       "Status": "New",
       "Notes": "A healthcare and medical equipment group expanding its footprint in Tamil Nadu, recently opening a new branch office in Trichy.",
       "SourceURL": "https://www.instagram.com/p/DV0xQa5k7sj",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823568183_47793",
@@ -5227,7 +5239,11 @@
       "Status": "New",
       "Notes": "The educational trust that runs Latha Mathavan Engineering College. Highly relevant prospect as their current campus is already established at Alagar Kovil, near Madurai.",
       "SourceURL": "https://www.lathamathavan.edu.in/engineering",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823590162_89825",
@@ -5240,7 +5256,11 @@
       "Status": "New",
       "Notes": "A global platform and partnership network connecting Non-Resident Indians (NRIs) to investment opportunities in India across real estate, education, hospitality, and business.",
       "SourceURL": "https://in.linkedin.com/company/nrione",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823627971_77648",
@@ -5253,7 +5273,11 @@
       "Status": "New",
       "Notes": "Located at TPK Main Road, Madurai. Features a fully air-conditioned marriage hall with a capacity of 400-500 pax, along with dedicated meeting and party halls.",
       "SourceURL": "https://hotelvenkateswaraa.com/party-hall",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823627971_75378",
@@ -5266,7 +5290,11 @@
       "Status": "New",
       "Notes": "A luxury hotel brand offering elegant banquet, meeting, and wedding halls in Madurai.",
       "SourceURL": "https://www.gateway-hotels.com/en-in/hotels/gateway-madurai/meetings-and-event-venues",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823652199_96947",
@@ -5279,7 +5307,11 @@
       "Status": "New",
       "Notes": "BPCL is actively expanding its EV fast-charging network on highways in Southern India and has launched corridors such as Bangalore to Chennai and Bangalore to Mysore to Coorg.",
       "SourceURL": "https://www.facebook.com/BharatPetroleumCorporation/posts/we-have-launched-two-more-ev-fast-charging-highway-corridors-in-southern-india-b/8145771502162631",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823652199_58514",
@@ -5292,7 +5324,11 @@
       "Status": "New",
       "Notes": "Actively setting up and expanding DC Fast Charging Stations across Tamil Nadu (including areas like Kanchipuram, Cheyyar, and Arani) and seeking business enquiries.",
       "SourceURL": "https://www.instagram.com/reel/DPY2YvijMlM",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-12T11:59:21.078Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783823652199_1030",
@@ -5305,7 +5341,11 @@
       "Status": "New",
       "Notes": "A government-supported pilot project currently in expansion mode to build 5,500 km of e-highways with world-class charging stations on key routes.",
       "SourceURL": "https://nhev.in/about-us-ev",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823652199_75272",
@@ -5318,7 +5358,11 @@
       "Status": "New",
       "Notes": "Expanding EV charging station operations across Tamil Nadu with investment setups starting from ₹13 Lakhs.",
       "SourceURL": "https://www.instagram.com/p/DU-pwvDjobi",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823652199_29809",
@@ -5331,7 +5375,11 @@
       "Status": "New",
       "Notes": "Helps plan, install, and operate EV charging infrastructure for commercial properties, offices, fleets, and hotels in Chennai and broader Tamil Nadu.",
       "SourceURL": "https://pulseenergy.io/in/ev-charging-station-franchise/chennai",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823688630_12460",
@@ -5344,7 +5392,11 @@
       "Status": "New",
       "Notes": "State tourism department and TTDC managing tourism infrastructure, pilgrim tourist rest houses, and heritage corridor developments across Tamil Nadu.",
       "SourceURL": "https://www.tamilnadutourism.tn.gov.in",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823709543_21108",
@@ -5357,7 +5409,11 @@
       "Status": "New",
       "Notes": "Government nodal agency operating under the MSME Department of Tamil Nadu to back scalable, innovation-led startups. They administer various state funds and drive commercial startup ecosystems in the region.",
       "SourceURL": "https://startuptn.in",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823709543_99381",
@@ -5370,7 +5426,11 @@
       "Status": "New",
       "Notes": "Tamil Nadu Deep Tech Innovation Network, coordinating deep-tech startup policies, research, and high-tech infrastructure support across the state.",
       "SourceURL": "https://itnthub.tn.gov.in/assets/deep-tech-policy-book.pdf",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783823709543_78037",
@@ -5383,7 +5443,11 @@
       "Status": "New",
       "Notes": "State industrial development agency spearheading emerging sectors, aerospace parks, and defense corridors. They have the capital and mandate for high-value commercial and industrial land development.",
       "SourceURL": "https://itnthub.tn.gov.in/assets/deep-tech-policy-book.pdf",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783840946585_79091",
@@ -5396,7 +5460,11 @@
       "Status": "New",
       "Notes": "Chennai-based real estate developer Appasamy Group, owner of The Residency Hotels, is in expansion mode with plans for a new hotel-cum-convention center in Madurai.",
       "SourceURL": "https://www.pressreader.com/india/businessline-hyderabad-9wvx/20250919/281539412113705",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783840946585_70573",
@@ -5409,7 +5477,11 @@
       "Status": "New",
       "Notes": "State tourism development agency managing accommodation/comfort stays in the heart of Madurai.",
       "SourceURL": "https://www.facebook.com/tntourismoffcl/posts/stay-in-the-heart-of-madurai-where-comfort-meets-convenience-from-cozy-deluxe-ro/1389588823193559",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783840963612_10576",
@@ -5422,7 +5494,11 @@
       "Status": "New",
       "Notes": "A Chennai-based pizzeria (Wood Fired Bistro) looking to expand its brand through franchising. It currently operates in Porur and Velachery.",
       "SourceURL": "https://www.smergers.com/fast-food-restaurant-franchise-opportunities-in-madurai/c26s412t11b",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783840963612_38674",
@@ -5435,7 +5511,11 @@
       "Status": "New",
       "Notes": "A highly celebrated, authentic local non-vegetarian restaurant in Madurai known for serving delicacies on banana leaves.",
       "SourceURL": "https://www.tripadvisor.com/Restaurant_Review-g297677-d4772072-Reviews-Kumar_Mess-Madurai_Madurai_District_Tamil_Nadu.html",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841015392_75494",
@@ -5448,7 +5528,11 @@
       "Status": "New",
       "Notes": "Located at 9, 10 Valluvar North Street, Jaihindpuram, Madurai – 625011.",
       "SourceURL": "https://www.instagram.com/p/DW9Q38djVst",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841080137_87369",
@@ -5461,7 +5545,11 @@
       "Status": "New",
       "Notes": "A government-established public charitable trust and endowment board in Tamil Nadu that manages community properties and charitable endowments.",
       "SourceURL": "https://www.tn.gov.in/vppwb/documents/organisation/application_form_trustees.pdf",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841080137_49814",
@@ -5474,7 +5562,11 @@
       "Status": "New",
       "Notes": "An organization led by President T.R. Ramesh, active in the protection, advocacy, and administrative affairs of temple lands and properties in Tamil Nadu.",
       "SourceURL": "https://www.facebook.com/pgurus1/videos/t-r-ramesh-president-temple-worshipers-society-on-the-new-controversial-tn-g-o-o/2372689776392796",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841138089_6198",
@@ -5487,7 +5579,11 @@
       "Status": "New",
       "Notes": "An engineering consulting and implementation firm managing site identification, feasibility studies, and grid integration for EV infrastructure projects in India.",
       "SourceURL": "https://www.imarcengineering.com/blog/setting-up-ev-charging-infrastructure-in-india-a-step-by-step-guide",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841138089_71388",
@@ -5500,7 +5596,11 @@
       "Status": "New",
       "Notes": "A charging station management system and hardware procurement provider offering deployment services for enterprise and commercial networks, backed by Schneider Electric.",
       "SourceURL": "https://www.evconnect.com",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841162448_56867",
@@ -5513,7 +5613,11 @@
       "Status": "New",
       "Notes": "Logistics and postal company expanding its franchise network in South India with a focus on Master/Area Developer franchises.",
       "SourceURL": "https://www.linkedin.com/posts/indian-small-business-and-franchise-association_trackon-to-expand-franchise-network-in-south-activity-7308742578340798465-ADZK",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841162448_42826",
@@ -5526,7 +5630,11 @@
       "Status": "New",
       "Notes": "A major franchise development and consulting firm promoting expansion opportunities across various business brands.",
       "SourceURL": "https://www.facebook.com/franchiseindiabrandslimited/posts/want-to-start-your-own-businessmeet-today-with-top-10-popular-franchise-opportun/3974733119221936",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841162448_20232",
@@ -5539,7 +5647,11 @@
       "Status": "New",
       "Notes": "A consulting agency offering scalable franchise growth systems and expansion strategy for businesses in Chennai and wider India.",
       "SourceURL": "https://strategizer.in/franchise-expansion-strategy-for-businesses",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783841190121_71712",
@@ -5552,7 +5664,11 @@
       "Status": "New",
       "Notes": "Local government administrative body within the Madurai district revenue department framework.",
       "SourceURL": "https://www.facebook.com/Maduraikarainga/posts/madurai-phone-bookrevenue-department-office-residence-collector-per2531110-25322/177890512372484",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-12T11:59:23.893Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783841209350_73180",
@@ -5565,7 +5681,11 @@
       "Status": "New",
       "Notes": "A state government-backed institution that formed the Tamil Nadu Startup and Innovation Mission (TANSIM) to implement policies and establish startup hubs and supporting infrastructure across Tamil Nadu.",
       "SourceURL": "https://www.startupindia.gov.in/srf/portal/reports/Tamil_Nadu_State_Report_26072020.pdf",
-      "DateAdded": "2026-07-12"
+      "DateAdded": "2026-07-12",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
