@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-12T07:26:53.351Z",
-    "lastRunAdded": 14,
-    "totalCompanies": 211
+    "lastRun": "2026-07-13T02:36:08.535Z",
+    "lastRunAdded": 8,
+    "totalCompanies": 219
   },
   "companies": [
     {
@@ -5686,6 +5686,110 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "id": "auto_1783909935526_80102",
+      "Company": "Unspecified South Indian Restaurant Franchise",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+91 9909425729",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An unnamed South Indian restaurant franchise actively advertising franchise and expansion opportunities in the Madurai region.",
+      "SourceURL": "https://www.instagram.com/reel/DYqwk4EIT5M",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783909935526_22578",
+      "Company": "Madurai Kitchen",
+      "Category": "Restaurants & Food Courts",
+      "Website": "https://maduraikitchen.net/page/franchise",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A South Indian culinary brand with a strong customer base, actively expanding its footprint through franchising.",
+      "SourceURL": "https://maduraikitchen.net/page/franchise",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783909997686_51758",
+      "Company": "Velammal Multispeciality",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "6381720633",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A multispeciality healthcare provider expanding its specialized departments.",
+      "SourceURL": "https://www.facebook.com/velammal.hospital/posts/velammal-multispeciality-continues-to-expand-its-specialized-departments-providi/985211800316342",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783910066660_54650",
+      "Company": "Heritage Madurai",
+      "Category": "Wedding & Convention Halls",
+      "Website": "https://heritagemadurai.com/banquet-chettinadu-hall-in-madurai",
+      "Email": "Not public",
+      "Phone": "+(91) 452 2385455",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Features the Chettinadu Hall, a party and marriage hall in Madurai. GSTIN: 33AALCG4556B1ZT.",
+      "SourceURL": "https://heritagemadurai.com/banquet-chettinadu-hall-in-madurai",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783910090509_39083",
+      "Company": "ZyCharge",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "www.zycharge.in",
+      "Email": "Not public",
+      "Phone": "+91 81250 52356",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Provides options to set up EV charging stations and offers EV charging solutions.",
+      "SourceURL": "https://www.instagram.com/reel/DZpROLFs2Fb",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783910090509_71596",
+      "Company": "NHEV (National Highway for Electric Vehicles)",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://nhev.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A pilot project adopted by the Government of India in expansion mode of 5,500 km of e-highways on Bharatmala & Sagarmala routes.",
+      "SourceURL": "https://nhev.in/about-us-ev",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783910138663_688",
+      "Company": "Tummy Tales",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Madrastalkies022@gmail.com",
+      "Phone": "+91 99203 68564 / +91 9354922464",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Continental cuisine brand inviting franchise partners in Tamil Nadu.",
+      "SourceURL": "https://www.facebook.com/franchiseindiabrandslimited/posts/want-to-bring-delicious-continental-cuisine-to-your-citytummytales-tummytales_ch/914808954191437",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783910159244_90876",
+      "Company": "Tamil Nadu Tourism Development Corporation",
+      "Category": "Government / PPP Institutional",
+      "Website": "Not public",
+      "Email": "pe.ttdc@gmail.com",
+      "Phone": "044-25333555",
+      "ContactPerson": "Dr. V.P. Jeyaseelan I.A.S.",
+      "Status": "New",
+      "Notes": "TTDC actively invites bids from experienced entities to manage and operate hotels across the state as part of new tourism ecosystem investments. Dr. V.P. Jeyaseelan serves as the Managing Director of TTDC.",
+      "SourceURL": "https://www.facebook.com/ttdconline/posts/ttdc-invites-bids-from-eligible-and-experienced-entities-to-manage-and-operate-h/874605751596175",
+      "DateAdded": "2026-07-13"
     }
   ]
 }
