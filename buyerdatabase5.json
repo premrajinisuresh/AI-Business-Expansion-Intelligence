@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-13T02:36:08.535Z",
+    "lastRun": "2026-07-13T08:42:11.473Z",
     "lastRunAdded": 8,
-    "totalCompanies": 219
+    "totalCompanies": 227
   },
   "companies": [
     {
@@ -5789,6 +5789,110 @@
       "Status": "New",
       "Notes": "TTDC actively invites bids from experienced entities to manage and operate hotels across the state as part of new tourism ecosystem investments. Dr. V.P. Jeyaseelan serves as the Managing Director of TTDC.",
       "SourceURL": "https://www.facebook.com/ttdconline/posts/ttdc-invites-bids-from-eligible-and-experienced-entities-to-manage-and-operate-h/874605751596175",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931891677_88227",
+      "Company": "Devyani International Limited",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Operates multiple food courts across malls, airports, highways, and hospitals under the brand name 'The Food Street'.",
+      "SourceURL": "https://dil-rjcorp.com/brands-food-street",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931891677_30458",
+      "Company": "Kohinoor Group",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An enterprise operating food spots/restaurants across Coimbatore, including areas near the airport, Sulur, Singanallur, and Avinashi Road.",
+      "SourceURL": "https://www.instagram.com/reel/DPyzQdcEvoY",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931944996_50753",
+      "Company": "CRW Engineering Group, Inc.",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.crweng.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A full-service engineering firm with over 40 years of experience providing civil, mechanical, electrical, structural, geotechnical, and environmental engineering, land and aerial surveying, and mapping.",
+      "SourceURL": "https://www.crweng.com",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931944996_68377",
+      "Company": "DOWL",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.dowl.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A professional services firm providing civil and land development, water and environmental services, planning, engineering, and surveying.",
+      "SourceURL": "https://www.dowl.com",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931944996_18112",
+      "Company": "College of Engineering, University of Alaska Anchorage",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.uaa.alaska.edu/academics/college-of-engineering/index.cshtml",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An academic institution offering degrees in engineering, computer science, and project management.",
+      "SourceURL": "https://www.uaa.alaska.edu/academics/college-of-engineering/index.cshtml",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783931944996_87126",
+      "Company": "HDL Engineering Consultants, LLC",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.hdlalaska.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An engineering consulting firm specializing in civil, transportation, aviation, water and wastewater, and geotechnical engineering, alongside surveying and environmental services.",
+      "SourceURL": "https://www.hdlalaska.com",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783932023388_6499",
+      "Company": "Hotel Venkateswaraa",
+      "Category": "Wedding & Convention Halls",
+      "Website": "https://hotelvenkateswaraa.com/party-hall",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Located at 2/2, TPK Main Road, Madurai. Features an air-conditioned marriage hall with a capacity of 400-500 guests, a meeting hall for 250-300 guests, and a party hall.",
+      "SourceURL": "https://hotelvenkateswaraa.com/party-hall",
+      "DateAdded": "2026-07-13"
+    },
+    {
+      "id": "auto_1783932054968_61144",
+      "Company": "Relux Electric",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://www.reluxelectric.com",
+      "Email": "enquiry@reluxelectric.com",
+      "Phone": "+919884866993",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Partnered with Tamil Nadu Green Energy Corporation to establish 500 EV charging stations across Tamil Nadu. Actively rolling out 60kW DC fast charging stations.",
+      "SourceURL": "https://www.instagram.com/p/DPBmSlPD0KE",
       "DateAdded": "2026-07-13"
     }
   ]
