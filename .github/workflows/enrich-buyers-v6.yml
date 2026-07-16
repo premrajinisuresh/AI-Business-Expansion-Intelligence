@@ -1,0 +1,44 @@
+
+name: Enrich Buyers V6
+
+on:
+  schedule:
+    # 23:13 UTC = 4:43 AM IST daily. Runs about 1.5 hours after
+    # the Search workflow (3:17 AM IST) so that night's new
+    # companies already exist in the database before enriching,
+    # and finishes well before Send Emails (9:45 AM IST).
+    - cron: "13 23 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  enrich-buyers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install axios cheerio
+
+      - name: Run enrichment
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/enrich-buyers-v6.mjs
+
+      - name: Commit updated database
+        run: |
+          git config user.name "buyer-finder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add buyerdatabase5.json
+          git diff --quiet --cached || git commit -m "Enriched buyer database"
+          git push
