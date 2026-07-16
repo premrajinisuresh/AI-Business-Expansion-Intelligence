@@ -1,0 +1,31 @@
+name: Cleanup Buyers V6
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-buyers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run cleanup (blank out absurd values)
+        run: node scripts/cleanup-buyers-v6.mjs
+
+      - name: Commit updated database
+        run: |
+          git config user.name "buyer-finder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add buyerdatabase5.json
+          git diff --quiet --cached || git commit -m "Cleanup: cleared absurd values"
+          git push
