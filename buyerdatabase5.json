@@ -2252,10 +2252,10 @@
       "City": "",
       "State": "",
       "PIN": "226010",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:19.123Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416332312_57582",
@@ -4939,10 +4939,10 @@
       "Notes": "An established healthcare provider operating since 1995, offering comprehensive medical services.",
       "SourceURL": "https://healthcarehospital.in",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:22.405Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://healthcarehospital.in/#about",
       "Mobile": "+919003561406",
       "WhatsApp": "919003561406, 9003561406",
@@ -4969,10 +4969,10 @@
       "Notes": "An aviation and hospitality management college in Madurai operating for over 12 years, offering undergraduate, postgraduate, and diploma programs.",
       "SourceURL": "https://bostoncolleges.in",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:26.493Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://bostoncolleges.in/about-us/",
       "Mobile": "8144043222, +918144043222, 08144043222, 9776482582, 9894506397",
       "WhatsApp": "918144043222",
@@ -4999,10 +4999,10 @@
       "Notes": "An educational trust that has been active in Madurai for seventy-five years, running several institutions ranging from Nursery to Engineering (Mangayarkarasi College of Engineering).",
       "SourceURL": "https://mce-madurai.ac.in",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:30.388Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://mce-madurai.ac.in/about/",
       "Mobile": "",
       "WhatsApp": "",
@@ -5029,10 +5029,10 @@
       "Notes": "Society running the Annai Fathima College of Arts & Science and the Annai Fathima College of Education, dedicated to serving rural community students in South Tamil Nadu.",
       "SourceURL": "http://annaifathimacollege.edu.in",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:34.069Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "http://annaifathimacollege.edu.in/about-us/",
       "Mobile": "7305228005, 6783280349",
       "WhatsApp": "",
@@ -5089,10 +5089,10 @@
       "Notes": "A luxury hotel and heritage resort in Kochadai, Madurai, offering premium room and banquet facilities. Operated under Grand Luxe Hotels (Coorg) Private Limited.",
       "SourceURL": "https://heritagemadurai.com/contact",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:37.870Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://heritagemadurai.com/about-us/",
       "Mobile": "+919003542786, +919600996089, +917550243146, 9600996089",
       "WhatsApp": "919600996089",
@@ -5299,10 +5299,10 @@
       "Notes": "A franchise consulting and planning service provider that assists businesses with expansion, franchise design, and client acquisition in Tier 2 and Tier 3 cities.",
       "SourceURL": "https://www.sparkleminds.com/2025/08/15/expand-franchise-businesses",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:41.070Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://www.sparkleminds.com/about-us/",
       "Mobile": "+919844443365, +919844445777, +919844443200, +919844441300",
       "WhatsApp": "",
@@ -5329,10 +5329,10 @@
       "Notes": "A rapidly growing food and beverage franchise brand actively targeting strategic expansion and market penetration in Tier 2 and Tier 3 cities.",
       "SourceURL": "https://www.chaisuttabarindia.com/blog/franchise-market",
       "DateAdded": "2026-07-10",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:44.615Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://www.chaisuttabarindia.com/about/",
       "Mobile": "9565217391, 7258016625, 8695074849, +916262300088, +916262300031",
       "WhatsApp": "916262300088",
@@ -5539,10 +5539,10 @@
       "Notes": "The educational trust that runs Latha Mathavan Engineering College. Highly relevant prospect as their current campus is already established at Alagar Kovil, near Madurai.",
       "SourceURL": "https://www.lathamathavan.edu.in/engineering",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:48.117Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "",
       "Mobile": "9099350177, 9942903931, 9942903932, 9965503936",
       "WhatsApp": "",
@@ -5569,10 +5569,10 @@
       "Notes": "A global platform and partnership network connecting Non-Resident Indians (NRIs) to investment opportunities in India across real estate, education, hospitality, and business.",
       "SourceURL": "https://in.linkedin.com/company/nrione",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:51.653Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://nrione.in/#about",
       "Mobile": "9699872565, 9986290007, +919986290007",
       "WhatsApp": "",
@@ -5599,10 +5599,10 @@
       "Notes": "Located at TPK Main Road, Madurai. Features a fully air-conditioned marriage hall with a capacity of 400-500 pax, along with dedicated meeting and party halls.",
       "SourceURL": "https://hotelvenkateswaraa.com/party-hall",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:55.183Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://hotelvenkateswaraa.com/about.html",
       "Mobile": "8903163444, 8903173444, +918903163444, +918903183444, 8903183444",
       "WhatsApp": "918903163444",
@@ -5719,10 +5719,10 @@
       "Notes": "A government-supported pilot project currently in expansion mode to build 5,500 km of e-highways with world-class charging stations on key routes.",
       "SourceURL": "https://nhev.in/about-us-ev",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:30:58.477Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://nhev.in/about-us-ev/",
       "Mobile": "9444297046, 9669861738, +919910226499, 6791992186",
       "WhatsApp": "",
@@ -6049,10 +6049,10 @@
       "Notes": "Located at 9, 10 Valluvar North Street, Jaihindpuram, Madurai – 625011.",
       "SourceURL": "https://www.instagram.com/p/DW9Q38djVst",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:01.870Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://www.tacticshealthcare.com/about.php",
       "Mobile": "+918778799585",
       "WhatsApp": "",
@@ -6139,10 +6139,10 @@
       "Notes": "An engineering consulting and implementation firm managing site identification, feasibility studies, and grid integration for EV infrastructure projects in India.",
       "SourceURL": "https://www.imarcengineering.com/blog/setting-up-ev-charging-infrastructure-in-india-a-step-by-step-guide",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:05.165Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://www.imarcengineering.com/services/location-analysis-and-site-selection",
       "Mobile": "",
       "WhatsApp": "",
@@ -6169,10 +6169,10 @@
       "Notes": "A charging station management system and hardware procurement provider offering deployment services for enterprise and commercial networks, backed by Schneider Electric.",
       "SourceURL": "https://www.evconnect.com",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:08.454Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://www.evconnect.com/legal/privacy-policy/",
       "Mobile": "8668167584",
       "WhatsApp": "",
@@ -6229,10 +6229,10 @@
       "Notes": "A major franchise development and consulting firm promoting expansion opportunities across various business brands.",
       "SourceURL": "https://www.facebook.com/franchiseindiabrandslimited/posts/want-to-start-your-own-businessmeet-today-with-top-10-popular-franchise-opportun/3974733119221936",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:11.840Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://franchisetrade.in/contactus/",
       "Mobile": "6666666667, 9354922464, 9209820099, +919354922464, 8448421566",
       "WhatsApp": "",
@@ -6259,10 +6259,10 @@
       "Notes": "A consulting agency offering scalable franchise growth systems and expansion strategy for businesses in Chennai and wider India.",
       "SourceURL": "https://strategizer.in/franchise-expansion-strategy-for-businesses",
       "DateAdded": "2026-07-12",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:16.090Z",
+      "EmailStatus": "Sent",
+      "LastError": "",
       "ContactPage": "https://strategizer.in/about-us/",
       "Mobile": "9094142366",
       "WhatsApp": "",
@@ -6361,7 +6361,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783909935526_22578",
@@ -6387,7 +6391,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783909997686_51758",
@@ -6413,7 +6421,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783910066660_54650",
@@ -6439,7 +6451,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/heritagemadurai/?hl=en",
       "X": "",
-      "YouTube": "https://www.youtube.com/@heritagemadurai3982"
+      "YouTube": "https://www.youtube.com/@heritagemadurai3982",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:20.538Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783910090509_39083",
@@ -6465,7 +6481,11 @@
       "LinkedIn": "https://www.linkedin.com/in/zycharge-energies-874a8b412?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
       "Instagram": "https://www.instagram.com/zycharge.energies?igsh=bjhodXV2d3BiOTR5&utm_source=qr",
       "X": "",
-      "YouTube": "https://youtube.com/@zycharge?si=1zPQb4jzWjcIW9F7"
+      "YouTube": "https://youtube.com/@zycharge?si=1zPQb4jzWjcIW9F7",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:24.058Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783910090509_71596",
@@ -6491,7 +6511,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:27.239Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783910138663_688",
@@ -6517,7 +6541,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:30.422Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783910159244_90876",
@@ -6543,7 +6571,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:33.933Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783931891677_88227",
@@ -6569,7 +6601,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783931891677_30458",
@@ -6595,7 +6631,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783931944996_50753",
@@ -6621,7 +6661,11 @@
       "LinkedIn": "https://www.linkedin.com/company/crw-engineering-group-llc",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:37.180Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783931944996_68377",
@@ -6647,7 +6691,11 @@
       "LinkedIn": "https://www.linkedin.com/company/dowl",
       "Instagram": "https://instagram.com/dowlengineers",
       "X": "https://twitter.com/DOWLengineers",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:40.371Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783931944996_18112",
@@ -6673,7 +6721,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/uaaengineering/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UCpCEt2XDUwfeglXS8FPP1wQ"
+      "YouTube": "https://www.youtube.com/channel/UCpCEt2XDUwfeglXS8FPP1wQ",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:43.685Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783931944996_87126",
@@ -6699,7 +6751,11 @@
       "LinkedIn": "https://www.linkedin.com/company/hdlengineering",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:46.897Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783932023388_6499",
@@ -6725,7 +6781,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:50.045Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783932054968_61144",
@@ -6751,7 +6811,11 @@
       "LinkedIn": "https://www.linkedin.com/company/reluxelectric/",
       "Instagram": "https://www.instagram.com/reluxelectric/",
       "X": "https://x.com/reluxelectric",
-      "YouTube": "https://www.youtube.com/@reluxelectric7550"
+      "YouTube": "https://www.youtube.com/@reluxelectric7550",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:53.277Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783996344326_20714",
@@ -6777,7 +6841,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996344326_62988",
@@ -6803,7 +6871,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996379434_60218",
@@ -6829,7 +6901,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/visvas_promoters_madurai/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@visvaspromoters"
+      "YouTube": "https://www.youtube.com/@visvaspromoters",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996379434_791",
@@ -6855,7 +6931,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/gpr_associates/",
       "X": "https://x.com/Gpr_Associates",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:31:56.632Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783996458935_79494",
@@ -6881,7 +6961,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996458935_73654",
@@ -6907,7 +6991,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:00.344Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783996458935_59006",
@@ -6933,7 +7021,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996458935_93885",
@@ -6959,7 +7051,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996458935_44309",
@@ -6985,7 +7081,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996594261_13359",
@@ -7011,7 +7111,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996594261_90661",
@@ -7037,7 +7141,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/youtube/",
       "X": "https://x.com/YouTube",
-      "YouTube": "https://www.youtube.com/about/"
+      "YouTube": "https://www.youtube.com/about/",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:03.581Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783996638438_63719",
@@ -7063,7 +7171,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996638438_64866",
@@ -7089,7 +7201,11 @@
       "LinkedIn": "https://www.linkedin.com/company/kazam-ev/",
       "Instagram": "https://www.instagram.com/kazam.energy/?igsh=MWIxdXQ1ZGViNTh0dw%3D%3D",
       "X": "https://x.com/KazamEnergy",
-      "YouTube": "https://www.youtube.com/@KazamEV"
+      "YouTube": "https://www.youtube.com/@KazamEV",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:07.374Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783996638438_34331",
@@ -7115,7 +7231,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996682700_97943",
@@ -7141,7 +7261,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/mducollector",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996682700_81369",
@@ -7167,7 +7291,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/mducollector",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783996682700_29599",
@@ -7193,7 +7321,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784008915345_15618",
@@ -7219,7 +7351,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/ammanrestaurantmadurai/",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:11.718Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784008915345_48344",
@@ -7245,7 +7381,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784008973168_92128",
@@ -7271,7 +7411,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784008973168_48960",
@@ -7297,7 +7441,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:15.140Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784008973168_67464",
@@ -7323,7 +7471,11 @@
       "LinkedIn": "https://www.linkedin.com/in/national-college-madurai-b7520117b/",
       "Instagram": "https://www.instagram.com/nimsmadurai/",
       "X": "https://x.com/MaduraiNims",
-      "YouTube": "https://www.youtube.com/@NationalCollegeMadurai"
+      "YouTube": "https://www.youtube.com/@NationalCollegeMadurai",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:18.332Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784008973168_27945",
@@ -7349,7 +7501,11 @@
       "LinkedIn": "https://www.linkedin.com/company/delhi-public-school-fatehpur/",
       "Instagram": "https://www.instagram.com/kricollege/",
       "X": "",
-      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik"
+      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784009034855_55273",
@@ -7375,7 +7531,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/mducollector",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784009034855_58485",
@@ -7401,7 +7561,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/mducollector",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082712596_11992",
@@ -7427,7 +7591,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082752697_52252",
@@ -7453,7 +7621,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082777100_58725",
@@ -7479,7 +7651,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/boston_aviation_college/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@BostonAviationCollegeSince2012"
+      "YouTube": "https://www.youtube.com/@BostonAviationCollegeSince2012",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:21.500Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784082777100_44453",
@@ -7505,7 +7681,11 @@
       "LinkedIn": "https://www.linkedin.com/company/delhi-public-school-fatehpur/",
       "Instagram": "https://www.instagram.com/kricollege/",
       "X": "",
-      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik"
+      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082777100_21714",
@@ -7531,7 +7711,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:24.621Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784082857156_66903",
@@ -7557,7 +7741,11 @@
       "LinkedIn": "https://in.linkedin.com/company/theresidencyhotels",
       "Instagram": "https://www.instagram.com/residencyhotels/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UCg4i-zbPgblzZKGv89TXzPQ"
+      "YouTube": "https://www.youtube.com/channel/UCg4i-zbPgblzZKGv89TXzPQ",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:27.775Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784082888483_19037",
@@ -7583,7 +7771,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082888483_82177",
@@ -7609,7 +7801,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082906495_33953",
@@ -7635,7 +7831,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:30.943Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784082932511_94620",
@@ -7661,7 +7861,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_10266",
@@ -7687,7 +7891,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_66794",
@@ -7713,7 +7921,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_16980",
@@ -7739,7 +7951,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_55810",
@@ -7765,7 +7981,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_20958",
@@ -7791,7 +8011,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784082932511_2416",
@@ -7817,7 +8041,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096815251_90639",
@@ -7843,7 +8071,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096815251_88126",
@@ -7869,7 +8101,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096815251_81179",
@@ -7895,7 +8131,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096815251_85081",
@@ -7921,7 +8161,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096815251_78693",
@@ -7947,7 +8191,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096851706_19939",
@@ -7973,7 +8221,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/infinxhealthcare/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@InfinxHealthcare"
+      "YouTube": "https://www.youtube.com/@InfinxHealthcare",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096851706_1208",
@@ -7999,7 +8251,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:34.220Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784096851706_90179",
@@ -8025,7 +8281,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096871928_92242",
@@ -8051,7 +8311,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/AlfaaIHMCT",
-      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA"
+      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:37.837Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784096871928_88393",
@@ -8077,7 +8341,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096871928_56614",
@@ -8103,7 +8371,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/annacolleges?utm_source=qr&igsh=MW40bmx2OXN4MHZvNg==",
       "X": "https://x.com/whatsapp",
-      "YouTube": "https://youtube.com/@annacolleges?si=aBfLSkJjLV5FzHTG"
+      "YouTube": "https://youtube.com/@annacolleges?si=aBfLSkJjLV5FzHTG",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:41.055Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784096871928_74063",
@@ -8129,7 +8401,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096889832_47956",
@@ -8155,7 +8431,11 @@
       "LinkedIn": "https://www.linkedin.com/company/dra-homes/?originalSubdomain=in",
       "Instagram": "https://www.instagram.com/drahomesindia/",
       "X": "https://twitter.com/dra_homes",
-      "YouTube": "https://www.youtube.com/channel/UCmvJKSyT6jeO6haBR2-fW8Q"
+      "YouTube": "https://www.youtube.com/channel/UCmvJKSyT6jeO6haBR2-fW8Q",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096923324_60892",
@@ -8181,7 +8461,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096923324_45591",
@@ -8207,7 +8491,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096923324_48483",
@@ -8233,7 +8521,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://x.com/whatsapp",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:44.291Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784096976807_78026",
@@ -8259,7 +8551,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:47.476Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784096976807_35565",
@@ -8285,7 +8581,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169131915_91227",
@@ -8311,7 +8611,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169131915_73822",
@@ -8337,7 +8641,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169167495_78896",
@@ -8363,7 +8671,11 @@
       "LinkedIn": "https://www.linkedin.com/company/devyani-international-limited/",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:52.434Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169167495_29582",
@@ -8389,7 +8701,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/templecityfoodproducts?igsh=MTBpMTh0bDFzdmFscA==",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:55.661Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169206176_78921",
@@ -8415,7 +8731,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169206176_87945",
@@ -8441,7 +8761,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169206176_3594",
@@ -8467,7 +8791,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169260927_67555",
@@ -8493,7 +8821,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169260927_17446",
@@ -8519,7 +8851,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169288769_4903",
@@ -8545,7 +8881,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169288769_29531",
@@ -8571,7 +8911,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nri-na/",
       "Instagram": "",
       "X": "https://x.com/NRINorthAmerica",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:32:58.805Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169288769_93858",
@@ -8597,7 +8941,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:02.084Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169402741_45608",
@@ -8623,7 +8971,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169402741_19220",
@@ -8649,7 +9001,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784169402741_33983",
@@ -8675,7 +9031,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:05.350Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169402741_63020",
@@ -8701,7 +9061,11 @@
       "LinkedIn": "https://www.linkedin.com/company/imarc-group",
       "Instagram": "",
       "X": "https://x.com/ImarcServices",
-      "YouTube": "https://www.youtube.com/@Imarcgroup"
+      "YouTube": "https://www.youtube.com/@Imarcgroup",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:08.468Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169450779_26047",
@@ -8727,7 +9091,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:11.799Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169450779_99486",
@@ -8753,7 +9121,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:14.927Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784169450779_83382",
@@ -8779,7 +9151,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:18.153Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784183577517_64904",
@@ -8805,7 +9181,11 @@
       "LinkedIn": "https://www.linkedin.com/company/hotel-temple-city/about/",
       "Instagram": "https://www.instagram.com/hoteltemplecity/",
       "X": "",
-      "YouTube": "https://youtu.be/_rZy08Hv7ws"
+      "YouTube": "https://youtu.be/_rZy08Hv7ws",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183577517_69475",
@@ -8831,7 +9211,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183685788_44644",
@@ -8857,7 +9241,11 @@
       "LinkedIn": "https://www.linkedin.com/company/washington-health",
       "Instagram": "https://www.instagram.com/washington_health/",
       "X": "https://x.com/wash_health",
-      "YouTube": "https://www.youtube.com/user/WHHSInHealth"
+      "YouTube": "https://www.youtube.com/user/WHHSInHealth",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:21.387Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784183685788_28581",
@@ -8883,7 +9271,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183685788_80456",
@@ -8909,7 +9301,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183685788_40017",
@@ -8935,7 +9331,11 @@
       "LinkedIn": "http://linkedin.com/company/jacksonhospital",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183685788_67387",
@@ -8961,7 +9361,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183685788_18233",
@@ -8987,7 +9391,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://x.com/sunriselasvegas",
-      "YouTube": "https://www.youtube.com/user/sunriselasvegas"
+      "YouTube": "https://www.youtube.com/user/sunriselasvegas",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183720831_15153",
@@ -9013,7 +9421,11 @@
       "LinkedIn": "https://www.linkedin.com/company/appaswamy-real-estates-ltd/",
       "Instagram": "https://www.instagram.com/appaswamy_realestates/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UC6WjN0hY8g84ZMNdyIZThTg"
+      "YouTube": "https://www.youtube.com/channel/UC6WjN0hY8g84ZMNdyIZThTg",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:24.687Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784183720831_38832",
@@ -9039,7 +9451,11 @@
       "LinkedIn": "https://www.linkedin.com/company/i5-housing-properties/",
       "Instagram": "https://www.instagram.com/i5housingpropertytrend/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@i5housingproperties"
+      "YouTube": "https://www.youtube.com/@i5housingproperties",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:27.899Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784183760862_99306",
@@ -9065,7 +9481,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183797321_83275",
@@ -9091,7 +9511,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:31.032Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784183797321_97833",
@@ -9117,7 +9541,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784183797321_90387",
@@ -9143,7 +9571,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:35.032Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255483026_65989",
@@ -9169,7 +9601,11 @@
       "LinkedIn": "https://www.linkedin.com/company/fortune-hotels/",
       "Instagram": "https://www.instagram.com/fortunehotelsindia/",
       "X": "https://x.com/ITCHotelscares",
-      "YouTube": "https://www.youtube.com/user/itchotels"
+      "YouTube": "https://www.youtube.com/user/itchotels",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:38.299Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255483026_87473",
@@ -9195,7 +9631,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:41.509Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255483026_45723",
@@ -9221,7 +9661,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255504438_76448",
@@ -9247,7 +9691,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/ammanrestaurantmadurai/",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:44.666Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255504438_23528",
@@ -9273,7 +9721,11 @@
       "LinkedIn": "https://www.linkedin.com/company/maduraifamousjigarthandallp/",
       "Instagram": "https://www.instagram.com/maduraifamousjigarthandallp/",
       "X": "https://twitter.com/mfjllp1977",
-      "YouTube": "https://www.youtube.com/@Maduraifamousjigarthandallp"
+      "YouTube": "https://www.youtube.com/@Maduraifamousjigarthandallp",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:47.818Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255504438_72449",
@@ -9299,7 +9751,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255504438_10077",
@@ -9325,7 +9781,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255525968_50435",
@@ -9351,7 +9811,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/visvas_promoters_madurai/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@visvaspromoters"
+      "YouTube": "https://www.youtube.com/@visvaspromoters",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255525969_46320",
@@ -9377,7 +9841,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:51.384Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255525969_47619",
@@ -9403,7 +9871,11 @@
       "LinkedIn": "https://www.linkedin.com/company/jayabharath-homes/",
       "Instagram": "https://www.instagram.com/jayabharathhomes/",
       "X": "https://x.com/jb_jayabharath",
-      "YouTube": "https://www.youtube.com/@jayabharathhomesbestbuilders"
+      "YouTube": "https://www.youtube.com/@jayabharathhomesbestbuilders",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:54.559Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255525969_21876",
@@ -9429,7 +9901,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255564914_1499",
@@ -9455,7 +9931,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/velammal_hospital/",
       "X": "",
-      "YouTube": "https://www.youtube.com/c/VelammalHospital"
+      "YouTube": "https://www.youtube.com/c/VelammalHospital",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:33:57.924Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255564914_37475",
@@ -9481,7 +9961,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:01.105Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255602561_98520",
@@ -9507,7 +9991,11 @@
       "LinkedIn": "https://www.linkedin.com/company/gesto-hotel-management-college-madurai/",
       "Instagram": "https://www.instagram.com/gestocollegemadurai/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UCa0cjbjhdwwJVHNdFF8aocg"
+      "YouTube": "https://www.youtube.com/channel/UCa0cjbjhdwwJVHNdFF8aocg",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:04.615Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255602561_75574",
@@ -9533,7 +10021,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255602561_60417",
@@ -9559,7 +10051,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255634831_86373",
@@ -9585,7 +10081,11 @@
       "LinkedIn": "https://www.linkedin.com/company/alamo-xsreal-private-limited/?originalSubdomain=in",
       "Instagram": "https://www.instagram.com/alamoxsreal/",
       "X": "",
-      "YouTube": "https://youtu.be/kj6VLQChpTo?si=4uleFcXpIGrB90jq"
+      "YouTube": "https://youtu.be/kj6VLQChpTo?si=4uleFcXpIGrB90jq",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:07.841Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255634831_2785",
@@ -9611,7 +10111,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255634831_66472",
@@ -9637,7 +10141,11 @@
       "LinkedIn": "https://www.linkedin.com/company/appaswamy-real-estates-ltd/",
       "Instagram": "https://www.instagram.com/appaswamy_realestates/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UC6WjN0hY8g84ZMNdyIZThTg"
+      "YouTube": "https://www.youtube.com/channel/UC6WjN0hY8g84ZMNdyIZThTg",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:11.111Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255666422_24504",
@@ -9663,7 +10171,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255666422_70938",
@@ -9689,7 +10201,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255666422_91674",
@@ -9715,7 +10231,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255666422_67210",
@@ -9741,7 +10261,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255666422_49523",
@@ -9767,7 +10291,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255724044_27055",
@@ -9793,7 +10321,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:14.247Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255724044_72354",
@@ -9819,7 +10351,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255724044_88490",
@@ -9845,7 +10381,11 @@
       "LinkedIn": "https://www.linkedin.com/company/boltearth",
       "Instagram": "https://www.instagram.com/bolt.earth/",
       "X": "https://x.com/bolt_earth",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:17.452Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255724044_88630",
@@ -9871,7 +10411,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255724045_896",
@@ -9897,7 +10441,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255724045_84273",
@@ -9923,7 +10471,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255724045_68840",
@@ -9949,7 +10501,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_16261",
@@ -9975,7 +10531,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_83301",
@@ -10001,7 +10561,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_21843",
@@ -10027,7 +10591,11 @@
       "LinkedIn": "https://www.linkedin.com/company/action-dna/",
       "Instagram": "https://www.instagram.com/actiondna/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@action-dna"
+      "YouTube": "https://www.youtube.com/@action-dna",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:20.743Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784255754871_55760",
@@ -10053,7 +10621,11 @@
       "LinkedIn": "",
       "Instagram": "https://instagram.com/mycleaners.in?igshid=thbm0hwxi4uf",
       "X": "https://twitter.com/MycleanersIn?s=09",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_80776",
@@ -10079,7 +10651,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_11078",
@@ -10105,7 +10681,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_93816",
@@ -10131,7 +10711,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_66309",
@@ -10157,7 +10741,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_99815",
@@ -10183,7 +10771,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_33904",
@@ -10209,7 +10801,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_92448",
@@ -10235,7 +10831,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255754871_93363",
@@ -10261,7 +10861,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255799633_22424",
@@ -10287,7 +10891,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255799633_13477",
@@ -10313,7 +10921,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255799633_58459",
@@ -10339,7 +10951,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269560716_55707",
@@ -10365,7 +10981,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/PoppysHotels",
-      "YouTube": "https://www.youtube.com/channel/UCEpvKsPxJDdchZV4YY4koRg"
+      "YouTube": "https://www.youtube.com/channel/UCEpvKsPxJDdchZV4YY4koRg",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:23.905Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269579627_19225",
@@ -10391,7 +11011,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269579627_52472",
@@ -10417,7 +11041,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": "https://www.youtube.com/@regionaltoglobal"
+      "YouTube": "https://www.youtube.com/@regionaltoglobal",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:27.085Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269616907_81567",
@@ -10443,7 +11071,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269616907_15629",
@@ -10469,7 +11101,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269616907_76629",
@@ -10495,7 +11131,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269616907_48867",
@@ -10521,7 +11161,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269637279_30658",
@@ -10547,7 +11191,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/oriental_madurai/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UCws0suLrixEt9qKYaT8JcFA/videos"
+      "YouTube": "https://www.youtube.com/channel/UCws0suLrixEt9qKYaT8JcFA/videos",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:30.200Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269637279_72079",
@@ -10573,7 +11221,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/AlfaaIHMCT",
-      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA"
+      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:33.499Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269637279_96179",
@@ -10599,7 +11251,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:36.841Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269637279_13769",
@@ -10625,7 +11281,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": "https://www.youtube.com/@SLCScollegeMadurai"
+      "YouTube": "https://www.youtube.com/@SLCScollegeMadurai",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:40.142Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269661934_23403",
@@ -10651,7 +11311,11 @@
       "LinkedIn": "https://in.linkedin.com/in/honeyygroup",
       "Instagram": "",
       "X": "https://www.twitter.com/HoneyyGroup",
-      "YouTube": "https://www.youtube.com/honeyygroup"
+      "YouTube": "https://www.youtube.com/honeyygroup",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:43.696Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269661934_48604",
@@ -10677,7 +11341,11 @@
       "LinkedIn": "https://in.linkedin.com/company/hiranandani-communities",
       "Instagram": "https://www.instagram.com/hiranandanicommunities/",
       "X": "https://twitter.com/h_communities",
-      "YouTube": "https://www.youtube.com/channel/UCkLuy5XpqQlAIaFvJGgrOOA"
+      "YouTube": "https://www.youtube.com/channel/UCkLuy5XpqQlAIaFvJGgrOOA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-17T08:34:47.015Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784269678971_50720",
@@ -10703,7 +11371,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269678971_80971",
@@ -10729,7 +11401,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784269738623_29820",
@@ -10755,7 +11431,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
