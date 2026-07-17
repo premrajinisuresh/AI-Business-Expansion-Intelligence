@@ -1474,8 +1474,8 @@
       "PIN": "",
       "EmailSent": false,
       "EmailSentDate": "",
-      "EmailStatus": "",
-      "LastError": ""
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416223742_33272",
@@ -2254,8 +2254,8 @@
       "PIN": "226010",
       "EmailSent": false,
       "EmailSentDate": "",
-      "EmailStatus": "",
-      "LastError": ""
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1783416332312_57582",
@@ -8254,8 +8254,8 @@
       "YouTube": "",
       "EmailSent": false,
       "EmailSentDate": "",
-      "EmailStatus": "",
-      "LastError": ""
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784096851706_90179",
@@ -9694,8 +9694,8 @@
       "YouTube": "",
       "EmailSent": false,
       "EmailSentDate": "",
-      "EmailStatus": "",
-      "LastError": ""
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784255504438_23528",
