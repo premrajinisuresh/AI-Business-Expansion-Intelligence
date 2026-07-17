@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buyer Database v5 (Auto-Collected)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f2f3f5; color:#222; }
+  .wrap { max-width: 1000px; margin:0 auto; padding: 20px 16px 60px; }
+  .back { display:inline-block; margin-bottom:14px; color:#fff; background:#1d3557; padding:8px 16px; border-radius:20px; font-size:0.85rem; font-weight:600; text-decoration:none; }
+  h1 { font-size:1.3rem; color:#1d3557; margin:0 0 6px; }
+  .meta { font-size:0.8rem; color:#666; margin-bottom:16px; background:#fff; padding:10px 14px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:18px; }
+  .stats div { background:#fff; border-radius:12px; padding:12px 6px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+  .stats span.num { display:block; font-size:1.4rem; font-weight:800; color:#1d3557; }
+  .stats span.label { font-size:0.7rem; color:#666; }
+
+  .toolbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .toolbar select, .toolbar input { padding:8px 10px; border-radius:8px; border:1px solid #ccc; font-size:0.85rem; }
+  .toolbar input { flex:1; min-width:140px; }
+  .toolbar button { padding:8px 14px; border:none; border-radius:8px; background:#1d3557; color:#fff; font-weight:700; cursor:pointer; font-size:0.85rem; }
+  .toolbar button.export { background:#c9a84c; color:#111; }
+
+  .bf-cards { display:flex; flex-direction:column; gap:12px; }
+  .bf-lead-card { background:#fff; border-radius:12px; padding:14px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+  .bf-lead-head { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px; }
+  .bf-company { font-weight:800; color:#1d3557; font-size:1rem; }
+  .bf-cat { font-size:0.75rem; color:#888; margin-top:2px; }
+  .bf-status-select { padding:6px 8px; border-radius:8px; border:1px solid #ccc; font-size:0.75rem; flex-shrink:0; }
+
+  .bf-fields { display:flex; flex-direction:column; gap:4px; margin-bottom:10px; }
+  .bf-field { font-size:0.85rem; color:#333; word-break:break-word; }
+  .bf-field-label { font-weight:700; color:#1d3557; margin-right:4px; }
+  .bf-field a { color:#1d3557; text-decoration:underline; }
+  .bf-notes { font-size:0.78rem; color:#666; margin-top:2px; }
+  .bf-socials { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .bf-social { font-size:0.72rem; background:#eef2f7; color:#1d3557; padding:2px 8px; border-radius:8px; text-decoration:none; }
+
+  .bf-actions { display:flex; gap:8px; margin-bottom:8px; }
+  .bf-btn-wa, .bf-btn-email { flex:1; border:none; border-radius:9px; padding:10px; font-weight:800; font-size:0.85rem; cursor:pointer; }
+  .bf-btn-wa { background:#25D366; color:#fff; }
+  .bf-btn-email { background:#1d3557; color:#fff; }
+  .bf-no-contact { font-size:0.78rem; color:#999; font-style:italic; }
+  .bf-email-status { font-size:0.75rem; padding:4px 8px; border-radius:8px; display:inline-block; margin-bottom:8px; }
+  .bf-email-sent { background:#e3f7e8; color:#1a7a34; }
+  .bf-email-failed { background:#fdeaea; color:#a3251e; }
+
+  .bf-date { font-size:0.72rem; color:#999; }
+  .bf-empty { text-align:center; padding:24px; color:#999; background:#fff; border-radius:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html" class="back">← Back to site</a>
+  <h1>📊 Buyer Database v5 — Auto-Collected</h1>
+  <div class="meta" id="metaInfo">Loading...</div>
+
+  <div class="stats">
+    <div><span class="num" id="statTotal">0</span><span class="label">Total Leads</span></div>
+    <div><span class="num" id="statNew">0</span><span class="label">New</span></div>
+    <div><span class="num" id="statContacted">0</span><span class="label">Contacted</span></div>
+    <div><span class="num" id="statInterested">0</span><span class="label">Interested</span></div>
+  </div>
+
+  <div class="toolbar">
+    <select id="categoryFilter"><option value="">All Categories</option></select>
+    <select id="statusFilter">
+      <option value="">All Statuses</option>
+      <option value="New">New</option>
+      <option value="Contacted">Contacted</option>
+      <option value="Interested">Interested</option>
+      <option value="Not Interested">Not Interested</option>
+      <option value="Closed">Closed</option>
+    </select>
+    <input type="text" id="searchBox" placeholder="Search company or notes..." />
+    <button id="refreshBtn">🔄 Refresh</button>
+    <button id="exportBtn" class="export">⬇ Export CSV</button>
+  </div>
+
+  <div id="dbBody" class="bf-cards"></div>
+</div>
+<script src="buyerfinder5.js"></script>
+</body>
+</html>
