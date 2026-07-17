@@ -374,7 +374,7 @@ function extractGoogleMaps(html) {
     const $ = cheerio.load(html);
     const candidates = [];
 
-    $("a[href*='google.com/maps'], a[href*='maps.google'], a[href*='goo.gl/maps']").each(
+    $("a[href*='maps.app.goo.gl'], a[href*='google.com/maps/place'], a[href*='google.com/maps?q='], a[href*='google.com/maps'], a[href*='maps.google'], a[href*='goo.gl/maps']").each(
       (_, el) => {
         const href = $(el).attr("href");
         if (href) candidates.push(href);
@@ -387,8 +387,24 @@ function extractGoogleMaps(html) {
       }
     );
 
-    const clean = candidates.filter((url) => !looksLikeDirectionsJunk(url));
-    return clean.length > 0 ? clean[0] : "";
+const clean = candidates.filter((url) => !looksLikeDirectionsJunk(url));
+
+const priority = [
+  "maps.app.goo.gl",
+  "/maps/place/",
+  "/maps?q=",
+  "google.com/maps",
+  "maps.google",
+  "goo.gl/maps"
+];
+
+for (const type of priority) {
+  const found = clean.find(url => url.includes(type));
+  if (found) return found;
+}
+
+return clean.length ? clean[0] : "";
+    
   } catch {
     return "";
   }
