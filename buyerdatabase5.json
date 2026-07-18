@@ -11461,7 +11461,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341903984_4629",
@@ -11487,7 +11491,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341903984_18531",
@@ -11513,7 +11521,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341928982_99042",
@@ -11539,7 +11551,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341928983_45175",
@@ -11565,7 +11581,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341928983_99121",
@@ -11591,7 +11611,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341948854_15251",
@@ -11617,7 +11641,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341948854_97671",
@@ -11643,7 +11671,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341948854_66838",
@@ -11669,7 +11701,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341948854_20571",
@@ -11695,7 +11731,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341948854_4648",
@@ -11721,7 +11761,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784341973310_82863",
@@ -11731,7 +11775,7 @@
       "Email": "sacsmec@yahoo.com",
       "Phone": "+91 83000 76901",
       "ContactPerson": "Dr. S. Navaneetha Krishnan",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Engineering college in Madurai offering BE programs in CSE, Civil, EEE, and ECE. Located at East Marret St, Madurai. Potential buyer for campus expansion in the education corridor.",
       "SourceURL": "https://www.sacsmec.in",
       "DateAdded": "2026-07-18",
@@ -11747,7 +11791,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/whatsapp/?hl=en",
       "X": "https://x.com/whatsapp",
-      "YouTube": "https://www.youtube.com/channel/UCAuerig2N-RZWJT8x75V9yw"
+      "YouTube": "https://www.youtube.com/channel/UCAuerig2N-RZWJT8x75V9yw",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:12:37.461Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784341973311_13934",
@@ -11757,7 +11805,7 @@
       "Email": "nasicthm@gmail.com",
       "Phone": "0452-3194554",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 2008, affiliated to Madurai Kamaraj University and approved by NAAC.",
       "SourceURL": "https://www.tamilnaducolleges.org/tamil-nadu/catering-hotel-colleges-in-madurai-district/1",
       "DateAdded": "2026-07-18",
@@ -11773,7 +11821,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:12:42.370Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342005693_92676",
@@ -11783,7 +11835,7 @@
       "Email": "President.GNDCTrust@gmail.com",
       "Phone": "94374 50428",
       "ContactPerson": "President & Managing Trustee",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A religious and charitable trust based in Odisha, India, managing temple-related donations and activities.",
       "SourceURL": "https://gndctrust.org/appeal",
       "DateAdded": "2026-07-18",
@@ -11799,7 +11851,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:12:47.374Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342031121_73544",
@@ -11809,7 +11865,7 @@
       "Email": "info@dwarkapalace.in",
       "Phone": "+91 - 7708544422",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Luxury banquet hall, party hall, and convention center operator located in Madurai.",
       "SourceURL": "https://www.instagram.com/reel/C4Z9opTgJ_K?hl=en",
       "DateAdded": "2026-07-18",
@@ -11825,7 +11881,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/dwarkapalacemadurai/",
       "X": "https://twitter.com/Dwarkapalacemdu",
-      "YouTube": "https://www.youtube.com/@HotelDwarkapalace"
+      "YouTube": "https://www.youtube.com/@HotelDwarkapalace",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:12:51.998Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342031121_5854",
@@ -11835,7 +11895,7 @@
       "Email": "jp.menon@marriott.com",
       "Phone": "+91 82911 57360",
       "ContactPerson": "JP Menon",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Premium international brand hotel in Madurai with multiple banquet facilities. Email and mobile listed belong to the General Manager.",
       "SourceURL": "https://www.tripadvisor.in/HotelsList-Madurai-Hotels-With-Banquet-Hall-zfp19083051.html",
       "DateAdded": "2026-07-18",
@@ -11851,7 +11911,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:12:56.850Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342031121_63856",
@@ -11877,7 +11941,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342031121_56397",
@@ -11903,7 +11971,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342031121_96647",
@@ -11929,7 +12001,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342031121_59488",
@@ -11955,7 +12031,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342031121_99885",
@@ -11981,7 +12061,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342055578_75072",
@@ -11991,7 +12075,7 @@
       "Email": "contact.us@evflomobility.com",
       "Phone": "+91 22 22 693 747",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Comprehensive EV charging solutions provider in India. Offers fleet charging solutions and rapid DC boost chargers (150 - 350+ kW) suitable for busy highway corridors, petrol stations, and commercial centers.",
       "SourceURL": "https://evflomobility.com",
       "DateAdded": "2026-07-18",
@@ -12007,7 +12091,11 @@
       "LinkedIn": "https://www.linkedin.com/company/80350311/admin",
       "Instagram": "https://www.instagram.com/chargewithevflo/",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:00.913Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342055578_55019",
@@ -12033,7 +12121,11 @@
       "LinkedIn": "https://www.linkedin.com/company/statiqindia",
       "Instagram": "https://www.instagram.com/statiqindia/?hl=en",
       "X": "https://x.com/statiqindia",
-      "YouTube": "https://www.youtube.com/channel/UCEuc2952ISJVGtktSnCes9A"
+      "YouTube": "https://www.youtube.com/channel/UCEuc2952ISJVGtktSnCes9A",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342055578_57037",
@@ -12059,7 +12151,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342055578_39077",
@@ -12085,7 +12181,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342073481_17420",
@@ -12095,7 +12195,7 @@
       "Email": "info@mistyinfotech.com",
       "Phone": "+91 72670 60773",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Technology firm launching a nationwide franchise expansion initiative in India, specifically targeting Chennai and Tamil Nadu to establish up to 100 new franchise centers.",
       "SourceURL": "https://mistyinfotech.com/business-franchise-opportunity-in-chennai-join-indias-fast-growing-franchise-network",
       "DateAdded": "2026-07-18",
@@ -12111,7 +12211,11 @@
       "LinkedIn": "https://www.linkedin.com/company/misty-infotech/",
       "Instagram": "https://www.instagram.com/MistyInfotechIT/",
       "X": "https://twitter.com/MistyITServices",
-      "YouTube": "https://www.youtube.com/watch?v=GSC2hbMNATw"
+      "YouTube": "https://www.youtube.com/watch?v=GSC2hbMNATw",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:05.875Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342073481_79909",
@@ -12137,7 +12241,11 @@
       "LinkedIn": "https://www.linkedin.com/in/tandooriwala-5a810825a/",
       "Instagram": "https://www.instagram.com/food_franchise_pan_india/",
       "X": "https://twitter.com/ChefabdulsT",
-      "YouTube": "https://www.youtube.com/channel/UC_Vz_rJLCWlL3ufbQbQ3ulg"
+      "YouTube": "https://www.youtube.com/channel/UC_Vz_rJLCWlL3ufbQbQ3ulg",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342090349_67760",
@@ -12163,7 +12271,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/mducollector",
-      "YouTube": "https://www.youtube.com/embed/rfFvw1h3yho"
+      "YouTube": "https://www.youtube.com/embed/rfFvw1h3yho",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342090349_32010",
@@ -12173,7 +12285,7 @@
       "Email": "ttdc@vsnl.com",
       "Phone": "2536 7850",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "State-run corporation promoting tourism. They operate wayside amenities and hotels (like Hotel Tamil Nadu on Alagar Koil Road). Excellent candidate for expanding tourism infrastructure on this corridor.",
       "SourceURL": "https://www.tn.gov.in/rti/proactive/inftour/handbook_ttdc.pdf",
       "DateAdded": "2026-07-18",
@@ -12189,7 +12301,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:10.806Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784342114242_83851",
@@ -12215,7 +12331,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342114242_65532",
@@ -12241,7 +12361,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342114242_74614",
@@ -12267,7 +12391,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342114242_84984",
@@ -12293,7 +12421,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342114242_79261",
@@ -12319,7 +12451,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784342114242_49025",
@@ -12345,7 +12481,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354029192_16483",
@@ -12355,7 +12495,7 @@
       "Email": "pandiyan@fortunehotels.in",
       "Phone": "+91 452 2545678",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "An Indian hospitality brand under ITC Hotels. Currently operates the Fortune Pandiyan Hotel in Madurai. Highly relevant as a corporate group managing or acquiring upscale/mid-market properties in the region.",
       "SourceURL": "https://www.itchotels.com/in/en/fortunepandiyan-madurai",
       "DateAdded": "2026-07-18",
@@ -12371,7 +12511,11 @@
       "LinkedIn": "https://www.linkedin.com/company/fortune-hotels/",
       "Instagram": "https://www.instagram.com/fortunehotelsindia/",
       "X": "https://x.com/ITCHotelscares",
-      "YouTube": "https://www.youtube.com/user/itchotels"
+      "YouTube": "https://www.youtube.com/user/itchotels",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:15.860Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784354051830_46286",
@@ -12397,7 +12541,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354051830_20739",
@@ -12423,7 +12571,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354051830_91686",
@@ -12449,7 +12601,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354051830_86736",
@@ -12475,7 +12631,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354073266_91488",
@@ -12501,7 +12661,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784354119466_68700",
@@ -12511,7 +12675,7 @@
       "Email": "nasicthm@gmail.com",
       "Phone": "+91 452 - 2539107",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 2008, offers undergraduate, postgraduate, and certificate courses in Hotel Management and Catering Technology. Affiliated with Madurai Kamaraj University.",
       "SourceURL": "https://www.careerindia.com/colleges/nas-catering-and-hotel-management-college-madurai-tamil-nadu-cp12251",
       "DateAdded": "2026-07-18",
@@ -12527,7 +12691,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:20.598Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784354119466_54413",
@@ -12537,7 +12705,7 @@
       "Email": "info@alfaacollege.com",
       "Phone": "+91 9380466366",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 2004, offering hotel management and engineering programs. Approved by the Government of India and Tamil Nadu, affiliated with Alagappa University.",
       "SourceURL": "https://alfaacollege.com",
       "DateAdded": "2026-07-18",
@@ -12553,7 +12721,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/AlfaaIHMCT",
-      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA"
+      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:25.279Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784354205974_61988",
@@ -12563,7 +12735,7 @@
       "Email": "tech-team@nhev.in",
       "Phone": "011 41448326, 011 43009699",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A government-supported pilot program expanding e-highways in India (specifically highlighting corridors like Chennai-Trichy). Uses hybrid/direct purchase land acquisition modes for establishing wayside amenities and charging hubs.",
       "SourceURL": "https://nhev.in/about-us-ev",
       "DateAdded": "2026-07-18",
@@ -12579,7 +12751,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:30.412Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784354205974_86067",
@@ -12589,7 +12765,7 @@
       "Email": "corporate@tcil.com",
       "Phone": "+91-124-2381603",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Leading logistics and warehousing conglomerate in India. Developing logistics infrastructure and fleet electrification charging hubs across major corridors.",
       "SourceURL": "https://tcil.com/wp-content/uploads/2025/12/Electrifying-Logistics-Charging-Ahead-on-Indias-Green-Mobility-Journey.pdf",
       "DateAdded": "2026-07-18",
@@ -12605,7 +12781,11 @@
       "LinkedIn": "https://www.linkedin.com/company/transystem-logistics-international-pvt-ltd/",
       "Instagram": "https://www.instagram.com/tcilgroup/",
       "X": "https://twitter.com/TCILGroup",
-      "YouTube": "https://www.youtube.com/watch?v=hxx7mNUTPEs"
+      "YouTube": "https://www.youtube.com/watch?v=hxx7mNUTPEs",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-18T09:13:35.116Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     }
   ]
 }
