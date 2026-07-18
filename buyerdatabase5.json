@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-18T02:35:18.242Z",
-    "lastRunAdded": 35,
-    "totalCompanies": 416
+    "lastRun": "2026-07-18T05:57:27.077Z",
+    "lastRunAdded": 10,
+    "totalCompanies": 426
   },
   "companies": [
     {
@@ -12346,6 +12346,136 @@
       "Instagram": "",
       "X": "",
       "YouTube": ""
+    },
+    {
+      "id": "auto_1784354029192_16483",
+      "Company": "Fortune Park Hotels Ltd",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.itchotels.com/in/en/fortunepandiyan-madurai",
+      "Email": "pandiyan@fortunehotels.in",
+      "Phone": "+91 452 2545678",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "An Indian hospitality brand under ITC Hotels. Currently operates the Fortune Pandiyan Hotel in Madurai. Highly relevant as a corporate group managing or acquiring upscale/mid-market properties in the region.",
+      "SourceURL": "https://www.itchotels.com/in/en/fortunepandiyan-madurai",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354051830_46286",
+      "Company": "McDonald’s India",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Rapidly expanding its presence in Tamil Nadu, recently launching a multi-level restaurant in Madurai on Sakthi Velammal Street. Highly prospective buyer for prime corner plots on high-traffic highway corridors.",
+      "SourceURL": "https://www.deccanherald.com/business/companies/mcdonalds-india-strengthens-presence-in-tamil-nadu-with-new-restaurant-in-madurai-3478652",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354051830_20739",
+      "Company": "Bismi Food Court",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+919043212346",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Established local food court operator in Madurai (currently in SS Colony). Potential acquirer looking to expand their footprint with a drive-in or multi-cuisine highway food court.",
+      "SourceURL": "https://www.zomato.com/madurai/bismi-food-court-ss-colony",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354051830_91686",
+      "Company": "PizzaBoy - Wood Fired Bistro",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Chennai-headquartered restaurant brand actively expanding its footprint specifically in Madurai.",
+      "SourceURL": "https://www.smergers.com/fast-food-restaurant-franchise-opportunities-in-madurai/c26s412t11b",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354051830_86736",
+      "Company": "The UFO",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Bengaluru-based QSR brand actively expanding its footprint across Tamil Nadu, targeting regions with large student populations and high transit potential.",
+      "SourceURL": "https://www.smergers.com/fast-food-restaurant-franchise-opportunities-in-madurai/c26s412t11b",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354073266_91488",
+      "Company": "Vaishali Traders",
+      "Category": "Local Madurai Investors & Business Families",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A local trading enterprise operating in Madurai. Trading houses and family-owned distribution businesses in Tamil Nadu are classic cash-rich candidates for acquiring prime corner plot highway frontage for warehouses, showrooms, or investment holding.",
+      "SourceURL": "https://dir.indiamart.com/madurai/commercial-land.html",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354119466_68700",
+      "Company": "NAS Catering and Hotel Management College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "http://www.nascateringinstitute.com",
+      "Email": "nasicthm@gmail.com",
+      "Phone": "+91 452 - 2539107",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Established in 2008, offers undergraduate, postgraduate, and certificate courses in Hotel Management and Catering Technology. Affiliated with Madurai Kamaraj University.",
+      "SourceURL": "https://www.careerindia.com/colleges/nas-catering-and-hotel-management-college-madurai-tamil-nadu-cp12251",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354119466_54413",
+      "Company": "Alfaa Aviation and Catering College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://alfaacollege.com",
+      "Email": "info@alfaacollege.com",
+      "Phone": "+91 9380466366",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Established in 2004, offering hotel management and engineering programs. Approved by the Government of India and Tamil Nadu, affiliated with Alagappa University.",
+      "SourceURL": "https://alfaacollege.com",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354205974_61988",
+      "Company": "NHEV (National Highway Electric Vehicle)",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://nhev.in/about-us-ev",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "A government-supported pilot program expanding e-highways in India (specifically highlighting corridors like Chennai-Trichy). Uses hybrid/direct purchase land acquisition modes for establishing wayside amenities and charging hubs.",
+      "SourceURL": "https://nhev.in/about-us-ev",
+      "DateAdded": "2026-07-18"
+    },
+    {
+      "id": "auto_1784354205974_86067",
+      "Company": "Transport Corporation of India Limited (TCI)",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://www.tcil.com",
+      "Email": "corporate@tcil.com",
+      "Phone": "+91-124-2381603",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Leading logistics and warehousing conglomerate in India. Developing logistics infrastructure and fleet electrification charging hubs across major corridors.",
+      "SourceURL": "https://tcil.com/wp-content/uploads/2025/12/Electrifying-Logistics-Charging-Ahead-on-Indias-Green-Mobility-Journey.pdf",
+      "DateAdded": "2026-07-18"
     }
   ]
 }
