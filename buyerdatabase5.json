@@ -12811,7 +12811,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428352642_54899",
@@ -12837,7 +12841,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428352642_75960",
@@ -12863,7 +12871,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428352642_55822",
@@ -12889,7 +12901,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428352642_61845",
@@ -12915,7 +12931,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428391701_75626",
@@ -12941,7 +12961,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428391701_83525",
@@ -12967,7 +12991,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428416777_71698",
@@ -12977,7 +13005,7 @@
       "Email": "info@alfaacollege.com",
       "Phone": "9380566366",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Pioneer institution in hospitality, catering, and engineering in Madurai, run by the Alfaa Educational & Social Welfare Trust.",
       "SourceURL": "https://alfaacollege.com",
       "DateAdded": "2026-07-19",
@@ -12993,7 +13021,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:11:52.477Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428416777_34129",
@@ -13003,7 +13035,7 @@
       "Email": "vaigaioffice@gmail.com",
       "Phone": "+91 944 460 5532",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Educational trust founded by industrial experts to provide engineering education in Madurai. High potential buyer for academic infrastructure expansion.",
       "SourceURL": "https://www.vaigai.org",
       "DateAdded": "2026-07-19",
@@ -13019,7 +13051,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/vaigaicollegeofengg/",
       "X": "https://twitter.com/vaigai_engg",
-      "YouTube": "https://www.youtube.com/@vaigaicollegeofengineering8092"
+      "YouTube": "https://www.youtube.com/@vaigaicollegeofengineering8092",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:11:57.676Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428435692_71985",
@@ -13045,7 +13081,11 @@
       "LinkedIn": "https://in.linkedin.com/company/gsquarehousing",
       "Instagram": "https://www.instagram.com/gsquarehousing",
       "X": "https://twitter.com/home?status=https://www.gsquarehousing.com/why-nris-are-increasingly-investing-in-tamil-nadu-real-estate/",
-      "YouTube": "https://www.youtube.com/c/GSquareGroup"
+      "YouTube": "https://www.youtube.com/c/GSquareGroup",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428435692_1326",
@@ -13055,7 +13095,7 @@
       "Email": "info@website.com",
       "Phone": "Not public",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Real estate developer in Tamil Nadu focused on creating investment opportunities, including premium villas and commercial-grade properties, specifically targeted at the NRI diaspora.",
       "SourceURL": "https://vnctglobal.com/why-should-nri-invest-property-in-tamil-nadu",
       "DateAdded": "2026-07-19",
@@ -13071,7 +13111,11 @@
       "LinkedIn": "https://www.linkedin.com/company/vnct-global/",
       "Instagram": "https://www.instagram.com/vnctglobal/",
       "X": "",
-      "YouTube": "https://www.youtube.com/c/VNCTGlobal"
+      "YouTube": "https://www.youtube.com/c/VNCTGlobal",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:02.754Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428454138_54834",
@@ -13097,7 +13141,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428454138_6011",
@@ -13123,7 +13171,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428454138_64728",
@@ -13149,7 +13201,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428495254_97000",
@@ -13159,7 +13215,7 @@
       "Email": "help@oneplugev.com",
       "Phone": "044 46 27 27 27",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "An EV charging station franchise network headquartered in Tirupur, Tamil Nadu. Actively expanding fast-charging stations across highways and popular destinations in Tamil Nadu and Kerala.",
       "SourceURL": "https://www.oneplugev.com",
       "DateAdded": "2026-07-19",
@@ -13175,7 +13231,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/oneplug.ev/",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:07.918Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428495254_77009",
@@ -13185,7 +13245,7 @@
       "Email": "crm@evcp.in",
       "Phone": "+91 90870 16300, +91 95001 26418",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "An EV charging network operator expanding strategic charging stations on corridors and highways across Tamil Nadu.",
       "SourceURL": "https://evchargepartners.in/2024/05/06/building-a-sustainable-future-for-tamil-nadu-ev-charge-partners-expand-network-with-four-new-charging-stations",
       "DateAdded": "2026-07-19",
@@ -13201,7 +13261,11 @@
       "LinkedIn": "https://www.linkedin.com/company/ev-charge-partners/",
       "Instagram": "https://www.instagram.com/evchargepartnersindia/",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:12.845Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428495254_57928",
@@ -13227,7 +13291,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428495254_77933",
@@ -13237,7 +13305,7 @@
       "Email": "info@incredibleengineering.in",
       "Phone": "+91 9080772263",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "ARAI-certified EV charger manufacturer and supplier based in Chennai, Tamil Nadu, deploying AC/DC fast-charging systems across South India.",
       "SourceURL": "https://www.incredibleengineering.in",
       "DateAdded": "2026-07-19",
@@ -13253,7 +13321,11 @@
       "LinkedIn": "https://www.linkedin.com/company/incredible-engineering/",
       "Instagram": "https://www.instagram.com/ie_incredibleengineering/",
       "X": "",
-      "YouTube": "https://www.youtube.com/channel/UCkAr8tuWIu2Be0ZB9PsSCHA"
+      "YouTube": "https://www.youtube.com/channel/UCkAr8tuWIu2Be0ZB9PsSCHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:18.121Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428495254_43336",
@@ -13263,7 +13335,7 @@
       "Email": "ind_leasing@esr.com",
       "Phone": "+919627233333, +91 22 6280 0000",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Industrial and logistics park developer strategically establishing hubs in Tamil Nadu to enhance supply chains for the rapidly growing EV and logistics sectors.",
       "SourceURL": "https://in.esr.com/logistics",
       "DateAdded": "2026-07-19",
@@ -13279,7 +13351,11 @@
       "LinkedIn": "https://www.linkedin.com/company/esrgroup/",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:23.074Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428516549_51019",
@@ -13289,7 +13365,7 @@
       "Email": "contact@franchisetimes.co.in",
       "Phone": "+91 9900039898",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Franchise development platform and master consulting group actively matching brands with investors in Tier 2 cities in India.",
       "SourceURL": "https://franchisetimes.co.in/tier%E2%80%912-india-business-opportunities",
       "DateAdded": "2026-07-19",
@@ -13305,7 +13381,11 @@
       "LinkedIn": "https://www.linkedin.com/company/franchise-times/",
       "Instagram": "https://www.instagram.com/franchisetimes_official?igsh=MWN5eTZ6OW52aHBndw==",
       "X": "",
-      "YouTube": "https://youtube.com/@franchisetimes?si=0Tfwi6OHDJe0_Pj_"
+      "YouTube": "https://youtube.com/@franchisetimes?si=0Tfwi6OHDJe0_Pj_",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:28.055Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428516549_98372",
@@ -13331,7 +13411,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428516549_30716",
@@ -13357,7 +13441,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428516549_73333",
@@ -13383,7 +13471,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428533699_20912",
@@ -13409,7 +13501,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784428533699_68492",
@@ -13419,7 +13515,7 @@
       "Email": "indtour@vsnl.com",
       "Phone": "044 - 28461459",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "The regional office for the central Ministry of Tourism, Government of India, located at 154, Anna Salai, Chennai, Tamil Nadu. It facilitates tourism infrastructure development and central scheme coordination in the state.",
       "SourceURL": "https://uptourism.gov.in/en/post/government-of-india-tourism-offices-in-india",
       "DateAdded": "2026-07-19",
@@ -13435,7 +13531,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:33.131Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428554410_72762",
@@ -13461,7 +13561,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445445589_55712",
@@ -13471,7 +13575,7 @@
       "Email": "reservations@fortunepandiyanhotel.com",
       "Phone": "+91-452-2545678",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Owns and operates Fortune Pandiyan Hotel (a member of ITC Hotels group). Crucially, this hotel is located on Alagar Kovil Road in Madurai, making them a prime candidate for expansion/acquisition along the exact same corridor.",
       "SourceURL": "https://fortunepandiyanhotel.com/location",
       "DateAdded": "2026-07-19",
@@ -13487,7 +13591,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:37.309Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445445589_33877",
@@ -13513,7 +13621,11 @@
       "LinkedIn": "https://www.linkedin.com/in/eliewmaalouf/",
       "Instagram": "https://www.instagram.com/ihghotels/?hl=en",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445466332_51348",
@@ -13539,7 +13651,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445466332_32150",
@@ -13549,7 +13665,7 @@
       "Email": "ceo@kftpl.com",
       "Phone": "+919008470808",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Multi-brand food franchise and cloud kitchen network expanding its footprint across urban locations in Madurai.",
       "SourceURL": "https://www.kouzinafoodtech.com/blog/food-franchise-opportunities-in-madurai",
       "DateAdded": "2026-07-19",
@@ -13565,7 +13681,11 @@
       "LinkedIn": "https://www.linkedin.com/company/kftpl/",
       "Instagram": "",
       "X": "",
-      "YouTube": "https://www.youtube.com/@WarmovenBangalore"
+      "YouTube": "https://www.youtube.com/@WarmovenBangalore",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:42.111Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445525179_19761",
@@ -13575,7 +13695,7 @@
       "Email": "krttrust@gmail.com",
       "Phone": "9942903931",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 2007, located near Alagarkovil Perumal Temple. High-intent potential buyer due to proximity to the sale plot in Alagarkovil, Madurai.",
       "SourceURL": "https://www.lathamathavan.edu.in/engineering",
       "DateAdded": "2026-07-19",
@@ -13591,7 +13711,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/latha_mathavan_engineering?igsh=cjhkYmc5OHFzeDV0",
       "X": "",
-      "YouTube": "http://www.youtube.com/@lathamathavanlmgi"
+      "YouTube": "http://www.youtube.com/@lathamathavanlmgi",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:46.301Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445525179_8362",
@@ -13601,7 +13725,7 @@
       "Email": "nasicthm@gmail.com",
       "Phone": "9597766556",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Catering and hotel management institution based in Madurai (Address: NAS Avenue Gangai Puram Street, Othapatti, Karuppayurani). Offers specialized hospitality courses.",
       "SourceURL": "https://www.instagram.com/p/Da4d-cOBKE5",
       "DateAdded": "2026-07-19",
@@ -13617,7 +13741,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:51.507Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445556479_56807",
@@ -13627,7 +13755,7 @@
       "Email": "rameshlux16@gmail.com",
       "Phone": "+91 9444007509",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "An Indian charitable trust engaged in temple renovation, Veda Patasalas, Gosamrakshana, and educational/social welfare programs. Based on their activities, they represent a potential trust buyer for land on an education and temple corridor.",
       "SourceURL": "http://skgt.in/temple.php",
       "DateAdded": "2026-07-19",
@@ -13643,7 +13771,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:12:55.583Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445598510_65710",
@@ -13669,7 +13801,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445598510_42140",
@@ -13695,7 +13831,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445598510_4719",
@@ -13721,7 +13861,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445598510_85779",
@@ -13747,7 +13891,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445598510_1301",
@@ -13757,7 +13905,7 @@
       "Email": "info@voltran.in",
       "Phone": "+91 78001 74001",
       "ContactPerson": "Pradeep Kodali",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Indian EV charging network operator building premium highway charging hubs featuring DC fast chargers, cafeterias, and washroom facilities.",
       "SourceURL": "https://www.voltran.in",
       "DateAdded": "2026-07-19",
@@ -13773,7 +13921,11 @@
       "LinkedIn": "https://www.linkedin.com/in/pradeep-kodali-a7101325/",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-19T10:13:00.832Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784445642427_40551",
@@ -13799,7 +13951,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445642427_57508",
@@ -13825,7 +13981,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445642427_97434",
@@ -13851,7 +14011,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445642427_51408",
@@ -13877,7 +14041,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445659379_70017",
@@ -13903,7 +14071,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784445659379_7998",
@@ -13929,7 +14101,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
