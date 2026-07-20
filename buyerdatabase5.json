@@ -13275,7 +13275,7 @@
       "Email": "prakash.mazire@ioemascharging.com",
       "Phone": "+919767844484",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A brand of IOEMAS Private Limited, specializing in smart EV charging solutions for highway corridors, fleet operators, and public charging networks in Tamil Nadu.",
       "SourceURL": "https://www.navurjaev.com/ev-charging-station-solutions-in-tamil-nadu.html",
       "DateAdded": "2026-07-19",
@@ -13292,10 +13292,10 @@
       "Instagram": "",
       "X": "",
       "YouTube": "",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:25.009Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428495254_77933",
@@ -14131,7 +14131,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514702477_99251",
@@ -14157,7 +14161,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514702477_77411",
@@ -14183,7 +14191,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514702477_37497",
@@ -14209,7 +14221,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514702477_72455",
@@ -14235,7 +14251,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514743995_59957",
@@ -14261,7 +14281,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514743995_1823",
@@ -14287,7 +14311,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514761953_43167",
@@ -14313,7 +14341,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514761953_76803",
@@ -14323,7 +14355,7 @@
       "Email": "info@nationalcollege.co.in",
       "Phone": "+91 9791 786 800",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A leading institution offering programs in Aviation, Banking, Fashion Designing, and Logistics with campuses in Madurai and Tirunelveli. Highly suitable prospect for establishing a highway-facing campus.",
       "SourceURL": "https://www.nationalcollege.co.in",
       "DateAdded": "2026-07-20",
@@ -14339,7 +14371,11 @@
       "LinkedIn": "https://www.linkedin.com/in/national-college-madurai-b7520117b/",
       "Instagram": "https://www.instagram.com/nimsmadurai/",
       "X": "https://x.com/MaduraiNims",
-      "YouTube": "https://www.youtube.com/@NationalCollegeMadurai"
+      "YouTube": "https://www.youtube.com/@NationalCollegeMadurai",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:28.516Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784514780804_92352",
@@ -14365,7 +14401,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514780804_23601",
@@ -14375,7 +14415,7 @@
       "Email": "sales@rohaanconstructions.com",
       "Phone": "095970 88298",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Chennai-based developer focused on commercial real estate investments, portfolio building, and property management for NRI investors.",
       "SourceURL": "https://www.rohaanconstructions.com/nri-real-estate-investment-perumbakkam-chennai",
       "DateAdded": "2026-07-20",
@@ -14391,7 +14431,11 @@
       "LinkedIn": "https://www.linkedin.com/company/rohaan-constructions-private-limited",
       "Instagram": "https://www.instagram.com/rohaanconstructions/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@rohaan_constructions"
+      "YouTube": "https://www.youtube.com/@rohaan_constructions",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:32.140Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784514800099_91859",
@@ -14417,7 +14461,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514800099_34236",
@@ -14443,7 +14491,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514800099_74750",
@@ -14469,7 +14521,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514800099_37275",
@@ -14495,7 +14551,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514816875_15195",
@@ -14521,7 +14581,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514840730_61040",
@@ -14531,7 +14595,7 @@
       "Email": "admin@ptccorp.in",
       "Phone": "0671-2201725",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Indian logistics fleet charging and EV depot infrastructure provider. Highly relevant as they expand their fleet charging, LNG logistics, and depot networks across transport corridors in India.",
       "SourceURL": "https://www.ptccorp.in/ev-fleet-charging-infrastructure-logistics-india",
       "DateAdded": "2026-07-20",
@@ -14547,7 +14611,11 @@
       "LinkedIn": "https://www.linkedin.com/company/prakash-transport-corporation/",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:35.857Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784514840730_26460",
@@ -14557,7 +14625,7 @@
       "Email": "tech-team@nhev.in",
       "Phone": "011 41448326, 011 43009699",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "An Indian national pilot program upgrading major highways into E-Highways. They utilize a hybrid PPP model to directly acquire land and build 3G charging stations, and are actively establishing sites in Tamil Nadu along key corridors such as the Kanyakumari–Madurai highway.",
       "SourceURL": "https://nhev.in",
       "DateAdded": "2026-07-20",
@@ -14573,7 +14641,11 @@
       "LinkedIn": "https://www.linkedin.com/company/nhev/",
       "Instagram": "https://www.instagram.com/nhforev/",
       "X": "https://twitter.com/NHforEV",
-      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA"
+      "YouTube": "https://www.youtube.com/channel/UCS5ZJEhZ9GFx_GGDBmggEHA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:39.397Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784514864916_43412",
@@ -14599,7 +14671,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514864916_29662",
@@ -14625,7 +14701,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514864916_10445",
@@ -14651,7 +14731,11 @@
       "LinkedIn": "https://www.linkedin.com/company/tumbledry-dry-clean-and-laundry/",
       "Instagram": "https://www.instagram.com/tumbledryind",
       "X": "https://twitter.com/tumbledryIndia",
-      "YouTube": "https://www.youtube.com/channel/UCAuerig2N-RZWJT8x75V9yw"
+      "YouTube": "https://www.youtube.com/channel/UCAuerig2N-RZWJT8x75V9yw",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784514864916_94323",
@@ -14677,7 +14761,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536135930_28809",
@@ -14703,7 +14791,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536135930_6111",
@@ -14713,7 +14805,7 @@
       "Email": "reservations@fortunepandiyanhotel.com",
       "Phone": "+91-452-2545678",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A member of the ITC Hotels group, India. Strategically located at 164 Alagar Kovil Road, Madurai. Because this hotel is located on the exact same road as the subject plot, they are a prime prospect for expansion or defensive land acquisition. Additional contact numbers: +91 979 041 0101, +91 733 933 8777. Additional email: it@fortunepandiyanhotel.com.",
       "SourceURL": "https://fortunepandiyanhotel.com/location",
       "DateAdded": "2026-07-20",
@@ -14729,7 +14821,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:42.922Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784536161180_20751",
@@ -14755,7 +14851,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536216098_87224",
@@ -14781,7 +14881,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536216098_11935",
@@ -14791,7 +14895,7 @@
       "Email": "info@alfaacollege.com",
       "Phone": "9380566366",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 2008. Affiliated to Madurai Kamaraj University and approved by NAAC. Also operates as Alfaa Catering and Aviation College.",
       "SourceURL": "https://www.tamilnaducolleges.org/tamil-nadu/catering-hotel-colleges-in-madurai-district/1",
       "DateAdded": "2026-07-20",
@@ -14807,7 +14911,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:46.591Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784536216098_63454",
@@ -14817,7 +14925,7 @@
       "Email": "registrar@mkuniversity.ac.in",
       "Phone": "0452-2530860",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Established in 1971. A major public state university in Madurai, approved by UGC.",
       "SourceURL": "https://www.tamilnaducolleges.org/tamil-nadu/catering-hotel-colleges-in-madurai-district/1",
       "DateAdded": "2026-07-20",
@@ -14833,7 +14941,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:50.093Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784536216098_60871",
@@ -14843,7 +14955,7 @@
       "Email": "contact@prist.ac.in",
       "Phone": "04362 265021",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Prist Deemed to be University's Madurai Campus contact point.",
       "SourceURL": "https://www.prist.ac.in/madurai-campus",
       "DateAdded": "2026-07-20",
@@ -14859,7 +14971,11 @@
       "LinkedIn": "https://www.linkedin.com/company/89679071/admin/",
       "Instagram": "https://www.instagram.com/pristdeemeduni/",
       "X": "https://twitter.com/pristdeemeduni",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-20T12:27:53.445Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784536277148_98445",
@@ -14885,7 +15001,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536277148_43268",
@@ -14911,7 +15031,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536298853_19986",
@@ -14937,7 +15061,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536298853_43532",
@@ -14963,7 +15091,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784536324290_69634",
@@ -14989,7 +15121,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
