@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-21T02:37:11.449Z",
-    "lastRunAdded": 11,
-    "totalCompanies": 515
+    "lastRun": "2026-07-21T07:44:58.825Z",
+    "lastRunAdded": 9,
+    "totalCompanies": 524
   },
   "companies": [
     {
@@ -15268,6 +15268,123 @@
       "Status": "New",
       "Notes": "Legacy bakery, sweets, and savouries brand operating in Tamil Nadu since 1972, actively seeking commercial expansion opportunities in major tier-2 urban centers.",
       "SourceURL": "https://bharatfranchise.in/franchise-business-opportunities-in-tamil-nadu",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619716099_33347",
+      "Company": "Meenakshi Mission Hospital & Research Centre",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "0452-4263000",
+      "ContactPerson": "Dr. S. Gurushankar",
+      "Status": "New",
+      "Notes": "Prominent healthcare provider in Tamil Nadu. The group recently expanded with a 350-bed luxury super speciality hospital in Madurai and is actively looking to expand into tier-2 cities due to financial viability and economies of scale.",
+      "SourceURL": "https://www.bwhealthcareworld.com/article/meenakshi-mission-expands-in-tamil-nadu-new-luxury-super-speciality-hospital-in-madurai-530587",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619741925_51743",
+      "Company": "NAS Catering and Hotel Management College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+91 452 – 2539107",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Established hospitality training college in Madurai. Located in a tourist destination hub, making high-visibility highway plots on tourism corridors prime targets for training centers or hostel facilities.",
+      "SourceURL": "https://www.careerindia.com/colleges/nas-catering-and-hotel-management-college-madurai-tamil-nadu-cp12251",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619826514_72366",
+      "Company": "Jio BP Pulse",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Indian joint venture EV mobility brand deploying fast-charging infrastructure along highways and commercial points in Tamil Nadu.",
+      "SourceURL": "https://www.evchargestation.in/state/tamil-nadu",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619826514_65578",
+      "Company": "Tata Power",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Major Indian utility and power enterprise deploying high-capacity EV charging networks on commercial corridors and highway transit routes in Tamil Nadu.",
+      "SourceURL": "https://www.evchargestation.in/state/tamil-nadu",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619850402_64935",
+      "Company": "Pepperfry.com",
+      "Category": "Franchise Master Operators",
+      "Website": "pepperfry.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Leading Indian furniture and home decor marketplace expanding its physical franchise studio footprint aggressively across India.",
+      "SourceURL": "https://www.franchisemart.in/franchise/contact-franchise-mart",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619850402_31377",
+      "Company": "Thomas Cook India",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Major Indian travel services company actively expanding its physical outlet franchise network throughout tier-1 and tier-2 cities.",
+      "SourceURL": "https://www.franchisemart.in/franchise/contact-franchise-mart",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619850402_28591",
+      "Company": "Cult Fit",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Bengaluru-headquartered premier fitness and gym brand with over 700 franchise locations. High capacity for commercial site acquisition.",
+      "SourceURL": "https://www.smergers.com/franchise-opportunities-in-tamil-nadu/c115t11b",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619869872_95811",
+      "Company": "India Tourism Development Corporation (ITDC)",
+      "Category": "Government / PPP Institutional",
+      "Website": "https://itdc.co.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Public sector undertaking under the Government of India engaged in developing, promoting, and expanding hospitality and tourism infrastructure nationwide.",
+      "SourceURL": "https://itdc.co.in",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784619869872_35571",
+      "Company": "Guidance Tamil Nadu",
+      "Category": "Government / PPP Institutional",
+      "Website": "https://tnswp.com",
+      "Email": "Not public",
+      "Phone": "18002583878",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "The nodal agency of the Government of Tamil Nadu for investment promotion and single-window clearances, facilitating large-scale commercial and hospitality investments.",
+      "SourceURL": "https://tnswp.com/DIGIGOV/TN-pages/individual-sector.jsp?pagedisp=static&sector=sunrise_tourism",
       "DateAdded": "2026-07-21"
     }
   ]
