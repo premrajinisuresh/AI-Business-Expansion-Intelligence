@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-20T08:32:36.264Z",
-    "lastRunAdded": 12,
-    "totalCompanies": 504
+    "lastRun": "2026-07-21T02:37:11.449Z",
+    "lastRunAdded": 11,
+    "totalCompanies": 515
   },
   "companies": [
     {
@@ -15126,6 +15126,149 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "id": "auto_1784601088133_38733",
+      "Company": "T.M Hotel",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://tmhotel.in/contact-us.php",
+      "Email": "reservations@tmhotel.in",
+      "Phone": "+91 7708681651",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Local hospitality provider operating in Madurai, Tamil Nadu.",
+      "SourceURL": "https://tmhotel.in/contact-us.php",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601088133_49706",
+      "Company": "ITC Hotels",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.itchotels.com/in/en/hotels-in-madurai",
+      "Email": "reservations@itchotels.com",
+      "Phone": "1-800-102-2333",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Major Indian luxury hotel chain with a brand portfolio including Welcomhotel, Fortune Hotels, and WelcomHeritage. Actively targeting business and religious tourism growth in Madurai.",
+      "SourceURL": "https://www.itchotels.com/in/en/hotels-in-madurai",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601137998_74523",
+      "Company": "Rani Vilas Hotel (Akka Kadai)",
+      "Category": "Restaurants & Food Courts",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "9894065919",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Famous highway non-vegetarian eatery based on Madurai Main Road, Chekkanoorani. Good prospect for highway-front expansion.",
+      "SourceURL": "https://www.thehindu.com/features/metroplus/Food/Highway-on-your-plate/article14617816.ece",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601201862_61494",
+      "Company": "Meenakshi Mission Hospital & Research Centre (MMHRC)",
+      "Category": "Hospitals & Healthcare Groups",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "0452-4263000",
+      "ContactPerson": "Dr. S. Gurushankar",
+      "Status": "New",
+      "Notes": "A highly prominent healthcare group in Madurai actively expanding its footprint (recently opened a new 350-bed luxury super specialty hospital). Led by Chairman Dr. S. Gurushankar, they have aggressive plans to build a large healthcare chain, making them an excellent prospect for prime commercial land.",
+      "SourceURL": "https://www.bwhealthcareworld.com/article/meenakshi-mission-expands-in-tamil-nadu-new-luxury-super-speciality-hospital-in-madurai-530587",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601232482_74093",
+      "Company": "Latha Mathavan Engineering College (Karuppiah Pillai Theivanai Ammal Educational Trust)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.lathamathavan.edu.in/engineering",
+      "Email": "lmecmdu@yahoo.co.in",
+      "Phone": "0452-2556722",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Highly relevant educational institution located in Kidaripatti near Alagarkovil Perumal Temple. Established by Karuppiah Pillai Theivanai Ammal Educational Trust. Other contact email: krttrust@gmail.com. Other phone numbers: 9942903931, 9942903932.",
+      "SourceURL": "https://www.lathamathavan.edu.in/engineering",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601232482_8235",
+      "Company": "Mangayarkarasi College Of Engineering (Mangayarkarasi Educational Trust)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://mce-madurai.ac.in",
+      "Email": "mangai.enggcoll@gmail.com",
+      "Phone": "+914522668635",
+      "ContactPerson": "Dr. P. ASHOK KUMAR",
+      "Status": "New",
+      "Notes": "Operated by Mangayarkarasi Educational Trust, which has been in the Madurai education sector for 75 years and manages nursery schools to engineering colleges. Vice-Chairman Er. A. Shakti Pranesh is also listed.",
+      "SourceURL": "https://mce-madurai.ac.in",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601232483_46245",
+      "Company": "Nagarathinam Angalammal Arts & Science College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://naascollege.com/courses/aviation-management",
+      "Email": "nasscollege@gmail.com",
+      "Phone": "9655915151",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Located in Valayankulam Village near Perungudi, Madurai. Offers specialized courses in Aviation Management.",
+      "SourceURL": "https://naascollege.com/courses/aviation-management",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601348365_31788",
+      "Company": "Heritage Madurai (Unit of Grand Luxe Hotels (Coorg) Private Limited)",
+      "Category": "Wedding & Convention Halls",
+      "Website": "https://heritagemadurai.com",
+      "Email": "reservations@heritagemadurai.com",
+      "Phone": "+91 452 2385455",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Luxury 5-star hotel and resort operator in Madurai featuring the premium Chettinadu banquet hall (accommodating up to 1200 guests). Strong target buyer for land to expand luxury resort or destination wedding footprint along a prime tourism corridor.",
+      "SourceURL": "https://heritagemadurai.com/facilities/banquet-halls-in-madurai-why-a-heritage-venue-is-the-perfect-choice-for-your-wedding",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601411869_65269",
+      "Company": "Fashion World",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Bangalore-headquartered large-scale retail apparel operator seeking multi-unit franchise expansion in Tamil Nadu, requiring significant commercial spaces up to 5,000 Sq Ft.",
+      "SourceURL": "https://www.franchiseindia.com/business-opportunities/tamil-nadu.LOC29",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601411869_4867",
+      "Company": "Studio 7 Salon",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "+91 82484 34001",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Award-winning premium unisex salon and bridal studio chain expanding its franchise operations across tier-1 and tier-2 cities in Tamil Nadu.",
+      "SourceURL": "https://bharatfranchise.in/franchise-business-opportunities-in-tamil-nadu",
+      "DateAdded": "2026-07-21"
+    },
+    {
+      "id": "auto_1784601411869_35941",
+      "Company": "Ajantha Bakers & Sweets",
+      "Category": "Franchise Master Operators",
+      "Website": "Not public",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Legacy bakery, sweets, and savouries brand operating in Tamil Nadu since 1972, actively seeking commercial expansion opportunities in major tier-2 urban centers.",
+      "SourceURL": "https://bharatfranchise.in/franchise-business-opportunities-in-tamil-nadu",
+      "DateAdded": "2026-07-21"
     }
   ]
 }
