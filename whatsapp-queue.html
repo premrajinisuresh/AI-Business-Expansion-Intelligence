@@ -180,6 +180,13 @@ function render() {
 
   document.getElementById("shareFlyerBtn").addEventListener("click", async () => {
     const editedMsg = document.getElementById("msgBox").value;
+
+    // Copy the number first, so the person can just paste it into
+    // WhatsApp's search bar to find the contact in one step.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try { await navigator.clipboard.writeText(waNumber); } catch (e) {}
+    }
+
     try {
       const [flyerRes, planRes] = await Promise.all([
         fetch("assets/property-flyer.jpg"),
@@ -193,16 +200,16 @@ function render() {
       ];
 
       if (navigator.canShare && navigator.canShare({ files })) {
+        alert(`Number copied: ${waNumber}\n\nNext screen: tap WhatsApp, then paste this number into WhatsApp's search bar to find the contact.`);
         await navigator.share({
           files,
           text: editedMsg,
           title: "Property Flyer & Site Plan"
         });
       } else {
-        alert("Your browser can't share multiple images at once. Use 'Open WhatsApp' for the text, and attach both pictures manually from your gallery (long-press each picture above to save it).");
+        alert(`Your browser can't share multiple images at once. Number copied: ${waNumber} — paste it into WhatsApp's search bar, open the chat, then attach both pictures manually from your gallery.`);
       }
     } catch (e) {
-      // User cancelling the share sheet also lands here -- not an error worth alarming over.
       console.log("Share cancelled or unavailable:", e.message);
     }
   });
