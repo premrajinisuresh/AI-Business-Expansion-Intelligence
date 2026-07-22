@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-22T04:42:00.160Z",
-    "lastRunAdded": 15,
-    "totalCompanies": 558
+    "lastRun": "2026-07-22T07:45:04.865Z",
+    "lastRunAdded": 10,
+    "totalCompanies": 568
   },
   "companies": [
     {
@@ -16746,6 +16746,136 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "id": "auto_1784706152776_24171",
+      "Company": "Madurai Charitable Trust",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.mctrust.co.in",
+      "Email": "mctrust@gmail.com",
+      "Phone": "+91 94430 53730",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Public non-profit trust based in Madurai operating educational and skill training centers across Southern India.",
+      "SourceURL": "https://www.mctrust.co.in",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706152777_85882",
+      "Company": "Alfaa College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://alfaacollege.com",
+      "Email": "Not public",
+      "Phone": "+91 9380466366",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Aviation, catering, and engineering institution operating in Madurai since 2004.",
+      "SourceURL": "https://alfaacollege.com",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706152777_23217",
+      "Company": "PRIST Deemed to be University",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.prist.ac.in/madurai-campus",
+      "Email": "contact@prist.ac.in",
+      "Phone": "04362 265021",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Deemed university operating a dedicated campus in Madurai.",
+      "SourceURL": "https://www.prist.ac.in/madurai-campus",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706237359_93413",
+      "Company": "PTC Corporation",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://www.ptccorp.in",
+      "Email": "admin@ptccorp.in",
+      "Phone": "0671-2201725",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Indian logistics fleet EV depot charging infrastructure provider.",
+      "SourceURL": "https://www.ptccorp.in/ev-fleet-charging-infrastructure-logistics-india",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706237359_98126",
+      "Company": "Fenfeo Automation Private Limited",
+      "Category": "Highway Fuel, EV & Logistics",
+      "Website": "https://www.rapidevcharge.com",
+      "Email": "sales@rapidevcharge.com",
+      "Phone": "0422 – 2975205",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Coimbatore-based EV charging infrastructure provider powering fast-charging stations across Tamil Nadu.",
+      "SourceURL": "https://www.rapidevcharge.com/fenfeo-automation-private-limited-powers-up-tamil-nadu-with-11-new-ev-charging-stations-across-iconic-iocl-petrol-bunks",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706260428_67063",
+      "Company": "Mr. Blue",
+      "Category": "Franchise Master Operators",
+      "Website": "https://www.mr-blue.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Franchise business network expanding commercial retail footprint across Tier-2 and Tier-3 cities in Tamil Nadu.",
+      "SourceURL": "https://www.mr-blue.in/best-franchise-business-in-tamilnadu",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706300865_21083",
+      "Company": "Knight Frank India",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.knightfrank.co.in/consultancy/institutional-advisory",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Institutional property advisory firm providing consultancy services to institutional property owners, developers, and investors in India.",
+      "SourceURL": "https://www.knightfrank.co.in/consultancy/institutional-advisory",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706300865_57141",
+      "Company": "ANAROCK Property Consultants",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://anarock.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Real estate consultancy and capital market advisory firm active across commercial, institutional, hospitality, and land advisory in India.",
+      "SourceURL": "https://anarock.com",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706300865_39330",
+      "Company": "Chattels Retail",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.chattels.in",
+      "Email": "karthik@chattels.in",
+      "Phone": "+91 7418-08-7418",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Chennai-based real estate consultants advising on commercial, industrial, build-to-suit (BTS), and commercial land transactions across India.",
+      "SourceURL": "https://www.chattels.in",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784706300865_73509",
+      "Company": "Colliers India",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.colliers.com/en-in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Global commercial real estate and capital markets investment consultancy with operations and advisory services across India.",
+      "SourceURL": "https://www.colliers.com/en-in",
+      "DateAdded": "2026-07-22"
     }
   ]
 }
