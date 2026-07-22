@@ -1965,7 +1965,7 @@
       "Email": "bestrateguarantee@marriott.com",
       "Phone": "",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "International premium hotel chain operating luxury banquet and event spaces in Madurai, suitable for high-end commercial site expansion.",
       "SourceURL": "https://www.marriott.com/en-us/hotels/ixmcy-courtyard-madurai/events",
       "DateAdded": "2026-07-07",
@@ -1982,10 +1982,10 @@
       "City": "Madurai",
       "State": "Tamil Nadu",
       "PIN": "625002",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:01.437Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1783416287725_74762",
@@ -13485,7 +13485,7 @@
       "Email": "projects@grihaindia.org",
       "Phone": "911146444500, 912424339606",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "A Government of Tamil Nadu undertaking responsible for promoting tourism and developing tourist infrastructure. Under the Tamil Nadu Tourism Policy 2023, the department aims to establish hotels, resorts, and expansive recreational facilities in key hubs including Madurai, frequently leveraging public-private partnerships or direct development.",
       "SourceURL": "https://www.grihaindia.org/sites/default/files/pdf/Tamil_Nadu_Tourism_Policy_2023_auger.pdf",
       "DateAdded": "2026-07-19",
@@ -13502,10 +13502,10 @@
       "Instagram": "https://www.instagram.com/grihacouncil/?igshid=bnaahlngb3cds",
       "X": "https://twitter.com/GRIHACouncil/",
       "YouTube": "https://www.youtube.com/@GRIHACouncil",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:06.487Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784428533699_68492",
@@ -16755,7 +16755,7 @@
       "Email": "mctrust@gmail.com",
       "Phone": "+91 94430 53730",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Public non-profit trust based in Madurai operating educational and skill training centers across Southern India.",
       "SourceURL": "https://www.mctrust.co.in",
       "DateAdded": "2026-07-22",
@@ -16771,7 +16771,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:11.159Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706152777_85882",
@@ -16781,7 +16785,7 @@
       "Email": "info@alfaacollege.com",
       "Phone": "+91 9380466366",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Aviation, catering, and engineering institution operating in Madurai since 2004.",
       "SourceURL": "https://alfaacollege.com",
       "DateAdded": "2026-07-22",
@@ -16797,7 +16801,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/AlfaaIHMCT",
-      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA"
+      "YouTube": "https://www.youtube.com/channel/UCiLkh0dIw1m-dvIZxFALtUA",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:15.521Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706152777_23217",
@@ -16807,7 +16815,7 @@
       "Email": "contact@prist.ac.in",
       "Phone": "04362 265021",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Deemed university operating a dedicated campus in Madurai.",
       "SourceURL": "https://www.prist.ac.in/madurai-campus",
       "DateAdded": "2026-07-22",
@@ -16823,7 +16831,11 @@
       "LinkedIn": "https://www.linkedin.com/company/89679071/admin/",
       "Instagram": "https://www.instagram.com/pristdeemeduni/",
       "X": "https://twitter.com/pristdeemeduni",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:19.192Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706237359_93413",
@@ -16833,7 +16845,7 @@
       "Email": "admin@ptccorp.in",
       "Phone": "0671-2201725",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Indian logistics fleet EV depot charging infrastructure provider.",
       "SourceURL": "https://www.ptccorp.in/ev-fleet-charging-infrastructure-logistics-india",
       "DateAdded": "2026-07-22",
@@ -16849,7 +16861,11 @@
       "LinkedIn": "https://www.linkedin.com/company/prakash-transport-corporation/",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:23.082Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706237359_98126",
@@ -16859,7 +16875,7 @@
       "Email": "sales@rapidevcharge.com",
       "Phone": "",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Coimbatore-based EV charging infrastructure provider powering fast-charging stations across Tamil Nadu.",
       "SourceURL": "https://www.rapidevcharge.com/fenfeo-automation-private-limited-powers-up-tamil-nadu-with-11-new-ev-charging-stations-across-iconic-iocl-petrol-bunks",
       "DateAdded": "2026-07-22",
@@ -16875,7 +16891,11 @@
       "LinkedIn": "https://www.linkedin.com/in/rapidevcharge-electric-vehicle-chargers-2947751b0/",
       "Instagram": "https://www.instagram.com/rapidevcharge/",
       "X": "https://twitter.com/RapidEVchargE",
-      "YouTube": "https://youtube.com/channel/UCrNE3ToTL6HAtA1uheEcO0g"
+      "YouTube": "https://youtube.com/channel/UCrNE3ToTL6HAtA1uheEcO0g",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:26.894Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706260428_67063",
@@ -16885,7 +16905,7 @@
       "Email": "http://care@mrblue.co.in",
       "Phone": "Not public",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Franchise business network expanding commercial retail footprint across Tier-2 and Tier-3 cities in Tamil Nadu.",
       "SourceURL": "https://www.mr-blue.in/best-franchise-business-in-tamilnadu",
       "DateAdded": "2026-07-22",
@@ -16901,7 +16921,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/mr.blue_india/",
       "X": "https://x.com/MrBlue15825206",
-      "YouTube": "https://www.youtube.com/@mr.blue_india"
+      "YouTube": "https://www.youtube.com/@mr.blue_india",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:30.763Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706300865_21083",
@@ -16927,7 +16951,11 @@
       "LinkedIn": "https://uk.linkedin.com/company/knight-frank",
       "Instagram": "https://www.instagram.com/knightfrank",
       "X": "",
-      "YouTube": "https://www.youtube.com/knightfrank"
+      "YouTube": "https://www.youtube.com/knightfrank",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784706300865_57141",
@@ -16953,7 +16981,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784706300865_39330",
@@ -16963,7 +16995,7 @@
       "Email": "karthik@chattels.in",
       "Phone": "+91 7418-08-7418",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Chennai-based real estate consultants advising on commercial, industrial, build-to-suit (BTS), and commercial land transactions across India.",
       "SourceURL": "https://www.chattels.in",
       "DateAdded": "2026-07-22",
@@ -16979,7 +17011,11 @@
       "LinkedIn": "https://in.linkedin.com/company/chattelsretail",
       "Instagram": "https://www.instagram.com/chattelsretail/",
       "X": "https://x.com/chattelsretail",
-      "YouTube": "https://www.youtube.com/@chattelsrealty4461/videos"
+      "YouTube": "https://www.youtube.com/@chattelsrealty4461/videos",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:34.859Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784706300865_73509",
@@ -17005,7 +17041,11 @@
       "LinkedIn": "https://www.linkedin.com/company/colliers-international/",
       "Instagram": "https://www.instagram.com/colliersinternational/",
       "X": "https://twitter.com/Colliers",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784716091430_56148",
@@ -17015,7 +17055,7 @@
       "Email": "reservationsmdu@grtgrand.com",
       "Phone": "+91 80 6221 0150",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Major South Indian hotel group operating multiple locations in Madurai, including Grand Madurai on the Thoothukudi Highway and Regency Madurai.",
       "SourceURL": "https://www.grthotels.com/contact-us.html",
       "DateAdded": "2026-07-22",
@@ -17031,7 +17071,11 @@
       "LinkedIn": "https://www.linkedin.com/company/grt-hotels-&-resorts/",
       "Instagram": "https://www.instagram.com/grt.hotels.india/",
       "X": "https://twitter.com/grthotels?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-      "YouTube": "https://www.youtube.com/@grthotels"
+      "YouTube": "https://www.youtube.com/@grthotels",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:38.726Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784716159367_91726",
@@ -17057,7 +17101,11 @@
       "LinkedIn": "https://www.linkedin.com/company/delhi-public-school-fatehpur/",
       "Instagram": "https://www.instagram.com/kricollege/",
       "X": "",
-      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik"
+      "YouTube": "https://youtube.com/@kricollege?si=Y8bg-0DkvBwo15ik",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784716254249_90459",
@@ -17067,7 +17115,7 @@
       "Email": "globalrealestatekovai@gmail.com",
       "Phone": "8015280678",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Commercial and institutional real estate consultancy based in Coimbatore, Tamil Nadu, handling educational, commercial, and institutional land transactions.",
       "SourceURL": "https://www.globalrealestateconsultants.com",
       "DateAdded": "2026-07-22",
@@ -17083,7 +17131,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:42.649Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784716254249_21079",
@@ -17109,7 +17161,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784716254249_64306",
@@ -17119,7 +17175,7 @@
       "Email": "jobs@spaceconsultant.net",
       "Phone": "+91-9211871009",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Specialized hospital and healthcare real estate advisor facilitating land acquisition for medical colleges, diagnostic centers, and healthcare projects across India.",
       "SourceURL": "https://www.spaceconsultant.co.in/hospital-real-estate-buy-sell-lease.htm",
       "DateAdded": "2026-07-22",
@@ -17135,7 +17191,11 @@
       "LinkedIn": "https://www.linkedin.com/company/space-manpower-and-recruitment-consultant/mycompany/?viewAsMember=true",
       "Instagram": "https://www.instagram.com/spaceconsultant_/",
       "X": "https://twitter.com/spaceconsultant",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:46.856Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784716254249_13288",
@@ -17145,7 +17205,7 @@
       "Email": "info@mytoletindia.in",
       "Phone": "Not public",
       "ContactPerson": "Balaji Naidu Balla",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Commercial real estate advisory and property solutions provider operating across South India including Tamil Nadu.",
       "SourceURL": "https://www.instagram.com/reel/Da1myjNStOz",
       "DateAdded": "2026-07-22",
@@ -17161,7 +17221,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/mytolet_2022/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@BBCADSTV"
+      "YouTube": "https://www.youtube.com/@BBCADSTV",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-22T11:27:50.569Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     }
   ]
 }
