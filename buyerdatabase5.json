@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-22T07:45:04.865Z",
-    "lastRunAdded": 10,
-    "totalCompanies": 568
+    "lastRun": "2026-07-22T10:30:58.249Z",
+    "lastRunAdded": 6,
+    "totalCompanies": 574
   },
   "companies": [
     {
@@ -17006,6 +17006,84 @@
       "Instagram": "https://www.instagram.com/colliersinternational/",
       "X": "https://twitter.com/Colliers",
       "YouTube": ""
+    },
+    {
+      "id": "auto_1784716091430_56148",
+      "Company": "GRT Hotels & Resorts",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.grthotels.com",
+      "Email": "reservationsmdu@grtgrand.com",
+      "Phone": "+91 80 6221 0150",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Major South Indian hotel group operating multiple locations in Madurai, including Grand Madurai on the Thoothukudi Highway and Regency Madurai.",
+      "SourceURL": "https://www.grthotels.com/contact-us.html",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784716159367_91726",
+      "Company": "KRI College of Aeronautics (The King Rashid International Institute)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://kri.org.in",
+      "Email": "Not public",
+      "Phone": "+91-9894925233",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Aviation college based in Madurai affiliated with Alagappa University; potential buyer for expanding campus footprint.",
+      "SourceURL": "https://kri.org.in",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784716254249_90459",
+      "Company": "Global Real Estate & Consultant",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.globalrealestateconsultants.com",
+      "Email": "globalrealestatekovai@gmail.com",
+      "Phone": "8015280678",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Commercial and institutional real estate consultancy based in Coimbatore, Tamil Nadu, handling educational, commercial, and institutional land transactions.",
+      "SourceURL": "https://www.globalrealestateconsultants.com",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784716254249_21079",
+      "Company": "PropScout",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.indirakshi.com",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Indirakshi",
+      "Status": "New",
+      "Notes": "Real estate advisory firm based in Tamil Nadu offering strategic guidance for property investments and developments.",
+      "SourceURL": "https://indirakshi.com/best-real-estate-consultant-in-tamil-nadu",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784716254249_64306",
+      "Company": "Space Consultant",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.spaceconsultant.co.in",
+      "Email": "jobs@spaceconsultant.net",
+      "Phone": "+91-9211871009",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Specialized hospital and healthcare real estate advisor facilitating land acquisition for medical colleges, diagnostic centers, and healthcare projects across India.",
+      "SourceURL": "https://www.spaceconsultant.co.in/hospital-real-estate-buy-sell-lease.htm",
+      "DateAdded": "2026-07-22"
+    },
+    {
+      "id": "auto_1784716254249_13288",
+      "Company": "My Tolet India",
+      "Category": "Institutional Property Consultants",
+      "Website": "https://www.mytoletindia.in",
+      "Email": "Not public",
+      "Phone": "Not public",
+      "ContactPerson": "Balaji Naidu Balla",
+      "Status": "New",
+      "Notes": "Commercial real estate advisory and property solutions provider operating across South India including Tamil Nadu.",
+      "SourceURL": "https://www.instagram.com/reel/Da1myjNStOz",
+      "DateAdded": "2026-07-22"
     }
   ]
 }
