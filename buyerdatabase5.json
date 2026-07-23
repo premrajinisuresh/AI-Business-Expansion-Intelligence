@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-22T10:30:58.249Z",
-    "lastRunAdded": 6,
-    "totalCompanies": 574
+    "lastRun": "2026-07-23T02:33:25.070Z",
+    "lastRunAdded": 1,
+    "totalCompanies": 575
   },
   "companies": [
     {
@@ -17226,6 +17226,19 @@
       "EmailSentDate": "2026-07-22T11:27:50.569Z",
       "EmailStatus": "Sent",
       "LastError": ""
+    },
+    {
+      "id": "auto_1784773880557_96488",
+      "Company": "ITC Hotels Limited",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.itchotels.com",
+      "Email": "reservations@itchotels.com",
+      "Phone": "1-800-102-2333",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Major Indian hospitality chain expanding presence in key tourism and business hubs across Tamil Nadu.",
+      "SourceURL": "https://www.itchotels.com/in/en/hotels-in-madurai",
+      "DateAdded": "2026-07-23"
     }
   ]
 }
