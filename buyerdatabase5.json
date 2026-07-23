@@ -17551,7 +17551,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/travell.adda/",
       "X": "https://twitter.com/travelladda",
-      "YouTube": "https://www.youtube.com/channel/UCI0fuD-ksP8JhsZy-dTQbHw"
+      "YouTube": "https://www.youtube.com/channel/UCI0fuD-ksP8JhsZy-dTQbHw",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784815926219_61003",
@@ -17561,7 +17565,7 @@
       "Email": "info@bostoncolleges.in",
       "Phone": "+91 81440-43222",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Institution in Madurai specializing in Aviation, Airport Management, Hotel Management, and Psychology. Ideal candidate for expanding academic facilities on major highway routes.",
       "SourceURL": "https://bostoncolleges.in",
       "DateAdded": "2026-07-23",
@@ -17577,7 +17581,11 @@
       "LinkedIn": "",
       "Instagram": "https://www.instagram.com/boston_aviation_college/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@BostonAviationCollegeSince2012"
+      "YouTube": "https://www.youtube.com/@BostonAviationCollegeSince2012",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T21:38:34.131Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784815926219_14420",
@@ -17587,7 +17595,7 @@
       "Email": "naascolege@gmail.com",
       "Phone": "919655915151",
       "ContactPerson": "Dr. Nagarathinam (Chairman), Dr. N. Jegatheesan (Secretary & Correspondent)",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Madurai-based educational institution with a dedicated Department of Hotel Management and Catering Science. Potential buyer for expanding campus operations along educational and transit corridors. (phone found via multi-directory lookup, no company website)",
       "SourceURL": "https://www.instagram.com/p/DWQP-22AeMS",
       "DateAdded": "2026-07-23",
@@ -17603,7 +17611,11 @@
       "LinkedIn": "https://www.linkedin.com/in/campuspro-hr-031880360/",
       "Instagram": "https://www.instagram.com/campuspro_ecp/",
       "X": "",
-      "YouTube": "https://www.youtube.com/@campusprohr"
+      "YouTube": "https://www.youtube.com/@campusprohr",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T21:38:37.763Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     }
   ]
 }
