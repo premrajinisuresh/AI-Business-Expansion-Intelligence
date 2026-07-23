@@ -17235,7 +17235,7 @@
       "Email": "reservations@itchotels.com",
       "Phone": "1-800-102-2333",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Major Indian hospitality chain expanding presence in key tourism and business hubs across Tamil Nadu.",
       "SourceURL": "https://www.itchotels.com/in/en/hotels-in-madurai",
       "DateAdded": "2026-07-23",
@@ -17251,7 +17251,11 @@
       "LinkedIn": "https://in.linkedin.com/company/itc-hotels",
       "Instagram": "https://www.instagram.com/itchotels/?hl=en",
       "X": "https://x.com/ITCHotelscares",
-      "YouTube": "https://www.youtube.com/user/itchotels"
+      "YouTube": "https://www.youtube.com/user/itchotels",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T05:25:04.336Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784782421704_85797",
@@ -17277,7 +17281,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784782421704_62626",
@@ -17303,7 +17311,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784782465063_59805",
@@ -17329,7 +17341,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784782465063_23943",
@@ -17355,7 +17371,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784782465063_68316",
@@ -17365,7 +17385,7 @@
       "Email": "info@gsmconstructions.in",
       "Phone": "919573102757",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Madurai-based construction and infrastructure firm interested in commercial land development opportunities. (phone found via business directory, no company website)",
       "SourceURL": "https://dir.indiamart.com/madurai/commercial-land.html",
       "DateAdded": "2026-07-23",
@@ -17381,7 +17401,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T05:25:08.126Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784782503792_69947",
@@ -17407,7 +17431,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
