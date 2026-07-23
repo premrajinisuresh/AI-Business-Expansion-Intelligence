@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-23T04:56:16.357Z",
-    "lastRunAdded": 6,
-    "totalCompanies": 581
+    "lastRun": "2026-07-23T06:32:40.763Z",
+    "lastRunAdded": 3,
+    "totalCompanies": 584
   },
   "companies": [
     {
@@ -17436,6 +17436,45 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "id": "auto_1784788236702_43763",
+      "Company": "IHG Hotels & Resorts",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.ihg.com",
+      "Email": "Not public",
+      "Phone": "+971 4 213 6502",
+      "ContactPerson": "Sudeep Jain (Managing Director, South West Asia)",
+      "Status": "New",
+      "Notes": "Global hotel major expanding rapidly in South India and Tamil Nadu high-growth micro-markets, targeting strategic transit and pilgrimage/tourist corridors in Madurai.",
+      "SourceURL": "https://www.ihgplc.com/en/news-and-media/news-releases/2026/ihg-hotels-and-resorts-strengthens-south-india-presence-with-signing-of-holiday-inn-express-and-suites-madurai",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784788286640_55787",
+      "Company": "Karuppiah Pillai Theivanai Ammal Educational Trust (Latha Mathavan Group of Institutions)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://www.lathamathavan.edu.in",
+      "Email": "krttrust@gmail.com",
+      "Phone": "0452-2556722",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Educational trust managing Latha Mathavan Engineering College and other institutions located directly in Alagarkovil, Madurai near Alagarkovil Perumal Temple. Highly prime target for local institutional expansion.",
+      "SourceURL": "https://www.lathamathavan.edu.in/engineering",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784788286640_11965",
+      "Company": "Rose Educational Trust (Arasu Groups)",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://arasugroups.org",
+      "Email": "Not public",
+      "Phone": "+91 97884 98080",
+      "ContactPerson": "Dr. V. Sudha",
+      "Status": "New",
+      "Notes": "Founded in 2006 by Dr. T.M. Dswin John Grace and chaired by Dr. V. Sudha, operating catering, electropathy, nursing, and ITI colleges across Madurai and southern Tamil Nadu districts.",
+      "SourceURL": "https://arasugroups.org/catering-college-in-ramanathapuram-virudhunagar-tirunelveli-tuticorin-madurai",
+      "DateAdded": "2026-07-23"
     }
   ]
 }
