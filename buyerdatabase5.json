@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-23T06:45:09.735Z",
-    "lastRunAdded": 0,
-    "totalCompanies": 584
+    "lastRun": "2026-07-23T14:13:21.973Z",
+    "lastRunAdded": 3,
+    "totalCompanies": 587
   },
   "companies": [
     {
@@ -17526,6 +17526,45 @@
       "EmailSentDate": "2026-07-23T11:27:30.512Z",
       "EmailStatus": "Sent",
       "LastError": ""
+    },
+    {
+      "id": "auto_1784815871571_90928",
+      "Company": "Chentoor Hotels Pvt Ltd",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.travelladda.com/details/hotel-chentoor",
+      "Email": "Not public",
+      "Phone": "916369938033",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Madurai-based hotel developer actively investing in prime commercial hospitality projects in Madurai; recently partnered with IHG to develop a 150-key Holiday Inn Express & Suites. (phone found via multi-directory lookup, no company website)",
+      "SourceURL": "https://www.ihgplc.com/en/news-and-media/news-releases/2026/ihg-hotels-and-resorts-strengthens-south-india-presence-with-signing-of-holiday-inn-express-and-suites-madurai",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784815926219_61003",
+      "Company": "Boston College, Madurai",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://bostoncolleges.in",
+      "Email": "Not public",
+      "Phone": "+91 81440-43222",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Institution in Madurai specializing in Aviation, Airport Management, Hotel Management, and Psychology. Ideal candidate for expanding academic facilities on major highway routes.",
+      "SourceURL": "https://bostoncolleges.in",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784815926219_14420",
+      "Company": "Nagarathinam Angalammal Arts & Science College",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://campuspro.co.in/colleges/663/nagarathinam-angalammal-arts-science-college",
+      "Email": "naascolege@gmail.com",
+      "Phone": "919655915151",
+      "ContactPerson": "Dr. Nagarathinam (Chairman), Dr. N. Jegatheesan (Secretary & Correspondent)",
+      "Status": "New",
+      "Notes": "Madurai-based educational institution with a dedicated Department of Hotel Management and Catering Science. Potential buyer for expanding campus operations along educational and transit corridors. (phone found via multi-directory lookup, no company website)",
+      "SourceURL": "https://www.instagram.com/p/DWQP-22AeMS",
+      "DateAdded": "2026-07-23"
     }
   ]
 }
