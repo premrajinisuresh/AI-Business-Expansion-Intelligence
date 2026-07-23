@@ -2,12 +2,9 @@ name: Send Emails
 
 on:
   schedule:
-    # 4:15 AM UTC = 9:45 AM IST daily -- runs a couple hours after
-    # the buyer-search workflow (3:17 AM IST) so fresh leads from
-    # that night's run are already in the database before emailing.
-    - cron: "15 4 * * *"
+    # Runs 4 times a day (every 6 hours) to match your automated lead enrichment schedule
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch: {}
-    # ^ still lets you trigger it by hand any time from the Actions tab.
 
 permissions:
   contents: write
