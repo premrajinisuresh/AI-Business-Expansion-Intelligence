@@ -17295,7 +17295,7 @@
       "Email": "reservations@madurairesidency.com",
       "Phone": "919842123437",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "South Indian hospitality group investing ₹600 crore to expand across South India; recently launched The Residency Signature in Madurai. (phone found via business directory, no company website)",
       "SourceURL": "https://www.facebook.com/RealtyNXT/posts/news-the-residency-hotels-will-invest-600-crore-over-the-next-three-years-to-dev/1468002002011155",
       "DateAdded": "2026-07-23",
@@ -17312,10 +17312,10 @@
       "Instagram": "",
       "X": "https://twitter.com/mduresidency",
       "YouTube": "",
-      "EmailSent": false,
-      "EmailSentDate": "",
-      "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T11:27:24.268Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784782465063_59805",
@@ -17461,7 +17461,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "id": "auto_1784788286640_55787",
@@ -17471,7 +17475,7 @@
       "Email": "krttrust@gmail.com",
       "Phone": "0452-2556722",
       "ContactPerson": "Not public",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Educational trust managing Latha Mathavan Engineering College and other institutions located directly in Alagarkovil, Madurai near Alagarkovil Perumal Temple. Highly prime target for local institutional expansion.",
       "SourceURL": "https://www.lathamathavan.edu.in/engineering",
       "DateAdded": "2026-07-23",
@@ -17487,7 +17491,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T11:27:27.303Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     },
     {
       "id": "auto_1784788286640_11965",
@@ -17497,7 +17505,7 @@
       "Email": "arasucolleges@gmail.com",
       "Phone": "+91 97884 98080",
       "ContactPerson": "Dr. V. Sudha",
-      "Status": "New",
+      "Status": "Contacted",
       "Notes": "Founded in 2006 by Dr. T.M. Dswin John Grace and chaired by Dr. V. Sudha, operating catering, electropathy, nursing, and ITI colleges across Madurai and southern Tamil Nadu districts.",
       "SourceURL": "https://arasugroups.org/catering-college-in-ramanathapuram-virudhunagar-tirunelveli-tuticorin-madurai",
       "DateAdded": "2026-07-23",
@@ -17513,7 +17521,11 @@
       "LinkedIn": "",
       "Instagram": "",
       "X": "https://twitter.com/rosebemscollege",
-      "YouTube": ""
+      "YouTube": "",
+      "EmailSent": true,
+      "EmailSentDate": "2026-07-23T11:27:30.512Z",
+      "EmailStatus": "Sent",
+      "LastError": ""
     }
   ]
 }
