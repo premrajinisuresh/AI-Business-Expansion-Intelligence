@@ -1,14 +1,11 @@
-
 name: Enrich Buyers V6
 
 on:
   schedule:
-    # 23:13 UTC = 4:43 AM IST daily. Runs about 1.5 hours after
-    # the Search workflow (3:17 AM IST) so that night's new
-    # companies already exist in the database before enriching,
-    # and finishes well before Send Emails (9:45 AM IST).
-    - cron: "13 23 * * *"
+    # Runs every 6 hours (4 times a day) to quickly process the backlog
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
+  
 
 permissions:
   contents: write
