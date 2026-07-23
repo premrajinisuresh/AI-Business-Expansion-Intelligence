@@ -2,9 +2,9 @@
   "meta": {
     "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
     "version": "v5-auto",
-    "lastRun": "2026-07-23T02:33:25.070Z",
-    "lastRunAdded": 1,
-    "totalCompanies": 575
+    "lastRun": "2026-07-23T04:56:16.357Z",
+    "lastRunAdded": 6,
+    "totalCompanies": 581
   },
   "companies": [
     {
@@ -17238,6 +17238,84 @@
       "Status": "New",
       "Notes": "Major Indian hospitality chain expanding presence in key tourism and business hubs across Tamil Nadu.",
       "SourceURL": "https://www.itchotels.com/in/en/hotels-in-madurai",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782421704_85797",
+      "Company": "Chentoor Hotels Pvt Ltd",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.justdial.com/Madurai/Hotel-Chentoor-Near-Supreme-Hotel-Opposite-Chennai-Silks-Madurai-Bazaar/0452P452STDF000166_BZDET/photos",
+      "Email": "Not public",
+      "Phone": "916369938033",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Hotel development company active in Madurai; partnered with IHG Hotels & Resorts to develop the 150-key Holiday Inn Express & Suites Madurai. (phone found via business directory, no company website)",
+      "SourceURL": "https://www.ihgplc.com/en/news-and-media/news-releases/2026/ihg-hotels-and-resorts-strengthens-south-india-presence-with-signing-of-holiday-inn-express-and-suites-madurai",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782421704_62626",
+      "Company": "The Residency Hotels",
+      "Category": "Hotels & Highway Hospitality",
+      "Website": "https://www.madurairesidency.com/contact",
+      "Email": "Not public",
+      "Phone": "919842123437",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "South Indian hospitality group investing ₹600 crore to expand across South India; recently launched The Residency Signature in Madurai. (phone found via business directory, no company website)",
+      "SourceURL": "https://www.facebook.com/RealtyNXT/posts/news-the-residency-hotels-will-invest-600-crore-over-the-next-three-years-to-dev/1468002002011155",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782465063_59805",
+      "Company": "Komalapuram Spinning And Weaving Mills",
+      "Category": "Local Madurai Investors & Business Families",
+      "Website": "https://textile.industry-report.net/komalapuram-spinning-and-weaving-mills",
+      "Email": "Not public",
+      "Phone": "919048206078",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Madurai/Tamil Nadu-based textile and industrial enterprise active in commercial land and property dealings. (phone found via business directory, no company website)",
+      "SourceURL": "https://dir.indiamart.com/madurai/commercial-land.html",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782465063_23943",
+      "Company": "S.M Builders And Land Promoters",
+      "Category": "Local Madurai Investors & Business Families",
+      "Website": "https://www.facebook.com/melursm/videos/for-construction-please-contactsm-buildersmelur-madurai-dts-ph-no9840175251/527756977568864",
+      "Email": "Not public",
+      "Phone": "919840175251",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Madurai-based builder and property development entity engaging in real estate plot investments and construction projects. (phone found via business directory, no company website)",
+      "SourceURL": "https://dir.indiamart.com/madurai/commercial-land.html",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782465063_68316",
+      "Company": "G.S.M. Construction And Interior",
+      "Category": "Local Madurai Investors & Business Families",
+      "Website": "https://gsmconstructions.in/contact",
+      "Email": "Not public",
+      "Phone": "919573102757",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Madurai-based construction and infrastructure firm interested in commercial land development opportunities. (phone found via business directory, no company website)",
+      "SourceURL": "https://dir.indiamart.com/madurai/commercial-land.html",
+      "DateAdded": "2026-07-23"
+    },
+    {
+      "id": "auto_1784782503792_69947",
+      "Company": "Madurai School of Management",
+      "Category": "Educational Trusts & Colleges",
+      "Website": "https://collegedunia.com/college/55409-madurai-school-of-management-madurai",
+      "Email": "Not public",
+      "Phone": "919443705275",
+      "ContactPerson": "Not public",
+      "Status": "New",
+      "Notes": "Management college established in 2011 located along four-lane highway in Madurai district, affiliated with Anna University Chennai. (phone found via business directory, no company website)",
+      "SourceURL": "https://collegedunia.com/college/55409-madurai-school-of-management-madurai",
       "DateAdded": "2026-07-23"
     }
   ]
