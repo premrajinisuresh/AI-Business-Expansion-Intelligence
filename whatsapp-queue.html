@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WhatsApp Queue — Buyer Database v5</title>
+
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f2f3f5; color:#222; }
+  .wrap { max-width: 600px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  .back { display:inline-block; margin-bottom:14px; color:#fff; background:#1d3557; padding:8px 16px; border-radius:20px; font-size:0.85rem; font-weight:700; text-decoration:none; }
+
+  h1 { font-size:1.3rem; color:#1d3557; margin:0 0 6px; }
+  .sub { font-size:0.85rem; color:#666; margin-bottom:18px; }
+
+  .meta { font-size:0.8rem; color:#666; margin-bottom:18px; background:#fff; padding:10px 14px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+  .queue-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:18px; }
+  .queue-stats div { background:#fff; border-radius:12px; padding:10px 6px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+  .queue-stats span.num { display:block; font-size:1.2rem; font-weight:800; color:#1d3557; }
+  .queue-stats span.label { font-size:0.65rem; color:#666; }
+  .progress-bar { background:#25D366; height:100%; transition: width 0.3s ease; }
+  .progress-label { font-size:0.8rem; color:#555; margin-bottom:22px; text-align:center; }
+
+  .card { background:#fff; border-radius:16px; padding:20px; box-shadow:0 3px 10px rgba(0,0,0,0.1); margin-bottom:18px; }
+  .card .badge { display:inline-block; background:#1d3557; color:#fff; font-size:0.72rem; font-weight:700; border-radius:8px; padding:3px 10px; margin-bottom:10px; }
+  .card h2 { font-size:1.15rem; margin:0 0 4px; color:#111; }
+  .card .num { font-size:0.8rem; color:#888; margin-bottom:14px; }
+  .card .msg-label { font-size:0.75rem; font-weight:700; color:#555; text-transform:uppercase; letter-spacing:0.03em; margin-bottom:6px; }
+  .card textarea { width:100%; min-height:110px; padding:10px; border:1px solid #ddd; border-radius:10px; font-size:0.9rem; font-family:inherit; resize:vertical; margin-bottom:14px; }
+
+  .flyer-preview { width:100%; border-radius:10px; margin-bottom:10px; display:block; border:1px solid #eee; }
+  .image-row { display:flex; gap:10px; margin-bottom:14px; }
+  .image-row img { width:50%; border-radius:10px; border:1px solid #eee; }
+
+  .btn-row { display:flex; gap:10px; }
+  .btn-row button { flex:1; padding:14px 8px; border:none; border-radius:12px; font-weight:800; font-size:0.95rem; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+  #openWaBtn { background:#25D366; color:#fff; }
+  #shareFlyerBtn { background:#1FB8CD; color:#fff; }
+  #sentNextBtn { background:#1d3557; color:#fff; }
+  #skipBtn { background:#eee; color:#900; flex:0.6; }
+
+  .empty, .done { text-align:center; padding:40px 20px; color:#555; }
+  .done h2 { color:#1d3557; }
+
+  #resetBtn { display:block; margin:24px auto 0; background:none; border:none; color:#888; font-size:0.8rem; text-decoration:underline; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html" class="back">← Back to site</a>
+  <h1>💬 WhatsApp Queue</h1>
+  <div class="sub">One tap opens WhatsApp with the message ready — you just hit send.</div>
+
+  <div class="meta" id="metaInfo">Loading...</div>
+  <div class="queue-stats">
+    <div><span class="num" id="statDbTotal">0</span><span class="label">Total in DB</span></div>
+    <div><span class="num" id="statQueueTotal">0</span><span class="label">Have WhatsApp #</span></div>
+    <div><span class="num" id="statLandline">0</span><span class="label">Landline Only</span></div>
+    <div><span class="num" id="statNoNumber">0</span><span class="label">No # Yet</span></div>
+  </div>
+
+  <div class="progress-wrap"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+  <div class="progress-label" id="progressLabel">Loading...</div>
+
+  <div id="cardArea"></div>
+
+  <button id="resetBtn">Reset progress and start over</button>
+</div>
+
+<script>
+const DB_URL = "buyerdatabase5.json";
+const PROGRESS_KEY = "wa_queue_handled_v1";
+
+const CATEGORY_MESSAGES = {
+  "Hotels & Highway Hospitality":
+    "Hello, I have a 23.5 cent corner land at Alagarkovil, Madurai — 4-lane highway frontage, strong temple/tourism footfall nearby. Could suit a hotel branch. Direct owner sale, ₹25 Lakhs/cent, negotiable. Interested?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Restaurants & Food Courts":
+    "Hello, sharing a 23.5 cent highway-corner land at Alagarkovil, Madurai — steady tourism + college traffic, good fit for a restaurant/food court. Direct owner sale, ₹25 Lakhs/cent, negotiable. Interested?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Local Madurai Investors & Business Families":
+    "Hello, sharing a solid investment opportunity — 23.5 cent corner land at Alagarkovil, Madurai, just 16 km from the city. Direct owner sale, ₹25 Lakhs/cent, negotiable. Worth a look?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Hospitals & Healthcare Groups":
+    "Hello, I have a 23.5 cent corner land at Alagarkovil, Madurai — highway-facing, near colleges too. Could suit a new hospital/clinic branch. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Educational Trusts & Colleges":
+    "Hello, sharing a 23.5 cent plot at Alagarkovil, Madurai, right in an existing education corridor. Good fit for a new campus? Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "NRI & Diaspora Investors":
+    "Hello, sharing an investment opportunity — 23.5 cent corner land at Alagarkovil, Madurai, close to Alagar Kovil Temple. Direct owner sale, ₹25 Lakhs/cent, negotiable. Interested?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Temple & Charitable Trusts":
+    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai, close to Alagar Kovil Temple — may suit trust-owned development. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Wedding & Convention Halls":
+    "Hello, I have a 23.5 cent highway-corner land at Alagarkovil, Madurai — good size and visibility for a wedding/convention hall. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Highway Fuel, EV & Logistics":
+    "Hello, sharing a 23.5 cent corner land on a 4-lane highway at Alagarkovil, Madurai — good fit for a fuel station, EV charging point, or logistics facility. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Franchise Master Operators":
+    "Hello, I have a 23.5 cent highway-corner land at Alagarkovil, Madurai — could suit a new franchise outlet location. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Government / PPP Institutional":
+    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai that may suit a government or PPP tourism/infrastructure project. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Funded Startups / Scaleups":
+    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai — could suit a new physical location as you expand into Tamil Nadu. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
+  "Institutional Property Consultants":
+    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai — could be a good fit to recommend to your hospital, college, or hotel clients scouting sites in this region. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930"
+};
+const DEFAULT_MESSAGE =
+  "Hello, sharing a 23.5 cent prime corner commercial land at Alagarkovil, Madurai (16 km from the city). Direct owner sale, ₹25 Lakhs/cent, negotiable. Interested?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930";
+
+function hasValue(v) {
+  return v !== undefined && v !== null && String(v).trim() !== "" && v !== "Not public";
+}
+
+function extractWaNumber(company) {
+  if (hasValue(company.WhatsApp)) {
+    const match = String(company.WhatsApp).match(/(\d{10,15})/);
+    if (match) return match[1];
+  }
+  // Check Mobile, then Phone (some records only have a mobile-shaped
+  // number sitting in the Phone field instead of Mobile) -- but only
+  // ever accept a value that genuinely looks like an Indian mobile
+  // (10 digits starting 6-9), so real landlines are never mistaken
+  // for a WhatsApp-capable number.
+  for (const field of [company.Mobile, company.Phone]) {
+    if (!hasValue(field)) continue;
+    for (const part of String(field).split(/[,/|]/)) {
+      const digits = part.replace(/\D/g, "");
+      if (digits.length === 10 && /^[6-9]/.test(digits)) return "91" + digits;
+      if (digits.length === 12 && digits.startsWith("91") && /^91[6-9]/.test(digits)) return digits;
+    }
+  }
+  return null;
+}
+
+function loadHandled() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    return {};
+  }
+}
+function saveHandled(handled) {
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(handled));
+}
+
+let queue = [];
+let handled = {};
+let currentIndex = 0;
+let dbMeta = {};
+let dbTotal = 0;
+let landlineOnlyCount = 0;
+
+function renderMeta() {
+  const el = document.getElementById("metaInfo");
+  if (!el) return;
+  if (!dbMeta.lastRun) {
+    el.textContent = "No automated run yet. Once the GitHub Action runs (on schedule or manually), leads will appear here.";
+  } else {
+    const last = new Date(dbMeta.lastRun);
+    el.textContent =
+      `Last automated run: ${last.toLocaleString()} · ` +
+      `Added ${dbMeta.lastRunAdded ?? 0} new lead(s) that run · ` +
+      `${dbMeta.totalCompanies ?? dbTotal} total in database`;
+  }
+
+  document.getElementById("statDbTotal").textContent = dbTotal;
+  document.getElementById("statQueueTotal").textContent = queue.length;
+  document.getElementById("statLandline").textContent = landlineOnlyCount;
+  document.getElementById("statNoNumber").textContent = Math.max(dbTotal - queue.length - landlineOnlyCount, 0);
+}
+
+function render() {
+  const cardArea = document.getElementById("cardArea");
+  const remaining = queue.filter((c) => !handled[c.id]);
+  const totalDone = queue.length - remaining.length;
+
+  document.getElementById("progressLabel").textContent =
+    `${totalDone} of ${queue.length} done`;
+  document.getElementById("progressBar").style.width =
+    queue.length ? `${(totalDone / queue.length) * 100}%` : "0%";
+
+  if (queue.length === 0) {
+    cardArea.innerHTML = `<div class="empty">No companies with a usable phone/WhatsApp number found yet. Run Enrich Buyers V6 first, then reload this page.</div>`;
+    return;
+  }
+
+  if (remaining.length === 0) {
+    cardArea.innerHTML = `<div class="done"><h2>🎉 All done!</h2><p>You've gone through every contact with a number.</p></div>`;
+    return;
+  }
+
+  const company = remaining[0];
+  const message = CATEGORY_MESSAGES[company.Category] || DEFAULT_MESSAGE;
+  const waNumber = extractWaNumber(company);
+  const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+
+  cardArea.innerHTML = `
+    <div class="card">
+      <span class="badge">${company.Category || "Uncategorized"}</span>
+      <h2>${company.Company || "(unnamed)"}</h2>
+      <div class="num">📱 ${waNumber}</div>
+      <div class="msg-label">Message</div>
+      <textarea id="msgBox">${message}</textarea>
+      <div class="image-row">
+        <img class="flyer-preview" src="assets/property-flyer.jpg" alt="Property flyer" />
+        <img class="flyer-preview" src="assets/site-plan.jpg" alt="Site plan" />
+      </div>
+      <div class="btn-row">
+        <button id="skipBtn">⏭ Skip</button>
+        <button id="openWaBtn">💬 Open WhatsApp</button>
+      </div>
+      <div class="btn-row" style="margin-top:10px;">
+        <button id="shareFlyerBtn">📤 Share Flyer + Plan + Message</button>
+      </div>
+      <div class="btn-row" style="margin-top:10px;">
+        <button id="sentNextBtn">✅ Sent — Next</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("openWaBtn").addEventListener("click", () => {
+    const editedMsg = document.getElementById("msgBox").value;
+    const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(editedMsg)}`;
+    window.open(url, "_blank");
+  });
+
+  document.getElementById("shareFlyerBtn").addEventListener("click", async () => {
+    const editedMsg = document.getElementById("msgBox").value;
+
+    // Copy the number first, so the person can just paste it into
+    // WhatsApp's search bar to find the contact in one step.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try { await navigator.clipboard.writeText(waNumber); } catch (e) {}
+    }
+
+    try {
+      const [flyerRes, planRes] = await Promise.all([
+        fetch("assets/property-flyer.jpg"),
+        fetch("assets/site-plan.jpg")
+      ]);
+      const [flyerBlob, planBlob] = await Promise.all([flyerRes.blob(), planRes.blob()]);
+
+      const files = [
+        new File([flyerBlob], "property-flyer.jpg", { type: "image/jpeg" }),
+        new File([planBlob], "site-plan.jpg", { type: "image/jpeg" })
+      ];
+
+      if (navigator.canShare && navigator.canShare({ files })) {
+        alert(`Number copied: ${waNumber}\n\nNext screen: tap WhatsApp, then paste this number into WhatsApp's search bar to find the contact.`);
+        await navigator.share({
+          files,
+          text: editedMsg,
+          title: "Property Flyer & Site Plan"
+        });
+      } else {
+        alert(`Your browser can't share multiple images at once. Number copied: ${waNumber} — paste it into WhatsApp's search bar, open the chat, then attach both pictures manually from your gallery.`);
+      }
+    } catch (e) {
+      console.log("Share cancelled or unavailable:", e.message);
+    }
+  });
+
+  document.getElementById("sentNextBtn").addEventListener("click", () => {
+    handled[company.id] = "sent";
+    saveHandled(handled);
+    render();
+  });
+
+  document.getElementById("skipBtn").addEventListener("click", () => {
+    handled[company.id] = "skipped";
+    saveHandled(handled);
+    render();
+  });
+}
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  if (confirm("Reset progress? This starts the queue over from the beginning (does not un-send any WhatsApp messages already sent).")) {
+    handled = {};
+    saveHandled(handled);
+    render();
+  }
+});
+
+async function init() {
+  handled = loadHandled();
+  try {
+    const res = await fetch(DB_URL + "?t=" + Date.now());
+    const data = await res.json();
+    dbMeta = data.meta || {};
+    const all = data.companies || [];
+    dbTotal = all.length;
+    queue = all.filter((c) => extractWaNumber(c) !== null);
+    landlineOnlyCount = all.filter(
+      (c) => extractWaNumber(c) === null && hasValue(c.Phone)
+    ).length;
+  } catch (e) {
+    document.getElementById("cardArea").innerHTML =
+      `<div class="empty">Could not load buyerdatabase5.json. Make sure this page is uploaded in the same folder as that file.</div>`;
+    return;
+  }
+  renderMeta();
+  render();
+}
+
+init();
+</script>
+</body>
+</html>
