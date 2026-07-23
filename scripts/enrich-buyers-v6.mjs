@@ -1,0 +1,727 @@
+/* ============================================================
+   Enrichment Script
+   Multi-Provider Search: Tavily (Primary) + Google Custom Search (Backup) + Gemini
+   Cap: 30 / Run (Optimized for Madurai Property Campaign)
+   ============================================================ */
+
+import fs from "fs/promises";
+import axios from "axios";
+import * as cheerio from "cheerio";
+import {
+  isValidEmail,
+  isValidPhone,
+  isValidMobile,
+  isValidWhatsApp,
+  isValidAddress,
+  isValidCity,
+  isValidState,
+  isValidPin,
+  isValidGoogleMaps,
+  isValidFacebook,
+  isValidLinkedIn,
+  isValidInstagram,
+  isValidX,
+  isValidYouTube,
+  isValidContactPage
+} from "./lead-validators.mjs";
+
+const DB_PATH = new URL("../buyerdatabase5.json", import.meta.url).pathname;
+
+const TIMEOUT_MS = 15000;
+
+const TAVILY_API_KEY = process.env.TAVILY_API_KEY;
+const GOOGLE_SEARCH_API_KEY = process.env.GOOGLE_SEARCH_API_KEY;
+const GOOGLE_CSE_ID = process.env.GOOGLE_CSE_ID;
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_MODEL = "gemini-flash-latest";
+const PHONE_HUNT_MAX_PER_RUN = 30;
+
+function isSocialPostUrl(url) {
+  if (!url) return false;
+  return /facebook\.com|instagram\.com/i.test(url);
+}
+
+function isDirectoryListingUrl(url) {
+  if (!url) return false;
+  return /justdial\.com|sulekha\.com|indiamart\.com|tradeindia\.com/i.test(url);
+}
+
+function isUnscrapableWebsite(url) {
+  return isSocialPostUrl(url) || isDirectoryListingUrl(url);
+}
+
+// Multi-Provider Search: Tries Tavily first, falls back to Google Custom Search API if needed
+async function searchWeb(query) {
+  // 1. Try Tavily Search First
+  if (TAVILY_API_KEY) {
+    try {
+      const res = await fetch("https://api.tavily.com/search", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          api_key: TAVILY_API_KEY,
+          query,
+          search_depth: "basic",
+          max_results: 5
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.results && data.results.length > 0) {
+          return data.results.map((r) => ({ title: r.title, url: r.url, content: r.content }));
+        }
+      } else if (res.status === 429) {
+        console.log("⚠️ Tavily limit reached (429). Switching to Google Custom Search backup...");
+      }
+    } catch {
+      // Tavily failed, proceed to fallback
+    }
+  }
+
+  // 2. Fallback: Google Custom Search API (100 free queries/day)
+  if (GOOGLE_SEARCH_API_KEY && GOOGLE_CSE_ID) {
+    try {
+      const googleUrl = `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_SEARCH_API_KEY}&cx=${GOOGLE_CSE_ID}&q=${encodeURIComponent(query)}`;
+      const res = await fetch(googleUrl);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.items && data.items.length > 0) {
+          return data.items.map((item) => ({
+            title: item.title,
+            url: item.link,
+            content: item.snippet
+          }));
+        }
+      }
+    } catch {
+      // Google search fallback failed
+    }
+  }
+
+  return [];
+}
+
+// Streamlined 2-Pass Phone Hunt (Google Business & Directories)
+async function huntPhoneNumberViaSearch(company) {
+  if (!GEMINI_API_KEY) return null;
+
+  const location = company.City || "Madurai Tamil Nadu";
+
+  // Pass 1: General targeted search
+  const generalQuery = `"${company.Company}" phone number WhatsApp contact ${location} India`;
+  let phone = await runPhoneSearchPass(company, generalQuery);
+  if (phone) return phone;
+
+  // Pass 2: Directory fallback
+  const directoryQuery = `${company.Company} ${location} phone number contact justdial sulekha indiamart tradeindia`;
+  phone = await runPhoneSearchPass(company, directoryQuery);
+  return phone;
+}
+
+async function runPhoneSearchPass(company, query) {
+  const results = await searchWeb(query);
+  if (results.length === 0) return null;
+
+  const prompt =
+    `From ONLY these web search results, find a real phone or WhatsApp number for the ` +
+    `organization "${company.Company}". Search results:\n${JSON.stringify(results, null, 2)}\n\n` +
+    `Respond with ONLY a JSON object in this exact shape: {"phone": "..."}. Use the exact ` +
+    `string "Not public" for the phone value if no real number is clearly present in the ` +
+    `results above. Never invent or guess a number.`;
+
+  try {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "{}";
+    const cleaned = text.replace(/```json/gi, "").replace(/```/g, "").trim();
+    const parsed = JSON.parse(cleaned);
+    return parsed.phone && parsed.phone !== "Not public" ? parsed.phone : null;
+  } catch {
+    return null;
+  }
+}
+
+const CONTACT_KEYWORDS = [
+  "contact", "contact-us", "contactus", "about", "about-us", "aboutus",
+  "reach", "reach-us", "reachus", "support", "location", "locations",
+  "branches", "corporate", "connect", "enquiry", "enquire", "inquiry",
+  "inquire", "get-in-touch", "get in touch", "getintouch", "book-now",
+  "book now", "booking", "talk-to-us", "talk to us", "message-us",
+  "message us", "write-to-us", "write to us"
+];
+
+const EMPTY_VALUES = new Set(["", "not public", "n/a", "na", "null", "undefined"]);
+
+const USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
+
+function isEmptyValue(value) {
+  if (value === null || value === undefined) return true;
+  const normalized = String(value).trim().toLowerCase();
+  return EMPTY_VALUES.has(normalized);
+}
+
+async function loadDatabase() {
+  const raw = await fs.readFile(DB_PATH, "utf-8");
+  const data = JSON.parse(raw);
+  if (!data.companies || !Array.isArray(data.companies)) {
+    throw new Error("Invalid database structure: 'companies' array missing.");
+  }
+  return data;
+}
+
+async function saveDatabase(data) {
+  await fs.writeFile(DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+}
+
+function normalizeUrl(base, link) {
+  try {
+    return new URL(link, base).href;
+  } catch {
+    return null;
+  }
+}
+
+async function fetchPage(url) {
+  try {
+    const response = await axios.get(url, {
+      timeout: TIMEOUT_MS,
+      headers: {
+        "User-Agent": USER_AGENT,
+        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      },
+      maxRedirects: 5,
+      validateStatus: (status) => status >= 200 && status < 400
+    });
+    if (typeof response.data !== "string") return null;
+    return response.data;
+  } catch {
+    return null;
+  }
+}
+
+function findContactPages(html, baseUrl) {
+  const links = new Set();
+  try {
+    const $ = cheerio.load(html);
+    $("a[href]").each((_, el) => {
+      const href = $(el).attr("href");
+      if (!href) return;
+      const hrefLower = href.toLowerCase();
+      const textLower = ($(el).text() || "").toLowerCase();
+      const matches = CONTACT_KEYWORDS.some(
+        (kw) => hrefLower.includes(kw) || textLower.includes(kw)
+      );
+      if (matches) {
+        const absolute = normalizeUrl(baseUrl, href);
+        if (absolute && absolute.startsWith("http")) {
+          links.add(absolute);
+        }
+      }
+    });
+  } catch {
+    // ignore parse errors
+  }
+  return Array.from(links).slice(0, 8);
+}
+
+function getCleanText(html) {
+  try {
+    const spaced = html.replace(/></g, "> <");
+    const $ = cheerio.load(spaced);
+    $("script, style, noscript, svg, iframe").remove();
+    return $("body").text().replace(/\s+/g, " ").trim();
+  } catch {
+    return "";
+  }
+}
+
+function extractEmails(html) {
+  const emails = new Set();
+
+  try {
+    const $ = cheerio.load(html);
+    $("a[href^='mailto:']").each((_, el) => {
+      const href = $(el).attr("href") || "";
+      const email = href.replace(/^mailto:/i, "").split("?")[0].trim();
+      if (email) emails.add(email.toLowerCase());
+    });
+  } catch {
+    // ignore
+  }
+
+  const cleanText = getCleanText(html);
+  const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+  const matches = cleanText.match(emailRegex) || [];
+  for (const match of matches) {
+    const lower = match.toLowerCase();
+    if (
+      lower.endsWith(".png") || lower.endsWith(".jpg") || lower.endsWith(".jpeg") ||
+      lower.endsWith(".gif") || lower.endsWith(".svg") || lower.endsWith(".webp") ||
+      lower.includes("example.com") || lower.includes("sentry.io") ||
+      lower.includes("wixpress.com") || lower.includes("godaddy.com") ||
+      lower.includes("schema.org")
+    ) {
+      continue;
+    }
+    emails.add(lower);
+  }
+
+  return Array.from(emails);
+}
+
+function normalizeDigits(raw) {
+  return String(raw).replace(/[^\d]/g, "");
+}
+
+function last10(raw) {
+  const digits = normalizeDigits(raw);
+  return digits.slice(-10);
+}
+
+function dedupeNumbers(list, max, formatter) {
+  const seen = new Set();
+  const out = [];
+  for (const n of list) {
+    const key = last10(n);
+    if (key.length !== 10 || seen.has(key)) continue;
+    seen.add(key);
+    out.push(formatter ? formatter(n) : n.trim());
+    if (out.length >= max) break;
+  }
+  return out;
+}
+
+function formatMobileForStorage(raw) {
+  const digits = normalizeDigits(raw);
+  const last = digits.slice(-10);
+  if (/^[6-9]/.test(last)) return "91" + last;
+  return digits;
+}
+
+function formatPhoneForStorage(raw) {
+  return normalizeDigits(raw);
+}
+
+function extractPhones(html) {
+  const phones = new Set();
+  const mobiles = new Set();
+  const whatsapp = new Set();
+
+  try {
+    const $ = cheerio.load(html);
+    $("a[href^='tel:']").each((_, el) => {
+      const href = $(el).attr("href") || "";
+      const num = href.replace(/^tel:/i, "").trim();
+      if (!num) return;
+      const digits = normalizeDigits(num);
+      const last = digits.slice(-10);
+      if (/^[6-9]/.test(last)) {
+        mobiles.add(num);
+      } else {
+        phones.add(num);
+      }
+    });
+    $("a[href*='wa.me'], a[href*='api.whatsapp.com'], a[href*='whatsapp']").each(
+      (_, el) => {
+        const href = $(el).attr("href") || "";
+        const match = href.match(/(\d{10,15})/);
+        if (match) whatsapp.add(match[1]);
+      }
+    );
+  } catch {
+    // ignore
+  }
+
+  const cleanText = getCleanText(html);
+  const indianMobileRegex = /(?<!\d)(?:\+?91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}(?!\d)/g;
+  const mobileMatches = cleanText.match(indianMobileRegex) || [];
+  for (const m of mobileMatches) {
+    mobiles.add(m.replace(/[\s-]/g, ""));
+  }
+
+  const landlineRegex = /(?<!\d)(?:\+91[\s-]?)?0\d{2,4}[\s-]\d{6,8}(?!\d)/g;
+  const landlineMatches = cleanText.match(landlineRegex) || [];
+  for (const m of landlineMatches) {
+    phones.add(m.replace(/\s+/g, " ").trim());
+  }
+
+  return {
+    phone: dedupeNumbers(Array.from(phones), 2, formatPhoneForStorage),
+    mobile: dedupeNumbers(Array.from(mobiles), 2, formatMobileForStorage),
+    whatsapp: dedupeNumbers(Array.from(whatsapp), 2, formatMobileForStorage)
+  };
+}
+
+function extractAddress(html) {
+  const result = { address: "", city: "", state: "", pin: "" };
+
+  try {
+    const $ = cheerio.load(html);
+    $("script[type='application/ld+json']").each((_, el) => {
+      if (result.address) return;
+      try {
+        const parsed = JSON.parse($(el).contents().text());
+        const nodes = Array.isArray(parsed) ? parsed : [parsed];
+        for (const node of nodes) {
+          const addr = node && node.address;
+          if (addr && typeof addr === "object") {
+            result.address = result.address || addr.streetAddress || "";
+            result.city = result.city || addr.addressLocality || "";
+            result.state = result.state || addr.addressRegion || "";
+            result.pin = result.pin || addr.postalCode || "";
+          }
+        }
+      } catch {
+        // skip
+      }
+    });
+  } catch {
+    // ignore
+  }
+
+  if (!result.address) {
+    try {
+      const $ = cheerio.load(html);
+      const addressTag = $("address").first().text().trim();
+      if (addressTag && addressTag.length < 300) {
+        result.address = addressTag.replace(/\s+/g, " ").trim();
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  const cleanText = getCleanText(html);
+
+  if (!result.pin) {
+    const pinMatch = cleanText.match(/\b\d{6}\b/);
+    if (pinMatch) result.pin = pinMatch[0];
+  }
+
+  const indianStates = [
+    "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana",
+    "Maharashtra", "Gujarat", "Rajasthan", "Punjab", "Haryana",
+    "Uttar Pradesh", "Madhya Pradesh", "Bihar", "West Bengal", "Odisha",
+    "Delhi", "Goa", "Assam", "Jharkhand", "Chhattisgarh", "Uttarakhand",
+    "Himachal Pradesh"
+  ];
+  if (!result.state) {
+    for (const state of indianStates) {
+      if (cleanText.includes(state)) {
+        result.state = state;
+        break;
+      }
+    }
+  }
+
+  const tamilCities = [
+    "Chennai", "Madurai", "Coimbatore", "Trichy", "Tiruchirappalli",
+    "Salem", "Erode", "Tirunelveli", "Vellore", "Thoothukudi",
+    "Dindigul", "Thanjavur", "Karur", "Namakkal"
+  ];
+  if (!result.city) {
+    for (const city of tamilCities) {
+      if (cleanText.includes(city)) {
+        result.city = city;
+        break;
+      }
+    }
+  }
+
+  return result;
+}
+
+function looksLikeDirectionsJunk(url) {
+  if (!url) return false;
+  const lower = url.toLowerCase();
+  if (lower.includes("/maps/dir/")) return true;
+  const coordMarkers = (url.match(/!2d/g) || []).length;
+  if (coordMarkers >= 2) return true;
+  return false;
+}
+
+function extractGoogleMaps(html) {
+  try {
+    const $ = cheerio.load(html);
+    const candidates = [];
+
+    $("a[href*='maps.app.goo.gl'], a[href*='google.com/maps/place'], a[href*='google.com/maps?q='], a[href*='google.com/maps'], a[href*='maps.google'], a[href*='goo.gl/maps']").each(
+      (_, el) => {
+        const href = $(el).attr("href");
+        if (href) candidates.push(href);
+      }
+    );
+    $("iframe[src*='google.com/maps'], iframe[src*='maps.google']").each(
+      (_, el) => {
+        const src = $(el).attr("src");
+        if (src) candidates.push(src);
+      }
+    );
+
+    const clean = candidates.filter((url) => !looksLikeDirectionsJunk(url));
+    const priority = [
+      "maps.app.goo.gl", "/maps/place/", "/maps?q=",
+      "google.com/maps", "maps.google", "goo.gl/maps"
+    ];
+
+    for (const type of priority) {
+      const found = clean.find(url => url.includes(type));
+      if (found) return found;
+    }
+
+    return clean.length ? clean[0] : "";
+  } catch {
+    return "";
+  }
+}
+
+function extractSocialLinks(html) {
+  const social = { facebook: "", linkedin: "", instagram: "", x: "", youtube: "" };
+
+  try {
+    const $ = cheerio.load(html);
+    $("a[href]").each((_, el) => {
+      const href = $(el).attr("href") || "";
+      const hrefLower = href.toLowerCase();
+
+      if (!social.facebook && hrefLower.includes("facebook.com")) {
+        social.facebook = href;
+      } else if (!social.linkedin && hrefLower.includes("linkedin.com")) {
+        social.linkedin = href;
+      } else if (!social.instagram && hrefLower.includes("instagram.com")) {
+        social.instagram = href;
+      } else if (!social.x && (hrefLower.includes("twitter.com") || hrefLower.includes("x.com"))) {
+        social.x = href;
+      } else if (!social.youtube && (hrefLower.includes("youtube.com") || hrefLower.includes("youtu.be"))) {
+        social.youtube = href;
+      }
+    });
+  } catch {
+    // ignore
+  }
+
+  return social;
+}
+
+function mergeCompany(company, extracted) {
+  let updated = false;
+
+  const setIfEmpty = (field, value, isValidFn) => {
+    if (!value) return;
+    if (isValidFn && !isValidFn(value)) return;
+    const current = company[field];
+    if (isEmptyValue(current)) {
+      company[field] = value;
+      updated = true;
+    }
+  };
+
+  setIfEmpty("Email", extracted.email, isValidEmail);
+  setIfEmpty("Phone", extracted.phone, isValidPhone);
+  setIfEmpty("Mobile", extracted.mobile, isValidMobile);
+  setIfEmpty("WhatsApp", extracted.whatsapp, isValidWhatsApp);
+  setIfEmpty("Address", extracted.address, (v) => isValidAddress(v, company.Category));
+  setIfEmpty("PIN", extracted.pin, (v) => isValidPin(v, company.City || extracted.city));
+  setIfEmpty("GoogleMaps", extracted.googleMaps, isValidGoogleMaps);
+  setIfEmpty("Facebook", extracted.facebook, isValidFacebook);
+  setIfEmpty("LinkedIn", extracted.linkedin, isValidLinkedIn);
+  setIfEmpty("Instagram", extracted.instagram, isValidInstagram);
+  setIfEmpty("X", extracted.x, isValidX);
+  setIfEmpty("YouTube", extracted.youtube, isValidYouTube);
+  setIfEmpty("ContactPage", extracted.contactPage, isValidContactPage);
+
+  if (
+    extracted.city &&
+    isEmptyValue(company.City) &&
+    isValidCity(extracted.city, company.Category)
+  ) {
+    company.City = extracted.city;
+    updated = true;
+  }
+  if (
+    extracted.state &&
+    isEmptyValue(company.State) &&
+    isValidState(extracted.state, company.City || extracted.city, company.Category)
+  ) {
+    company.State = extracted.state;
+    updated = true;
+  }
+
+  return updated;
+}
+
+function ensureFields(company) {
+  const fields = [
+    "ContactPage", "Phone", "Mobile", "WhatsApp", "Address", "City",
+    "State", "PIN", "GoogleMaps", "Facebook", "LinkedIn", "Instagram",
+    "X", "YouTube"
+  ];
+  for (const field of fields) {
+    if (!(field in company)) {
+      company[field] = "";
+    }
+  }
+}
+
+async function processCompany(company, stats) {
+  ensureFields(company);
+
+  const website = (company.Website || "").trim();
+  const hasRealWebsite = !isEmptyValue(website) && !isUnscrapableWebsite(website);
+
+  stats.processed += 1;
+  let wasUpdated = false;
+
+  if (hasRealWebsite) {
+    let url = website;
+    if (!/^https?:\/\//i.test(url)) {
+      url = `https://${url}`;
+    }
+
+    try {
+      const homepageHtml = await fetchPage(url);
+      if (!homepageHtml) {
+        stats.errors += 1;
+      } else {
+        const aggregatedHtml = [homepageHtml];
+        let contactPages = findContactPages(homepageHtml, url);
+
+        if (contactPages.length === 0) {
+          const guessedPaths = ["/contact", "/contact-us", "/about", "/about-us"];
+          contactPages = guessedPaths
+            .map((path) => normalizeUrl(url, path))
+            .filter((u) => u !== null);
+        }
+
+        for (const pageUrl of contactPages) {
+          const pageHtml = await fetchPage(pageUrl);
+          if (pageHtml) {
+            aggregatedHtml.push(pageHtml);
+          }
+        }
+
+        const combinedHtml = aggregatedHtml.join("\n");
+
+        const emails = extractEmails(combinedHtml);
+        const phones = extractPhones(combinedHtml);
+        const address = extractAddress(combinedHtml);
+        const googleMaps = extractGoogleMaps(combinedHtml);
+        const social = extractSocialLinks(combinedHtml);
+
+        const extracted = {
+          email: emails.length > 0 ? emails[0] : "",
+          phone: phones.phone.length > 0 ? phones.phone.join(", ") : "",
+          mobile: phones.mobile.length > 0 ? phones.mobile.join(", ") : "",
+          whatsapp: phones.whatsapp.length > 0 ? phones.whatsapp.join(", ") : "",
+          address: address.address,
+          city: address.city,
+          state: address.state,
+          pin: address.pin,
+          googleMaps: googleMaps,
+          facebook: social.facebook,
+          linkedin: social.linkedin,
+          instagram: social.instagram,
+          x: social.x,
+          youtube: social.youtube,
+          contactPage: contactPages.length > 0 ? contactPages[0] : ""
+        };
+
+        wasUpdated = mergeCompany(company, extracted) || wasUpdated;
+      }
+    } catch {
+      stats.errors += 1;
+    }
+  } else {
+    stats.skipped += 1;
+  }
+
+  // Phone Hunt Fallback with cap set to 30
+  const stillNoNumber =
+    isEmptyValue(company.Mobile) && isEmptyValue(company.Phone) && isEmptyValue(company.WhatsApp);
+
+  if (stillNoNumber && stats.phoneHuntAttempts < PHONE_HUNT_MAX_PER_RUN) {
+    stats.phoneHuntAttempts += 1;
+    const found = await huntPhoneNumberViaSearch(company);
+    if (found) {
+      const digits = normalizeDigits(found);
+      const last = digits.slice(-10);
+      if (/^[6-9]/.test(last)) {
+        const candidate = formatMobileForStorage(found);
+        if (isValidMobile(candidate) && isEmptyValue(company.Mobile)) {
+          company.Mobile = candidate;
+          wasUpdated = true;
+          stats.phoneHuntSuccess += 1;
+        }
+      } else {
+        const candidate = formatPhoneForStorage(found);
+        if (isValidPhone(candidate) && isEmptyValue(company.Phone)) {
+          company.Phone = candidate;
+          wasUpdated = true;
+          stats.phoneHuntSuccess += 1;
+        }
+      }
+    }
+    await new Promise((r) => setTimeout(r, 1500));
+  }
+
+  if (wasUpdated) {
+    stats.updated += 1;
+  }
+}
+
+const HEARTBEAT_EVERY = 20;
+const AUTOSAVE_EVERY = 50;
+
+async function main() {
+  const stats = {
+    processed: 0,
+    updated: 0,
+    skipped: 0,
+    errors: 0,
+    phoneHuntAttempts: 0,
+    phoneHuntSuccess: 0
+  };
+
+  const data = await loadDatabase();
+  const total = data.companies.length;
+
+  for (let i = 0; i < total; i += 1) {
+    const company = data.companies[i];
+    await processCompany(company, stats);
+
+    const done = i + 1;
+
+    if (done % HEARTBEAT_EVERY === 0 || done === total) {
+      console.log(
+        `... progress ${done}/${total} (updated: ${stats.updated}, skipped: ${stats.skipped}, errors: ${stats.errors})`
+      );
+    }
+
+    if (done % AUTOSAVE_EVERY === 0) {
+      await saveDatabase(data);
+    }
+  }
+
+  await saveDatabase(data);
+
+  console.log(`Processed: ${stats.processed}`);
+  console.log(`Updated: ${stats.updated}`);
+  console.log(`Skipped: ${stats.skipped}`);
+  console.log(`Errors: ${stats.errors}`);
+  console.log(`Phone-hunt attempts (no-website companies): ${stats.phoneHuntAttempts}`);
+  console.log(`Phone-hunt successes: ${stats.phoneHuntSuccess}`);
+  console.log("Completed Successfully");
+}
+
+main().catch((err) => {
+  console.error("Fatal error:", err.message);
+  process.exit(1);
+});
