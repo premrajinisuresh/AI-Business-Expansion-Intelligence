@@ -17907,6 +17907,46 @@
       "EmailSentDate": "2026-07-23T21:38:37.763Z",
       "EmailStatus": "Sent",
       "LastError": ""
+    },
+    {
+      "Company": "Royal Castle Builders Madurai",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Sun City Housing Promoters Madurai",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Lakshmi Builders and Developers Madurai",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Kovil Real Estate Promoters",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Madurai Prime Builders",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
