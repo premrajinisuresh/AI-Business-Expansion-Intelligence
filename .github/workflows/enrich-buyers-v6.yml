@@ -2,10 +2,9 @@ name: Enrich Buyers V6
 
 on:
   schedule:
-    # Runs every 6 hours (4 times a day) to quickly process the backlog
-    - cron: "0 */6 * * *"
+    # Runs every 3 hours to process micro-batches safely within free-tier limits
+    - cron: "0 */3 * * *"
   workflow_dispatch: {}
-  
 
 permissions:
   contents: write
@@ -24,11 +23,10 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install axios cheerio
+        run: npm install
 
       - name: Run enrichment
         env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/enrich-buyers-v6.mjs
 
@@ -37,5 +35,5 @@ jobs:
           git config user.name "buyer-finder-bot"
           git config user.email "actions@users.noreply.github.com"
           git add buyerdatabase5.json
-          git diff --quiet --cached || git commit -m "Enriched buyer database"
+          git diff --quiet --cached || git commit -m "Enriched buyer database [skip ci]"
           git push
