@@ -4,7 +4,6 @@
    ============================================================ */
 
 import fs from "fs/promises";
-import fetch from "node-fetch";
 
 const DB_PATH = "buyerdatabase5.json";
 const TIMEOUT_MS = 8000;
