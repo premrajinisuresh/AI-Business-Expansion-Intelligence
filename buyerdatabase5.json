@@ -17914,7 +17914,8 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1
+      "RetryCount": 1,
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Royal%20Castle%20Builders%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Sun City Housing Promoters Madurai",
@@ -17922,7 +17923,8 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1
+      "RetryCount": 1,
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Sun%20City%20Housing%20Promoters%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Lakshmi Builders and Developers Madurai",
@@ -17930,7 +17932,8 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1
+      "RetryCount": 1,
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Lakshmi%20Builders%20and%20Developers%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Alagar Kovil Real Estate Promoters",
@@ -17938,7 +17941,8 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1
+      "RetryCount": 1,
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Kovil%20Real%20Estate%20Promoters%2C%20Madurai"
     },
     {
       "Company": "Madurai Prime Builders",
@@ -17946,7 +17950,8 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1
+      "RetryCount": 1,
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Prime%20Builders%2C%20Madurai"
     }
   ]
 }
