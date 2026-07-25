@@ -17952,6 +17952,14 @@
       "WhatsApp": "Not public",
       "RetryCount": 1,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Prime%20Builders%2C%20Madurai"
+    },
+    {
+      "Company": "Golden Nest Promoters Madurai",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
