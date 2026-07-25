@@ -11951,7 +11951,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341973310_82863",
@@ -12012,7 +12012,7 @@
       "EmailSentDate": "2026-07-18T09:12:42.370Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342005693_92676",
@@ -12133,7 +12133,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342031121_56397",
@@ -12164,7 +12164,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342031121_96647",
@@ -12195,7 +12195,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342031121_59488",
@@ -12226,7 +12226,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342031121_99885",
@@ -12257,7 +12257,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342055578_75072",
@@ -12288,7 +12288,7 @@
       "EmailSentDate": "2026-07-18T09:13:00.913Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342055578_55019",
@@ -12349,7 +12349,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784342055578_39077",
@@ -17914,7 +17914,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1,
+      "RetryCount": 2,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Royal%20Castle%20Builders%20Madurai%2C%20Madurai"
     },
     {
@@ -17923,7 +17923,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1,
+      "RetryCount": 2,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Sun%20City%20Housing%20Promoters%20Madurai%2C%20Madurai"
     },
     {
@@ -17932,7 +17932,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1,
+      "RetryCount": 2,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Lakshmi%20Builders%20and%20Developers%20Madurai%2C%20Madurai"
     },
     {
@@ -17941,7 +17941,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1,
+      "RetryCount": 2,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Kovil%20Real%20Estate%20Promoters%2C%20Madurai"
     },
     {
@@ -17950,7 +17950,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 1,
+      "RetryCount": 2,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Prime%20Builders%2C%20Madurai"
     },
     {
@@ -17959,7 +17959,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     }
   ]
 }
