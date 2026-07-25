@@ -9136,7 +9136,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169402741_33983",
@@ -9197,7 +9197,7 @@
       "EmailSentDate": "2026-07-17T08:33:08.468Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169450779_26047",
@@ -9228,7 +9228,7 @@
       "EmailSentDate": "2026-07-17T08:33:11.799Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169450779_99486",
@@ -9259,7 +9259,7 @@
       "EmailSentDate": "2026-07-17T08:33:14.927Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169450779_83382",
@@ -9290,7 +9290,7 @@
       "EmailSentDate": "2026-07-17T08:33:18.153Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784183577517_64904",
@@ -9441,7 +9441,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784183685788_40017",
@@ -9772,7 +9772,7 @@
       "EmailSentDate": "2026-07-17T08:33:41.509Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255483026_45723",
@@ -9803,7 +9803,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255504438_76448",
@@ -9894,7 +9894,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255504438_10077",
@@ -9925,7 +9925,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255525968_50435",
@@ -10046,7 +10046,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255564914_1499",
@@ -10077,7 +10077,7 @@
       "EmailSentDate": "2026-07-17T08:33:57.924Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255564914_37475",
@@ -10168,7 +10168,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255602561_60417",
@@ -10199,7 +10199,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255634831_86373",
@@ -10260,7 +10260,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784255634831_66472",
