@@ -11641,7 +11641,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341903984_4629",
@@ -11672,7 +11672,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341903984_18531",
@@ -11703,7 +11703,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341928982_99042",
@@ -11734,7 +11734,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341928983_45175",
@@ -11765,7 +11765,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341928983_99121",
@@ -11796,7 +11796,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341948854_15251",
@@ -11827,7 +11827,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341948854_97671",
@@ -11858,7 +11858,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341948854_66838",
@@ -11889,7 +11889,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341948854_20571",
@@ -11920,7 +11920,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784341948854_4648",
@@ -17914,7 +17914,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     },
     {
       "Company": "Sun City Housing Promoters Madurai",
@@ -17922,7 +17922,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     },
     {
       "Company": "Lakshmi Builders and Developers Madurai",
@@ -17930,7 +17930,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     },
     {
       "Company": "Alagar Kovil Real Estate Promoters",
@@ -17938,7 +17938,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     },
     {
       "Company": "Madurai Prime Builders",
@@ -17946,7 +17946,7 @@
       "Website": "Not public",
       "Mobile": "Not public",
       "WhatsApp": "Not public",
-      "RetryCount": 0
+      "RetryCount": 1
     }
   ]
 }
