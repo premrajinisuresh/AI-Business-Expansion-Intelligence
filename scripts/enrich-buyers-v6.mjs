@@ -9,7 +9,7 @@ const DB_PATH = "buyerdatabase5.json";
 const TIMEOUT_MS = 25000;
 const BATCH_DELAY_MS = 12000; // 12-second safety buffer between requests
 const MAX_RETRY_COUNT = 3;
-const PHONE_HUNT_MAX_PER_RUN = 10; // Strict limit: exactly 10 leads per execution
+const PHONE_HUNT_MAX_PER_RUN = 15; // Strict limit: exactly 10 leads per execution
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = "gemini-flash-latest";
