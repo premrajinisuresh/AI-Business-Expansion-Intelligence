@@ -8676,7 +8676,7 @@
       "EmailSentDate": "2026-07-17T08:32:47.476Z",
       "EmailStatus": "Sent",
       "LastError": "",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784096976807_35565",
@@ -8707,7 +8707,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169131915_91227",
@@ -8738,7 +8738,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169131915_73822",
@@ -8769,7 +8769,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169167495_78896",
@@ -8860,7 +8860,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169206176_87945",
@@ -8891,7 +8891,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169206176_3594",
@@ -8922,7 +8922,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169260927_67555",
@@ -8953,7 +8953,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169260927_17446",
@@ -8984,7 +8984,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169288769_4903",
@@ -9015,7 +9015,7 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address",
-      "RetryCount": 2
+      "RetryCount": 3
     },
     {
       "id": "auto_1784169288769_29531",
