@@ -1,6 +1,6 @@
 /* ============================================================
    scripts/enrich-buyers-v6.mjs
-   BULLETPROOF DIRECT-TEXT OSINT ENRICHMENT PIPELINE
+   DEBUG-ENABLED FLEXIBLE OSINT ENRICHMENT PIPELINE
    ============================================================ */
 
 import fs from "fs/promises";
@@ -21,26 +21,28 @@ const getJitteredDelay = (baseMs) => {
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const MOBILE_REGEX = /(?<!\d)(?:\+?91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}(?!\d)/;
-const LANDLINE_MADURAI_REGEX = /(?<!\d)(?:0452[\s-]?)?\d{7,8}(?!\d)/;
-
 function extractContactNumber(text) {
   const str = String(text || "");
-  const mobileMatches = str.match(new RegExp(MOBILE_REGEX, "g"));
-  if (mobileMatches && mobileMatches.length > 0) {
-    for (const m of mobileMatches) {
-      const digits = m.replace(/\D/g, "");
-      const last10 = digits.slice(-10);
-      if (/^[6-9]\d{9}$/.test(last10)) return "91" + last10;
+  
+  // Clean out common formatting words to isolate digits
+  const cleanedText = str.replace(/[^\d\s\-\+\(\)]/g, " ");
+  
+  // Find any sequence of 10 digits starting with 6-9 (Indian mobile) or landline prefixes
+  const matches = cleanedText.match(/(?:\+?91[\s-]?)?[6-9]\d{9}/g);
+  if (matches && matches.length > 0) {
+    const digits = matches[0].replace(/\D/g, "");
+    const last10 = digits.slice(-10);
+    if (/^[6-9]\d{9}$/.test(last10)) return "91" + last10;
+  }
+
+  // Fallback: look for any 10-digit block
+  const generic10 = cleanedText.match(/\d{10}/g);
+  if (generic10 && generic10.length > 0) {
+    for (const num of generic10) {
+      if (/^[6-9]\d{9}$/.test(num)) return "91" + num;
     }
   }
-  const landlineMatches = str.match(new RegExp(LANDLINE_MADURAI_REGEX, "g"));
-  if (landlineMatches && landlineMatches.length > 0) {
-    for (const l of landlineMatches) {
-      const digits = l.replace(/\D/g, "");
-      if (digits.length >= 7) return digits.startsWith("0452") ? digits : "0452" + digits;
-    }
-  }
+
   return null;
 }
 
@@ -49,7 +51,7 @@ async function huntPhoneNumber(company) {
   const companyName = company.Company || "";
   const location = company.City || "Madurai Tamil Nadu";
 
-  const prompt = `Find the contact phone number, mobile number, landline, or WhatsApp number for "${companyName}" in "${location}" using Google Search. Check Google Maps, Justdial, IndiaMART, and company websites. Return all phone numbers found in the search results text.`;
+  const prompt = `Search Google for the official contact phone number, mobile number, landline, or WhatsApp number for "${companyName}" in "${location}". Look at Justdial, IndiaMART, and official website contact pages. Output all phone numbers found clearly.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
   
@@ -71,7 +73,8 @@ async function huntPhoneNumber(company) {
       const data = await res.json();
       const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
       
-      // Directly extract phone numbers from Gemini's raw text response
+      console.log(`[Raw Search Response for ${companyName}]:`, text.substring(0, 200)); // Log snippet for debugging
+      
       const found = extractContactNumber(text);
       if (found) return found;
     }
