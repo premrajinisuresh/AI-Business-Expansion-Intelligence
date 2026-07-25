@@ -1,6 +1,6 @@
 /* ============================================================
    scripts/enrich-buyers-v6.mjs
-   DEBUG-ENABLED FLEXIBLE OSINT ENRICHMENT PIPELINE
+   TARGETED DIRECTORY OSINT ENRICHMENT PIPELINE
    ============================================================ */
 
 import fs from "fs/promises";
@@ -23,11 +23,9 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function extractContactNumber(text) {
   const str = String(text || "");
-  
-  // Clean out common formatting words to isolate digits
   const cleanedText = str.replace(/[^\d\s\-\+\(\)]/g, " ");
   
-  // Find any sequence of 10 digits starting with 6-9 (Indian mobile) or landline prefixes
+  // Find any 10-digit mobile number starting with 6-9
   const matches = cleanedText.match(/(?:\+?91[\s-]?)?[6-9]\d{9}/g);
   if (matches && matches.length > 0) {
     const digits = matches[0].replace(/\D/g, "");
@@ -35,11 +33,20 @@ function extractContactNumber(text) {
     if (/^[6-9]\d{9}$/.test(last10)) return "91" + last10;
   }
 
-  // Fallback: look for any 10-digit block
+  // Fallback for generic 10-digit blocks
   const generic10 = cleanedText.match(/\d{10}/g);
   if (generic10 && generic10.length > 0) {
     for (const num of generic10) {
       if (/^[6-9]\d{9}$/.test(num)) return "91" + num;
+    }
+  }
+
+  // Fallback for Madurai landlines (0452 prefix)
+  const landlineMatches = cleanedText.match(/(?:0452[\s-]?)?\d{7,8}/g);
+  if (landlineMatches && landlineMatches.length > 0) {
+    for (const l of landlineMatches) {
+      const digits = l.replace(/\D/g, "");
+      if (digits.length >= 7) return digits.startsWith("0452") ? digits : "0452" + digits;
     }
   }
 
@@ -51,7 +58,14 @@ async function huntPhoneNumber(company) {
   const companyName = company.Company || "";
   const location = company.City || "Madurai Tamil Nadu";
 
-  const prompt = `Search Google for the official contact phone number, mobile number, landline, or WhatsApp number for "${companyName}" in "${location}". Look at Justdial, IndiaMART, and official website contact pages. Output all phone numbers found clearly.`;
+  // Forced targeted search operators to pull exact directory records
+  const prompt = `Perform a targeted Google Search for the official phone number or mobile number of "${companyName}" in "${location}". 
+  Use these precise query vectors in your search:
+  - "${companyName} Madurai phone number contact Justdial IndiaMART"
+  - "site:justdial.com ${companyName} Madurai"
+  - "site:indiamart.com ${companyName} Madurai"
+  
+  Extract and output all raw phone number digits found in the search results.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
   
@@ -72,8 +86,6 @@ async function huntPhoneNumber(company) {
     if (res && res.ok) {
       const data = await res.json();
       const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
-      
-      console.log(`[Raw Search Response for ${companyName}]:`, text.substring(0, 200)); // Log snippet for debugging
       
       const found = extractContactNumber(text);
       if (found) return found;
@@ -111,7 +123,7 @@ async function main() {
 
   const candidates = allCandidates.slice(0, PHONE_HUNT_MAX_PER_RUN);
 
-  console.log(`[Micro-Batch Architecture] Processing ${candidates.length} prioritized leads out of ${allCandidates.length} pending...`);
+  console.log(`[Targeted Architecture] Processing ${candidates.length} prioritized leads out of ${allCandidates.length} pending...`);
 
   for (const company of candidates) {
     stats.phoneHuntAttempts++;
