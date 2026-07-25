@@ -1,20 +1,19 @@
 /* ============================================================
    scripts/enrich-buyers-v6.mjs
-   PRODUCTION-GRADE ASYNCHRONOUS OSINT ENRICHMENT ENGINE
+   BULLETPROOF DIRECT-TEXT OSINT ENRICHMENT PIPELINE
    ============================================================ */
 
 import fs from "fs/promises";
 
 const DB_PATH = "buyerdatabase5.json";
 const TIMEOUT_MS = 25000;
-const BASE_DELAY_MS = 12000; 
+const BASE_DELAY_MS = 12000;
 const MAX_RETRY_COUNT = 3;
-const PHONE_HUNT_MAX_PER_RUN = 15; 
+const PHONE_HUNT_MAX_PER_RUN = 15;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = "gemini-flash-latest";
 
-// Introduce random jitter (±20%) to avoid fixed-interval rate throttling
 const getJitteredDelay = (baseMs) => {
   const jitter = baseMs * 0.4 * (Math.random() - 0.5);
   return Math.floor(baseMs + jitter);
@@ -49,17 +48,8 @@ async function huntPhoneNumber(company) {
   if (!GEMINI_API_KEY) return null;
   const companyName = company.Company || "";
   const location = company.City || "Madurai Tamil Nadu";
-  const website = company.Website || "Not public";
 
-  const prompt = `Perform a deep OSINT search for the official contact phone number, mobile number, landline, or WhatsApp number for "${companyName}" in "${location}". 
-  Check these specific sources thoroughly via Google Search:
-  1. Google Business Profile and Google Maps listings for "${companyName}".
-  2. Indian local business directories like Justdial, IndiaMART, Sulekha, or Tradeindia.
-  3. The official website headers, footers, or contact/about pages (Website hint: ${website}).
-  
-  Respond with ONLY a valid JSON object in this exact format:
-  {"phone": "the exact phone number digits found or 'Not public'"}
-  No markdown outside json.`;
+  const prompt = `Find the contact phone number, mobile number, landline, or WhatsApp number for "${companyName}" in "${location}" using Google Search. Check Google Maps, Justdial, IndiaMART, and company websites. Return all phone numbers found in the search results text.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
   
@@ -79,12 +69,11 @@ async function huntPhoneNumber(company) {
 
     if (res && res.ok) {
       const data = await res.json();
-      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "{}";
-      const cleanedJson = text.replace(/```json/gi, "").replace(/```/g, "").trim();
-      const parsed = JSON.parse(cleanedJson);
-      if (parsed.phone && parsed.phone !== "Not public") {
-        return extractContactNumber(parsed.phone);
-      }
+      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
+      
+      // Directly extract phone numbers from Gemini's raw text response
+      const found = extractContactNumber(text);
+      if (found) return found;
     }
   } catch (e) {
     console.error(`[Search Error] ${companyName}: ${e.message}`);
@@ -102,7 +91,6 @@ async function loadDatabase() {
 }
 
 async function saveDatabase(data) {
-  // Atomic write simulation via stringify formatting preservation
   await fs.writeFile(DB_PATH, JSON.stringify(data, null, 2), "utf-8");
 }
 
@@ -111,7 +99,6 @@ async function main() {
   const data = await loadDatabase();
   const companies = data.companies || [];
 
-  // Filter and prioritize candidates with fewer prior retry counts
   const allCandidates = companies
     .filter((c) => {
       const hasPhone = (c.Mobile && c.Mobile !== "Not public") || (c.WhatsApp && c.WhatsApp !== "Not public");
@@ -129,7 +116,7 @@ async function main() {
     
     if (foundContact) {
       company.Mobile = foundContact;
-      company.WhatsApp = company.WhatsApp && company.WhatsApp !== "Not public" ? company.WhatsApp : (foundContact.startsWith("91") ? `https://wa.me/${foundContact}` : "Not public");
+      company.WhatsApp = foundContact.startsWith("91") ? `https://wa.me/${foundContact}` : "Not public";
       company.RetryCount = 0;
       stats.updated++;
       stats.phoneHuntSuccess++;
@@ -139,8 +126,7 @@ async function main() {
     }
     stats.processed++;
     
-    const currentDelay = getJitteredDelay(BASE_DELAY_MS);
-    await delay(currentDelay);
+    await delay(getJitteredDelay(BASE_DELAY_MS));
   }
 
   await saveDatabase(data);
