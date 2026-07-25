@@ -1,6 +1,6 @@
 /* ============================================================
    scripts/auto-buyer-search5.mjs
-   ROBUST MULTI-VECTOR AUTOMATED BUYER SEARCH ENGINE
+   BULLETPROOF TEXT-PARSING BUYER SEARCH ENGINE
    ============================================================ */
 
 import fs from "fs/promises";
@@ -10,7 +10,6 @@ const TIMEOUT_MS = 30000;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = "gemini-flash-latest";
 
-// Rotating pool of diverse search vectors to guarantee lead discovery
 const SEARCH_VECTORS = [
   "top real estate developers and builders in Madurai Alagar Kovil Highway",
   "commercial property buyers and real estate investors Madurai",
@@ -33,30 +32,14 @@ async function saveDatabase(data) {
 }
 
 async function searchBuyers() {
-  if (!GEMINI_API_KEY) {
-    console.error("Missing GEMINI_API_KEY");
-    return [];
-  }
+  if (!GEMINI_API_KEY) return [];
 
-  // Select vector based on day of year to ensure rotation across runs
   const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
   const queryVector = SEARCH_VECTORS[dayOfYear % SEARCH_VECTORS.length];
 
   console.log(`[Search Vector Rotation] Executing query: "${queryVector}"`);
 
-  const prompt = `Search Google for real companies, firms, or active buyers matching: "${queryVector}".
-  Extract up to 10 distinct entities.
-  Respond with ONLY a valid JSON array of objects in this exact format:
-  [
-    {
-      "Company": "Company Name",
-      "City": "Madurai",
-      "Website": "website URL or 'Not public'",
-      "Mobile": "Not public",
-      "WhatsApp": "Not public"
-    }
-  ]
-  No markdown formatting outside the JSON array.`;
+  const prompt = `Search Google and list 10 real companies, real estate firms, builders, or active buyers matching: "${queryVector}". Provide their company names clearly line by line or in a list.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
@@ -76,10 +59,11 @@ async function searchBuyers() {
 
     if (res && res.ok) {
       const data = await res.json();
-      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "[]";
-      const cleaned = text.replace(/```json/gi, "").replace(/```/g, "").trim();
-      const parsed = JSON.parse(cleaned);
-      if (Array.isArray(parsed)) return parsed;
+      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
+      
+      // Extract lines that look like company names (splitting by newlines or bullet points)
+      const lines = text.split(/\r?\n/).map(l => l.replace(/^[0-9#\-\*\.\s]+/, "").trim()).filter(l => l.length > 3 && l.length < 60);
+      return lines;
     }
   } catch (e) {
     console.error(`[Search Error]: ${e.message}`);
@@ -92,21 +76,21 @@ async function main() {
   const existingCompanies = new Set((db.companies || []).map(c => (c.Company || "").toLowerCase().trim()));
 
   const rawResults = await searchBuyers();
-  console.log(`-> Extracted ${rawResults.length} raw entities from search.`);
+  console.log(`-> Extracted ${rawResults.length} raw entity lines from search.`);
 
   let addedCount = 0;
-  for (const item of rawResults) {
-    const name = (item.Company || "").trim();
-    if (name && !existingCompanies.has(name.toLowerCase())) {
+  for (const name of rawResults) {
+    const cleanName = name.trim();
+    if (cleanName && !existingCompanies.has(cleanName.toLowerCase())) {
       db.companies.push({
-        Company: name,
-        City: item.City || "Madurai",
-        Website: item.Website || "Not public",
+        Company: cleanName,
+        City: "Madurai",
+        Website: "Not public",
         Mobile: "Not public",
         WhatsApp: "Not public",
         RetryCount: 0
       });
-      existingCompanies.add(name.toLowerCase());
+      existingCompanies.add(cleanName.toLowerCase());
       addedCount++;
     }
   }
