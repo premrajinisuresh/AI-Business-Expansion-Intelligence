@@ -10,7 +10,7 @@ const TIMEOUT_MS = 8000;
 const BATCH_SIZE = 5;
 const BATCH_DELAY_MS = 1500;
 const MAX_RETRY_COUNT = 3;
-const PHONE_HUNT_MAX_PER_RUN = 120;
+const PHONE_HUNT_MAX_PER_RUN = 500;
 
 const TAVILY_API_KEY = process.env.TAVILY_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
