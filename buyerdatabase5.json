@@ -1,11 +1,7 @@
 {
-  "meta": {
-    "property": "Alagarkovil Junction, Madurai - 23.5 Cents Corner Commercial Land",
-    "version": "v5-auto",
-    "lastRun": "2026-07-25T08:34:27.621Z",
-    "lastRunAdded": 0,
-    "totalCompanies": 587
-  },
+  "lastRun": "7/26/2026, 5:56:55 PM",
+  "addedThisRun": 0,
+  "total": 599,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
