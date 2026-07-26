@@ -1,7 +1,8 @@
 {
-  "lastRun": "7/26/2026, 10:12:31 PM",
-  "addedThisRun": 0,
-  "total": 614,
+  "lastRun": "7/26/2026, 10:33:43 PM",
+  "addedThisRun": 5,
+  "total": 619,
+  "rotationIndex": 1,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18185,6 +18186,51 @@
       "WhatsApp": "https://wa.me/919443678901",
       "RetryCount": 0,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20NRI%20Enterprise%2C%20Madurai"
+    },
+    {
+      "Company": "Heritage Gateway Resorts Madurai",
+      "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Grand Highway Inns Madurai",
+      "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Royal Residency & Suites Madurai",
+      "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Southern Oasis Hotels Madurai",
+      "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Elite Palms Hospitality Madurai",
+      "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
