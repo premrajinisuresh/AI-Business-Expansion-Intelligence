@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/26/2026, 10:01:53 PM",
-  "addedThisRun": 0,
-  "total": 599,
-  "rotationIndex": 3,
+  "lastRun": "7/26/2026, 10:08:40 PM",
+  "addedThisRun": 5,
+  "total": 604,
+  "rotationIndex": 4,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18036,6 +18036,51 @@
       "WhatsApp": "https://wa.me/919842789012",
       "RetryCount": 0,
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Real%20Estate%20Developers%20Madurai%2C%20Madurai"
+    },
+    {
+      "Company": "Madurai Hospitals Hub",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Hospitals Group",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Hospitals Trust",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Hospitals Associates",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Pandiyan Hospitals Enterprise",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
