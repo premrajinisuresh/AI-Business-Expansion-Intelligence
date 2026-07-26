@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/26/2026, 10:33:43 PM",
+  "lastRun": "7/26/2026, 10:34:47 PM",
   "addedThisRun": 5,
-  "total": 619,
-  "rotationIndex": 1,
+  "total": 624,
+  "rotationIndex": 2,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18226,6 +18226,51 @@
     {
       "Company": "Elite Palms Hospitality Madurai",
       "Category": "Hotels & Highway Hospitality",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Spicy Crest Food Courts Madurai",
+      "Category": "Restaurants & Food Courts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Namma Veetu Dine-In Madurai",
+      "Category": "Restaurants & Food Courts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Flavour Route Restaurants Madurai",
+      "Category": "Restaurants & Food Courts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Royal Feast Chain Madurai",
+      "Category": "Restaurants & Food Courts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Grand Bake & Dine Madurai",
+      "Category": "Restaurants & Food Courts",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
