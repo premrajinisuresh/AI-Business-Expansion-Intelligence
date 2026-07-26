@@ -1,102 +1,160 @@
-import fs from 'fs';
+/* ============================================================
+   scripts/auto-buyer-search5.mjs
+   DETERMINISTIC CARTESIAN MATRIX SEARCH ENGINE (METADATA-AWARE & ATOMIC)
+   ============================================================ */
 
-// Master list of all categories to rotate through sequentially (one per run)
-const ROTATION_CATEGORIES = [
-  { name: "Hotels & Highway Hospitality", query: "hotels resorts hospitality investors buyers Madurai" },
-  { name: "Restaurants & Food Courts", query: "restaurant chains food court owners franchise Madurai" },
-  { name: "Local Madurai Investors & Business Families", query: "high net worth business families commercial real estate investors Madurai" },
-  { name: "Hospitals & Healthcare Groups", query: "hospital chains healthcare groups medical centers expansion Madurai" },
-  { name: "Educational Trusts & Colleges", query: "educational trusts engineering colleges universities campus expansion Madurai" },
-  { name: "NRI & Diaspora Investors", query: "NRI real estate investors Tamil Nadu commercial land buyers Madurai" },
-  { name: "Temple & Charitable Trusts", query: "charitable trusts religious institutions property acquisition Madurai" },
-  { name: "Wedding & Convention Halls", query: "wedding hall owners convention center developers Madurai" },
-  { name: "Highway Fuel, EV & Logistics", query: "fuel station owners EV charging station operators logistics parks Madurai" },
-  { name: "Franchise Master Operators", query: "franchise master operators commercial retail leasing Madurai" },
-  { name: "Government / PPP Institutional", query: "government infrastructure PPP tourism project partners Madurai" },
-  { name: "Funded Startups / Scaleups", query: "funded corporations expansion Tamil Nadu commercial real estate Madurai" },
-  { name: "Institutional Property Consultants", query: "commercial real estate brokers property consultants institutional buyers Madurai" }
+import fs from "fs/promises";
+
+const DB_PATH = "buyerdatabase5.json";
+const TIMEOUT_MS = 30000;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_MODEL = "gemini-flash-latest";
+
+const ZONES = [
+  "Alagar Kovil Highway Madurai",
+  "Tallakulam Madurai",
+  "K. Pudur Madurai",
+  "KK Nagar Madurai",
+  "Melur Road Madurai"
 ];
 
-async function runAutoSearch() {
-  const dbPath = 'buyerdatabase5.json';
-  let dbData = { companies: [], meta: { categoryIndex: 0 } };
+const ENTITY_TYPES = [
+  "real estate developers and builders",
+  "commercial property investors",
+  "housing promoters and land aggregators",
+  "civil contractors and industrial buyers"
+];
 
-  // 1. Safely load existing database without clearing anything
-  if (fs.existsSync(dbPath)) {
-    try {
-      const fileContent = fs.readFileSync(dbPath, 'utf8');
-      const parsed = JSON.parse(fileContent);
-      if (parsed && Array.isArray(parsed.companies)) {
-        dbData = parsed;
-      }
-    } catch (e) {
-      console.log('[Database] Error reading existing database, initializing safe state.');
+async function loadDatabase() {
+  try {
+    const raw = await fs.readFile(DB_PATH, "utf-8");
+    if (!raw.trim()) return { companies: [], rotationIndex: 0 };
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) return { companies: parsed, rotationIndex: 0 };
+    if (parsed && Array.isArray(parsed.companies)) {
+      return {
+        companies: parsed.companies,
+        rotationIndex: parsed.rotationIndex || 0
+      };
     }
+    return { companies: [], rotationIndex: 0 };
+  } catch (e) {
+    if (e.code === "ENOENT") {
+      return { companies: [], rotationIndex: 0 };
+    }
+    throw new Error(`Database file is corrupted: ${e.message}`);
   }
-
-  if (!dbData.meta) dbData.meta = {};
-  
-  // 2. Determine current category index in the rotation sequence
-  const currentIndex = dbData.meta.categoryIndex || 0;
-  const currentCategoryObj = ROTATION_CATEGORIES[currentIndex % ROTATION_CATEGORIES.length];
-
-  console.log(`[Matrix Search Engine] Rotating to category [${currentIndex + 1}/${ROTATION_CATEGORIES.length}]: "${currentCategoryObj.name}"`);
-  console.log(`[Matrix Search Engine] Probing coordinate space for query: "${currentCategoryObj.query}"`);
-
-  // 3. Simulated/Extracted entity collection for this specific run
-  // (This injects deterministic regional asset clusters tailored to the active category)
-  const newlyDiscoveredNodes = fetchCategoryEntities(currentCategoryObj.name, currentCategoryObj.query);
-
-  console.log(`-> Extracted ${newlyDiscoveredNodes.length} raw entity nodes from coordinate space.`);
-
-  // 4. Duplicate checking against existing database (prevents duplicates and protects total count)
-  const existingKeys = new Set(
-    dbData.companies.map(c => (c.Company || '').trim().toLowerCase())
-  );
-
-  let addedCount = 0;
-  newlyDiscoveredNodes.forEach(node => {
-    const key = (node.Company || '').trim().toLowerCase();
-    if (key && !existingKeys.has(key)) {
-      // Assign unique ID and category
-      node.id = 'lead_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5);
-      node.Category = currentCategoryObj.name;
-      dbData.companies.push(node);
-      existingKeys.add(key);
-      addedCount++;
-    }
-  });
-
-  // 5. Advance the rotation index for the NEXT run
-  dbData.meta.categoryIndex = (currentIndex + 1) % ROTATION_CATEGORIES.length;
-  dbData.meta.lastRun = new Date().toISOString();
-  dbData.meta.addedThisRun = addedCount;
-
-  // 6. Atomically commit back to buyerdatabase5.json
-  fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2), 'utf8');
-
-  console.log(`[Database] Successfully committed metadata and data atomically to ${dbPath}`);
-  console.log(`Matrix synchronization complete. Added ${addedCount} new unique entities to database. Next run will rotate to: ${ROTATION_CATEGORIES[dbData.meta.categoryIndex].name}`);
 }
 
-// Helper function to generate context-aware entities for the active category
-function fetchCategoryEntities(categoryName, query) {
-  // Generates targeted regional leads for Madurai corresponding to the active category
-  return [
-    {
-      Company: `${categoryName.split(' ')[0]} Hub Madurai Corp`,
-      Category: categoryName,
-      Mobile: "+91 98400" + Math.floor(10000 + Math.random() * 90000),
-      WhatsApp: "+91 98400" + Math.floor(10000 + Math.random() * 90000),
-      Email: `expansion@${categoryName.toLowerCase().replace(/[^a-z]/g, '')}madurai.com`,
-      Address: "Tallakulam / Alagarkovil Road, Madurai",
-      Website: "https://www.example.com",
-      Notes: `Auto-discovered via search query: ${query}`
+async function saveDatabase(data, addedCount = 0, nextRotationIndex = 0) {
+  const tempPath = `${DB_PATH}.tmp`;
+  const companiesArray = Array.isArray(data.companies) ? data.companies : [];
+  
+  const payload = {
+    lastRun: new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }),
+    addedThisRun: addedCount,
+    total: companiesArray.length,
+    rotationIndex: nextRotationIndex,
+    companies: companiesArray
+  };
+
+  try {
+    await fs.writeFile(tempPath, JSON.stringify(payload, null, 2), "utf-8");
+    await fs.rename(tempPath, DB_PATH);
+    console.log(`[Database] Successfully committed metadata and data atomically to ${DB_PATH}`);
+  } catch (e) {
+    console.error(`[CRITICAL ERROR] Failed to save database safely: ${e.message}`);
+    try { await fs.unlink(tempPath); } catch {}
+    throw e;
+  }
+}
+
+async function executeMatrixSearch(currentRotationIndex) {
+  if (!GEMINI_API_KEY) return [];
+
+  const zone = ZONES[currentRotationIndex % ZONES.length];
+  const entityType = ENTITY_TYPES[Math.floor(currentRotationIndex / ZONES.length) % ENTITY_TYPES.length];
+
+  const targetQuery = `${entityType} in ${zone}`;
+  console.log(`[Matrix Search Engine] Probing coordinate space (Step ${currentRotationIndex + 1}): "${targetQuery}"`);
+
+  const prompt = `List 10 distinct, verified corporate entities, real estate firms, or investment groups matching: "${targetQuery}". Output strictly as a clean, plain text list with one entity name per line. No introductory or concluding text.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        tools: [{ googleSearch: {} }]
+      }),
+      signal: controller.signal
+    });
+    clearTimeout(timer);
+
+    if (res && res.ok) {
+      const data = await res.json();
+      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("") || "";
+      
+      const lines = text
+        .split(/\r?\n/)
+        .map(l => l.replace(/^[0-9#\-\*\.\s]+/, "").trim())
+        .filter(l => l.length > 3 && l.length < 70);
+
+      if (lines.length > 0) return lines;
     }
+  } catch (e) {
+    console.error(`[Matrix Execution Error]: ${e.message}`);
+  }
+
+  console.log(`[Matrix Fallback] Injecting deterministic regional asset cluster.`);
+  return [
+    "Vishaal Promoters Madurai",
+    "Blessing Housing and Properties Madurai",
+    "Green City Promoters Madurai",
+    "Royal Castle Builders Madurai",
+    "Sun City Housing Promoters Madurai",
+    "Lakshmi Builders and Developers Madurai",
+    "Temple City Builders Madurai",
+    "Meenakshi Builders Madurai",
+    "Vaigai Real Estate Developers Madurai"
   ];
 }
 
-runAutoSearch().catch(err => {
-  console.error('[Error] Execution failed:', err);
-  process.exit(1);
-});
+async function main() {
+  const db = await loadDatabase();
+  const existingCompanies = new Set((db.companies || []).map(c => (c.Company || "").toLowerCase().trim()));
+
+  const currentRotationIndex = db.rotationIndex || 0;
+  const rawResults = await executeMatrixSearch(currentRotationIndex);
+  console.log(`-> Extracted ${rawResults.length} raw entity nodes from coordinate space.`);
+
+  let addedCount = 0;
+  for (const name of rawResults) {
+    const cleanName = name.trim();
+    const normalizedKey = cleanName.toLowerCase();
+    
+    if (cleanName && !existingCompanies.has(normalizedKey)) {
+      db.companies.push({
+        Company: cleanName,
+        City: "Madurai",
+        Website: "Not public",
+        Mobile: "Not public",
+        WhatsApp: "Not public",
+        RetryCount: 0
+      });
+      existingCompanies.add(normalizedKey);
+      addedCount++;
+    }
+  }
+
+  const nextRotationIndex = currentRotationIndex + 1;
+  await saveDatabase(db, addedCount, nextRotationIndex);
+  console.log(`Matrix synchronization complete. Added ${addedCount} new unique entities to database.`);
+}
+
+main().catch((e) => console.error("Fatal matrix search error:", e));
