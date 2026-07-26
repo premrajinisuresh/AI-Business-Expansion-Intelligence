@@ -52,10 +52,10 @@
   <div class="meta" id="metaInfo">Loading database status...</div>
   
   <div class="stats">
-    <div><span class="num" id="statTotal">0</span><span class="label">Total Leads</span></div>
+    <div><span class="num" id="statTotal">0</span><span class="label">Total</span></div>
     <div><span class="num" id="statNew">0</span><span class="label">New</span></div>
-    <div><span class="num" id="statContacted">0</span><span class="label">Contacted</span></div>
-    <div><span class="num" id="statInterested">0</span><span class="label">Interested</span></div>
+    <div><span class="num" id="statWaSent">0</span><span class="label">WA Sent</span></div>
+    <div><span class="num" id="statEmailSent">0</span><span class="label">Email Sent</span></div>
   </div>
 
   <div class="filters">
@@ -82,7 +82,7 @@
 
 <script>
 const DB_URL = "buyerdatabase5.json";
-const STATUS_KEY = "buyer_statuses_v2";
+const STATUS_KEY = "buyer_statuses_v3";
 
 const CATEGORY_MESSAGES = {
   "Hotels & Highway Hospitality":
@@ -159,20 +159,8 @@ function loadStatuses() {
     let raw = localStorage.getItem(STATUS_KEY);
     if (raw) return JSON.parse(raw);
     
-    // Fallback from v1
-    raw = localStorage.getItem("buyer_statuses_v1");
-    if (raw) {
-      const old = JSON.parse(raw);
-      const migrated = {};
-      for (const k in old) {
-        migrated[k] = {
-          general: old[k],
-          wa: old[k] === "Contacted" ? "Sent" : "Pending",
-          email: old[k] === "Contacted" ? "Sent" : "Pending"
-        };
-      }
-      return migrated;
-    }
+    raw = localStorage.getItem("buyer_statuses_v2");
+    if (raw) return JSON.parse(raw);
   } catch (e) {}
   return {};
 }
@@ -234,18 +222,22 @@ function render() {
     metaEl.textContent = `Total leads in database: ${companies.length}`;
   }
 
-  let newCount = 0, contactedCount = 0, interestedCount = 0;
+  let totalCount = companies.length;
+  let newCount = 0;
+  let waSentCount = 0;
+  let emailSentCount = 0;
+
   companies.forEach(c => {
     const rec = getRecordStatus(c);
     if (rec.general === "New") newCount++;
-    else if (rec.general === "Contacted") contactedCount++;
-    else if (rec.general === "Interested") interestedCount++;
+    if (rec.wa === "Sent") waSentCount++;
+    if (rec.email === "Sent") emailSentCount++;
   });
 
-  document.getElementById("statTotal").textContent = companies.length;
+  document.getElementById("statTotal").textContent = totalCount;
   document.getElementById("statNew").textContent = newCount;
-  document.getElementById("statContacted").textContent = contactedCount;
-  document.getElementById("statInterested").textContent = interestedCount;
+  document.getElementById("statWaSent").textContent = waSentCount;
+  document.getElementById("statEmailSent").textContent = emailSentCount;
 
   const catFilter = document.getElementById("categoryFilter").value;
   const statFilter = document.getElementById("statusFilter").value;
@@ -357,7 +349,6 @@ window.sendBoth = function(id, encodedCompany, waUrl, emailUrl) {
   statuses[key].general = "Contacted";
   saveStatuses();
 
-  // Open email first, then WhatsApp in new tab
   window.location.href = emailUrl;
   setTimeout(() => {
     window.open(waUrl, "_blank");
