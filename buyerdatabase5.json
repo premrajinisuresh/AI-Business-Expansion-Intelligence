@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/26/2026, 10:09:57 PM",
+  "lastRun": "7/26/2026, 10:10:53 PM",
   "addedThisRun": 5,
-  "total": 609,
-  "rotationIndex": 5,
+  "total": 614,
+  "rotationIndex": 6,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18121,6 +18121,51 @@
     {
       "Company": "Pandiyan Educational Enterprise",
       "Category": "Educational Trusts & Colleges",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Madurai NRI Hub",
+      "Category": "NRI & Diaspora Investors",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai NRI Group",
+      "Category": "NRI & Diaspora Investors",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi NRI Trust",
+      "Category": "NRI & Diaspora Investors",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar NRI Associates",
+      "Category": "NRI & Diaspora Investors",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Pandiyan NRI Enterprise",
+      "Category": "NRI & Diaspora Investors",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
