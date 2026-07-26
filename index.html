@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>Buyer Database v5 — Auto-Collected</title>
 <style>
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f2f3f5; color:#222; }
-  .wrap { max-width: 600px; margin: 0 auto; padding: 20px 16px 60px; }
+  html, body { width: 100%; overflow-x: hidden; margin: 0; padding: 0; background: #f2f3f5; color: #222; font-family: Arial, Helvetica, sans-serif; }
+  .wrap { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px 16px 60px; }
   .nav-bar { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
   .btn-queue { display:inline-block; color:#fff; background:#25D366; padding:8px 16px; border-radius:20px; font-size:0.85rem; font-weight:700; text-decoration:none; }
   h1 { font-size:1.3rem; color:#1d3557; margin:0 0 6px; }
-  .meta { font-size:0.8rem; color:#666; margin-bottom:18px; background:#fff; padding:10px 14px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
-  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-bottom:18px; }
-  .stats div { background:#fff; border-radius:10px; padding:8px 4px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
-  .stats span.num { display:block; font-size:1.1rem; font-weight:800; color:#1d3557; }
-  .stats span.label { font-size:0.6rem; color:#666; }
+  .meta { font-size:0.8rem; color:#666; margin-bottom:18px; background:#fff; padding:10px 14px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.06); word-break: break-word; }
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:18px; }
+  .stats div { background:#fff; border-radius:8px; padding:8px 2px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+  .stats span.num { display:block; font-size:0.95rem; font-weight:800; color:#1d3557; }
+  .stats span.label { font-size:0.55rem; color:#666; }
   .filters { display:flex; flex-direction:column; gap:10px; margin-bottom:18px; }
   .filter-row { display:flex; gap:10px; }
   select, input { width:100%; padding:10px; border:1px solid #ddd; border-radius:10px; font-size:0.9rem; font-family:inherit; background:#fff; }
@@ -23,11 +23,11 @@
   .action-row button { flex:1; padding:10px; border:none; border-radius:10px; font-weight:700; cursor:pointer; }
   #refreshBtn { background:#1d3557; color:#fff; }
   #exportBtn { background:#d4a373; color:#fff; }
-  .card { background:#fff; border-radius:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:14px; }
-  .card .header-row { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px; }
-  .card h2 { font-size:1.05rem; margin:0 0 2px; color:#111; }
+  .card { background:#fff; border-radius:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:14px; width:100%; overflow:hidden; }
+  .card .header-row { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px; gap:8px; }
+  .card h2 { font-size:1.05rem; margin:0 0 2px; color:#111; word-break: break-word; }
   .card .category { font-size:0.75rem; color:#666; margin-bottom:8px; }
-  .card .details { font-size:0.85rem; color:#444; margin-bottom:12px; line-height:1.4; }
+  .card .details { font-size:0.85rem; color:#444; margin-bottom:12px; line-height:1.4; word-break: break-word; }
   .card .details div { margin-bottom:4px; }
   .status-badges { display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap; }
   .badge { font-size:0.7rem; padding:3px 8px; border-radius:6px; font-weight:700; }
@@ -47,13 +47,14 @@
 <div class="wrap">
   <div class="nav-bar">
     <h1>📊 Buyer Database v5</h1>
-    <a href="whatsapp-queue.html" class="btn-queue">💬 WhatsApp Queue</a>
+    <a href="whatsapp-queue.html" class="btn-queue">💬 WA Queue</a>
   </div>
   <div class="meta" id="metaInfo">Loading database status...</div>
   
   <div class="stats">
     <div><span class="num" id="statTotal">0</span><span class="label">Total</span></div>
     <div><span class="num" id="statNew">0</span><span class="label">New</span></div>
+    <div><span class="num" id="statContacted">0</span><span class="label">Contacted</span></div>
     <div><span class="num" id="statWaSent">0</span><span class="label">WA Sent</span></div>
     <div><span class="num" id="statEmailSent">0</span><span class="label">Email Sent</span></div>
   </div>
@@ -224,18 +225,21 @@ function render() {
 
   let totalCount = companies.length;
   let newCount = 0;
+  let contactedCount = 0;
   let waSentCount = 0;
   let emailSentCount = 0;
 
   companies.forEach(c => {
     const rec = getRecordStatus(c);
     if (rec.general === "New") newCount++;
+    if (rec.general === "Contacted") contactedCount++;
     if (rec.wa === "Sent") waSentCount++;
     if (rec.email === "Sent") emailSentCount++;
   });
 
   document.getElementById("statTotal").textContent = totalCount;
   document.getElementById("statNew").textContent = newCount;
+  document.getElementById("statContacted").textContent = contactedCount;
   document.getElementById("statWaSent").textContent = waSentCount;
   document.getElementById("statEmailSent").textContent = emailSentCount;
 
@@ -328,7 +332,11 @@ window.sendChannel = function(id, encodedCompany, url, isWhatsApp) {
     window.open(url, "_blank");
   } else {
     statuses[key].email = "Sent";
-    window.location.href = url;
+    const tempA = document.createElement('a');
+    tempA.href = url;
+    document.body.appendChild(tempA);
+    tempA.click();
+    document.body.removeChild(tempA);
   }
   
   statuses[key].general = "Contacted";
@@ -349,7 +357,12 @@ window.sendBoth = function(id, encodedCompany, waUrl, emailUrl) {
   statuses[key].general = "Contacted";
   saveStatuses();
 
-  window.location.href = emailUrl;
+  const tempA = document.createElement('a');
+  tempA.href = emailUrl;
+  document.body.appendChild(tempA);
+  tempA.click();
+  document.body.removeChild(tempA);
+
   setTimeout(() => {
     window.open(waUrl, "_blank");
   }, 400);
