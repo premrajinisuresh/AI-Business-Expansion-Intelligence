@@ -1,418 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>Buyer Database v5 — Auto-Collected</title>
-<style>
-  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body { width: 100%; overflow-x: hidden; margin: 0; padding: 0; background: #f2f3f5; color: #222; font-family: Arial, Helvetica, sans-serif; }
-  .wrap { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px 16px 60px; }
-  .nav-bar { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
-  .btn-queue { display:inline-block; color:#fff; background:#25D366; padding:8px 16px; border-radius:20px; font-size:0.85rem; font-weight:700; text-decoration:none; }
-  h1 { font-size:1.3rem; color:#1d3557; margin:0 0 6px; }
-  .meta { font-size:0.8rem; color:#666; margin-bottom:18px; background:#fff; padding:10px 14px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.06); word-break: break-word; }
-  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:18px; }
-  .stats div { background:#fff; border-radius:8px; padding:8px 2px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
-  .stats span.num { display:block; font-size:0.95rem; font-weight:800; color:#1d3557; }
-  .stats span.label { font-size:0.55rem; color:#666; }
-  .filters { display:flex; flex-direction:column; gap:10px; margin-bottom:18px; }
-  .filter-row { display:flex; gap:10px; }
-  select, input { width:100%; padding:10px; border:1px solid #ddd; border-radius:10px; font-size:0.9rem; font-family:inherit; background:#fff; }
-  .action-row { display:flex; gap:10px; margin-bottom:18px; }
-  .action-row button { flex:1; padding:10px; border:none; border-radius:10px; font-weight:700; cursor:pointer; }
-  #refreshBtn { background:#1d3557; color:#fff; }
-  #exportBtn { background:#d4a373; color:#fff; }
-  .card { background:#fff; border-radius:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:14px; width:100%; overflow:hidden; }
-  .card .header-row { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px; gap:8px; }
-  .card h2 { font-size:1.05rem; margin:0 0 2px; color:#111; word-break: break-word; }
-  .card .category { font-size:0.75rem; color:#666; margin-bottom:8px; }
-  .card .details { font-size:0.85rem; color:#444; margin-bottom:12px; line-height:1.4; word-break: break-word; }
-  .card .details div { margin-bottom:4px; }
-  .status-badges { display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap; }
-  .badge { font-size:0.7rem; padding:3px 8px; border-radius:6px; font-weight:700; }
-  .badge-wa-sent { background:#d4edda; color:#155724; }
-  .badge-wa-pending { background:#fff3cd; color:#856404; }
-  .badge-email-sent { background:#cce5ff; color:#004085; }
-  .badge-email-pending { background:#f8d7da; color:#721c24; }
-  .btn-group { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
-  .btn-row-dual { display:flex; gap:8px; }
-  .wa-btn { flex:1; display:block; text-align:center; background:#25D366; color:#fff; padding:10px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow:0 2px 5px rgba(0,0,0,0.1); cursor:pointer; font-size:0.85rem; }
-  .email-btn { flex:1; display:block; text-align:center; background:#1d3557; color:#fff; padding:10px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow:0 2px 5px rgba(0,0,0,0.1); cursor:pointer; font-size:0.85rem; }
-  .both-btn { display:block; text-align:center; background:linear-gradient(135deg, #1d3557, #25D366); color:#fff; padding:12px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow:0 2px 5px rgba(0,0,0,0.1); cursor:pointer; font-size:0.9rem; }
-  .empty { text-align:center; padding:30px; color:#666; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Database v5</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #10b981;
+            --background: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            margin: 0;
+            padding: 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+        }
+        .btn-wa-queue {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .automation-banner {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 600px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 12px 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .stat-card .label {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 4px;
+        }
+        .controls-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .filter-row {
+            display: flex;
+            gap: 8px;
+        }
+        select, input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: white;
+            font-size: 0.9rem;
+        }
+        .action-row {
+            display: flex;
+            gap: 8px;
+        }
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+        .btn-refresh { background-color: #1e293b; }
+        .btn-export { background-color: #d97706; }
+        
+        .lead-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .lead-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .lead-title h3 {
+            margin: 0 0 4px 0;
+            font-size: 1.1rem;
+        }
+        .lead-title p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .badge-container {
+            display: flex;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .badge-sent { background-color: #d1fae5; color: #065f46; }
+        .badge-pending { background-color: #fee2e2; color: #991b1b; }
+        .lead-details p {
+            margin: 6px 0;
+            font-size: 0.85rem;
+        }
+        .lead-details a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="nav-bar">
-    <h1>📊 Buyer Database v5</h1>
-    <a href="whatsapp-queue.html" class="btn-queue">💬 WA Queue</a>
-  </div>
-  <div class="meta" id="metaInfo">Loading database status...</div>
-  
-  <div class="stats">
-    <div><span class="num" id="statTotal">0</span><span class="label">Total</span></div>
-    <div><span class="num" id="statNew">0</span><span class="label">New</span></div>
-    <div><span class="num" id="statContacted">0</span><span class="label">Contacted</span></div>
-    <div><span class="num" id="statWaSent">0</span><span class="label">WA Sent</span></div>
-    <div><span class="num" id="statEmailSent">0</span><span class="label">Email Sent</span></div>
-  </div>
+    <div class="container">
+        <div class="header-bar">
+            <h1>📊 Buyer Database v5</h1>
+            <button class="btn-wa-queue" onclick="openWaQueue()">💬 WA Queue</button>
+        </div>
 
-  <div class="filters">
-    <select id="categoryFilter"><option value="">All Categories</option></select>
-    <div class="filter-row">
-      <select id="statusFilter">
-        <option value="">All Statuses</option>
-        <option value="New">New</option>
-        <option value="Contacted">Contacted</option>
-        <option value="Interested">Interested</option>
-        <option value="Skipped">Skipped</option>
-      </select>
-      <input type="text" id="searchInput" placeholder="Search company or notes..." />
+        <div class="automation-banner" id="automation-status">
+            Last automated run: Loading... · Added 0 new lead(s) · <span id="total-count-banner">0</span> total
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number" id="stat-total">0</div>
+                <div class="label">Total</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="stat-new">0</div>
+                <div class="label">New</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="stat-contacted">0</div>
+                <div class="label">Contacted</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="stat-wa">0</div>
+                <div class="label">WA Sent</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="stat-email">0</div>
+                <div class="label">Email Sent</div>
+            </div>
+        </div>
+
+        <div class="controls-grid">
+            <div class="filter-row">
+                <select id="categoryFilter" onchange="filterAndRender()">
+                    <option value="All">All Categories</option>
+                </select>
+                <select id="statusFilter" onchange="filterAndRender()">
+                    <option value="All">All Statuses</option>
+                    <option value="New">New</option>
+                    <option value="Contacted">Contacted</option>
+                    <option value="Interested">Interested</option>
+                    <option value="Skipped">Skipped</option>
+                </select>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search company or notes..." oninput="filterAndRender()">
+            <div class="action-row">
+                <button class="btn btn-refresh" onclick="resetData()">🔄 Refresh</button>
+                <button class="btn btn-export" onclick="exportCSV()">↓ Export CSV</button>
+            </div>
+        </div>
+
+        <div id="leads-container"></div>
     </div>
-  </div>
 
-  <div class="action-row">
-    <button id="refreshBtn">🔄 Refresh</button>
-    <button id="exportBtn">⬇ Export CSV</button>
-  </div>
+    <script>
+        let leads = JSON.parse(localStorage.getItem('buyer_database_leads')) || [
+            {
+                id: 1,
+                company: "IHG Hotels & Resorts",
+                category: "Hotels & Highway Hospitality",
+                status: "Contacted",
+                waSent: true,
+                emailSent: false,
+                mobile: "918774242449",
+                website: "https://www.ihgplc.com",
+                notes: "A major multinational hospitality company expanding its footprint in South India. They have officially signed a management agreement to bring Holiday Inn Express & Suites to Madurai, highlighting active corporate interest in the region's hospitality market."
+            }
+        ];
 
-  <div id="cardList"></div>
-</div>
+        function initApp() {
+            populateCategories();
+            updateStats();
+            filterAndRender();
+            document.getElementById('automation-status').innerHTML = 
+                `Last automated run: ${new Date().toLocaleString()} · Added 0 new lead(s) · <span id="total-count-banner">${leads.length}</span> total`;
+        }
 
-<script>
-const DB_URL = "buyerdatabase5.json";
-const STATUS_KEY = "buyer_statuses_v3";
+        function populateCategories() {
+            const categories = [...new Set(leads.map(l => l.category))];
+            const select = document.getElementById('categoryFilter');
+            select.innerHTML = '<option value="All">All Categories</option>';
+            categories.forEach(cat => {
+                if(cat) {
+                    select.innerHTML += `<option value="${cat}">${cat}</option>`;
+                }
+            });
+        }
 
-const CATEGORY_MESSAGES = {
-  "Hotels & Highway Hospitality":
-    "Hello, I have a 23.5 cent corner land at Alagarkovil, Madurai — 4-lane highway frontage, strong temple/tourism footfall nearby. Could suit a hotel branch. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Restaurants & Food Courts":
-    "Hello, sharing a 23.5 cent highway-corner land at Alagarkovil, Madurai — steady tourism + college traffic, good fit for a restaurant/food court. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Local Madurai Investors & Business Families":
-    "Hello, sharing a solid investment opportunity — 23.5 cent corner land at Alagarkovil, Madurai, just 16 km from the city. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Hospitals & Healthcare Groups":
-    "Hello, I have a 23.5 cent corner land at Alagarkovil, Madurai — highway-facing, near colleges too. Could suit a new hospital/clinic branch. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Educational Trusts & Colleges":
-    "Hello, sharing a 23.5 cent plot at Alagarkovil, Madurai, right in an existing education corridor. Good fit for a new campus? Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "NRI & Diaspora Investors":
-    "Hello, sharing an investment opportunity — 23.5 cent corner land at Alagarkovil, Madurai, close to Alagar Kovil Temple. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Temple & Charitable Trusts":
-    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai, close to Alagar Kovil Temple — may suit trust-owned development. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Wedding & Convention Halls":
-    "Hello, I have a 23.5 cent highway-corner land at Alagarkovil, Madurai — good size and visibility for a wedding/convention hall. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Highway Fuel, EV & Logistics":
-    "Hello, sharing a 23.5 cent corner land on a 4-lane highway at Alagarkovil, Madurai — good fit for a fuel station, EV charging point, or logistics facility. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Franchise Master Operators":
-    "Hello, I have a 23.5 cent highway-corner land at Alagarkovil, Madurai — could suit a new franchise outlet location. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Government / PPP Institutional":
-    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai that may suit a government or PPP tourism/infrastructure project. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Funded Startups / Scaleups":
-    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai — could suit a new physical location as you expand into Tamil Nadu. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930",
-  "Institutional Property Consultants":
-    "Hello, sharing a 23.5 cent corner land at Alagarkovil, Madurai — could be a good fit to recommend to your hospital, college, or hotel clients scouting sites in this region. Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930"
-};
-const DEFAULT_MESSAGE =
-  "Hello, sharing a 23.5 cent prime corner commercial land at Alagarkovil, Madurai (16 km from the city). Direct owner sale, ₹25 Lakhs/cent, negotiable.\n\nPlease find the detailed property flyer and exact site-to-scale plan attached above. Shall I share the exact Google Maps location pin or arrange a brief call?\n\n— Prof. Dr. Suresh Kumar, Structural & Software Engineer, +91 9884198930";
+        function updateStats() {
+            const total = leads.length;
+            const newCount = leads.filter(l => !l.status || l.status === 'New').length;
+            const contactedCount = leads.filter(l => l.status === 'Contacted').length;
+            const waSentCount = leads.filter(l => l.waSent === true || l.whatsappSent === true).length;
+            const emailSentCount = leads.filter(l => l.emailSent === true).length;
 
-let dbData = { companies: [] };
-let statuses = {};
+            document.getElementById('stat-total').innerText = total;
+            document.getElementById('stat-new').innerText = newCount;
+            document.getElementById('stat-contacted').innerText = contactedCount;
+            document.getElementById('stat-wa').innerText = waSentCount;
+            document.getElementById('stat-email').innerText = emailSentCount;
+            
+            const bannerCount = document.getElementById('total-count-banner');
+            if(bannerCount) bannerCount.innerText = total;
+        }
 
-function hasValue(v) {
-  return v !== undefined && v !== null && String(v).trim() !== "" && v !== "Not public";
-}
+        function updateLeadStatus(id, newStatus) {
+            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
+            if (lead) {
+                lead.status = newStatus;
+                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
+                updateStats();
+                filterAndRender();
+            }
+        }
 
-function extractWaNumber(company) {
-  if (hasValue(company.WhatsApp)) {
-    for (const part of String(company.WhatsApp).split(/[,/|]/)) {
-      const match = part.match(/(\d{10,15})/);
-      if (match) return match[1];
-    }
-  }
-  for (const field of [company.Mobile, company.Phone]) {
-    if (!hasValue(field)) continue;
-    for (const part of String(field).split(/[,/|]/)) {
-      const digits = part.replace(/\D/g, "");
-      if (digits.length === 10 && /^[6-9]/.test(digits)) return "91" + digits;
-      if (digits.length === 12 && digits.startsWith("91") && /^91[6-9]/.test(digits)) return digits;
-    }
-  }
-  return null;
-}
+        function filterAndRender() {
+            const categoryVal = document.getElementById('categoryFilter').value;
+            const statusVal = document.getElementById('statusFilter').value;
+            const searchVal = document.getElementById('searchInput').value.toLowerCase();
 
-function extractEmail(company) {
-  if (hasValue(company.Email)) {
-    for (const part of String(company.Email).split(/[,/|]/)) {
-      const match = part.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
-      if (match) return match[0];
-    }
-  }
-  return null;
-}
+            const filtered = leads.filter(l => {
+                const matchesCategory = (categoryVal === 'All' || l.category === categoryVal);
+                const matchesStatus = (statusVal === 'All' || (l.status || 'New') === statusVal);
+                const matchesSearch = (l.company.toLowerCase().includes(searchVal) || (l.notes && l.notes.toLowerCase().includes(searchVal)));
+                return matchesCategory && matchesStatus && matchesSearch;
+            });
 
-function getCompanyKey(c) {
-  return c.id || (c.Company ? c.Company.trim().toLowerCase() : "");
-}
+            const container = document.getElementById('leads-container');
+            if (filtered.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No leads found matching criteria.</p>';
+                return;
+            }
 
-function loadStatuses() {
-  try {
-    let raw = localStorage.getItem(STATUS_KEY);
-    if (raw) return JSON.parse(raw);
-    
-    raw = localStorage.getItem("buyer_statuses_v2");
-    if (raw) return JSON.parse(raw);
-  } catch (e) {}
-  return {};
-}
+            container.innerHTML = filtered.map(lead => {
+                const currentStatus = lead.status || 'New';
+                const uniqueId = lead.id || lead.mobile || lead.company;
+                return `
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-title">
+                            <h3>${lead.company}</h3>
+                            <p>${lead.category}</p>
+                        </div>
+                        <select onchange="updateLeadStatus('${uniqueId}', this.value)" style="width: auto; padding: 6px 12px; font-weight: 500;">
+                            <option value="New" ${currentStatus === 'New' ? 'selected' : ''}>New</option>
+                            <option value="Contacted" ${currentStatus === 'Contacted' ? 'selected' : ''}>Contacted</option>
+                            <option value="Interested" ${currentStatus === 'Interested' ? 'selected' : ''}>Interested</option>
+                            <option value="Skipped" ${currentStatus === 'Skipped' ? 'selected' : ''}>Skipped</option>
+                        </select>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge ${lead.waSent ? 'badge-sent' : 'badge-pending'}">
+                            WhatsApp: ${lead.waSent ? 'Sent' : 'Pending'}
+                        </span>
+                        <span class="badge ${lead.emailSent ? 'badge-sent' : 'badge-pending'}">
+                            Email: ${lead.emailSent ? 'Sent' : 'Pending'}
+                        </span>
+                    </div>
+                    <div class="lead-details">
+                        <p><strong>📱 Mobile/Phone:</strong> ${lead.mobile || 'N/A'}</p>
+                        <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/${lead.mobile}" target="_blank">https://wa.me/${lead.mobile}</a></p>
+                        <p><strong>🌐 Website:</strong> <a href="${lead.website}" target="_blank">${lead.website || 'N/A'}</a></p>
+                        <p><strong>📝 Notes:</strong> ${lead.notes || 'No notes added.'}</p>
+                    </div>
+                </div>`;
+            }).join('');
+        }
 
-function saveStatuses() {
-  localStorage.setItem(STATUS_KEY, JSON.stringify(statuses));
-}
+        function resetData() {
+            localStorage.removeItem('buyer_database_leads');
+            location.reload();
+        }
 
-function getRecordStatus(c) {
-  const key = getCompanyKey(c);
-  const altKey = c.Company ? c.Company.trim().toLowerCase() : "";
-  let rec = statuses[c.id] || statuses[key] || statuses[altKey];
-  if (!rec) {
-    rec = { general: "New", wa: "Pending", email: "Pending" };
-  }
-  if (typeof rec === "string") {
-    rec = { general: rec, wa: rec === "Contacted" ? "Sent" : "Pending", email: rec === "Contacted" ? "Sent" : "Pending" };
-  }
-  return rec;
-}
+        function exportCSV() {
+            let csv = 'Company,Category,Status,WhatsApp Sent,Email Sent,Mobile,Website,Notes\n';
+            leads.forEach(l => {
+                csv += `"${l.company}","${l.category || ''}","${l.status || 'New'}","${l.waSent ? 'Yes' : 'No'}","${l.emailSent ? 'Yes' : 'No'}","${l.mobile || ''}","${l.website || ''}","${(l.notes || '').replace(/"/g, '""')}"\n`;
+            });
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'buyer_database_export.csv';
+            a.click();
+        }
 
-async function init() {
-  statuses = loadStatuses();
-  try {
-    const res = await fetch(DB_URL + "?t=" + Date.now());
-    dbData = await res.json();
-  } catch (e) {
-    document.getElementById("cardList").innerHTML = `<div class="empty">Could not load buyerdatabase5.json</div>`;
-    return;
-  }
+        function openWaQueue() {
+            alert('Redirecting to WhatsApp Queue...');
+        }
 
-  setupFilters();
-  render();
-
-  document.getElementById("refreshBtn").addEventListener("click", init);
-  document.getElementById("categoryFilter").addEventListener("change", render);
-  document.getElementById("statusFilter").addEventListener("change", render);
-  document.getElementById("searchInput").addEventListener("input", render);
-  document.getElementById("exportBtn").addEventListener("click", exportCsv);
-}
-
-function setupFilters() {
-  const cats = [...new Set(dbData.companies.map(c => c.Category).filter(Boolean))].sort();
-  const sel = document.getElementById("categoryFilter");
-  sel.innerHTML = '<option value="">All Categories</option>' + cats.map(cat => `<option value="${cat}">${cat}</option>`).join("");
-}
-
-function render() {
-  const companies = dbData.companies || [];
-  const meta = dbData.meta || {};
-  const lastRunTime = dbData.lastRun || meta.lastRun;
-  const addedCount = dbData.addedThisRun ?? dbData.lastRunAdded ?? meta.addedThisRun ?? 0;
-
-  const metaEl = document.getElementById("metaInfo");
-  if (lastRunTime) {
-    const last = new Date(lastRunTime);
-    metaEl.textContent = `Last automated run: ${last.toLocaleString()} · Added ${addedCount} new lead(s) · ${companies.length} total`;
-  } else {
-    metaEl.textContent = `Total leads in database: ${companies.length}`;
-  }
-
-  let totalCount = companies.length;
-  let newCount = 0;
-  let contactedCount = 0;
-  let waSentCount = 0;
-  let emailSentCount = 0;
-
-  companies.forEach(c => {
-    const rec = getRecordStatus(c);
-    if (rec.general === "New") newCount++;
-    if (rec.general === "Contacted") contactedCount++;
-    if (rec.wa === "Sent") waSentCount++;
-    if (rec.email === "Sent") emailSentCount++;
-  });
-
-  document.getElementById("statTotal").textContent = totalCount;
-  document.getElementById("statNew").textContent = newCount;
-  document.getElementById("statContacted").textContent = contactedCount;
-  document.getElementById("statWaSent").textContent = waSentCount;
-  document.getElementById("statEmailSent").textContent = emailSentCount;
-
-  const catFilter = document.getElementById("categoryFilter").value;
-  const statFilter = document.getElementById("statusFilter").value;
-  const search = document.getElementById("searchInput").value.toLowerCase();
-
-  const filtered = companies.filter(c => {
-    const rec = getRecordStatus(c);
-    if (catFilter && c.Category !== catFilter) return false;
-    if (statFilter && rec.general !== statFilter) return false;
-    if (search) {
-      const text = (c.Company + " " + (c.Notes || "") + " " + (c.Address || "")).toLowerCase();
-      if (!text.includes(search)) return false;
-    }
-    return true;
-  });
-
-  const listEl = document.getElementById("cardList");
-  if (filtered.length === 0) {
-    listEl.innerHTML = `<div class="empty">No matching leads found.</div>`;
-    return;
-  }
-
-  listEl.innerHTML = filtered.map(c => {
-    const rec = getRecordStatus(c);
-    const waNum = extractWaNumber(c);
-    const emailAddr = extractEmail(c);
-    const msg = CATEGORY_MESSAGES[c.Category] || DEFAULT_MESSAGE;
-    const waUrl = waNum ? `https://wa.me/${waNum}?text=${encodeURIComponent(msg)}` : "#";
-    const emailSubject = encodeURIComponent("Prime 23.5 Cent Commercial Land for Sale - Alagarkovil Highway, Madurai");
-    const emailBody = encodeURIComponent(msg);
-    const emailUrl = emailAddr ? `mailto:${emailAddr}?subject=${emailSubject}&body=${emailBody}` : "#";
-    const hasBoth = waNum && emailAddr;
-
-    const altKey = c.Company ? c.Company.trim().toLowerCase() : "";
-    const uniqueId = c.id || altKey.replace(/[^a-z0-9]/g, '_');
-
-    return `
-      <div class="card" id="card-${uniqueId}">
-        <div class="header-row">
-          <div>
-            <h2>${c.Company || "(Unnamed)"}</h2>
-            <div class="category">${c.Category || "Uncategorized"}</div>
-          </div>
-          <select id="sel-${uniqueId}" onchange="updateGeneralStatus('${c.id}', '${encodeURIComponent(c.Company || '')}', this.value)" style="width:auto; padding:4px 8px; font-size:0.8rem;">
-            <option value="New" ${rec.general === "New" ? "selected" : ""}>New</option>
-            <option value="Contacted" ${rec.general === "Contacted" ? "selected" : ""}>Contacted</option>
-            <option value="Interested" ${rec.general === "Interested" ? "selected" : ""}>Interested</option>
-            <option value="Skipped" ${rec.general === "Skipped" ? "selected" : ""}>Skipped</option>
-          </select>
-        </div>
-
-        <div class="status-badges">
-          <span class="badge ${rec.wa === 'Sent' ? 'badge-wa-sent' : 'badge-wa-pending'}">💬 WhatsApp: ${rec.wa}</span>
-          <span class="badge ${rec.email === 'Sent' ? 'badge-email-sent' : 'badge-email-pending'}">✉️ Email: ${rec.email}</span>
-        </div>
-
-        <div class="details">
-          ${hasValue(c.Mobile) || hasValue(c.Phone) ? `<div>📱 <b>Mobile/Phone:</b> ${c.Mobile || c.Phone}</div>` : ""}
-          ${hasValue(c.WhatsApp) ? `<div>💬 <b>WhatsApp:</b> ${c.WhatsApp}</div>` : ""}
-          ${hasValue(c.Email) ? `<div>✉️ <b>Email:</b> ${c.Email}</div>` : ""}
-          ${hasValue(c.Address) ? `<div>📍 <b>Address:</b> ${c.Address}</div>` : ""}
-          ${hasValue(c.Website) ? `<div>🌐 <b>Website:</b> <a href="${c.Website}" target="_blank">${c.Website}</a></div>` : ""}
-          ${hasValue(c.Notes) ? `<div>📝 <b>Notes:</b> ${c.Notes}</div>` : ""}
-        </div>
-
-        <div class="btn-group">
-          ${hasBoth ? `<a onclick="sendBoth('${c.id}', '${encodeURIComponent(c.Company || '')}', '${waUrl}', '${emailUrl}')" class="both-btn">🚀 Send Both (WhatsApp & Email)</a>` : ""}
-          <div class="btn-row-dual">
-            ${waNum ? `<a onclick="sendChannel('${c.id}', '${encodeURIComponent(c.Company || '')}', '${waUrl}', true)" class="wa-btn">💬 WhatsApp</a>` : `<div style="flex:1; text-align:center; color:#888; font-size:0.8rem; padding:10px; background:#eee; border-radius:10px;">No WhatsApp</div>`}
-            ${emailAddr ? `<a onclick="sendChannel('${c.id}', '${encodeURIComponent(c.Company || '')}', '${emailUrl}', false)" class="email-btn">📧 Send Email</a>` : `<div style="flex:1; text-align:center; color:#888; font-size:0.8rem; padding:10px; background:#eee; border-radius:10px;">No Email</div>`}
-          </div>
-        </div>
-      </div>
-    `;
-  }).join("");
-}
-
-window.sendChannel = function(id, encodedCompany, url, isWhatsApp) {
-  const companyName = decodeURIComponent(encodedCompany).trim().toLowerCase();
-  const key = id && id !== "undefined" ? id : companyName;
-  
-  if (!statuses[key] || typeof statuses[key] !== "object") {
-    statuses[key] = { general: "New", wa: "Pending", email: "Pending" };
-  }
-  
-  if (isWhatsApp) {
-    statuses[key].wa = "Sent";
-    window.open(url, "_blank");
-  } else {
-    statuses[key].email = "Sent";
-    const tempA = document.createElement('a');
-    tempA.href = url;
-    document.body.appendChild(tempA);
-    tempA.click();
-    document.body.removeChild(tempA);
-  }
-  
-  statuses[key].general = "Contacted";
-  saveStatuses();
-  render();
-};
-
-window.sendBoth = function(id, encodedCompany, waUrl, emailUrl) {
-  const companyName = decodeURIComponent(encodedCompany).trim().toLowerCase();
-  const key = id && id !== "undefined" ? id : companyName;
-
-  if (!statuses[key] || typeof statuses[key] !== "object") {
-    statuses[key] = { general: "New", wa: "Pending", email: "Pending" };
-  }
-
-  statuses[key].wa = "Sent";
-  statuses[key].email = "Sent";
-  statuses[key].general = "Contacted";
-  saveStatuses();
-
-  const tempA = document.createElement('a');
-  tempA.href = emailUrl;
-  document.body.appendChild(tempA);
-  tempA.click();
-  document.body.removeChild(tempA);
-
-  setTimeout(() => {
-    window.open(waUrl, "_blank");
-  }, 400);
-
-  render();
-};
-
-window.updateGeneralStatus = function(id, encodedCompany, val) {
-  const companyName = decodeURIComponent(encodedCompany).trim().toLowerCase();
-  const key = id && id !== "undefined" ? id : companyName;
-
-  if (!statuses[key] || typeof statuses[key] !== "object") {
-    statuses[key] = { general: val, wa: "Pending", email: "Pending" };
-  } else {
-    statuses[key].general = val;
-  }
-  saveStatuses();
-  render();
-};
-
-function exportCsv() {
-  const companies = dbData.companies || [];
-  if (companies.length === 0) return;
-  let csv = "Company,Category,Mobile,WhatsApp,Email,Address,Website,Status,WhatsApp Sent,Email Sent,Notes\n";
-  companies.forEach(c => {
-    const rec = getRecordStatus(c);
-    const row = [
-      `"${(c.Company || "").replace(/"/g, '""')}"`,
-      `"${(c.Category || "").replace(/"/g, '""')}"`,
-      `"${(c.Mobile || c.Phone || "").replace(/"/g, '""')}"`,
-      `"${(c.WhatsApp || "").replace(/"/g, '""')}"`,
-      `"${(c.Email || "").replace(/"/g, '""')}"`,
-      `"${(c.Address || "").replace(/"/g, '""')}"`,
-      `"${(c.Website || "").replace(/"/g, '""')}"`,
-      `"${rec.general}"`,
-      `"${rec.wa}"`,
-      `"${rec.email}"`,
-      `"${(c.Notes || "").replace(/"/g, '""')}"`
-    ];
-    csv += row.join(",") + "\n";
-  });
-  const blob = new Blob([csv], { type: "text/csv" });
-  const url = window.URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "buyer-database-export.csv";
-  a.click();
-}
-
-init();
-</script>
+        window.onload = initApp;
+    </script>
 </body>
 </html>
