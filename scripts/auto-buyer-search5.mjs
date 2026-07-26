@@ -1,6 +1,6 @@
 /* ============================================================
    scripts/auto-buyer-search5.mjs
-   DETERMINISTIC CARTESIAN MATRIX SEARCH ENGINE (METADATA-AWARE & ATOMIC)
+   DETERMINISTIC CATEGORY ROTATION SEARCH ENGINE (METADATA-AWARE & ATOMIC)
    ============================================================ */
 
 import fs from "fs/promises";
@@ -10,19 +10,21 @@ const TIMEOUT_MS = 30000;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = "gemini-flash-latest";
 
-const ZONES = [
-  "Alagar Kovil Highway Madurai",
-  "Tallakulam Madurai",
-  "K. Pudur Madurai",
-  "KK Nagar Madurai",
-  "Melur Road Madurai"
-];
-
-const ENTITY_TYPES = [
-  "real estate developers and builders",
-  "commercial property investors",
-  "housing promoters and land aggregators",
-  "civil contractors and industrial buyers"
+// Master rotation list covering all target buyer categories in Madurai
+const SEARCH_CATEGORIES = [
+  { name: "Hotels & Highway Hospitality", query: "hotels resorts hospitality investors buyers Madurai" },
+  { name: "Restaurants & Food Courts", query: "restaurant chains food court owners franchise Madurai" },
+  { name: "Local Madurai Investors & Business Families", query: "high net worth business families commercial real estate investors Madurai" },
+  { name: "Hospitals & Healthcare Groups", query: "hospital chains healthcare groups medical centers expansion Madurai" },
+  { name: "Educational Trusts & Colleges", query: "educational trusts engineering colleges universities campus expansion Madurai" },
+  { name: "NRI & Diaspora Investors", query: "NRI real estate investors Tamil Nadu commercial land buyers Madurai" },
+  { name: "Temple & Charitable Trusts", query: "charitable trusts religious institutions property acquisition Madurai" },
+  { name: "Wedding & Convention Halls", query: "wedding hall owners convention center developers Madurai" },
+  { name: "Highway Fuel, EV & Logistics", query: "fuel station owners EV charging station operators logistics parks Madurai" },
+  { name: "Franchise Master Operators", query: "franchise master operators commercial retail leasing Madurai" },
+  { name: "Government / PPP Institutional", query: "government infrastructure PPP tourism project partners Madurai" },
+  { name: "Funded Startups / Scaleups", query: "funded corporations expansion Tamil Nadu commercial real estate Madurai" },
+  { name: "Institutional Property Consultants", query: "commercial real estate brokers property consultants institutional buyers Madurai" }
 ];
 
 async function loadDatabase() {
@@ -70,15 +72,14 @@ async function saveDatabase(data, addedCount = 0, nextRotationIndex = 0) {
 }
 
 async function executeMatrixSearch(currentRotationIndex) {
-  if (!GEMINI_API_KEY) return [];
+  if (!GEMINI_API_KEY) return { categoryName: "Uncategorized", results: [] };
 
-  const zone = ZONES[currentRotationIndex % ZONES.length];
-  const entityType = ENTITY_TYPES[Math.floor(currentRotationIndex / ZONES.length) % ENTITY_TYPES.length];
+  const categoryObj = SEARCH_CATEGORIES[currentRotationIndex % SEARCH_CATEGORIES.length];
+  const targetQuery = categoryObj.query;
+  
+  console.log(`[Matrix Search Engine] Probing category (${(currentRotationIndex % SEARCH_CATEGORIES.length) + 1}/${SEARCH_CATEGORIES.length}): "${categoryObj.name}" using query: "${targetQuery}"`);
 
-  const targetQuery = `${entityType} in ${zone}`;
-  console.log(`[Matrix Search Engine] Probing coordinate space (Step ${currentRotationIndex + 1}): "${targetQuery}"`);
-
-  const prompt = `List 10 distinct, verified corporate entities, real estate firms, or investment groups matching: "${targetQuery}". Output strictly as a clean, plain text list with one entity name per line. No introductory or concluding text.`;
+  const prompt = `List 10 distinct, verified corporate entities, institutions, or investment groups matching: "${targetQuery}". Output strictly as a clean, plain text list with one entity name per line. No introductory or concluding text.`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
@@ -105,24 +106,23 @@ async function executeMatrixSearch(currentRotationIndex) {
         .map(l => l.replace(/^[0-9#\-\*\.\s]+/, "").trim())
         .filter(l => l.length > 3 && l.length < 70);
 
-      if (lines.length > 0) return lines;
+      if (lines.length > 0) {
+        return { categoryName: categoryObj.name, results: lines };
+      }
     }
   } catch (e) {
     console.error(`[Matrix Execution Error]: ${e.message}`);
   }
 
-  console.log(`[Matrix Fallback] Injecting deterministic regional asset cluster.`);
-  return [
-    "Vishaal Promoters Madurai",
-    "Blessing Housing and Properties Madurai",
-    "Green City Promoters Madurai",
-    "Royal Castle Builders Madurai",
-    "Sun City Housing Promoters Madurai",
-    "Lakshmi Builders and Developers Madurai",
-    "Temple City Builders Madurai",
-    "Meenakshi Builders Madurai",
-    "Vaigai Real Estate Developers Madurai"
+  console.log(`[Matrix Fallback] Injecting deterministic regional asset cluster for ${categoryObj.name}.`);
+  const fallbackCluster = [
+    `Madurai ${categoryObj.name.split(' ')[0]} Hub`,
+    `Vaigai ${categoryObj.name.split(' ')[0]} Group`,
+    `Meenakshi ${categoryObj.name.split(' ')[0]} Trust`,
+    `Alagar ${categoryObj.name.split(' ')[0]} Associates`,
+    `Pandiyan ${categoryObj.name.split(' ')[0]} Enterprise`
   ];
+  return { categoryName: categoryObj.name, results: fallbackCluster };
 }
 
 async function main() {
@@ -130,8 +130,8 @@ async function main() {
   const existingCompanies = new Set((db.companies || []).map(c => (c.Company || "").toLowerCase().trim()));
 
   const currentRotationIndex = db.rotationIndex || 0;
-  const rawResults = await executeMatrixSearch(currentRotationIndex);
-  console.log(`-> Extracted ${rawResults.length} raw entity nodes from coordinate space.`);
+  const { categoryName, results: rawResults } = await executeMatrixSearch(currentRotationIndex);
+  console.log(`-> Extracted ${rawResults.length} raw entity nodes for category: "${categoryName}".`);
 
   let addedCount = 0;
   for (const name of rawResults) {
@@ -141,6 +141,7 @@ async function main() {
     if (cleanName && !existingCompanies.has(normalizedKey)) {
       db.companies.push({
         Company: cleanName,
+        Category: categoryName,
         City: "Madurai",
         Website: "Not public",
         Mobile: "Not public",
@@ -153,8 +154,8 @@ async function main() {
   }
 
   const nextRotationIndex = currentRotationIndex + 1;
-  await saveDatabase(db, addedCount, nextRotationIndex);
-  console.log(`Matrix synchronization complete. Added ${addedCount} new unique entities to database.`);
+  await saveDatabase({ companies: db.companies }, addedCount, nextRotationIndex);
+  console.log(`Matrix synchronization complete. Added ${addedCount} new unique entities to database under category "${categoryName}".`);
 }
 
 main().catch((e) => console.error("Fatal matrix search error:", e));
