@@ -17983,7 +17983,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Golden%20Nest%20Promoters%20Madurai%2C%20Madurai"
     }
   ]
 }
