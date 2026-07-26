@@ -46,6 +46,15 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .btn-back {
+            background-color: #64748b;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
         .automation-banner {
             background: #ffffff;
             border: 1px solid var(--border);
@@ -161,63 +170,112 @@
             color: var(--primary);
             text-decoration: none;
         }
+        .card-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .btn-action-wa {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            flex: 1;
+        }
+        .btn-action-email {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            flex: 1;
+        }
+        .hidden { display: none !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header-bar">
-            <h1>📊 Buyer Database v5</h1>
-            <button class="btn-wa-queue" onclick="openWaQueue()">💬 WA Queue</button>
+        <!-- DASHBOARD VIEW -->
+        <div id="dashboard-view">
+            <div class="header-bar">
+                <h1>📊 Buyer Database v5</h1>
+                <button class="btn-wa-queue" onclick="toggleWaQueue(true)">💬 WA Queue</button>
+            </div>
+
+            <div class="automation-banner" id="automation-status">
+                Last automated run: Loading... · Added 0 new lead(s) · <span id="total-count-banner">0</span> total
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number" id="stat-total">0</div>
+                    <div class="label">Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="stat-new">0</div>
+                    <div class="label">New</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="stat-contacted">0</div>
+                    <div class="label">Contacted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="stat-wa">0</div>
+                    <div class="label">WA Sent</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="stat-email">0</div>
+                    <div class="label">Email Sent</div>
+                </div>
+            </div>
+
+            <div class="controls-grid">
+                <div class="filter-row">
+                    <select id="categoryFilter" onchange="filterAndRender()">
+                        <option value="All">All Categories</option>
+                    </select>
+                    <select id="statusFilter" onchange="filterAndRender()">
+                        <option value="All">All Statuses</option>
+                        <option value="New">New</option>
+                        <option value="Contacted">Contacted</option>
+                        <option value="Interested">Interested</option>
+                        <option value="Skipped">Skipped</option>
+                    </select>
+                </div>
+                <input type="text" id="searchInput" placeholder="Search company or notes..." oninput="filterAndRender()">
+                <div class="action-row">
+                    <button class="btn btn-refresh" onclick="resetData()">🔄 Reset Data</button>
+                    <button class="btn btn-export" onclick="exportCSV()">↓ Export CSV</button>
+                </div>
+            </div>
+
+            <div id="leads-container"></div>
         </div>
 
-        <div class="automation-banner" id="automation-status">
-            Last automated run: Loading... · Added 0 new lead(s) · <span id="total-count-banner">0</span> total
+        <!-- WHATSAPP QUEUE VIEW -->
+        <div id="wa-queue-view" class="hidden">
+            <div class="header-bar">
+                <h1>💬 WhatsApp Queue</h1>
+                <button class="btn-back" onclick="toggleWaQueue(false)">← Back to Dashboard</button>
+            </div>
+            <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px;">Leads pending WhatsApp outreach:</p>
+            <div id="wa-queue-container"></div>
         </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="number" id="stat-total">0</div>
-                <div class="label">Total</div>
-            </div>
-            <div class="stat-card">
-                <div class="number" id="stat-new">0</div>
-                <div class="label">New</div>
-            </div>
-            <div class="stat-card">
-                <div class="number" id="stat-contacted">0</div>
-                <div class="label">Contacted</div>
-            </div>
-            <div class="stat-card">
-                <div class="number" id="stat-wa">0</div>
-                <div class="label">WA Sent</div>
-            </div>
-            <div class="stat-card">
-                <div class="number" id="stat-email">0</div>
-                <div class="label">Email Sent</div>
-            </div>
-        </div>
-
-        <div class="controls-grid">
-            <div class="filter-row">
-                <select id="categoryFilter" onchange="filterAndRender()">
-                    <option value="All">All Categories</option>
-                </select>
-                <select id="statusFilter" onchange="filterAndRender()">
-                    <option value="All">All Statuses</option>
-                    <option value="New">New</option>
-                    <option value="Contacted">Contacted</option>
-                    <option value="Interested">Interested</option>
-                    <option value="Skipped">Skipped</option>
-                </select>
-            </div>
-            <input type="text" id="searchInput" placeholder="Search company or notes..." oninput="filterAndRender()">
-            <div class="action-row">
-                <button class="btn btn-refresh" onclick="resetData()">🔄 Refresh</button>
-                <button class="btn btn-export" onclick="exportCSV()">↓ Export CSV</button>
-            </div>
-        </div>
-
-        <div id="leads-container"></div>
     </div>
 
     <script>
@@ -235,6 +293,8 @@
             }
         ];
 
+        const isContactedLead = l => l.status === 'Contacted' || l.waSent === true || l.whatsappSent === true || l.emailSent === true;
+
         function initApp() {
             populateCategories();
             updateStats();
@@ -244,20 +304,18 @@
         }
 
         function populateCategories() {
-            const categories = [...new Set(leads.map(l => l.category))];
+            const categories = [...new Set(leads.map(l => l.category))].filter(Boolean);
             const select = document.getElementById('categoryFilter');
             select.innerHTML = '<option value="All">All Categories</option>';
             categories.forEach(cat => {
-                if(cat) {
-                    select.innerHTML += `<option value="${cat}">${cat}</option>`;
-                }
+                select.innerHTML += `<option value="${cat}">${cat}</option>`;
             });
         }
 
         function updateStats() {
             const total = leads.length;
-            const newCount = leads.filter(l => !l.status || l.status === 'New').length;
-            const contactedCount = leads.filter(l => l.status === 'Contacted').length;
+            const contactedCount = leads.filter(isContactedLead).length;
+            const newCount = leads.filter(l => (!l.status || l.status === 'New') && !isContactedLead(l)).length;
             const waSentCount = leads.filter(l => l.waSent === true || l.whatsappSent === true).length;
             const emailSentCount = leads.filter(l => l.emailSent === true).length;
 
@@ -281,14 +339,45 @@
             }
         }
 
+        function markWaSent(id) {
+            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
+            if (lead) {
+                lead.waSent = true;
+                lead.status = 'Contacted';
+                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
+                updateStats();
+                filterAndRender();
+            }
+        }
+
+        function markEmailSent(id) {
+            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
+            if (lead) {
+                lead.emailSent = true;
+                lead.status = 'Contacted';
+                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
+                updateStats();
+                filterAndRender();
+            }
+        }
+
         function filterAndRender() {
             const categoryVal = document.getElementById('categoryFilter').value;
             const statusVal = document.getElementById('statusFilter').value;
-            const searchVal = document.getElementById('searchInput').value.toLowerCase();
+            const searchVal = (document.getElementById('searchInput').value || '').toLowerCase();
 
             const filtered = leads.filter(l => {
                 const matchesCategory = (categoryVal === 'All' || l.category === categoryVal);
-                const matchesStatus = (statusVal === 'All' || (l.status || 'New') === statusVal);
+                
+                let matchesStatus = true;
+                if (statusVal === 'Contacted') {
+                    matchesStatus = isContactedLead(l);
+                } else if (statusVal === 'New') {
+                    matchesStatus = (!l.status || l.status === 'New') && !isContactedLead(l);
+                } else if (statusVal !== 'All') {
+                    matchesStatus = (l.status === statusVal);
+                }
+
                 const matchesSearch = (l.company.toLowerCase().includes(searchVal) || (l.notes && l.notes.toLowerCase().includes(searchVal)));
                 return matchesCategory && matchesStatus && matchesSearch;
             });
@@ -300,14 +389,14 @@
             }
 
             container.innerHTML = filtered.map(lead => {
-                const currentStatus = lead.status || 'New';
+                const currentStatus = isContactedLead(lead) ? 'Contacted' : (lead.status || 'New');
                 const uniqueId = lead.id || lead.mobile || lead.company;
                 return `
                 <div class="lead-card">
                     <div class="lead-header">
                         <div class="lead-title">
                             <h3>${lead.company}</h3>
-                            <p>${lead.category}</p>
+                            <p>${lead.category || ''}</p>
                         </div>
                         <select onchange="updateLeadStatus('${uniqueId}', this.value)" style="width: auto; padding: 6px 12px; font-weight: 500;">
                             <option value="New" ${currentStatus === 'New' ? 'selected' : ''}>New</option>
@@ -330,19 +419,66 @@
                         <p><strong>🌐 Website:</strong> <a href="${lead.website}" target="_blank">${lead.website || 'N/A'}</a></p>
                         <p><strong>📝 Notes:</strong> ${lead.notes || 'No notes added.'}</p>
                     </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-action-wa" onclick="markWaSent('${uniqueId}')">💬 Send WA</a>
+                        <button class="btn-action-email" onclick="markEmailSent('${uniqueId}')">✉️ Send Email</button>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function toggleWaQueue(show) {
+            const dashboard = document.getElementById('dashboard-view');
+            const queueView = document.getElementById('wa-queue-view');
+            if (show) {
+                dashboard.classList.add('hidden');
+                queueView.classList.remove('hidden');
+                renderWaQueue();
+            } else {
+                queueView.classList.add('hidden');
+                dashboard.classList.remove('hidden');
+            }
+        }
+
+        function renderWaQueue() {
+            const queueContainer = document.getElementById('wa-queue-container');
+            const pendingLeads = leads.filter(l => !l.waSent && l.mobile);
+
+            if (pendingLeads.length === 0) {
+                queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No pending WhatsApp messages in queue! 🎉</p>';
+                return;
+            }
+
+            queueContainer.innerHTML = pendingLeads.map(lead => {
+                const uniqueId = lead.id || lead.mobile || lead.company;
+                return `
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-title">
+                            <h3>${lead.company}</h3>
+                            <p>${lead.category || ''}</p>
+                        </div>
+                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-wa-queue" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;" onclick="markWaSent('${uniqueId}'); toggleWaQueue(true);">Open WA Chat</a>
+                    </div>
+                    <div class="lead-details">
+                        <p><strong>📱 Mobile:</strong> ${lead.mobile}</p>
+                        <p><strong>📝 Notes:</strong> ${lead.notes || 'No notes.'}</p>
+                    </div>
                 </div>`;
             }).join('');
         }
 
         function resetData() {
-            localStorage.removeItem('buyer_database_leads');
-            location.reload();
+            if(confirm('Are you sure you want to reset data?')) {
+                localStorage.removeItem('buyer_database_leads');
+                location.reload();
+            }
         }
 
         function exportCSV() {
             let csv = 'Company,Category,Status,WhatsApp Sent,Email Sent,Mobile,Website,Notes\n';
             leads.forEach(l => {
-                csv += `"${l.company}","${l.category || ''}","${l.status || 'New'}","${l.waSent ? 'Yes' : 'No'}","${l.emailSent ? 'Yes' : 'No'}","${l.mobile || ''}","${l.website || ''}","${(l.notes || '').replace(/"/g, '""')}"\n`;
+                csv += `"${l.company}","${l.category || ''}","${isContactedLead(l) ? 'Contacted' : (l.status || 'New')}","${l.waSent ? 'Yes' : 'No'}","${l.emailSent ? 'Yes' : 'No'}","${l.mobile || ''}","${l.website || ''}","${(l.notes || '').replace(/"/g, '""')}"\n`;
             });
             const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
@@ -350,10 +486,6 @@
             a.href = url;
             a.download = 'buyer_database_export.csv';
             a.click();
-        }
-
-        function openWaQueue() {
-            alert('Redirecting to WhatsApp Queue...');
         }
 
         window.onload = initApp;
