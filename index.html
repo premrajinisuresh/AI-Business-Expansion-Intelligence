@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buyer Database & WhatsApp Queue - Recovery v5.6</title>
+    <title>Buyer Database & WhatsApp Queue - v5.7 Universal Recovery</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -195,7 +195,7 @@
         <!-- DASHBOARD VIEW -->
         <div id="dashboard-view">
             <div class="header-bar">
-                <h1>📊 Buyer Database v5.6</h1>
+                <h1>📊 Buyer Database v5.7</h1>
                 <button class="btn-wa-queue" onclick="toggleView(true)">💬 WA Queue (<span id="queue-badge">0</span>)</button>
             </div>
 
@@ -247,8 +247,7 @@
     </div>
 
     <script>
-        const PRIMARY_STORAGE_KEY = 'buyer_db_master_v56';
-        const LEGACY_KEYS = ['buyer_db_leads_v55', 'buyer_database_leads', 'buyer_db_leads', 'leads'];
+        const ACTIVE_KEY = 'buyer_db_master_v57';
 
         const defaultLeads = [
             {
@@ -267,32 +266,27 @@
 
         function loadData() {
             try {
-                // 1. Check primary master key first
-                let saved = localStorage.getItem(PRIMARY_STORAGE_KEY);
-                if (saved) {
-                    const parsed = JSON.parse(saved);
-                    if (Array.isArray(parsed) && parsed.length > 0) {
-                        leads = parsed;
-                        return;
-                    }
-                }
-
-                // 2. Scan legacy keys to recover user data automatically
-                for (const key of LEGACY_KEYS) {
-                    saved = localStorage.getItem(key);
-                    if (saved) {
-                        const parsed = JSON.parse(saved);
-                        if (Array.isArray(parsed) && parsed.length > 0) {
-                            leads = parsed;
-                            // Migrate recovered data immediately to primary key
-                            saveData();
-                            return;
+                let bestDataset = [];
+                
+                // DYNAMIC STORAGE INSPECTOR: Scan ALL keys in localStorage to find your actual data
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    const rawValue = localStorage.getItem(key);
+                    try {
+                        const parsed = JSON.parse(rawValue);
+                        if (Array.isArray(parsed) && parsed.length > bestDataset.length) {
+                            bestDataset = parsed;
                         }
+                    } catch (err) {
+                        // Not JSON, skip
                     }
                 }
 
-                // 3. Fallback if absolutely nothing found
-                leads = defaultLeads;
+                if (bestDataset.length > 0) {
+                    leads = bestDataset;
+                } else {
+                    leads = defaultLeads;
+                }
                 saveData();
             } catch (e) {
                 leads = defaultLeads;
@@ -300,7 +294,7 @@
         }
 
         function saveData() {
-            localStorage.setItem(PRIMARY_STORAGE_KEY, JSON.stringify(leads));
+            localStorage.setItem(ACTIVE_KEY, JSON.stringify(leads));
         }
 
         function init() {
@@ -366,7 +360,7 @@
                 return matchesCat && matchesStatus && matchesSearch;
             });
 
-            // Render Dashboard List (capped rendering for performance if dataset is large)
+            // Render Dashboard List (paginated display to prevent browser lag on large datasets)
             const listContainer = document.getElementById('leads-list');
             if (filtered.length === 0) {
                 listContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No matching leads found.</p>';
@@ -401,7 +395,7 @@
                         </div>
                     </div>
                 `;
-                }).join('') + (filtered.length > 100 ? '<p style="text-align:center; color:#64748b; font-size:0.8rem;">Showing first 100 matching results...</p>' : '');
+                }).join('') + (filtered.length > 100 ? '<p style="text-align:center; color:#64748b; font-size:0.8rem;">Showing first 100 results for performance...</p>' : '');
             }
 
             // Render WA Queue List
@@ -444,7 +438,7 @@
         }
 
         function resetDatabase() {
-            if (confirm('Reset database to default sample leads? (Warning: This will clear stored data).')) {
+            if (confirm('Reset database?')) {
                 localStorage.clear();
                 leads = defaultLeads;
                 saveData();
