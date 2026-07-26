@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/26/2026, 10:08:40 PM",
+  "lastRun": "7/26/2026, 10:09:57 PM",
   "addedThisRun": 5,
-  "total": 604,
-  "rotationIndex": 4,
+  "total": 609,
+  "rotationIndex": 5,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18076,6 +18076,51 @@
     {
       "Company": "Pandiyan Hospitals Enterprise",
       "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Madurai Educational Hub",
+      "Category": "Educational Trusts & Colleges",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Educational Group",
+      "Category": "Educational Trusts & Colleges",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Educational Trust",
+      "Category": "Educational Trusts & Colleges",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Educational Associates",
+      "Category": "Educational Trusts & Colleges",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Pandiyan Educational Enterprise",
+      "Category": "Educational Trusts & Colleges",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
