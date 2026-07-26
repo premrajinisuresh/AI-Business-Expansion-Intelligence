@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buyer Database v5</title>
+    <title>Buyer Database v5.2 - Active Queue</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -214,7 +214,7 @@
         <div id="dashboard-view">
             <div class="header-bar">
                 <h1>📊 Buyer Database v5</h1>
-                <button class="btn-wa-queue" onclick="toggleWaQueue(true)">💬 WA Queue</button>
+                <button class="btn-wa-queue" onclick="toggleWaQueue(true)">💬 WA Queue (<span id="queue-count-badge">0</span>)</button>
             </div>
 
             <div class="automation-banner" id="automation-status">
@@ -279,19 +279,53 @@
     </div>
 
     <script>
-        let leads = JSON.parse(localStorage.getItem('buyer_database_leads')) || [
+        const defaultLeads = [
             {
                 id: 1,
                 company: "IHG Hotels & Resorts",
                 category: "Hotels & Highway Hospitality",
-                status: "Contacted",
-                waSent: true,
+                status: "New",
+                waSent: false,
                 emailSent: false,
                 mobile: "918774242449",
                 website: "https://www.ihgplc.com",
-                notes: "A major multinational hospitality company expanding its footprint in South India. They have officially signed a management agreement to bring Holiday Inn Express & Suites to Madurai, highlighting active corporate interest in the region's hospitality market."
+                notes: "A major multinational hospitality company expanding its footprint in South India."
+            },
+            {
+                id: 2,
+                company: "Courtyard by Marriott",
+                category: "Hotels & Highway Hospitality",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919842123456",
+                website: "https://www.marriott.com",
+                notes: "Actively evaluating high-traffic commercial corridor plots for business hotel expansion."
+            },
+            {
+                id: 3,
+                company: "Apollo Hospitals Enterprise",
+                category: "Healthcare & Corporate Real Estate",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919443198765",
+                website: "https://www.apollohospitals.com",
+                notes: "Looking for strategic large-scale corner land parcels for specialized care units."
             }
         ];
+
+        let leads = [];
+        try {
+            const saved = localStorage.getItem('buyer_database_leads');
+            leads = saved ? JSON.parse(saved) : defaultLeads;
+            if (!Array.isArray(leads) || leads.length <= 1) {
+                leads = defaultLeads;
+                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
+            }
+        } catch (e) {
+            leads = defaultLeads;
+        }
 
         const isContactedLead = l => l.status === 'Contacted' || l.waSent === true || l.whatsappSent === true || l.emailSent === true;
 
@@ -318,12 +352,16 @@
             const newCount = leads.filter(l => (!l.status || l.status === 'New') && !isContactedLead(l)).length;
             const waSentCount = leads.filter(l => l.waSent === true || l.whatsappSent === true).length;
             const emailSentCount = leads.filter(l => l.emailSent === true).length;
+            const pendingWaCount = leads.filter(l => !l.waSent && !l.whatsappSent && l.mobile).length;
 
             document.getElementById('stat-total').innerText = total;
             document.getElementById('stat-new').innerText = newCount;
             document.getElementById('stat-contacted').innerText = contactedCount;
             document.getElementById('stat-wa').innerText = waSentCount;
             document.getElementById('stat-email').innerText = emailSentCount;
+            
+            const queueBadge = document.getElementById('queue-count-badge');
+            if(queueBadge) queueBadge.innerText = pendingWaCount;
             
             const bannerCount = document.getElementById('total-count-banner');
             if(bannerCount) bannerCount.innerText = total;
@@ -347,6 +385,7 @@
                 localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
                 updateStats();
                 filterAndRender();
+                renderWaQueue();
             }
         }
 
@@ -442,7 +481,7 @@
 
         function renderWaQueue() {
             const queueContainer = document.getElementById('wa-queue-container');
-            const pendingLeads = leads.filter(l => !l.waSent && l.mobile);
+            const pendingLeads = leads.filter(l => !l.waSent && !l.whatsappSent && l.mobile);
 
             if (pendingLeads.length === 0) {
                 queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No pending WhatsApp messages in queue! 🎉</p>';
@@ -458,7 +497,7 @@
                             <h3>${lead.company}</h3>
                             <p>${lead.category || ''}</p>
                         </div>
-                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-wa-queue" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;" onclick="markWaSent('${uniqueId}'); toggleWaQueue(true);">Open WA Chat</a>
+                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-wa-queue" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem;" onclick="markWaSent('${uniqueId}')">Open WA Chat</a>
                     </div>
                     <div class="lead-details">
                         <p><strong>📱 Mobile:</strong> ${lead.mobile}</p>
@@ -469,7 +508,7 @@
         }
 
         function resetData() {
-            if(confirm('Are you sure you want to reset data?')) {
+            if(confirm('Are you sure you want to reset data to defaults?')) {
                 localStorage.removeItem('buyer_database_leads');
                 location.reload();
             }
