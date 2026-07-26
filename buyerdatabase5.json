@@ -17989,7 +17989,11 @@
       "Mobile": "919842145210",
       "WhatsApp": "https://wa.me/919842145210",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vishaal%20Promoters%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vishaal%20Promoters%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Blessing Housing and Properties Madurai",
@@ -17998,7 +18002,11 @@
       "Mobile": "919842234567",
       "WhatsApp": "https://wa.me/919842234567",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Blessing%20Housing%20and%20Properties%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Blessing%20Housing%20and%20Properties%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Green City Promoters Madurai",
@@ -18007,7 +18015,11 @@
       "Mobile": "919443123456",
       "WhatsApp": "https://wa.me/919443123456",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Green%20City%20Promoters%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Green%20City%20Promoters%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Temple City Builders Madurai",
@@ -18016,7 +18028,11 @@
       "Mobile": "919842678901",
       "WhatsApp": "https://wa.me/919842678901",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Temple%20City%20Builders%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Temple%20City%20Builders%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Meenakshi Builders Madurai",
@@ -18025,7 +18041,11 @@
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Builders%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Builders%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai Real Estate Developers Madurai",
@@ -18034,7 +18054,11 @@
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Real%20Estate%20Developers%20Madurai%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Real%20Estate%20Developers%20Madurai%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Madurai Hospitals Hub",
@@ -18044,7 +18068,11 @@
       "Mobile": "919837016259",
       "WhatsApp": "https://wa.me/919837016259",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Hospitals%20Hub%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Hospitals%20Hub%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai Hospitals Group",
@@ -18054,7 +18082,11 @@
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Hospitals%20Group%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Hospitals%20Group%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Meenakshi Hospitals Trust",
@@ -18064,7 +18096,11 @@
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Hospitals%20Trust%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Hospitals%20Trust%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Alagar Hospitals Associates",
@@ -18074,7 +18110,11 @@
       "Mobile": "919805631226",
       "WhatsApp": "https://wa.me/919805631226",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Hospitals%20Associates%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Hospitals%20Associates%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Pandiyan Hospitals Enterprise",
@@ -18084,7 +18124,11 @@
       "Mobile": "919443678901",
       "WhatsApp": "https://wa.me/919443678901",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20Hospitals%20Enterprise%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20Hospitals%20Enterprise%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Madurai Educational Hub",
@@ -18094,7 +18138,11 @@
       "Mobile": "919800619555",
       "WhatsApp": "https://wa.me/919800619555",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Educational%20Hub%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20Educational%20Hub%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai Educational Group",
@@ -18104,7 +18152,11 @@
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Educational%20Group%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20Educational%20Group%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Meenakshi Educational Trust",
@@ -18114,7 +18166,11 @@
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Educational%20Trust%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20Educational%20Trust%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Alagar Educational Associates",
@@ -18124,7 +18180,11 @@
       "Mobile": "919896869408",
       "WhatsApp": "https://wa.me/919896869408",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Educational%20Associates%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20Educational%20Associates%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Pandiyan Educational Enterprise",
@@ -18134,7 +18194,11 @@
       "Mobile": "919443678901",
       "WhatsApp": "https://wa.me/919443678901",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20Educational%20Enterprise%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20Educational%20Enterprise%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Madurai NRI Hub",
@@ -18144,7 +18208,11 @@
       "Mobile": "919874737361",
       "WhatsApp": "https://wa.me/919874737361",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20NRI%20Hub%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Madurai%20NRI%20Hub%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai NRI Group",
@@ -18154,7 +18222,11 @@
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20NRI%20Group%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Vaigai%20NRI%20Group%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Meenakshi NRI Trust",
@@ -18164,7 +18236,11 @@
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20NRI%20Trust%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Meenakshi%20NRI%20Trust%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Alagar NRI Associates",
@@ -18174,7 +18250,11 @@
       "Mobile": "919819623246",
       "WhatsApp": "https://wa.me/919819623246",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20NRI%20Associates%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Alagar%20NRI%20Associates%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Pandiyan NRI Enterprise",
@@ -18184,7 +18264,11 @@
       "Mobile": "919443678901",
       "WhatsApp": "https://wa.me/919443678901",
       "RetryCount": 0,
-      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20NRI%20Enterprise%2C%20Madurai"
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Pandiyan%20NRI%20Enterprise%2C%20Madurai",
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Heritage Gateway Resorts Madurai",
@@ -18193,7 +18277,11 @@
       "Website": "Not public",
       "Mobile": "919816944134",
       "WhatsApp": "https://wa.me/919816944134",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Grand Highway Inns Madurai",
@@ -18202,7 +18290,11 @@
       "Website": "Not public",
       "Mobile": "919897571034",
       "WhatsApp": "https://wa.me/919897571034",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Royal Residency & Suites Madurai",
@@ -18211,7 +18303,11 @@
       "Website": "Not public",
       "Mobile": "919812652695",
       "WhatsApp": "https://wa.me/919812652695",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Southern Oasis Hotels Madurai",
@@ -18220,7 +18316,11 @@
       "Website": "Not public",
       "Mobile": "919863424021",
       "WhatsApp": "https://wa.me/919863424021",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Elite Palms Hospitality Madurai",
@@ -18229,7 +18329,11 @@
       "Website": "Not public",
       "Mobile": "919836883837",
       "WhatsApp": "https://wa.me/919836883837",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Spicy Crest Food Courts Madurai",
@@ -18238,7 +18342,11 @@
       "Website": "Not public",
       "Mobile": "919876458136",
       "WhatsApp": "https://wa.me/919876458136",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Namma Veetu Dine-In Madurai",
@@ -18247,7 +18355,11 @@
       "Website": "Not public",
       "Mobile": "919860451504",
       "WhatsApp": "https://wa.me/919860451504",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Flavour Route Restaurants Madurai",
@@ -18256,7 +18368,11 @@
       "Website": "Not public",
       "Mobile": "919847829819",
       "WhatsApp": "https://wa.me/919847829819",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Royal Feast Chain Madurai",
@@ -18265,7 +18381,11 @@
       "Website": "Not public",
       "Mobile": "919827147552",
       "WhatsApp": "https://wa.me/919827147552",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Grand Bake & Dine Madurai",
@@ -18274,7 +18394,11 @@
       "Website": "Not public",
       "Mobile": "919849963646",
       "WhatsApp": "https://wa.me/919849963646",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
