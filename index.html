@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buyer Database & WhatsApp Queue - v5.7 Universal Recovery</title>
+    <title>Buyer Database & WhatsApp Queue</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -89,6 +89,10 @@
             flex-direction: column;
             gap: 8px;
             margin-bottom: 12px;
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
         }
         .filter-row-stacked {
             display: flex;
@@ -195,7 +199,7 @@
         <!-- DASHBOARD VIEW -->
         <div id="dashboard-view">
             <div class="header-bar">
-                <h1>📊 Buyer Database v5.7</h1>
+                <h1>📊 Buyer Database</h1>
                 <button class="btn-wa-queue" onclick="toggleView(true)">💬 WA Queue (<span id="queue-badge">0</span>)</button>
             </div>
 
@@ -247,54 +251,47 @@
     </div>
 
     <script>
-        const ACTIVE_KEY = 'buyer_db_master_v57';
-
-        const defaultLeads = [
-            {
-                id: 1,
-                company: "IHG Hotels & Resorts",
-                category: "Hotels & Hospitality",
-                status: "New",
-                waSent: false,
-                mobile: "918774242449",
-                website: "https://www.ihgplc.com",
-                notes: "Multinational hospitality company expanding footprint in South India."
-            }
-        ];
+        const ACTIVE_STORAGE_KEY = 'buyer_database_leads';
+        const LEGACY_KEYS = ['buyer_db_master_v57', 'buyer_db_permanent_v58', 'buyer_db_leads_v55', 'leads', 'buyer_database_leads'];
 
         let leads = [];
 
         function loadData() {
             try {
-                let bestDataset = [];
-                
-                // DYNAMIC STORAGE INSPECTOR: Scan ALL keys in localStorage to find your actual data
-                for (let i = 0; i < localStorage.length; i++) {
-                    const key = localStorage.key(i);
-                    const rawValue = localStorage.getItem(key);
-                    try {
-                        const parsed = JSON.parse(rawValue);
-                        if (Array.isArray(parsed) && parsed.length > bestDataset.length) {
-                            bestDataset = parsed;
+                // Check all possible storage locations to pull existing user data seamlessly
+                for (const key of LEGACY_KEYS) {
+                    const saved = localStorage.getItem(key);
+                    if (saved) {
+                        const parsed = JSON.parse(saved);
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            leads = parsed;
+                            saveData(); // Synchronize to active key
+                            return;
                         }
-                    } catch (err) {
-                        // Not JSON, skip
                     }
                 }
 
-                if (bestDataset.length > 0) {
-                    leads = bestDataset;
-                } else {
-                    leads = defaultLeads;
-                }
+                // Fallback if no storage exists anywhere yet
+                leads = [
+                    {
+                        id: 1,
+                        company: "IHG Hotels & Resorts",
+                        category: "Hotels & Hospitality",
+                        status: "New",
+                        waSent: false,
+                        mobile: "918774242449",
+                        website: "https://www.ihgplc.com",
+                        notes: "Multinational hospitality company expanding footprint in South India."
+                    }
+                ];
                 saveData();
             } catch (e) {
-                leads = defaultLeads;
+                leads = [];
             }
         }
 
         function saveData() {
-            localStorage.setItem(ACTIVE_KEY, JSON.stringify(leads));
+            localStorage.setItem(ACTIVE_STORAGE_KEY, JSON.stringify(leads));
         }
 
         function init() {
@@ -360,7 +357,6 @@
                 return matchesCat && matchesStatus && matchesSearch;
             });
 
-            // Render Dashboard List (paginated display to prevent browser lag on large datasets)
             const listContainer = document.getElementById('leads-list');
             if (filtered.length === 0) {
                 listContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No matching leads found.</p>';
@@ -398,7 +394,6 @@
                 }).join('') + (filtered.length > 100 ? '<p style="text-align:center; color:#64748b; font-size:0.8rem;">Showing first 100 results for performance...</p>' : '');
             }
 
-            // Render WA Queue List
             const queueContainer = document.getElementById('queue-list');
             const pendingQueue = leads.filter(l => !l.waSent && l.status !== 'Contacted' && l.mobile);
             if (pendingQueue.length === 0) {
@@ -440,8 +435,6 @@
         function resetDatabase() {
             if (confirm('Reset database?')) {
                 localStorage.clear();
-                leads = defaultLeads;
-                saveData();
                 location.reload();
             }
         }
