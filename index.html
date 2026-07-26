@@ -182,14 +182,39 @@
             background-color: #10b981;
             color: white;
             border: none;
-            padding: 8px 12px;
+            padding: 10px;
             border-radius: 6px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
             text-align: center;
             flex: 1;
+        }
+        .queue-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        .queue-nav button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .queue-nav button:disabled {
+            background: var(--border);
+            cursor: not-allowed;
         }
         .hidden { display: none !important; }
     </style>
@@ -239,52 +264,42 @@
             <div id="leads-list"></div>
         </div>
 
-        <!-- WHATSAPP QUEUE VIEW -->
+        <!-- WHATSAPP QUEUE VIEW (SEQUENTIAL PLAYER) -->
         <div id="wa-queue-view" class="hidden">
             <div class="header-bar">
                 <h1>💬 WhatsApp Queue</h1>
                 <button class="btn-back" onclick="toggleView(false)">← Dashboard</button>
             </div>
-            <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 10px;">Leads pending WhatsApp outreach:</p>
-            <div id="queue-list"></div>
+            <div class="queue-nav">
+                <button id="prevBtn" onclick="changeQueueIndex(-1)">⬅ Prev</button>
+                <span id="queue-counter">Lead 0 of 0</span>
+                <button id="nextBtn" onclick="changeQueueIndex(1)">Next ➡</button>
+            </div>
+            <div id="queue-player-card"></div>
         </div>
     </div>
 
     <script>
         const ACTIVE_STORAGE_KEY = 'buyer_database_leads';
-        const LEGACY_KEYS = ['buyer_db_master_v57', 'buyer_db_permanent_v58', 'buyer_db_leads_v55', 'leads', 'buyer_database_leads'];
+        const LEGACY_KEYS = ['buyer_database_leads', 'leads', 'buyer_db_leads_v55', 'buyer_db_master_v57', 'buyer_db_permanent_v58'];
 
         let leads = [];
+        let currentQueueIndex = 0;
 
         function loadData() {
             try {
-                // Check all possible storage locations to pull existing user data seamlessly
                 for (const key of LEGACY_KEYS) {
                     const saved = localStorage.getItem(key);
                     if (saved) {
                         const parsed = JSON.parse(saved);
                         if (Array.isArray(parsed) && parsed.length > 0) {
                             leads = parsed;
-                            saveData(); // Synchronize to active key
+                            saveData();
                             return;
                         }
                     }
                 }
-
-                // Fallback if no storage exists anywhere yet
-                leads = [
-                    {
-                        id: 1,
-                        company: "IHG Hotels & Resorts",
-                        category: "Hotels & Hospitality",
-                        status: "New",
-                        waSent: false,
-                        mobile: "918774242449",
-                        website: "https://www.ihgplc.com",
-                        notes: "Multinational hospitality company expanding footprint in South India."
-                    }
-                ];
-                saveData();
+                leads = [];
             } catch (e) {
                 leads = [];
             }
@@ -338,6 +353,23 @@
                 saveData();
                 renderApp();
             }
+        }
+
+        function changeQueueIndex(direction) {
+            const pendingQueue = leads.filter(l => !l.waSent && l.status !== 'Contacted' && l.mobile);
+            currentQueueIndex += direction;
+            if (currentQueueIndex < 0) currentQueueIndex = 0;
+            if (currentQueueIndex >= pendingQueue.length) currentQueueIndex = Math.max(0, pendingQueue.length - 1);
+            renderQueuePlayer();
+        }
+
+        function handleQueueAction(id) {
+            markWaSent(id);
+            const pendingQueue = leads.filter(l => !l.waSent && l.status !== 'Contacted' && l.mobile);
+            if (currentQueueIndex >= pendingQueue.length) {
+                currentQueueIndex = Math.max(0, pendingQueue.length - 1);
+            }
+            renderApp();
         }
 
         function renderApp() {
@@ -394,38 +426,64 @@
                 }).join('') + (filtered.length > 100 ? '<p style="text-align:center; color:#64748b; font-size:0.8rem;">Showing first 100 results for performance...</p>' : '');
             }
 
-            const queueContainer = document.getElementById('queue-list');
+            renderQueuePlayer();
+        }
+
+        function renderQueuePlayer() {
             const pendingQueue = leads.filter(l => !l.waSent && l.status !== 'Contacted' && l.mobile);
+            const queueContainer = document.getElementById('queue-player-card');
+            const counterEl = document.getElementById('queue-counter');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
             if (pendingQueue.length === 0) {
-                queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">All WhatsApp messages sent! 🎉</p>';
-            } else {
-                queueContainer.innerHTML = pendingQueue.slice(0, 100).map((l, index) => {
-                    const uniqueId = l.id || l.mobile || l.company || index;
-                    return `
-                    <div class="lead-card">
-                        <div class="lead-header">
-                            <div class="lead-title">
-                                <h3>${l.company || 'Unnamed Company'}</h3>
-                                <p>${l.category || 'General'}</p>
-                            </div>
-                            <a href="https://wa.me/${l.mobile || ''}" target="_blank" class="btn-action-wa" style="padding: 6px 12px; font-size: 0.8rem;" onclick="markWaSent('${uniqueId}')">Open WA Chat</a>
-                        </div>
-                        <div class="lead-details">
-                            <p><strong>📱 Mobile:</strong> ${l.mobile || 'N/A'}</p>
-                            <p><strong>📝 Notes:</strong> ${l.notes || 'No notes.'}</p>
-                        </div>
-                    </div>
-                `;
-                }).join('');
+                counterEl.innerText = 'Queue Empty';
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 30px; background: white; border-radius: 8px; border: 1px solid var(--border);">All WhatsApp messages sent! 🎉</p>';
+                return;
             }
+
+            if (currentQueueIndex >= pendingQueue.length) {
+                currentQueueIndex = pendingQueue.length - 1;
+            }
+
+            counterEl.innerText = `Lead ${currentQueueIndex + 1} of ${pendingQueue.length}`;
+            prevBtn.disabled = currentQueueIndex === 0;
+            nextBtn.disabled = currentQueueIndex === pendingQueue.length - 1;
+
+            const l = pendingQueue[currentQueueIndex];
+            const uniqueId = l.id || l.mobile || l.company || currentQueueIndex;
+
+            queueContainer.innerHTML = `
+                <div class="lead-card" style="margin-bottom:0;">
+                    <div class="lead-header">
+                        <div class="lead-title">
+                            <h3>${l.company || 'Unnamed Company'}</h3>
+                            <p>${l.category || 'General'}</p>
+                        </div>
+                        <span class="badge badge-pending">Pending Outreach</span>
+                    </div>
+                    <div class="lead-details" style="margin: 12px 0;">
+                        <p style="font-size: 1rem;"><strong>📱 Mobile:</strong> ${l.mobile || 'N/A'}</p>
+                        <p><strong>🌐 Web:</strong> <a href="${l.website || '#'}" target="_blank">${l.website || 'N/A'}</a></p>
+                        <p style="margin-top: 8px;"><strong>📝 Notes:</strong> ${l.notes || 'No notes.'}</p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/${l.mobile || ''}" target="_blank" class="btn-action-wa" onclick="handleQueueAction('${uniqueId}')">💬 Open WA Chat & Next</a>
+                    </div>
+                </div>
+            `;
         }
 
         function toggleView(showQueue) {
             const dash = document.getElementById('dashboard-view');
             const queue = document.getElementById('wa-queue-view');
             if (showQueue) {
+                currentQueueIndex = 0;
                 dash.classList.add('hidden');
                 queue.classList.remove('hidden');
+                renderQueuePlayer();
             } else {
                 queue.classList.add('hidden');
                 dash.classList.remove('hidden');
@@ -433,7 +491,7 @@
         }
 
         function resetDatabase() {
-            if (confirm('Reset database?')) {
+            if (confirm('Are you sure you want to reset?')) {
                 localStorage.clear();
                 location.reload();
             }
