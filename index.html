@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buyer Database v5.4 - Production Stable</title>
+    <title>Buyer Database & WhatsApp Queue - Recovery v5.6</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -11,80 +11,71 @@
             --background: #f8fafc;
             --card-bg: #ffffff;
             --text: #1e293b;
-            --border: #e2e8f0;
+            --border: #cbd5e1;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--background);
             color: var(--text);
             margin: 0;
-            padding: 16px;
+            padding: 12px;
+            box-sizing: border-box;
         }
+        * { box-sizing: border-box; }
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
         }
         .header-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            gap: 8px;
         }
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.25rem;
+            margin: 0;
             display: flex;
             align-items: center;
             gap: 6px;
-            margin: 0;
         }
         .btn-wa-queue {
             background-color: #10b981;
             color: white;
             border: none;
-            padding: 8px 14px;
+            padding: 8px 12px;
             border-radius: 20px;
             font-weight: bold;
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            white-space: nowrap;
         }
         .btn-back {
             background-color: #64748b;
             color: white;
             border: none;
-            padding: 8px 14px;
+            padding: 8px 12px;
             border-radius: 20px;
             font-weight: bold;
             cursor: pointer;
-        }
-        .automation-banner {
-            background: #ffffff;
-            border: 1px solid var(--border);
-            padding: 10px 12px;
-            border-radius: 8px;
-            margin-bottom: 16px;
             font-size: 0.8rem;
-            color: #64748b;
         }
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 6px;
-            margin-bottom: 16px;
-        }
-        @media (max-width: 650px) {
-            .stats-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            margin-bottom: 12px;
         }
         .stat-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            padding: 10px 4px;
-            border-radius: 8px;
+            padding: 8px 4px;
+            border-radius: 6px;
             text-align: center;
         }
         .stat-card .number {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: var(--primary);
         }
@@ -93,21 +84,16 @@
             color: #64748b;
             margin-top: 2px;
         }
-        .controls-grid {
+        .controls-stack {
             display: flex;
             flex-direction: column;
             gap: 8px;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
-        .filter-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .filter-row-stacked {
+            display: flex;
+            flex-direction: column;
             gap: 8px;
-        }
-        @media (max-width: 480px) {
-            .filter-row {
-                grid-template-columns: 1fr;
-            }
         }
         select, input {
             width: 100%;
@@ -116,7 +102,6 @@
             border-radius: 6px;
             background: white;
             font-size: 0.9rem;
-            box-sizing: border-box;
         }
         .action-row {
             display: flex;
@@ -132,16 +117,16 @@
             color: white;
             font-size: 0.85rem;
         }
-        .btn-refresh { background-color: #1e293b; }
+        .btn-reset { background-color: #334155; }
         .btn-export { background-color: #d97706; }
         
         .lead-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
         .lead-header {
             display: flex;
@@ -152,27 +137,27 @@
         }
         .lead-title h3 {
             margin: 0 0 2px 0;
-            font-size: 1.05rem;
+            font-size: 1rem;
         }
         .lead-title p {
             margin: 0;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #64748b;
         }
         .badge-container {
             display: flex;
             gap: 6px;
-            margin: 10px 0;
-            flex-wrap: wrap;
+            margin: 8px 0;
         }
         .badge {
             padding: 3px 8px;
-            border-radius: 20px;
+            border-radius: 12px;
             font-size: 0.7rem;
-            font-weight: 500;
+            font-weight: 600;
         }
         .badge-sent { background-color: #d1fae5; color: #065f46; }
         .badge-pending { background-color: #fee2e2; color: #991b1b; }
+        
         .lead-details p {
             margin: 5px 0;
             font-size: 0.85rem;
@@ -185,8 +170,8 @@
         .card-actions {
             display: flex;
             gap: 8px;
-            margin-top: 12px;
-            padding-top: 12px;
+            margin-top: 10px;
+            padding-top: 10px;
             border-top: 1px solid var(--border);
         }
         .btn-action-wa {
@@ -196,24 +181,9 @@
             padding: 8px 12px;
             border-radius: 6px;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: bold;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            flex: 1;
-        }
-        .btn-action-email {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
             text-align: center;
             flex: 1;
         }
@@ -225,74 +195,61 @@
         <!-- DASHBOARD VIEW -->
         <div id="dashboard-view">
             <div class="header-bar">
-                <h1>📊 Buyer DB v5.4</h1>
-                <button class="btn-wa-queue" onclick="toggleWaQueue(true)">💬 WA Queue (<span id="queue-count-badge">0</span>)</button>
-            </div>
-
-            <div class="automation-banner" id="automation-status">
-                Sync Status: Active · Total Enterprise Leads: <span id="total-count-banner">0</span>
+                <h1>📊 Buyer Database v5.6</h1>
+                <button class="btn-wa-queue" onclick="toggleView(true)">💬 WA Queue (<span id="queue-badge">0</span>)</button>
             </div>
 
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="number" id="stat-total">0</div>
-                    <div class="label">Total</div>
+                    <div class="label">Total Leads</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number" id="stat-new">0</div>
-                    <div class="label">New</div>
+                    <div class="number" id="stat-pending">0</div>
+                    <div class="label">Pending WA</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number" id="stat-contacted">0</div>
-                    <div class="label">Contacted</div>
-                </div>
-                <div class="stat-card">
-                    <div class="number" id="stat-wa">0</div>
+                    <div class="number" id="stat-sent">0</div>
                     <div class="label">WA Sent</div>
-                </div>
-                <div class="stat-card">
-                    <div class="number" id="stat-email">0</div>
-                    <div class="label">Email Sent</div>
                 </div>
             </div>
 
-            <div class="controls-grid">
-                <div class="filter-row">
-                    <select id="categoryFilter" onchange="filterAndRender()">
+            <div class="controls-stack">
+                <div class="filter-row-stacked">
+                    <select id="categoryFilter" onchange="renderApp()">
                         <option value="All">All Categories</option>
                     </select>
-                    <select id="statusFilter" onchange="filterAndRender()">
+                    <select id="statusFilter" onchange="renderApp()">
                         <option value="All">All Statuses</option>
-                        <option value="New">New</option>
-                        <option value="Contacted">Contacted</option>
-                        <option value="Interested">Interested</option>
-                        <option value="Skipped">Skipped</option>
+                        <option value="New">Pending Outreach</option>
+                        <option value="Contacted">Contacted / Sent</option>
                     </select>
                 </div>
-                <input type="text" id="searchInput" placeholder="Search company or notes..." oninput="filterAndRender()">
+                <input type="text" id="searchInput" placeholder="Search company name or notes..." oninput="renderApp()">
                 <div class="action-row">
-                    <button class="btn btn-refresh" onclick="resetData()">🔄 Purge Cache & Reset</button>
+                    <button class="btn btn-reset" onclick="resetDatabase()">🔄 Reset Defaults</button>
                     <button class="btn btn-export" onclick="exportCSV()">↓ Export CSV</button>
                 </div>
             </div>
 
-            <div id="leads-container"></div>
+            <div id="leads-list"></div>
         </div>
 
         <!-- WHATSAPP QUEUE VIEW -->
         <div id="wa-queue-view" class="hidden">
             <div class="header-bar">
                 <h1>💬 WhatsApp Queue</h1>
-                <button class="btn-back" onclick="toggleWaQueue(false)">← Back to Dashboard</button>
+                <button class="btn-back" onclick="toggleView(false)">← Dashboard</button>
             </div>
-            <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 12px;">Leads pending WhatsApp outreach:</p>
-            <div id="wa-queue-container"></div>
+            <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 10px;">Leads pending WhatsApp outreach:</p>
+            <div id="queue-list"></div>
         </div>
     </div>
 
     <script>
-        const SCHEMA_VERSION = 'v5.4_prod';
-        
+        const PRIMARY_STORAGE_KEY = 'buyer_db_master_v56';
+        const LEGACY_KEYS = ['buyer_db_leads_v55', 'buyer_database_leads', 'buyer_db_leads', 'leads'];
+
         const defaultLeads = [
             {
                 id: 1,
@@ -300,116 +257,56 @@
                 category: "Hotels & Hospitality",
                 status: "New",
                 waSent: false,
-                emailSent: false,
                 mobile: "918774242449",
                 website: "https://www.ihgplc.com",
                 notes: "Multinational hospitality company expanding footprint in South India."
-            },
-            {
-                id: 2,
-                company: "Courtyard by Marriott",
-                category: "Hotels & Hospitality",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919842123456",
-                website: "https://www.marriott.com",
-                notes: "Evaluating high-traffic commercial corridor plots for business hotel expansion."
-            },
-            {
-                id: 3,
-                company: "Apollo Hospitals Enterprise",
-                category: "Healthcare & Real Estate",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919443198765",
-                website: "https://www.apollohospitals.com",
-                notes: "Looking for strategic large-scale corner land parcels for specialized care units."
-            },
-            {
-                id: 4,
-                company: "Meenakshi Mission Hospital",
-                category: "Healthcare & Real Estate",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919843011223",
-                website: "https://www.mmhrc.in",
-                notes: "Expanding regional diagnostic and satellite emergency care infrastructure."
-            },
-            {
-                id: 5,
-                company: "Reliance Retail Ventures",
-                category: "Retail & Hypermarkets",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919894567890",
-                website: "https://www.ril.com",
-                notes: "Seeking highway-facing plots for large-format retail hypermarkets and distribution."
-            },
-            {
-                id: 6,
-                company: "GRT Hotels & Resorts",
-                category: "Hotels & Hospitality",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919444055667",
-                website: "https://www.grthotels.com",
-                notes: "Interested in boutique convention centers and premium transit hotel properties."
-            },
-            {
-                id: 7,
-                company: "TVS Mobility Group",
-                category: "Corporate & Automotive",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919715012345",
-                website: "https://www.tvsmobility.com",
-                notes: "Evaluating multi-use commercial plots for flagship showrooms and service hubs."
-            },
-            {
-                id: 8,
-                company: "Velammal Educational Trust",
-                category: "Institutional & Educational",
-                status: "New",
-                waSent: false,
-                emailSent: false,
-                mobile: "919443288990",
-                website: "https://www.velammal.edu.in",
-                notes: "Acquiring strategic parcels for executive training and professional academy centers."
             }
         ];
 
         let leads = [];
-        
-        // Enforce schema versioning to eliminate stale localStorage corruption
-        try {
-            const currentVer = localStorage.getItem('db_schema_version');
-            if (currentVer !== SCHEMA_VERSION) {
-                localStorage.setItem('buyer_database_leads', JSON.stringify(defaultLeads));
-                localStorage.setItem('db_schema_version', SCHEMA_VERSION);
-                leads = defaultLeads;
-            } else {
-                const saved = localStorage.getItem('buyer_database_leads');
-                leads = saved ? JSON.parse(saved) : defaultLeads;
-                if (!Array.isArray(leads) || leads.length === 0) {
-                    leads = defaultLeads;
+
+        function loadData() {
+            try {
+                // 1. Check primary master key first
+                let saved = localStorage.getItem(PRIMARY_STORAGE_KEY);
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        leads = parsed;
+                        return;
+                    }
                 }
+
+                // 2. Scan legacy keys to recover user data automatically
+                for (const key of LEGACY_KEYS) {
+                    saved = localStorage.getItem(key);
+                    if (saved) {
+                        const parsed = JSON.parse(saved);
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            leads = parsed;
+                            // Migrate recovered data immediately to primary key
+                            saveData();
+                            return;
+                        }
+                    }
+                }
+
+                // 3. Fallback if absolutely nothing found
+                leads = defaultLeads;
+                saveData();
+            } catch (e) {
+                leads = defaultLeads;
             }
-        } catch (e) {
-            leads = defaultLeads;
         }
 
-        const isContactedLead = l => l.status === 'Contacted' || l.waSent === true || l.emailSent === true;
+        function saveData() {
+            localStorage.setItem(PRIMARY_STORAGE_KEY, JSON.stringify(leads));
+        }
 
-        function initApp() {
+        function init() {
+            loadData();
             populateCategories();
-            updateStats();
-            filterAndRender();
+            renderApp();
         }
 
         function populateCategories() {
@@ -423,177 +320,142 @@
 
         function updateStats() {
             const total = leads.length;
-            const contactedCount = leads.filter(isContactedLead).length;
-            const newCount = leads.filter(l => (!l.status || l.status === 'New') && !isContactedLead(l)).length;
-            const waSentCount = leads.filter(l => l.waSent === true).length;
-            const emailSentCount = leads.filter(l => l.emailSent === true).length;
-            const pendingWaCount = leads.filter(l => !l.waSent && l.mobile).length;
+            const pending = leads.filter(l => !l.waSent && l.status !== 'Contacted').length;
+            const sent = leads.filter(l => l.waSent || l.status === 'Contacted').length;
 
             document.getElementById('stat-total').innerText = total;
-            document.getElementById('stat-new').innerText = newCount;
-            document.getElementById('stat-contacted').innerText = contactedCount;
-            document.getElementById('stat-wa').innerText = waSentCount;
-            document.getElementById('stat-email').innerText = emailSentCount;
-            
-            const queueBadge = document.getElementById('queue-count-badge');
-            if(queueBadge) queueBadge.innerText = pendingWaCount;
-            
-            const bannerCount = document.getElementById('total-count-banner');
-            if(bannerCount) bannerCount.innerText = total;
-        }
-
-        function updateLeadStatus(id, newStatus) {
-            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
-            if (lead) {
-                lead.status = newStatus;
-                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
-                updateStats();
-                filterAndRender();
-            }
+            document.getElementById('stat-pending').innerText = pending;
+            document.getElementById('stat-sent').innerText = sent;
+            document.getElementById('queue-badge').innerText = pending;
         }
 
         function markWaSent(id) {
-            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
+            const lead = leads.find(l => l.id === id || l.mobile === id || l.company === id);
             if (lead) {
                 lead.waSent = true;
                 lead.status = 'Contacted';
-                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
-                updateStats();
-                filterAndRender();
-                renderWaQueue();
+                saveData();
+                renderApp();
             }
         }
 
-        function markEmailSent(id) {
-            const lead = leads.find(l => l.id == id || l.mobile == id || l.company === id);
+        function updateStatus(id, newStatus) {
+            const lead = leads.find(l => l.id === id || l.mobile === id || l.company === id);
             if (lead) {
-                lead.emailSent = true;
-                lead.status = 'Contacted';
-                localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
-                updateStats();
-                filterAndRender();
+                lead.status = newStatus;
+                if (newStatus === 'Contacted') lead.waSent = true;
+                saveData();
+                renderApp();
             }
         }
 
-        function filterAndRender() {
-            const categoryVal = document.getElementById('categoryFilter').value;
+        function renderApp() {
+            updateStats();
+            const catVal = document.getElementById('categoryFilter').value;
             const statusVal = document.getElementById('statusFilter').value;
             const searchVal = (document.getElementById('searchInput').value || '').toLowerCase();
 
             const filtered = leads.filter(l => {
-                const matchesCategory = (categoryVal === 'All' || l.category === categoryVal);
-                
+                const matchesCat = (catVal === 'All' || l.category === catVal);
                 let matchesStatus = true;
-                if (statusVal === 'Contacted') {
-                    matchesStatus = isContactedLead(l);
-                } else if (statusVal === 'New') {
-                    matchesStatus = (!l.status || l.status === 'New') && !isContactedLead(l);
-                } else if (statusVal !== 'All') {
-                    matchesStatus = (l.status === statusVal);
-                }
-
-                const matchesSearch = (l.company.toLowerCase().includes(searchVal) || (l.notes && l.notes.toLowerCase().includes(searchVal)));
-                return matchesCategory && matchesStatus && matchesSearch;
+                const isContacted = l.waSent || l.status === 'Contacted';
+                if (statusVal === 'New') matchesStatus = !isContacted;
+                if (statusVal === 'Contacted') matchesStatus = isContacted;
+                
+                const matchesSearch = (l.company || '').toLowerCase().includes(searchVal) || ((l.notes || '').toLowerCase().includes(searchVal));
+                return matchesCat && matchesStatus && matchesSearch;
             });
 
-            const container = document.getElementById('leads-container');
+            // Render Dashboard List (capped rendering for performance if dataset is large)
+            const listContainer = document.getElementById('leads-list');
             if (filtered.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No leads found matching criteria.</p>';
-                return;
-            }
-
-            container.innerHTML = filtered.map(lead => {
-                const currentStatus = isContactedLead(lead) ? 'Contacted' : (lead.status || 'New');
-                const uniqueId = lead.id || lead.mobile || lead.company;
-                return `
-                <div class="lead-card">
-                    <div class="lead-header">
-                        <div class="lead-title">
-                            <h3>${lead.company}</h3>
-                            <p>${lead.category || ''}</p>
-                        </div>
-                        <select onchange="updateLeadStatus('${uniqueId}', this.value)" style="width: auto; padding: 4px 8px; font-weight: 500; font-size: 0.8rem;">
-                            <option value="New" ${currentStatus === 'New' ? 'selected' : ''}>New</option>
-                            <option value="Contacted" ${currentStatus === 'Contacted' ? 'selected' : ''}>Contacted</option>
-                            <option value="Interested" ${currentStatus === 'Interested' ? 'selected' : ''}>Interested</option>
-                            <option value="Skipped" ${currentStatus === 'Skipped' ? 'selected' : ''}>Skipped</option>
-                        </select>
-                    </div>
-                    <div class="badge-container">
-                        <span class="badge ${lead.waSent ? 'badge-sent' : 'badge-pending'}">
-                            WhatsApp: ${lead.waSent ? 'Sent' : 'Pending'}
-                        </span>
-                        <span class="badge ${lead.emailSent ? 'badge-sent' : 'badge-pending'}">
-                            Email: ${lead.emailSent ? 'Sent' : 'Pending'}
-                        </span>
-                    </div>
-                    <div class="lead-details">
-                        <p><strong>📱 Mobile:</strong> ${lead.mobile || 'N/A'}</p>
-                        <p><strong>💬 Chat:</strong> <a href="https://wa.me/${lead.mobile}" target="_blank">wa.me/${lead.mobile}</a></p>
-                        <p><strong>🌐 Web:</strong> <a href="${lead.website}" target="_blank">${lead.website || 'N/A'}</a></p>
-                        <p><strong>📝 Notes:</strong> ${lead.notes || 'No notes added.'}</p>
-                    </div>
-                    <div class="card-actions">
-                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-action-wa" onclick="markWaSent('${uniqueId}')">💬 Send WA</a>
-                        <button class="btn-action-email" onclick="markEmailSent('${uniqueId}')">✉️ Send Email</button>
-                    </div>
-                </div>`;
-            }).join('');
-        }
-
-        function toggleWaQueue(show) {
-            const dashboard = document.getElementById('dashboard-view');
-            const queueView = document.getElementById('wa-queue-view');
-            if (show) {
-                dashboard.classList.add('hidden');
-                queueView.classList.remove('hidden');
-                renderWaQueue();
+                listContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No matching leads found.</p>';
             } else {
-                queueView.classList.add('hidden');
-                dashboard.classList.remove('hidden');
-            }
-        }
-
-        function renderWaQueue() {
-            const queueContainer = document.getElementById('wa-queue-container');
-            const pendingLeads = leads.filter(l => !l.waSent && l.mobile);
-
-            if (pendingLeads.length === 0) {
-                queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">No pending WhatsApp messages in queue! 🎉</p>';
-                return;
-            }
-
-            queueContainer.innerHTML = pendingLeads.map(lead => {
-                const uniqueId = lead.id || lead.mobile || lead.company;
-                return `
-                <div class="lead-card">
-                    <div class="lead-header">
-                        <div class="lead-title">
-                            <h3>${lead.company}</h3>
-                            <p>${lead.category || ''}</p>
+                listContainer.innerHTML = filtered.slice(0, 100).map((l, index) => {
+                    const uniqueId = l.id || l.mobile || l.company || index;
+                    const isContacted = l.waSent || l.status === 'Contacted';
+                    return `
+                    <div class="lead-card">
+                        <div class="lead-header">
+                            <div class="lead-title">
+                                <h3>${l.company || 'Unnamed Company'}</h3>
+                                <p>${l.category || 'General'}</p>
+                            </div>
+                            <select onchange="updateStatus('${uniqueId}', this.value)" style="width: auto; padding: 4px 8px; font-size: 0.8rem;">
+                                <option value="New" ${!isContacted ? 'selected' : ''}>New</option>
+                                <option value="Contacted" ${isContacted ? 'selected' : ''}>Contacted</option>
+                            </select>
                         </div>
-                        <a href="https://wa.me/${lead.mobile}" target="_blank" class="btn-wa-queue" style="text-decoration: none; padding: 6px 12px; font-size: 0.8rem;" onclick="markWaSent('${uniqueId}')">Open WA Chat</a>
+                        <div class="badge-container">
+                            <span class="badge ${isContacted ? 'badge-sent' : 'badge-pending'}">
+                                WhatsApp: ${isContacted ? 'Sent' : 'Pending'}
+                            </span>
+                        </div>
+                        <div class="lead-details">
+                            <p><strong>📱 Mobile:</strong> ${l.mobile || 'N/A'}</p>
+                            <p><strong>🌐 Web:</strong> <a href="${l.website || '#'}" target="_blank">${l.website || 'N/A'}</a></p>
+                            <p><strong>📝 Notes:</strong> ${l.notes || 'No notes.'}</p>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/${l.mobile || ''}" target="_blank" class="btn-action-wa" onclick="markWaSent('${uniqueId}')">💬 Open WA Chat</a>
+                        </div>
                     </div>
-                    <div class="lead-details">
-                        <p><strong>📱 Mobile:</strong> ${lead.mobile}</p>
-                        <p><strong>📝 Notes:</strong> ${lead.notes || 'No notes.'}</p>
+                `;
+                }).join('') + (filtered.length > 100 ? '<p style="text-align:center; color:#64748b; font-size:0.8rem;">Showing first 100 matching results...</p>' : '');
+            }
+
+            // Render WA Queue List
+            const queueContainer = document.getElementById('queue-list');
+            const pendingQueue = leads.filter(l => !l.waSent && l.status !== 'Contacted' && l.mobile);
+            if (pendingQueue.length === 0) {
+                queueContainer.innerHTML = '<p style="text-align: center; color: #64748b; padding: 20px;">All WhatsApp messages sent! 🎉</p>';
+            } else {
+                queueContainer.innerHTML = pendingQueue.slice(0, 100).map((l, index) => {
+                    const uniqueId = l.id || l.mobile || l.company || index;
+                    return `
+                    <div class="lead-card">
+                        <div class="lead-header">
+                            <div class="lead-title">
+                                <h3>${l.company || 'Unnamed Company'}</h3>
+                                <p>${l.category || 'General'}</p>
+                            </div>
+                            <a href="https://wa.me/${l.mobile || ''}" target="_blank" class="btn-action-wa" style="padding: 6px 12px; font-size: 0.8rem;" onclick="markWaSent('${uniqueId}')">Open WA Chat</a>
+                        </div>
+                        <div class="lead-details">
+                            <p><strong>📱 Mobile:</strong> ${l.mobile || 'N/A'}</p>
+                            <p><strong>📝 Notes:</strong> ${l.notes || 'No notes.'}</p>
+                        </div>
                     </div>
-                </div>`;
-            }).join('');
+                `;
+                }).join('');
+            }
         }
 
-        function resetData() {
-            if(confirm('Purge local cache and reset to default dataset?')) {
-                localStorage.removeItem('buyer_database_leads');
-                localStorage.removeItem('db_schema_version');
+        function toggleView(showQueue) {
+            const dash = document.getElementById('dashboard-view');
+            const queue = document.getElementById('wa-queue-view');
+            if (showQueue) {
+                dash.classList.add('hidden');
+                queue.classList.remove('hidden');
+            } else {
+                queue.classList.add('hidden');
+                dash.classList.remove('hidden');
+            }
+        }
+
+        function resetDatabase() {
+            if (confirm('Reset database to default sample leads? (Warning: This will clear stored data).')) {
+                localStorage.clear();
+                leads = defaultLeads;
+                saveData();
                 location.reload();
             }
         }
 
         function exportCSV() {
-            let csv = 'Company,Category,Status,WhatsApp Sent,Email Sent,Mobile,Website,Notes\n';
+            let csv = 'Company,Category,Status,WhatsApp Sent,Mobile,Website,Notes\n';
             leads.forEach(l => {
-                csv += `"${l.company}","${l.category || ''}","${isContactedLead(l) ? 'Contacted' : (l.status || 'New')}","${l.waSent ? 'Yes' : 'No'}","${l.emailSent ? 'Yes' : 'No'}","${l.mobile || ''}","${l.website || ''}","${(l.notes || '').replace(/"/g, '""')}"\n`;
+                csv += `"${l.company || ''}","${l.category || ''}","${l.status || 'New'}","${l.waSent ? 'Yes' : 'No'}","${l.mobile || ''}","${l.website || ''}","${(l.notes || '').replace(/"/g, '""')}"\n`;
             });
             const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
@@ -603,7 +465,7 @@
             a.click();
         }
 
-        window.onload = initApp;
+        window.onload = init;
     </script>
 </body>
 </html>
