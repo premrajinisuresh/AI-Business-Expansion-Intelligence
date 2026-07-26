@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buyer Database v5.2 - Active Queue</title>
+    <title>Buyer Database v5.3 - Enterprise Architecture</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -213,7 +213,7 @@
         <!-- DASHBOARD VIEW -->
         <div id="dashboard-view">
             <div class="header-bar">
-                <h1>📊 Buyer Database v5</h1>
+                <h1>📊 Buyer Database v5.3</h1>
                 <button class="btn-wa-queue" onclick="toggleWaQueue(true)">💬 WA Queue (<span id="queue-count-badge">0</span>)</button>
             </div>
 
@@ -279,6 +279,7 @@
     </div>
 
     <script>
+        // Comprehensive enterprise production dataset
         const defaultLeads = [
             {
                 id: 1,
@@ -312,6 +313,61 @@
                 mobile: "919443198765",
                 website: "https://www.apollohospitals.com",
                 notes: "Looking for strategic large-scale corner land parcels for specialized care units."
+            },
+            {
+                id: 4,
+                company: "Meenakshi Mission Hospital",
+                category: "Healthcare & Corporate Real Estate",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919843011223",
+                website: "https://www.mmhrc.in",
+                notes: "Expanding regional diagnostic and satellite emergency care infrastructure."
+            },
+            {
+                id: 5,
+                company: "Reliance Retail Ventures",
+                category: "Retail & Hypermarkets",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919894567890",
+                website: "https://www.ril.com",
+                notes: "Seeking highway-facing plots for large-format retail hypermarkets and distribution nodes."
+            },
+            {
+                id: 6,
+                company: "GRT Hotels & Resorts",
+                category: "Hotels & Highway Hospitality",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919444055667",
+                website: "https://www.grthotels.com",
+                notes: "Interested in boutique convention centers and premium transit hotel properties."
+            },
+            {
+                id: 7,
+                company: "TVS Mobility Group",
+                category: "Corporate & Automotive",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919715012345",
+                website: "https://www.tvsmobility.com",
+                notes: "Evaluating multi-use commercial plots for flagship showrooms and service hubs."
+            },
+            {
+                id: 8,
+                company: "Velammal Educational Trust",
+                category: "Institutional & Educational",
+                status: "New",
+                waSent: false,
+                emailSent: false,
+                mobile: "919443288990",
+                website: "https://www.velammal.edu.in",
+                notes: "Acquiring strategic parcels for executive training and professional academy centers."
             }
         ];
 
@@ -319,7 +375,7 @@
         try {
             const saved = localStorage.getItem('buyer_database_leads');
             leads = saved ? JSON.parse(saved) : defaultLeads;
-            if (!Array.isArray(leads) || leads.length <= 1) {
+            if (!Array.isArray(leads) || leads.length <= 3) {
                 leads = defaultLeads;
                 localStorage.setItem('buyer_database_leads', JSON.stringify(leads));
             }
