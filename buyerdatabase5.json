@@ -18410,5 +18410,11 @@
       "LastError": "Invalid or missing email address",
       "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Grand%20Bake%20%26%20Dine%20Madurai%2C%20Madurai"
     }
-  ]
+  ],
+  "metadata": {
+    "rotationIndex": 1,
+    "lastAutomatedRun": "7/27/2026, 9:34:08 AM UTC",
+    "lastRunAddedCount": 0,
+    "totalLeads": 0
+  }
 }
