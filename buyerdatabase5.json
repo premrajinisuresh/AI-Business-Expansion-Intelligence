@@ -18417,7 +18417,11 @@
       "Website": "Not public",
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai Capital Partners Madurai",
@@ -18426,7 +18430,11 @@
       "Website": "Not public",
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Pandiyan Family Office Madurai",
@@ -18435,7 +18443,11 @@
       "Website": "Not public",
       "Mobile": "919443678901",
       "WhatsApp": "https://wa.me/919443678901",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Alagar Trade Ventures Madurai",
@@ -18444,7 +18456,11 @@
       "Website": "Not public",
       "Mobile": "919867420559",
       "WhatsApp": "https://wa.me/919867420559",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Temple City Assets Madurai",
@@ -18453,7 +18469,11 @@
       "Website": "Not public",
       "Mobile": "919842678901",
       "WhatsApp": "https://wa.me/919842678901",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
