@@ -18282,7 +18282,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Heritage%20Gateway%20Resorts%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Grand Highway Inns Madurai",
@@ -18295,7 +18296,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Grand%20Highway%20Inns%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Royal Residency & Suites Madurai",
@@ -18308,7 +18310,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Royal%20Residency%20%26%20Suites%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Southern Oasis Hotels Madurai",
@@ -18321,7 +18324,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Southern%20Oasis%20Hotels%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Elite Palms Hospitality Madurai",
@@ -18334,7 +18338,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Elite%20Palms%20Hospitality%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Spicy Crest Food Courts Madurai",
@@ -18347,7 +18352,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Spicy%20Crest%20Food%20Courts%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Namma Veetu Dine-In Madurai",
@@ -18360,7 +18366,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Namma%20Veetu%20Dine-In%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Flavour Route Restaurants Madurai",
@@ -18373,7 +18380,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Flavour%20Route%20Restaurants%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Royal Feast Chain Madurai",
@@ -18386,7 +18394,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Royal%20Feast%20Chain%20Madurai%2C%20Madurai"
     },
     {
       "Company": "Grand Bake & Dine Madurai",
@@ -18399,7 +18408,8 @@
       "EmailSent": false,
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
-      "LastError": "Invalid or missing email address"
+      "LastError": "Invalid or missing email address",
+      "GoogleMaps": "https://www.google.com/maps/search/?api=1&query=Grand%20Bake%20%26%20Dine%20Madurai%2C%20Madurai"
     }
   ]
 }
