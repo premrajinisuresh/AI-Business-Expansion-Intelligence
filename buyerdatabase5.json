@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/28/2026, 8:47:48 AM",
-  "addedThisRun": 0,
-  "total": 629,
-  "rotationIndex": 3,
+  "lastRun": "7/28/2026, 8:49:15 AM",
+  "addedThisRun": 5,
+  "total": 634,
+  "rotationIndex": 4,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18475,6 +18475,51 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "Company": "Apex Multi-Specialty Hospitals Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Global Care Medical Hub Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Lifeline Health Networks Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Prime Wellness Centers Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Metro Cure Hospitals Madurai",
+      "Category": "Hospitals & Healthcare Groups",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
