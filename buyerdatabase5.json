@@ -18482,7 +18482,11 @@
       "Website": "Not public",
       "Mobile": "919443789012",
       "WhatsApp": "https://wa.me/919443789012",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Global Care Medical Hub Madurai",
@@ -18491,7 +18495,11 @@
       "Website": "Not public",
       "Mobile": "919807738601",
       "WhatsApp": "https://wa.me/919807738601",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Lifeline Health Networks Madurai",
@@ -18500,7 +18508,11 @@
       "Website": "Not public",
       "Mobile": "919860252622",
       "WhatsApp": "https://wa.me/919860252622",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Prime Wellness Centers Madurai",
@@ -18509,7 +18521,11 @@
       "Website": "Not public",
       "Mobile": "919845362169",
       "WhatsApp": "https://wa.me/919845362169",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Metro Cure Hospitals Madurai",
@@ -18518,7 +18534,11 @@
       "Website": "Not public",
       "Mobile": "919858231770",
       "WhatsApp": "https://wa.me/919858231770",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
