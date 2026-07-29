@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/29/2026, 1:44:52 PM",
+  "lastRun": "7/29/2026, 1:46:10 PM",
   "addedThisRun": 5,
-  "total": 642,
-  "rotationIndex": 2,
+  "total": 647,
+  "rotationIndex": 3,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18607,6 +18607,51 @@
     {
       "Company": "Bhakta Samajam Property Fund Madurai",
       "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Royal Palace Convention Centre Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Grand Mandapam & Resorts Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Emerald Banquet Halls Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Celebration Megaplex Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Lotus Flower Convention Hub Madurai",
+      "Category": "Wedding Halls & Mandapams",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
