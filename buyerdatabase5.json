@@ -18547,7 +18547,11 @@
       "Website": "Not public",
       "Mobile": "919838506044",
       "WhatsApp": "https://wa.me/919838506044",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Southern Oasis Resorts Madurai",
@@ -18556,7 +18560,11 @@
       "Website": "Not public",
       "Mobile": "919844806902",
       "WhatsApp": "https://wa.me/919844806902",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Heritage Gateway Retreat Madurai",
@@ -18565,7 +18573,11 @@
       "Website": "Not public",
       "Mobile": "919806232961",
       "WhatsApp": "https://wa.me/919806232961",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Sri Alagar Dharma Trust Madurai",
@@ -18574,7 +18586,11 @@
       "Website": "Not public",
       "Mobile": "919809710114",
       "WhatsApp": "https://wa.me/919809710114",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Meenakshi Heritage Foundation Madurai",
@@ -18583,7 +18599,11 @@
       "Website": "Not public",
       "Mobile": "919443567890",
       "WhatsApp": "https://wa.me/919443567890",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Temple City Charitable Trust Madurai",
@@ -18592,7 +18612,11 @@
       "Website": "Not public",
       "Mobile": "919842678901",
       "WhatsApp": "https://wa.me/919842678901",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Vaigai Seva Trust Madurai",
@@ -18601,7 +18625,11 @@
       "Website": "Not public",
       "Mobile": "919842789012",
       "WhatsApp": "https://wa.me/919842789012",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Bhakta Samajam Property Fund Madurai",
@@ -18610,7 +18638,11 @@
       "Website": "Not public",
       "Mobile": "919873918538",
       "WhatsApp": "https://wa.me/919873918538",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Royal Palace Convention Centre Madurai",
@@ -18619,7 +18651,11 @@
       "Website": "Not public",
       "Mobile": "919867789312",
       "WhatsApp": "https://wa.me/919867789312",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Grand Mandapam & Resorts Madurai",
@@ -18628,7 +18664,11 @@
       "Website": "Not public",
       "Mobile": "919845626134",
       "WhatsApp": "https://wa.me/919845626134",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Emerald Banquet Halls Madurai",
@@ -18637,7 +18677,11 @@
       "Website": "Not public",
       "Mobile": "919835170261",
       "WhatsApp": "https://wa.me/919835170261",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Celebration Megaplex Madurai",
@@ -18646,7 +18690,11 @@
       "Website": "Not public",
       "Mobile": "919835045556",
       "WhatsApp": "https://wa.me/919835045556",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     },
     {
       "Company": "Lotus Flower Convention Hub Madurai",
@@ -18655,7 +18703,11 @@
       "Website": "Not public",
       "Mobile": "919847835089",
       "WhatsApp": "https://wa.me/919847835089",
-      "RetryCount": 0
+      "RetryCount": 0,
+      "EmailSent": false,
+      "EmailSentDate": "",
+      "EmailStatus": "Skipped",
+      "LastError": "Invalid or missing email address"
     }
   ]
 }
