@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/29/2026, 1:43:33 PM",
-  "addedThisRun": 3,
-  "total": 637,
-  "rotationIndex": 1,
+  "lastRun": "7/29/2026, 1:44:52 PM",
+  "addedThisRun": 5,
+  "total": 642,
+  "rotationIndex": 2,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18562,6 +18562,51 @@
     {
       "Company": "Heritage Gateway Retreat Madurai",
       "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Sri Alagar Dharma Trust Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Heritage Foundation Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Temple City Charitable Trust Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Seva Trust Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Bhakta Samajam Property Fund Madurai",
+      "Category": "Religious & Charitable Trusts",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
