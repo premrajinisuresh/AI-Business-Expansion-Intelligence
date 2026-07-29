@@ -1,7 +1,8 @@
 {
-  "lastRun": "7/29/2026, 1:33:34 PM",
-  "addedThisRun": 0,
-  "total": 634,
+  "lastRun": "7/29/2026, 1:43:33 PM",
+  "addedThisRun": 3,
+  "total": 637,
+  "rotationIndex": 1,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18539,6 +18540,33 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "Company": "Alagar Hills Resort & Spa Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Southern Oasis Resorts Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Heritage Gateway Retreat Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
