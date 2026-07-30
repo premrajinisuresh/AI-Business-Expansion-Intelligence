@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:07:30 PM",
+  "lastRun": "7/30/2026, 12:08:56 PM",
   "addedThisRun": 5,
-  "total": 652,
-  "rotationIndex": 1,
+  "total": 657,
+  "rotationIndex": 2,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18749,6 +18749,51 @@
     {
       "Company": "Pudupatti Highway Inn Madurai",
       "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Kovil Kainkarya Trust Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Sri Andal Bhakta Samajam Madurai",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Madurai Thiruppani Dharma Nidhi",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Sri Krishna Seva Trust",
+      "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Sundararaja Perumal Trust Madurai",
+      "Category": "Religious & Charitable Trusts",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
