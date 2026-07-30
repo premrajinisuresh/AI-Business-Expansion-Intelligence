@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:10:38 PM",
+  "lastRun": "7/30/2026, 12:11:19 PM",
   "addedThisRun": 5,
-  "total": 667,
-  "rotationIndex": 4,
+  "total": 672,
+  "rotationIndex": 5,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18884,6 +18884,51 @@
     {
       "Company": "Madurai Metro Living Suites",
       "Category": "Service Apartments",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar High-Street Plaza Madurai",
+      "Category": "Commercial Complex & Retail Hub",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Trade Arcade Madurai",
+      "Category": "Commercial Complex & Retail Hub",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Commercial Galleria Madurai",
+      "Category": "Commercial Complex & Retail Hub",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Retail Hub Madurai",
+      "Category": "Commercial Complex & Retail Hub",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Northern Highway Commercial Complex Madurai",
+      "Category": "Commercial Complex & Retail Hub",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
