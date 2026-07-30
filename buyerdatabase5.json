@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:08:56 PM",
+  "lastRun": "7/30/2026, 12:09:43 PM",
   "addedThisRun": 5,
-  "total": 657,
-  "rotationIndex": 2,
+  "total": 662,
+  "rotationIndex": 3,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18794,6 +18794,51 @@
     {
       "Company": "Sundararaja Perumal Trust Madurai",
       "Category": "Religious & Charitable Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Perumal Thirumana Mandapam Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Grand Palace Convention Hall",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Riverfront Banquet Hub Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Royal Lotus Celebration Centre Madurai",
+      "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Marriage Megaplex Madurai",
+      "Category": "Wedding Halls & Mandapams",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
