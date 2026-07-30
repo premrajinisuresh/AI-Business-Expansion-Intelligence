@@ -1,7 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:01:11 PM",
-  "addedThisRun": 0,
-  "total": 647,
+  "lastRun": "7/30/2026, 12:07:30 PM",
+  "addedThisRun": 5,
+  "total": 652,
+  "rotationIndex": 1,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18708,6 +18709,51 @@
       "EmailSentDate": "",
       "EmailStatus": "Skipped",
       "LastError": "Invalid or missing email address"
+    },
+    {
+      "Company": "Alagarmalai Wild Woods Resort Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Valley Eco Retreat Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Gateway Hotels Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Tamizham Heritage Resorts Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Pudupatti Highway Inn Madurai",
+      "Category": "Hotels & Eco-Resorts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
     }
   ]
 }
