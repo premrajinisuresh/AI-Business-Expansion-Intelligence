@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:09:43 PM",
+  "lastRun": "7/30/2026, 12:10:38 PM",
   "addedThisRun": 5,
-  "total": 662,
-  "rotationIndex": 3,
+  "total": 667,
+  "rotationIndex": 4,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18839,6 +18839,51 @@
     {
       "Company": "Meenakshi Marriage Megaplex Madurai",
       "Category": "Wedding Halls & Mandapams",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Corridor Executive Suites Madurai",
+      "Category": "Service Apartments",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Extended Stay Apartments",
+      "Category": "Service Apartments",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Temple View Serviced Residences Madurai",
+      "Category": "Service Apartments",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Corporate Housing Madurai",
+      "Category": "Service Apartments",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Madurai Metro Living Suites",
+      "Category": "Service Apartments",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
