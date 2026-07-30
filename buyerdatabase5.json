@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:11:19 PM",
+  "lastRun": "7/30/2026, 12:12:19 PM",
   "addedThisRun": 5,
-  "total": 672,
-  "rotationIndex": 5,
+  "total": 677,
+  "rotationIndex": 6,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18929,6 +18929,51 @@
     {
       "Company": "Northern Highway Commercial Complex Madurai",
       "Category": "Commercial Complex & Retail Hub",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Healthcare Research Annexe Madurai",
+      "Category": "Hospital Annexe",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Medical Extension Hub",
+      "Category": "Hospital Annexe",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Multispecialty Branch Madurai",
+      "Category": "Hospital Annexe",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Medical Trust Extension Madurai",
+      "Category": "Hospital Annexe",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Northern Health Pavilion Madurai",
+      "Category": "Hospital Annexe",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
