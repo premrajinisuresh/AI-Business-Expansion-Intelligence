@@ -1,8 +1,8 @@
 {
-  "lastRun": "7/30/2026, 12:12:19 PM",
+  "lastRun": "7/30/2026, 12:13:03 PM",
   "addedThisRun": 5,
-  "total": 677,
-  "rotationIndex": 6,
+  "total": 682,
+  "rotationIndex": 0,
   "companies": [
     {
       "id": "auto_1783331981835_63938",
@@ -18974,6 +18974,51 @@
     {
       "Company": "Northern Health Pavilion Madurai",
       "Category": "Hospital Annexe",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Alagar Educational and Charitable Society Madurai",
+      "Category": "Educational & Institutional Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "K Pudur Campus Extension Trust",
+      "Category": "Educational & Institutional Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Vaigai Vidya Trust Madurai",
+      "Category": "Educational & Institutional Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Meenakshi Academic Foundation Madurai",
+      "Category": "Educational & Institutional Trusts",
+      "City": "Madurai",
+      "Website": "Not public",
+      "Mobile": "Not public",
+      "WhatsApp": "Not public",
+      "RetryCount": 0
+    },
+    {
+      "Company": "Northern Institute Trust Madurai",
+      "Category": "Educational & Institutional Trusts",
       "City": "Madurai",
       "Website": "Not public",
       "Mobile": "Not public",
